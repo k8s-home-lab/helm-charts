@@ -1,0 +1,35 @@
+apiVersion: v2
+appVersion: 1.16.5
+description: gitea helm package
+name: gitea
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - gitea
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gitea
+icon: https://docs.gitea.io/images/gitea.png
+sources:
+  - https://github.com/go-gitea/gitea
+maintainers:
+  - name: Aste88
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.3.0
+  - name: postgresql
+    version: 11.1.9
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+  - name: mariadb
+    version: 10.4.2
+    repository: https://charts.bitnami.com/bitnami
+    condition: mariadb.enabled
+  - name: redis
+    version: 16.6.0
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
