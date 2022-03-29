@@ -7,7 +7,7 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.16.5
-    created: "2022-03-29T13:03:56.363383+02:00"
+    created: "2022-03-29T22:05:31.518131+02:00"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -38,7 +38,7 @@ entries:
     sources:
     - https://github.com/go-gitea/gitea
     urls:
-    - https://gitea.k8s.internal.aste.tools/aste/helm-charts/raw/branch/master/repository/gitea-1.0.0.tgz
+    - https://git.aste.tools/aste/helm-charts/raw/branch/master/repository/gitea-1.0.0.tgz
     version: 1.0.0
   influxdb-exporter:
   - annotations:
@@ -47,7 +47,7 @@ entries:
           description: Update image to 0.9.0 (InfluxDB v2 clients support), use differnt port for UDP.
     apiVersion: v2
     appVersion: v0.9.0
-    created: "2022-03-29T13:03:56.367569+02:00"
+    created: "2022-03-29T22:05:31.522785+02:00"
     dependencies:
     - name: common
       repository: https://library-charts.k8s-at-home.com
@@ -67,6 +67,6 @@ entries:
     sources:
     - https://github.com/prometheus/influxdb_exporter
     urls:
-    - https://gitea.k8s.internal.aste.tools/aste/helm-charts/raw/branch/master/repository/influxdb-exporter-1.0.2.tgz
+    - https://git.aste.tools/aste/helm-charts/raw/branch/master/repository/influxdb-exporter-1.0.2.tgz
     version: 1.0.2
-generated: "2022-03-29T13:03:56.343452+02:00"
+generated: "2022-03-29T22:05:31.496452+02:00"
