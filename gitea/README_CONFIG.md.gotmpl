@@ -5,5 +5,17 @@
 {{- define "custom.custom.configuration" -}}
 {{ template "custom.custom.configuration.header" . }}
 
-N/A
+Set Gitea parameters with:
+```
+config:
+  GITEA__APP_NAME: "Gitea: Git with a cup of tea"
+  GITEA__RUN_MODE: prod
+  GITEA__repository__ROOT: /data/git/repositories
+  GITEA__server__APP_DATA_PATH: /data/gitea
+  GITEA__service__DISABLE_REGISTRATION: false
+  GITEA__service__REQUIRE_SIGNIN_VIEW: false
+```
+
+All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/).
+
 {{- end -}}

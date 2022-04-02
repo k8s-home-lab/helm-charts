@@ -18,6 +18,15 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+# -- gitea specific configuration keys. Must be formatted as GITEA__[section]__variable
+# @default -- See https://docs.gitea.io/en-us/config-cheat-sheet/
+config:
+  # GITEA__APP_NAME: "Gitea: Git with a cup of tea"
+  # GITEA__RUN_MODE: prod
+  # GITEA__repository__ROOT: /data/git/repositories
+  # GITEA__server__APP_DATA_PATH: /data/gitea
+  # GITEA__service__DISABLE_REGISTRATION: false
+  # GITEA__service__REQUIRE_SIGNIN_VIEW: false
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
