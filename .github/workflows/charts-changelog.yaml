@@ -31,7 +31,7 @@ jobs:
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
-              ./.github/scripts/check-releasenotes.sh "charts/${chart_parts[1]}"
+              ./.github/scripts/check-releasenotes.sh "charts/${chart_parts[0]}/${chart_parts[1]}"
               echo ""
           done
 
@@ -65,7 +65,7 @@ jobs:
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
-                ./.github/scripts/renovate-releasenotes.sh "charts/${chart_parts[1]}"
+                ./.github/scripts/renovate-releasenotes.sh "charts/${chart_parts[0]}/${chart_parts[1]}"
               echo ""
           done
 
@@ -74,7 +74,7 @@ jobs:
         if: inputs.isRenovatePR == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: charts/
+          file_pattern: charts/**/
           commit_message: "chore: Auto-update chart metadata [skip ci]"
           commit_user_name: ${{ github.actor }}
           commit_user_email: ${{ github.actor }}@users.noreply.github.com

@@ -2,10 +2,11 @@ remote: origin
 target-branch: master
 helm-extra-args: --timeout 600s
 chart-dirs:
-- charts
+  - charts/incubator
+  - charts/stable
 excluded-charts:
 chart-repos:
-- bitnami=https://charts.bitnami.com/bitnami
-- k8s-at-home-libraries=https://library-charts.k8s-at-home.com
-- k8s-at-home=https://k8s-at-home.com/charts
-- jetstack=https://charts.jetstack.io
+  - bitnami=https://charts.bitnami.com/bitnami
+  - k8s-at-home-libraries=https://library-charts.k8s-at-home.com
+  - k8s-at-home=https://k8s-at-home.com/charts
+  - jetstack=https://charts.jetstack.io

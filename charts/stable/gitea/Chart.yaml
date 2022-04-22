@@ -6,7 +6,7 @@ version: 1.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gitea
+home: https://github.com/Aste88/helm-charts/tree/master/charts/gitea
 icon: https://docs.gitea.io/images/gitea.png
 sources:
   - https://github.com/go-gitea/gitea

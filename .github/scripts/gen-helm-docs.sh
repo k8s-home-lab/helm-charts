@@ -14,22 +14,22 @@ command -v helm-docs >/dev/null 2>&1 || {
 repository=$(git rev-parse --show-toplevel)
 
 # Templates to copy into each chart directory
-readme_template="${repository}/hack/templates/README.md.gotmpl"
-readme_config_template="${repository}/hack/templates/README_CONFIG.md.gotmpl"
+readme_template="${repository}/scripts/templates/README.md.gotmpl"
+readme_config_template="${repository}/scripts/templates/README_CONFIG.md.gotmpl"
 
 # Gather all charts using the common library, excluding common-test
 charts=$(find "${repository}" -name "Chart.yaml")
 
 # Allow for a specific chart to be passed in as a argument
 if [ $# -ge 1 ] && [ -n "$1" ] && [ -n "$2" ]; then
-    charts="${repository}/charts/$2/Chart.yaml"
+    charts="${repository}/charts/$1/$2/Chart.yaml"
     root="$(dirname "${charts}")"
     if [ ! -f "$charts" ]; then
         echo "File ${charts} does not exist."
         exit 1
     fi
 else
-    root="${repository}/charts"
+    root="${repository}/charts/stable"
 fi
 
 for chart in ${charts}; do

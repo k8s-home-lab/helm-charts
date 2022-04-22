@@ -10,7 +10,7 @@
     "enabled": false
   },
   "helmv3": {
-    "fileMatch": ["charts/Chart\\.yaml$"]
+    "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
   "packageRules": [
     // Setup datasources

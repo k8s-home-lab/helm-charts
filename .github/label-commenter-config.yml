@@ -14,12 +14,7 @@ labels:
       issue:
         body: |
           :wave: @{{ issue.user.login }}, we use the issue tracker exclusively
-          for bug reports and feature requests. However, this issue appears
-          to be a support request. Please use our support channels
-          to get help.
-          - [Docs](https://docs.k8s-at-home.com/)
-          - [Discord](https://discord.gg/sTMX7Vh)
-          - [GitHub Discussions](https://github.com/k8s-at-home/organization/discussions)
+          for bug reports and feature requests.
         action: close
 
   - name: incomplete-docs

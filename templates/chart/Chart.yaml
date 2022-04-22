@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: ${CHARTNAME} helm package
+name: ${CHARTNAME}
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- ${CHARTNAME}
+home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/${CHARTNAME}
+icon: https://${CHARTNAME}.org/icon
+sources:
+- https://github.com/${CHARTNAME}/${CHARTNAME}-docker
+maintainers:
+- name: ${CHARTNAME}
+  email: ${CHARTNAME}@${CHARTNAME}.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version

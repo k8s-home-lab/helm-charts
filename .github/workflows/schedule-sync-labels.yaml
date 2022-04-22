@@ -10,7 +10,7 @@ jobs:
   labels:
     name: Sync Labels
     runs-on: ubuntu-latest
-    if: github.repository == 'k8s-at-home/charts'
+    if: github.repository == 'Aste88/helm-charts'
     steps:
       - name: Generate Token
         uses: tibdex/github-app-token@v1

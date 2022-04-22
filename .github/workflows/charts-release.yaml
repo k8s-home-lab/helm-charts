@@ -8,7 +8,7 @@ on:
     branches:
       - master
     paths:
-      - "charts"
+      - "charts/**"
 
 jobs:
   release:
@@ -53,7 +53,7 @@ jobs:
           for i in "${CHARTS[@]}"
           do
               IFS='/' read -r -a chart_parts <<< "$i"
-              if [ -f "charts/"${chart_parts[1]}/Chart.yaml" ]; then
+              if [ -f "charts/${chart_parts[0]}"/"${chart_parts[1]}/Chart.yaml" ]; then
                 ./.github/scripts/gen-helm-docs.sh "${chart_parts[0]}" "${chart_parts[1]}"
               fi
           done
@@ -62,11 +62,11 @@ jobs:
         id: create-commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: charts/
+          file_pattern: charts/**/
           commit_message: "chore: Auto-update chart README [skip ci]"
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: helm[bot]
+          commit_user_email: helm[bot]@users.noreply.github.com
+          commit_author: helm[bot] <helm[bot]@users.noreply.github.com>
 
       - name: Save commit hash
         id: save-commit-hash
@@ -86,8 +86,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "helm-charts[bot]"
-          git config user.email "helm-charts[bot]@users.noreply.github.com"
+          git config user.name "helm[bot]"
+          git config user.email "helm[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.0
@@ -125,14 +125,14 @@ jobs:
 
       - name: Run script
         run: |
-          ./hack/gen-chart-summary.sh
+          ./scripts/gen-chart-summary.sh
 
       - name: Create Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: helm[bot]
+          commit_user_email: helm[bot]@users.noreply.github.com
+          commit_author: helm[bot] <helm[bot]@users.noreply.github.com>
           file_pattern: charts/README.md
