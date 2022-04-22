@@ -1,0 +1,8 @@
+repositoryID: 06f4cfc6-871e-429f-9b75-d11b25c3be21
+owners:
+  - name: Francescco Astegiano
+    email: admin@aste.tools
+ignore:
+  # These charts are related to the common library
+  - name: common
+  - name: common-test

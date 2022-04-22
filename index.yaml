@@ -1,0 +1,111 @@
+apiVersion: v1
+entries:
+  gitea:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Add gitea custom configuration
+    apiVersion: v2
+    appVersion: 1.16.5
+    created: "2022-04-04T08:04:20.445169+02:00"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.9
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    description: gitea helm package
+    digest: ef25590cdef521de21e9dd85f2ead2d8b2da837e9af03859ace7f0a97ea6f43f
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    urls:
+    - https://aste88.github.io/helm-charts/gitea-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.16.5
+    created: "2022-04-04T08:04:20.426623+02:00"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.9
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    description: gitea helm package
+    digest: 8337a26260d7d308bb949551897bc91e7c6672f49178b8a53d186d796a2ef6be
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    urls:
+    - https://aste88.github.io/helm-charts/gitea-1.0.0.tgz
+    version: 1.0.0
+  influxdb-exporter:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Update image to 0.9.0 (InfluxDB v2 clients support), use differnt port for UDP.
+    apiVersion: v2
+    appVersion: v0.9.0
+    created: "2022-04-04T08:04:20.449074+02:00"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: An exporter for metrics in the InfluxDB format, transforms them and
+      exposes them for consumption by Prometheus.
+    digest: 0481db8f521b87d1797a4c4ccb4ba765aa8eabc7da820c1f9c20191b991995ec
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/influxdb-exporter
+    icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
+    keywords:
+    - influxdb-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: influxdb-exporter
+    sources:
+    - https://github.com/prometheus/influxdb_exporter
+    urls:
+    - https://aste88.github.io/helm-charts/influxdb-exporter-1.0.2.tgz
+    version: 1.0.2
+generated: "2022-04-04T08:04:20.40658+02:00"
