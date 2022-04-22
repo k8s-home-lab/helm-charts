@@ -1,4 +1,6 @@
-# k8s@Home Collection of helm charts
+# Aste88 Collection of helm charts
+
+Work inspired and in the most part based on the fantastic [k8s-at-home](https://k8s-at-home.com/) team.
 
 ## Installation
 
