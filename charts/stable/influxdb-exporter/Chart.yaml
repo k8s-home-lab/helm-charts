@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: v0.9.0
 description: An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 name: influxdb-exporter
-version: 1.0.2
+version: 1.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - influxdb-exporter
@@ -19,5 +19,5 @@ dependencies:
     version: 4.3.0
 annotations:
   artifacthub.io/changes: |
-    - kind: fixed
-      description: Update image to 0.9.0 (InfluxDB v2 clients support), use differnt port for UDP.
+    - kind: added
+      description: Add link to grafana Proxmox chart.
