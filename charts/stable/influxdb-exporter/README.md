@@ -1,6 +1,6 @@
 # influxdb-exporter
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: v0.9.0](https://img.shields.io/badge/AppVersion-v0.9.0-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: v0.9.0](https://img.shields.io/badge/AppVersion-v0.9.0-informational?style=flat-square)
 
 An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 
@@ -85,6 +85,8 @@ Override the default container `args:` with optons:
 
 (adapt service address/path/port accordingly)
 
+Proxmox grafana chart adapted for translated metrics: [Proxmox metric-server via Prometheus](https://grafana.com/grafana/dashboards/16162)
+
 ## Values
 
 **Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
@@ -105,11 +107,11 @@ Override the default container `args:` with optons:
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 
-N/A
+* Add link to grafana Proxmox chart.
 
 #### Changed
 
@@ -117,7 +119,7 @@ N/A
 
 #### Fixed
 
-* Update image to 0.9.0 (InfluxDB v2 clients support), use differnt port for UDP.
+N/A
 
 ### Older versions
 
