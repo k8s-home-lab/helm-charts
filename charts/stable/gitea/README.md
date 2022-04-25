@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 1.16.5](https://img.shields.io/badge/AppVersion-1.16.5-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
 
 gitea helm package
 
@@ -122,11 +122,11 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.2
 
 #### Added
 
-* Add gitea custom configuration
+* Update gitea to 1.16.6
 
 #### Changed
 
