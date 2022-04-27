@@ -6,7 +6,7 @@ version: 1.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - influxdb-exporter
-home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/influxdb-exporter
+home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
 icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
 sources:
   - https://github.com/prometheus/influxdb_exporter
