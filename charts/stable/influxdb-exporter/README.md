@@ -9,6 +9,7 @@ An exporter for metrics in the InfluxDB format, transforms them and exposes them
 ## Source Code
 
 * <https://github.com/prometheus/influxdb_exporter>
+* <https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter>
 
 ## Requirements
 

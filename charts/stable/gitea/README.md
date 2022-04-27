@@ -9,6 +9,7 @@ gitea helm package
 ## Source Code
 
 * <https://github.com/go-gitea/gitea>
+* <https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea>
 
 ## Requirements
 
