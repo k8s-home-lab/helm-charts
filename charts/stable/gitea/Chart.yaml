@@ -10,6 +10,7 @@ home: https://github.com/Aste88/helm-charts/tree/master/charts/gitea
 icon: https://docs.gitea.io/images/gitea.png
 sources:
   - https://github.com/go-gitea/gitea
+  - https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
 maintainers:
   - name: Aste88
     email: admin@aste.tools
