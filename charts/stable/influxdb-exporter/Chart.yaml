@@ -10,6 +10,7 @@ home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/influxd
 icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
 sources:
   - https://github.com/prometheus/influxdb_exporter
+  - https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
 maintainers:
   - name: Aste88
     email: admin@aste.tools
