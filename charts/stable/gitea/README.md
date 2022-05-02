@@ -1,8 +1,8 @@
 # gitea
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
 
-gitea helm package
+Gitea self-hosted github-styled git repository manager
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/Aste88/helm-charts/issues/new/choose)**
 
@@ -22,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 | https://charts.bitnami.com/bitnami | mariadb | 10.4.2 |
 | https://charts.bitnami.com/bitnami | postgresql | 11.1.9 |
 | https://charts.bitnami.com/bitnami | redis | 16.6.0 |
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.4.1 |
 
 ## TL;DR
 
@@ -123,15 +123,15 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 
-* Update gitea to 1.16.6
+N/A
 
 #### Changed
 
-N/A
+* Upgraded `common` chart dependency to version 4.4.1
 
 #### Fixed
 
