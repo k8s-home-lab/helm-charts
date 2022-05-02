@@ -1,8 +1,8 @@
 apiVersion: v2
 appVersion: 1.16.6
-description: gitea helm package
+description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 1.0.2
+version: 1.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -17,7 +17,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 4.3.0
+    version: 4.4.1
   - name: postgresql
     version: 11.1.9
     repository: https://charts.bitnami.com/bitnami
@@ -31,6 +31,6 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |
-    - kind: added
-      description: Update gitea to 1.16.6
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.4.1
