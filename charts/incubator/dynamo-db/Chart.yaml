@@ -7,7 +7,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
 - dynamo-db
 home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dynamo-db
-icon: https://dynamo-db.org/icon
+icon: https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png
 sources:
 - https://github.com/dynamo-db/dynamo-db-docker
 maintainers:
