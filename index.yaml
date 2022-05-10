@@ -1,5 +1,69 @@
 apiVersion: v1
 entries:
+  brave-sync:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v0.1.19
+    created: "2022-05-10T20:53:52.262352437Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    - condition: dynamo-db.enabled
+      name: dynamo-db
+      repository: file://../dynamo-db/
+      version: 0.0.1
+    description: brave-sync helm package
+    digest: e3140df2ce855057a098539779ed94d9a1b091fd414f8bd0d7ba76e4f9829941
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/brave-sync
+    icon: https://brave-sync.org/icon
+    keywords:
+    - brave-sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: brave-sync@brave-sync.com
+      name: brave-sync
+    name: brave-sync
+    sources:
+    - https://github.com/brave-sync/brave-sync-docker
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/brave-sync-0.0.1/brave-sync-0.0.1.tgz
+    version: 0.0.1
+  dynamo-db:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.18.0
+    created: "2022-05-10T20:53:52.399841125Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: dynamo-db helm package
+    digest: 5fbdc8f57d75179a22c49c75fa71dd8a83c78b6137d867a8c7f2432524aebe27
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dynamo-db
+    icon: https://dynamo-db.org/icon
+    keywords:
+    - dynamo-db
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: dynamo-db@dynamo-db.com
+      name: dynamo-db
+    name: dynamo-db
+    sources:
+    - https://github.com/dynamo-db/dynamo-db-docker
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/dynamo-db-0.0.1/dynamo-db-0.0.1.tgz
+    version: 0.0.1
   gitea:
   - annotations:
       artifacthub.io/changes: |-
@@ -140,4 +204,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.0.3/influxdb-exporter-1.0.3.tgz
     version: 1.0.3
-generated: "2022-05-02T10:52:10.82632865Z"
+generated: "2022-05-10T20:53:52.399858626Z"
