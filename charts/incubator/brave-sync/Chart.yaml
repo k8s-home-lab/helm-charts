@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.0.0
+appVersion: v0.1.19
 description: brave-sync helm package
 name: brave-sync
-version: 1.1.2
+version: 0.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
 - brave-sync
@@ -14,9 +14,17 @@ maintainers:
 - name: brave-sync
   email: brave-sync@brave-sync.com
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.4.2
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+  - name: redis
+    version: 16.6.0
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
+  - name: dynamo-db
+    version: 0.0.1
+    repository: file://../dynamo-db/
+    condition: dynamo-db.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: added

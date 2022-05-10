@@ -7,14 +7,13 @@
 
 image:
   # -- image repository
-  repository: brave-sync/brave-sync
+  repository: trow.k8s.internal.aste.tools:443/brave/go-sync
   # -- image tag
-  # @default -- chart.appVersion
-  tag:
+  tag: 
   # -- image pull policy
   pullPolicy: IfNotPresent
 
-# -- environment variables. See more environment variables in the [brave-sync documentation](https://brave-sync.org/docs).
+# -- environment variables. See more environment variables in the [gitea documentation](https://gitea.org/docs).
 # @default -- See below
 env:
   # -- Set the container timezone
@@ -26,7 +25,7 @@ service:
   main:
     ports:
       http:
-        port: 1880
+        port: 8000
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -40,3 +39,23 @@ persistence: {}
   # data:
   #   enabled: false
   #   mountPath: /data
+
+# -- Enable and configure redis subchart under this key.
+#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+# @default -- See values.yaml
+redis:
+  enabled: false
+  architecture: standalone
+  auth:
+    enabled: true
+    password: csjndlascxaj
+  master:
+    persistence:
+      size: 6Gi
+
+dynamo-db:
+  enabled: false
+  persistence:
+  data:
+    enabled: false
+    mountPath: /data
