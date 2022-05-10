@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.18.0
+description: dynamo-db helm package
+name: dynamo-db
+version: 0.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- dynamo-db
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dynamo-db
+icon: https://dynamo-db.org/icon
+sources:
+- https://github.com/dynamo-db/dynamo-db-docker
+maintainers:
+- name: dynamo-db
+  email: dynamo-db@dynamo-db.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
