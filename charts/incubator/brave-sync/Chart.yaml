@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: brave-sync helm package
+name: brave-sync
+version: 1.1.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+- brave-sync
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/brave-sync
+icon: https://brave-sync.org/icon
+sources:
+- https://github.com/brave-sync/brave-sync-docker
+maintainers:
+- name: brave-sync
+  email: brave-sync@brave-sync.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.4.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
