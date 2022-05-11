@@ -7,9 +7,9 @@
 
 image:
   # -- image repository
-  repository: trow.k8s.internal.aste.tools:443/brave/go-sync
+  repository: ghcr.io/aste88/brave/sync
   # -- image tag
-  tag: 
+  tag: 0.1
   # -- image pull policy
   pullPolicy: IfNotPresent
 
