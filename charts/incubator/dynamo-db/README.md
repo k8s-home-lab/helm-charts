@@ -1,6 +1,6 @@
 # dynamo-db
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![AppVersion: 1.18.0](https://img.shields.io/badge/AppVersion-1.18.0-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: 1.18.0](https://img.shields.io/badge/AppVersion-1.18.0-informational?style=flat-square)
 
 dynamo-db helm package
 
@@ -8,7 +8,7 @@ dynamo-db helm package
 
 ## Source Code
 
-* <https://github.com/dynamo-db/dynamo-db-docker>
+* <https://hub.docker.com/r/amazon/dynamodb-local/>
 
 ## Requirements
 
@@ -86,11 +86,11 @@ N/A
 
 ## Changelog
 
-### Version 0.0.1
+### Version 0.0.2
 
 #### Added
 
-* Initial version
+N/A
 
 #### Changed
 
@@ -98,7 +98,7 @@ N/A
 
 #### Fixed
 
-N/A
+* fix Chart.yaml fields
 
 ### Older versions
 

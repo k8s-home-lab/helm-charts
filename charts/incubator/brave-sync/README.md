@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| file://../dynamo-db/ | dynamo-db | 0.0.1 |
+| https://aste88.github.io/helm-charts/ | dynamo-db | 0.0.1 |
 | https://charts.bitnami.com/bitnami | redis | 16.6.0 |
 | https://library-charts.k8s-at-home.com | common | 4.4.2 |
 
@@ -84,8 +84,8 @@ N/A
 | env | object | See below | environment variables. See more environment variables in the [gitea documentation](https://gitea.org/docs). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"trow.k8s.internal.aste.tools:443/brave/go-sync"` | image repository |
-| image.tag | string | `nil` | image tag |
+| image.repository | string | `"ghcr.io/aste88/brave/sync"` | image repository |
+| image.tag | float | `0.1` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
@@ -97,7 +97,7 @@ N/A
 
 #### Added
 
-* Initial version
+N/A
 
 #### Changed
 
@@ -105,7 +105,7 @@ N/A
 
 #### Fixed
 
-N/A
+* fix Chart.yaml fields, use ghcr.io image
 
 ### Older versions
 
