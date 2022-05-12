@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/aste88/brave/sync
   # -- image tag
-  tag: 0.1
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -18,6 +18,12 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+  AWS_ACCESS_KEY_ID: \#
+  AWS_SECRET_ACCESS_KEY: \#
+  AWS_REGION: eu-central-1
+  TABLE_NAME: client-entity-dev
+  AWS_ENDPOINT: http://brave-sync-dynamo-db:8000
+  REDIS_URL: brave-sync-redis-headless:6379
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
