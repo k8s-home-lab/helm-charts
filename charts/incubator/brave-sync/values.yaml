@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/aste88/brave/sync
   # -- image tag
-  tag:
+  tag: 0.1
   # -- image pull policy
   pullPolicy: IfNotPresent
 
