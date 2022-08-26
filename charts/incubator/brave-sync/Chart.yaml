@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: v0.1.19
 description: brave-sync helm package
 name: brave-sync
-version: 0.0.2
+version: 0.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - brave-sync
@@ -28,4 +28,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: fixed
-      description: fix Chart.yaml fields values's and ENVs
+      description: fix tag
