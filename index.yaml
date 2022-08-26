@@ -4,6 +4,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
+          description: fix tag
+    apiVersion: v2
+    appVersion: v0.1.19
+    created: "2022-08-26T17:11:17.363137853Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    - condition: dynamo-db.enabled
+      name: dynamo-db
+      repository: https://aste88.github.io/helm-charts/
+      version: 0.0.2
+    description: brave-sync helm package
+    digest: e9c077e633763f7e37a84310eb28350300097f99c0e346772f3ad0fa576f75d5
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/brave-sync
+    icon: https://cdn.icon-icons.com/icons2/3053/PNG/512/brave_macos_bigsur_icon_190322.png
+    keywords:
+    - brave-sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: brave-sync
+    sources:
+    - https://github.com/brave/go-sync
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/brave-sync-0.0.3/brave-sync-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
           description: fix Chart.yaml fields values's and ENVs
     apiVersion: v2
     appVersion: v0.1.19
@@ -266,4 +301,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.0.3/influxdb-exporter-1.0.3.tgz
     version: 1.0.3
-generated: "2022-05-12T09:34:43.406540477Z"
+generated: "2022-08-26T17:11:17.363163453Z"
