@@ -1,6 +1,6 @@
 # brave-sync
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: v0.1.19](https://img.shields.io/badge/AppVersion-v0.1.19-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: v0.1.19](https://img.shields.io/badge/AppVersion-v0.1.19-informational?style=flat-square)
 
 brave-sync helm package
 
@@ -93,7 +93,7 @@ N/A
 
 ## Changelog
 
-### Version 0.0.2
+### Version 0.0.3
 
 #### Added
 
@@ -105,7 +105,7 @@ N/A
 
 #### Fixed
 
-* fix Chart.yaml fields values's and ENVs
+* fix tag
 
 ### Older versions
 
