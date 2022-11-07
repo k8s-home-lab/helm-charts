@@ -246,6 +246,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Bump version
+    apiVersion: v2
+    appVersion: v0.10.0
+    created: "2022-11-07T15:57:54.340116359Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: An exporter for metrics in the InfluxDB format, transforms them and
+      exposes them for consumption by Prometheus.
+    digest: 69e8a89741ee62ff8a34ea946ace7273e0f6f609b28c85425ae38cc5110dc709
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
+    keywords:
+    - influxdb-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: influxdb-exporter
+    sources:
+    - https://github.com/prometheus/influxdb_exporter
+    - https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.1.1/influxdb-exporter-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgraded `common` chart dependency to version 4.4.1
     apiVersion: v2
     appVersion: v0.9.0
@@ -301,4 +330,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.0.3/influxdb-exporter-1.0.3.tgz
     version: 1.0.3
-generated: "2022-08-26T17:11:17.363163453Z"
+generated: "2022-11-07T15:57:54.34014776Z"
