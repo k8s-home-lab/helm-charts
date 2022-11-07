@@ -1,6 +1,6 @@
 # influxdb-exporter
 
-![Version: 1.0.4](https://img.shields.io/badge/Version-1.0.4-informational?style=flat-square) ![AppVersion: v0.9.0](https://img.shields.io/badge/AppVersion-v0.9.0-informational?style=flat-square)
+![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-informational?style=flat-square) ![AppVersion: v0.10.0](https://img.shields.io/badge/AppVersion-v0.10.0-informational?style=flat-square)
 
 An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.4.1 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -99,7 +99,7 @@ Proxmox grafana chart adapted for translated metrics: [Proxmox metric-server via
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"prom/influxdb-exporter"` | image repository |
-| image.tag | string | `"v0.9.0"` | image tag |
+| image.tag | string | `nil` | image tag |
 | metrics.enabled | bool | See values.yaml | Enable and configure prometheus-qbittorrent-exporter sidecar and Prometheus podMonitor. |
 | metrics.serviceMonitor.interval | string | `"15s"` |  |
 | metrics.serviceMonitor.labels | object | `{}` |  |
@@ -108,7 +108,7 @@ Proxmox grafana chart adapted for translated metrics: [Proxmox metric-server via
 
 ## Changelog
 
-### Version 1.0.4
+### Version 1.1.1
 
 #### Added
 
@@ -116,7 +116,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.4.1
+* Bump version
 
 #### Fixed
 
