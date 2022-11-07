@@ -11,6 +11,7 @@
 | [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
 | [qbittorrent](stable/qbittorrent) | qBittorrent is a cross-platform free and open-source BitTorrent client |
 | [radarr](stable/radarr) | A fork of Sonarr to work with movies à la Couchpotato |
+| [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
