@@ -367,4 +367,37 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.0.3/influxdb-exporter-1.0.3.tgz
     version: 1.0.3
-generated: "2022-11-07T16:55:21.581716928Z"
+  lidarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 1.0.2
+    created: "2022-11-07T20:06:44.21334741Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Looks and smells like Sonarr but made for music
+    digest: a7e1cea1e73838b5af10f97f280379f8e4c86fd535be790826a301c72a74cc9d
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/lidarr-15.0.0/lidarr-15.0.0.tgz
+    version: 15.0.0
+generated: "2022-11-07T20:06:44.21336771Z"
