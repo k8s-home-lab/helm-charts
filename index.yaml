@@ -602,4 +602,37 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/readarr-7.0.0/readarr-7.0.0.tgz
     version: 7.0.0
-generated: "2022-11-07T20:32:37.553621125Z"
+  sonarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 3.0.9
+    created: "2022-11-07T20:34:31.229359509Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: efb87ae08f148a35b936171b5214002d0dde66633e773fbba2bdd406676aa892
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr
+    icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
+    keywords:
+    - sonarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
+    version: 17.0.0
+generated: "2022-11-07T20:34:31.229381709Z"
