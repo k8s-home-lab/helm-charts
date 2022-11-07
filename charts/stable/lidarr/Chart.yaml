@@ -1,0 +1,28 @@
+apiVersion: v2
+appVersion: 1.0.2
+description: Looks and smells like Sonarr but made for music
+name: lidarr
+version: 15.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - lidarr
+  - torrent
+  - usenet
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+sources:
+  - https://github.com/Lidarr/Lidarr
+  - https://fleet.linuxserver.io/
+maintainers:
+  - name: Aste88
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Upgraded `common` chart dependency to version `4.5.2`.
+    - kind: changed
+      description: Updated to use the latest linuxserver docker image.
