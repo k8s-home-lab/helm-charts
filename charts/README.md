@@ -5,6 +5,7 @@
 | [bazarr](stable/bazarr) | Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements |
 | [gitea](stable/gitea) | Gitea self-hosted github-styled git repository manager |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
+| [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
