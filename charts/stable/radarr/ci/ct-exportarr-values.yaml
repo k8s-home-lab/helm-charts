@@ -1,0 +1,26 @@
+# Test exportarr
+persistence:
+  config:
+    enabled: true
+    type: emptyDir
+
+additionalContainers:
+  exportarr:
+    name: exportarr
+    image: ghcr.io/onedr0p/exportarr:v1.0.0
+    imagePullPolicy: IfNotPresent
+    args: ["radarr"]
+    env:
+    - name: PORT
+      value: "32123"
+    - name: URL
+      value: "http://localhost"
+    - name: CONFIG
+      value: "/config/config.xml"
+    ports:
+    - name: exportarr
+      containerPort: 32123
+    volumeMounts:
+    - name: config
+      mountPath: /config
+      readOnly: true
