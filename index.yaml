@@ -502,4 +502,36 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/prowlarr-5.0.0/prowlarr-5.0.0.tgz
     version: 5.0.0
-generated: "2022-11-07T20:27:31.8961093Z"
+  qbittorrent:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 4.4.5
+    created: "2022-11-07T20:29:42.523903745Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: 37c3c3f564d9e9fbee040581c3cd591ff2aeab5e8a02caca6a2f53eb59ad1f0d
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/qbittorrent-14.0.0/qbittorrent-14.0.0.tgz
+    version: 14.0.0
+generated: "2022-11-07T20:29:42.523939045Z"
