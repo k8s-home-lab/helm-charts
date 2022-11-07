@@ -1,5 +1,42 @@
 apiVersion: v1
 entries:
+  bazarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest docker image.
+    apiVersion: v2
+    appVersion: 1.1.2
+    created: "2022-11-07T16:55:21.581287919Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: d69575de0f015d61cf8abbb609dc4e8a3e34fe3c054e7980e0d863a3016e68cf
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://hub.docker.com/r/linuxserver/ombi
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/bazarr-11.0.0/bazarr-11.0.0.tgz
+    version: 11.0.0
   brave-sync:
   - annotations:
       artifacthub.io/changes: |
@@ -330,4 +367,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.0.3/influxdb-exporter-1.0.3.tgz
     version: 1.0.3
-generated: "2022-11-07T15:57:54.34014776Z"
+generated: "2022-11-07T16:55:21.581716928Z"
