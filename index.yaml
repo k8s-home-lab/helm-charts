@@ -534,4 +534,37 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/qbittorrent-14.0.0/qbittorrent-14.0.0.tgz
     version: 14.0.0
-generated: "2022-11-07T20:29:42.523939045Z"
+  radarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 4.2.4
+    created: "2022-11-07T20:31:14.109093643Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 1c48f7f88226ccadf0c265f57d879f584dc87fc07d559fd51b80c1c9191d390d
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/radarr-17.0.0/radarr-17.0.0.tgz
+    version: 17.0.0
+generated: "2022-11-07T20:31:14.109115742Z"
