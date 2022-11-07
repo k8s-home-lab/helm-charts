@@ -8,6 +8,7 @@
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
 | [plex](stable/plex) | Plex Media Server |
+| [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
