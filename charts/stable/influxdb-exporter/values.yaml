@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: prom/influxdb-exporter
   # -- image tag
-  tag: v0.9.0
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
