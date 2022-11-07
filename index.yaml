@@ -400,4 +400,40 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/lidarr-15.0.0/lidarr-15.0.0.tgz
     version: 15.0.0
-generated: "2022-11-07T20:06:44.21336771Z"
+  ombi:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `common` chart dependency to version `4.5.2`.
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 4.22.5
+    created: "2022-11-07T20:18:23.568992731Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
+    digest: e45ad0688beb509535b879bd4f63cc8f5a7c262dadd36bdd19d24a7976f81ca7
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
+    keywords:
+    - ombi
+    - plex
+    - emby
+    - sonarr
+    - radarr
+    - couchpotato
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: ombi
+    sources:
+    - https://github.com/tidusjar/Ombi
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/ombi-12.0.0/ombi-12.0.0.tgz
+    version: 12.0.0
+generated: "2022-11-07T20:18:23.569013732Z"
