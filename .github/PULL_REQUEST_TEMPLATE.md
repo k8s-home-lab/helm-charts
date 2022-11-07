@@ -36,4 +36,3 @@ Also don't be worried if the request is closed or not integrated sometimes our p
 - [ ] Chart version bumped in `Chart.yaml` according to [semver](http://semver.org/).
 - [ ] Chart `artifacthub.io/changes` changelog annotation has been updated in `Chart.yaml`. See [Artifact Hub documentation](https://artifacthub.io/docs/topics/annotations/helm/#supported-annotations) for more info.
 - [ ] Variables have been documented in the `values.yaml` file.
-
