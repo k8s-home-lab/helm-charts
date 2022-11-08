@@ -2,6 +2,8 @@
 
 Work inspired and in the most part based on the fantastic [k8s-at-home](https://k8s-at-home.com/) team.
 
+Container images mostly from [linuxserver.io](https://www.linuxserver.io/).
+
 ## Installation
 
 ```console
