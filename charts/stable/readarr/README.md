@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: 0.1.1-nightly](https://img.shields.io/badge/AppVersion-0.1.1--nightly-informational?style=flat-square)
+![Version: 7.0.1](https://img.shields.io/badge/Version-7.0.1-informational?style=flat-square) ![AppVersion: 0.1.1-nightly](https://img.shields.io/badge/AppVersion-0.1.1--nightly-informational?style=flat-square)
 
 A fork of Radarr to work with Books & AudioBooks
 
@@ -83,7 +83,7 @@ helm install readarr Aste88/readarr -f values.yaml
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/readarr"` | image repository |
-| image.tag | string | `"v0.1.0.715"` | image tag |
+| image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | probes | object | See values.yaml | Configures the probes for the main Pod. |
@@ -91,7 +91,7 @@ helm install readarr Aste88/readarr -f values.yaml
 
 ## Changelog
 
-### Version 7.0.0
+### Version 7.0.1
 
 #### Added
 
@@ -99,12 +99,11 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest linuxserver docker image.
+N/A
 
 #### Fixed
 
-N/A
+* chart version fix
 
 ### Older versions
 
