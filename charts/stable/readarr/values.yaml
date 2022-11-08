@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/linuxserver/readarr
   # -- image tag
-  tag: v0.1.0.715
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
