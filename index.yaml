@@ -570,6 +570,38 @@ entries:
   readarr:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: chart version fix
+    apiVersion: v2
+    appVersion: 0.1.1-nightly
+    created: "2022-11-08T07:21:58.961000515Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Radarr to work with Books & AudioBooks
+    digest: 2582ed367ae65ea775134cb9283a26a0f2e5b82e853c1d36cbcb28b36a8ba83a
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
+    icon: https://readarr.com/img/logo.png
+    keywords:
+    - readarr
+    - torrent
+    - usenet
+    - AudioBooks
+    - ebooks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mark@markmcw.uk
+      name: mcmarkj
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/readarr-7.0.1/readarr-7.0.1.tgz
+    version: 7.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
@@ -635,4 +667,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
-generated: "2022-11-07T20:34:31.229381709Z"
+generated: "2022-11-08T07:21:58.961023615Z"
