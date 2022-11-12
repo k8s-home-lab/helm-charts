@@ -146,6 +146,33 @@ entries:
   dynamo-db:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: update lib chart, fix formatting
+    apiVersion: v2
+    appVersion: 1.20.0
+    created: "2022-11-12T17:04:38.437642261Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: dynamo-db helm package
+    digest: 0407da56b133272f327a42dba628854e3afafb51d803197fc68b82c3ff852bc7
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/dynamo-db
+    icon: https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png
+    keywords:
+    - dynamo-db
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: dynamo-db
+    sources:
+    - https://hub.docker.com/r/amazon/dynamodb-local/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/dynamo-db-0.0.3/dynamo-db-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: fix Chart.yaml fields
     apiVersion: v2
@@ -667,4 +694,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
-generated: "2022-11-08T07:21:58.961023615Z"
+generated: "2022-11-12T17:04:38.437698761Z"
