@@ -1,6 +1,6 @@
 # dynamo-db
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: 1.18.0](https://img.shields.io/badge/AppVersion-1.18.0-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: 1.20.0](https://img.shields.io/badge/AppVersion-1.20.0-informational?style=flat-square)
 
 dynamo-db helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.4.2 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -86,7 +86,7 @@ N/A
 
 ## Changelog
 
-### Version 0.0.2
+### Version 0.0.3
 
 #### Added
 
@@ -94,11 +94,11 @@ N/A
 
 #### Changed
 
-N/A
+* update lib chart, fix formatting
 
 #### Fixed
 
-* fix Chart.yaml fields
+N/A
 
 ### Older versions
 
