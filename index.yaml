@@ -40,6 +40,41 @@ entries:
   brave-sync:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: update lib chart, fix formatting
+    apiVersion: v2
+    appVersion: "0.1"
+    created: "2022-11-12T17:05:52.63298041Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    - condition: dynamo-db.enabled
+      name: dynamo-db
+      repository: https://aste88.github.io/helm-charts/
+      version: 0.0.2
+    description: brave-sync helm package
+    digest: 1350ed285e92095f046d00c37e1326afdbe8d79190e078e436d74ba6c7665fd0
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/brave-sync
+    icon: https://cdn.icon-icons.com/icons2/3053/PNG/512/brave_macos_bigsur_icon_190322.png
+    keywords:
+    - brave-sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: brave-sync
+    sources:
+    - https://github.com/brave/go-sync
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/brave-sync-0.0.4/brave-sync-0.0.4.tgz
+    version: 0.0.4
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: fix tag
     apiVersion: v2
@@ -694,4 +729,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
-generated: "2022-11-12T17:04:38.437698761Z"
+generated: "2022-11-12T17:05:52.633091511Z"
