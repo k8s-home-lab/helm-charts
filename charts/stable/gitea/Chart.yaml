@@ -17,7 +17,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 4.4.1
+    version: 4.5.2
   - name: postgresql
     version: 11.1.9
     repository: https://charts.bitnami.com/bitnami
@@ -33,4 +33,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.4.1
+      description: update lib chart, fix formatting

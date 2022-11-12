@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: gitea/gitea
   # -- image tag
-  tag: 
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -38,7 +38,7 @@ service:
   ssh:
     ports:
       ssh:
-        port: 22 
+        port: 22
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -94,7 +94,7 @@ redis:
     password: csjndlascxaj
   master:
     persistence:
-      size: 6Gi 
+      size: 6Gi
 
 addons:
     # -- The common library supports adding a code-server add-on to access files. It can be configured under this key.

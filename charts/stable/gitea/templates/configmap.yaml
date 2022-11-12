@@ -16,7 +16,7 @@ data:
   GITEA__database__USER: {{ .Values.postgresql.auth.username  }}
   {{ end }}
   {{ if .Values.mariadb.enabled }}
-  GITEA__database__DB_TYPE: mysql  
+  GITEA__database__DB_TYPE: mysql
   GITEA__database__HOST: gitea-mariadb:3306
   GITEA__database__NAME: {{ .Values.mariadb.auth.database }}
   GITEA__database__USER: {{ .Values.mariadb.auth.username  }}
