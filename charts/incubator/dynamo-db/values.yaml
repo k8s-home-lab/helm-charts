@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: amazon/dynamodb-local
   # -- image tag
-  tag: 
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 

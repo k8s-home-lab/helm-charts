@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.18.0
+appVersion: 1.20.0
 description: dynamo-db helm package
 name: dynamo-db
-version: 0.0.2
+version: 0.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - dynamo-db
@@ -16,8 +16,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 4.4.2
+    version: 4.5.2
 annotations:
   artifacthub.io/changes: |
-    - kind: fixed
-      description: fix Chart.yaml fields
+    - kind: changed
+      description: update lib chart, fix formatting
