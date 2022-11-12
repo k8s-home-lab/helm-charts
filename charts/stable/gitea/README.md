@@ -22,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 | https://charts.bitnami.com/bitnami | mariadb | 10.4.2 |
 | https://charts.bitnami.com/bitnami | postgresql | 11.1.9 |
 | https://charts.bitnami.com/bitnami | redis | 16.6.0 |
-| https://library-charts.k8s-at-home.com | common | 4.4.1 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -131,7 +131,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.4.1
+* update lib chart, fix formatting
 
 #### Fixed
 
