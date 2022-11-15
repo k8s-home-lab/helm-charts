@@ -178,6 +178,37 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/brave-sync-0.0.1/brave-sync-0.0.1.tgz
     version: 0.0.1
+  calibre-web:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Bump chart version
+    apiVersion: v2
+    appVersion: 0.6.19
+    created: "2022-11-15T12:49:58.022534244Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Calibre-Web is a web app providing a clean interface for browsing,
+      reading and downloading eBooks using an existing Calibre database.
+    digest: 678659d10833a8a98c9219923ddaecef280a41513d062dff0234f78a68087b6d
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/calibre-web
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
+    keywords:
+    - calibre
+    - ebook
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: calibre-web
+    sources:
+    - https://github.com/janeczku/calibre-web
+    - https://hub.docker.com/r/linuxserver/calibre-web/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/calibre-web-9.0.0/calibre-web-9.0.0.tgz
+    version: 9.0.0
   dynamo-db:
   - annotations:
       artifacthub.io/changes: |
@@ -729,4 +760,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
-generated: "2022-11-12T17:05:52.633091511Z"
+generated: "2022-11-15T12:49:58.235161343Z"
