@@ -1,6 +1,6 @@
 # calibre-web
 
-![Version: 8.4.2](https://img.shields.io/badge/Version-8.4.2-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
+![Version: 9.0.0](https://img.shields.io/badge/Version-9.0.0-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
 
 Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 
@@ -8,8 +8,8 @@ Calibre-Web is a web app providing a clean interface for browsing, reading and d
 
 ## Source Code
 
-* <https://hub.docker.com/r/linuxserver/calibre-web/>
 * <https://github.com/janeczku/calibre-web>
+* <https://hub.docker.com/r/linuxserver/calibre-web/>
 
 ## Requirements
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 5.0.0 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 8.4.2
+### Version 9.0.0
 
 #### Added
 
