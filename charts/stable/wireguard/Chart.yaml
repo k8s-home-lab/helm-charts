@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.0.20210424
 description: Fast, modern, secure VPN tunnel
 name: wireguard
-version: 1.5.0
+version: 1.5.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - vpn
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update image to self-built
+      description: Bump version
