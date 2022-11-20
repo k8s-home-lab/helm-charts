@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 2.0.0
+appVersion: v2.0.0
 description: Fast, modern, secure VPN tunnel with PIA connect scripts
 name: wireguard-pia
 version: 1.5.2
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: fixed
-      description: Chart naming and desc
+      description: Fix app version
