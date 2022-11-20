@@ -1,6 +1,6 @@
 # wireguard
 
-![Version: 1.4.2](https://img.shields.io/badge/Version-1.4.2-informational?style=flat-square) ![AppVersion: 1.0.20210424](https://img.shields.io/badge/AppVersion-1.0.20210424-informational?style=flat-square)
+![Version: 1.5.0](https://img.shields.io/badge/Version-1.5.0-informational?style=flat-square) ![AppVersion: 2.0.0](https://img.shields.io/badge/AppVersion-2.0.0-informational?style=flat-square)
 
 Fast, modern, secure VPN tunnel
 
@@ -8,8 +8,9 @@ Fast, modern, secure VPN tunnel
 
 ## Source Code
 
-* <https://github.com/k8s-at-home/container-images>
-* <https://github.com/Aste88/helm-charts>
+* <https://git.zx2c4.com/wireguard-tools>
+* <https://github.com/pia-foss/manual-connections>
+* <https://github.com/Aste88/container-images>
 
 ## Requirements
 
@@ -24,9 +25,9 @@ Kubernetes: `>=1.16.0-0`
 ## TL;DR
 
 ```console
-helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo add Aste88 https://aste88.github.io/helm-charts/
 helm repo update
-helm install wireguard k8s-at-home/wireguard
+helm install wireguard Aste88/wireguard
 ```
 
 ## Installing the Chart
@@ -34,7 +35,7 @@ helm install wireguard k8s-at-home/wireguard
 To install the chart with the release name `wireguard`
 
 ```console
-helm install wireguard k8s-at-home/wireguard
+helm install wireguard Aste88/wireguard
 ```
 
 ## Uninstalling the Chart
@@ -57,13 +58,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```console
 helm install wireguard \
   --set env.TZ="America/New York" \
-    k8s-at-home/wireguard
+    Aste88/wireguard
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install wireguard k8s-at-home/wireguard -f values.yaml
+helm install wireguard Aste88/wireguard -f values.yaml
 ```
 
 ## Custom configuration
@@ -77,23 +78,29 @@ for it to run. Either add it under configSecret or under persistence.
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| configSecret | object | base64 encoded wg0.conf by running `base64 wg0.conf` | If set to 'true', the configuration will be read from these values. -- Otherwise you have to mount a volume to /etc/wireguard containing the wg0.conf. |
-| configSecret.enabled | bool | `false` | Store Wireguard config as a secret |
+| config.AUTOCONNECT | string | `"false"` | Automatically select best server based on latency |
+| config.DIP_TOKEN | string | `"no"` | optional PIA dedicated IP token |
+| config.DISABLE_IPV6 | string | `"yes"` | Disable IPv6 from the wg tunnel (active IPv6 connections might compromise security) |
+| config.PIA_DNS | string | 0.05; | Maximum latency to PIA server for AUTOCONNECT MAX_LATENCY: "0.05" -- Set PIA dns in the resolvconf system |
+| config.PIA_PASS | string | `""` | PIA password |
+| config.PIA_PF | string | `"false"` | assign forwarding port |
+| config.PIA_USER | string | `""` | PIA username (p#######) |
+| config.PREFERRED_REGION | string | `""` | Selet regio to connect (AUTOCONNECT overrides PREFERRED_REGION) |
 | env.IPTABLES_BACKEND | string | `"nft"` | Override the backend used by iptables. Valid values are nft and legacy |
 | env.KILLSWITCH | bool | false | Enable a killswitch that kills all trafic when the VPN is not connected |
 | env.TZ | string | `"UTC"` | Set the container timezone |
+| env.UMASK | string | `nil` | Sets UMASK. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/k8s-at-home/wireguard"` | image repository |
-| image.tag | string | `"v1.0.20210424"` | image tag |
+| image.repository | string | `"ghcr.io/aste88/wireguard-pia"` | image repository |
+| image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | probes | object | See values.yaml | Configures the probes for the main Pod. |
 | securityContext | object | see values.yaml | Security contexts required for container. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.4.2
+### Version 1.5.0
 
 #### Added
 
@@ -101,7 +108,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.5.2
+* Added PIA manual-connection scripts
 
 #### Fixed
 
@@ -109,14 +116,12 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/wireguard?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/aste88-helm-charts/wireguard?modal=changelog)
 
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
 - Open an [issue](https://github.com/Aste88/helm-charts/issues/new/choose)
-- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
-- Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
 Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/k8s-at-home/helm-docs/releases/v0.1.1)
