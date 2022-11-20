@@ -1,6 +1,6 @@
 # wireguard
 
-![Version: 1.5.1](https://img.shields.io/badge/Version-1.5.1-informational?style=flat-square) ![AppVersion: v1.0.20210424](https://img.shields.io/badge/AppVersion-v1.0.20210424-informational?style=flat-square)
+![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: v1.0.20210914](https://img.shields.io/badge/AppVersion-v1.0.20210914-informational?style=flat-square)
 
 Fast, modern, secure VPN tunnel
 
@@ -93,7 +93,7 @@ for it to run. Either add it under configSecret or under persistence.
 
 ## Changelog
 
-### Version 1.5.1
+### Version 1.5.2
 
 #### Added
 
@@ -101,11 +101,11 @@ N/A
 
 #### Changed
 
-* Bump version
+N/A
 
 #### Fixed
 
-N/A
+* Fix app version
 
 ### Older versions
 
