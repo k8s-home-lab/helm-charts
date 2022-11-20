@@ -1,6 +1,6 @@
 # wireguard-pia
 
-![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: 2.0.0](https://img.shields.io/badge/AppVersion-2.0.0-informational?style=flat-square)
+![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: v2.0.0](https://img.shields.io/badge/AppVersion-v2.0.0-informational?style=flat-square)
 
 Fast, modern, secure VPN tunnel with PIA connect scripts
 
@@ -112,7 +112,7 @@ N/A
 
 #### Fixed
 
-* Chart naming and desc
+* Fix app version
 
 ### Older versions
 
