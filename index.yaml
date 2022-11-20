@@ -763,6 +763,36 @@ entries:
   wireguard:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix app version
+    apiVersion: v2
+    appVersion: v1.0.20210914
+    created: "2022-11-20T18:19:59.662261652Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Fast, modern, secure VPN tunnel
+    digest: 7b5dbdda5cc87b28c4fa369e2a84eeb4e7f40abc1792907bb2bedfb212bf6021
+    icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
+    keywords:
+    - vpn
+    - privacy
+    - security
+    - wireguard
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: wireguard
+    sources:
+    - https://git.zx2c4.com/wireguard-tools
+    - https://github.com/Aste88/container-images
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/wireguard-1.5.2/wireguard-1.5.2.tgz
+    version: 1.5.2
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Added PIA manual-connection scripts
     apiVersion: v2
@@ -854,4 +884,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2022-11-20T17:29:54.311964276Z"
+generated: "2022-11-20T18:19:59.662294652Z"
