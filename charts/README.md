@@ -14,7 +14,7 @@
 | [radarr](stable/radarr) | A fork of Sonarr to work with movies à la Couchpotato |
 | [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
 | [sonarr](stable/sonarr) | Smart PVR for newsgroup and bittorrent users |
-| [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
+| [wireguard-pia](stable/wireguard-pia) | Fast, modern, secure VPN tunnel with PIA connect scripts |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
 ### Incubator charts:
 | Chart | Description |
