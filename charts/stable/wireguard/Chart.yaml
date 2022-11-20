@@ -1,0 +1,27 @@
+---
+apiVersion: v2
+appVersion: v1.0.20210424
+description: Fast, modern, secure VPN tunnel
+name: wireguard
+version: 1.5.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - vpn
+  - privacy
+  - security
+  - wireguard
+sources:
+  - https://git.zx2c4.com/wireguard-tools
+  - https://github.com/Aste88/container-images
+icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
+maintainers:
+  - name: Aste88
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    version: 4.5.2
+    repository: https://library-charts.k8s-at-home.com
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Update image to self-built
