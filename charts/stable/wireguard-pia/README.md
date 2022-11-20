@@ -1,8 +1,8 @@
-# wireguard
+# wireguard-pia
 
-![Version: 1.5.1](https://img.shields.io/badge/Version-1.5.1-informational?style=flat-square) ![AppVersion: 2.0.0](https://img.shields.io/badge/AppVersion-2.0.0-informational?style=flat-square)
+![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: 2.0.0](https://img.shields.io/badge/AppVersion-2.0.0-informational?style=flat-square)
 
-Fast, modern, secure VPN tunnel
+Fast, modern, secure VPN tunnel with PIA connect scripts
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/Aste88/helm-charts/issues/new/choose)**
 
@@ -27,23 +27,23 @@ Kubernetes: `>=1.16.0-0`
 ```console
 helm repo add Aste88 https://aste88.github.io/helm-charts/
 helm repo update
-helm install wireguard Aste88/wireguard
+helm install wireguard-pia Aste88/wireguard-pia
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `wireguard`
+To install the chart with the release name `wireguard-pia`
 
 ```console
-helm install wireguard Aste88/wireguard
+helm install wireguard-pia Aste88/wireguard-pia
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `wireguard` deployment
+To uninstall the `wireguard-pia` deployment
 
 ```console
-helm uninstall wireguard
+helm uninstall wireguard-pia
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -56,15 +56,15 @@ Other values may be used from the [values.yaml](https://github.com/k8s-at-home/l
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install wireguard \
+helm install wireguard-pia \
   --set env.TZ="America/New York" \
-    Aste88/wireguard
+    Aste88/wireguard-pia
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install wireguard Aste88/wireguard -f values.yaml
+helm install wireguard-pia Aste88/wireguard-pia -f values.yaml
 ```
 
 ## Custom configuration
@@ -100,7 +100,7 @@ for it to run. Either add it under configSecret or under persistence.
 
 ## Changelog
 
-### Version 1.5.1
+### Version 1.5.2
 
 #### Added
 
@@ -108,15 +108,15 @@ N/A
 
 #### Changed
 
-* Added PIA manual-connection scripts
+N/A
 
 #### Fixed
 
-N/A
+* Chart naming and desc
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/aste88-helm-charts/wireguard?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/aste88-helm-charts/wireguard-pia?modal=changelog)
 
 ## Support
 
