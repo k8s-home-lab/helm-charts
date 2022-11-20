@@ -1,0 +1,102 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/aste88/wireguard-pia
+  # -- image tag
+  tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC  # -- Sets UID Photoprism runs under.
+  # -- Sets UMASK.
+  UMASK:  # 0000
+  # -- Override the backend used by iptables. Valid values are nft and legacy
+  IPTABLES_BACKEND: nft
+  # -- Enable a killswitch that kills all trafic when the VPN is not connected
+  # @default -- false
+  KILLSWITCH: false
+  # -- A separated list of IPv4 networks that will be excluded from the VPN/killswitch
+  # KILLSWITCH_EXCLUDEDNETWORKS_IPV4:
+  # -- A separated list of IPv6 networks that will be excluded from the VPN/killswitch
+  # KILLSWITCH_EXCLUDEDNETWORKS_IPV6:
+  # -- The separator that is used to split the KILLSWITCH_EXCLUDEDNETWORKS lists
+  # @default -- ;
+  # SEPARATOR: ;
+
+config:
+  # -- Disable IPv6 from the wg tunnel (active IPv6 connections might compromise security)
+  DISABLE_IPV6: "yes"
+  # -- Automatically select best server based on latency
+  AUTOCONNECT: "false"
+  # -- Selet regio to connect (AUTOCONNECT overrides PREFERRED_REGION)
+  PREFERRED_REGION: ""
+  # -- Maximum latency to PIA server for AUTOCONNECT
+  # @default -- 0.05;
+  # MAX_LATENCY: "0.05"
+  # -- Set PIA dns in the resolvconf system
+  PIA_DNS: "yes"
+  # -- assign forwarding port
+  PIA_PF: "false"
+  # -- optional PIA dedicated IP token
+  DIP_TOKEN: "no"
+  # -- PIA username (p#######)
+  PIA_USER: ""
+  # -- PIA password
+  PIA_PASS: ""
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    enabled: true
+    ports:
+      http:
+        enabled: false
+      vpn:
+        enabled: true
+        port: 51820
+        protocol: UDP
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Security contexts required for container.
+# @default -- see values.yaml
+securityContext:
+  capabilities:
+    add:
+    - NET_ADMIN
+    - SYS_MODULE
+
+# -- Configures the probes for the main Pod.
+# @default -- See values.yaml
+probes:
+  liveness:
+    enabled: true
+    ## Set this to true if you wish to specify your own livenessProbe
+    custom: true
+    ## The spec field contains the values for the default livenessProbe.
+    ## If you selected custom: true, this field holds the definition of the livenessProbe.
+    spec:
+      exec:
+        command: ["bash", "-c", "if [[ $(curl -s https://ipinfo.io) ]]; then exit 0; else exit $?; fi"]
+      initialDelaySeconds: 0
+      timeoutSeconds: 1
+      periodSeconds: 5
+      failureThreshold: 5
+  readiness:
+    enabled: false
+  startup:
+    enabled: false
