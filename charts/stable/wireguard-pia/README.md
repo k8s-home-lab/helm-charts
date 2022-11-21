@@ -1,6 +1,6 @@
 # wireguard-pia
 
-![Version: 1.5.2](https://img.shields.io/badge/Version-1.5.2-informational?style=flat-square) ![AppVersion: v2.0.0](https://img.shields.io/badge/AppVersion-v2.0.0-informational?style=flat-square)
+![Version: 1.5.3](https://img.shields.io/badge/Version-1.5.3-informational?style=flat-square) ![AppVersion: v2.0.0](https://img.shields.io/badge/AppVersion-v2.0.0-informational?style=flat-square)
 
 Fast, modern, secure VPN tunnel with PIA connect scripts
 
@@ -100,7 +100,7 @@ for it to run. Either add it under configSecret or under persistence.
 
 ## Changelog
 
-### Version 1.5.2
+### Version 1.5.3
 
 #### Added
 
@@ -108,11 +108,11 @@ N/A
 
 #### Changed
 
-N/A
+* Disable default for probes
 
 #### Fixed
 
-* Fix app version
+N/A
 
 ### Older versions
 
