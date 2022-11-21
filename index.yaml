@@ -855,6 +855,37 @@ entries:
   wireguard-pia:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: Disable default for probes
+    apiVersion: v2
+    appVersion: v2.0.0
+    created: "2022-11-21T19:05:57.217337823Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Fast, modern, secure VPN tunnel with PIA connect scripts
+    digest: ce10b675aeff41f43e8bee6855907600b083874c013c365d80edf0d2038c7435
+    icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
+    keywords:
+    - vpn
+    - privacy
+    - security
+    - wireguard
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: wireguard-pia
+    sources:
+    - https://git.zx2c4.com/wireguard-tools
+    - https://github.com/pia-foss/manual-connections
+    - https://github.com/Aste88/container-images
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.3/wireguard-pia-1.5.3.tgz
+    version: 1.5.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: fixed
           description: Chart naming and desc
     apiVersion: v2
@@ -884,4 +915,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2022-11-20T18:19:59.662294652Z"
+generated: "2022-11-21T19:05:57.217374525Z"
