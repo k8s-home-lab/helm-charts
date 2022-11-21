@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: v2.0.0
 description: Fast, modern, secure VPN tunnel with PIA connect scripts
 name: wireguard-pia
-version: 1.5.2
+version: 1.5.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - vpn
@@ -23,5 +23,5 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Fix app version
+    - kind: changed
+      description: Disable default for probes
