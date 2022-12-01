@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.16.6
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 1.0.3
+version: 1.0.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -19,11 +19,11 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.1.9
+    version: 11.1.29
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 10.4.2
+    version: 10.4.6
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: redis
