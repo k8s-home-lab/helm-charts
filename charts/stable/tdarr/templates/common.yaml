@@ -1,0 +1,48 @@
+{{- include "common.values.setup" . }}
+
+{{/* Append the hardcoded settings */}}
+{{- define "tdarr.harcodedValues" -}}
+{{ if .Values.node.enabled }}
+additionalContainers:
+  node:
+    name: node
+    image: "{{ .Values.node.image.repository }}:{{ .Values.node.image.tag }}"
+    imagePullPolicy: {{ .Values.node.image.pullPolicy }}
+    env:
+      - name: TZ
+        value: {{ default "UTC" .Values.env.TZ }}
+      - name: nodeID
+        value: {{ default "UTC" .Values.node.id }}
+      - name: serverIP
+        value: "localhost"
+      - name: serverPort
+        value: "{{ .Values.service.main.ports.server.port }}"
+      - name: ffmpegPath
+        value: {{ default "" .Values.env.ffmpegPath }}
+      - name: PUID
+        value: {{ (.Values.env.PUID | quote) }}
+      - name: PGID
+        value: {{ (.Values.env.PGID | quote) }}
+    volumeMounts:
+      {{ if .Values.persistence.config.enabled }}
+      - name: config
+        mountPath: /app/configs
+      {{ end }}
+      {{ if .Values.persistence.media.enabled }}
+      - name: media
+        mountPath: {{ .Values.persistence.media.mountPath }}
+      {{ end }}
+      {{ if .Values.persistence.shared.enabled }}
+      - name: shared
+        mountPath: /shared
+      {{ end }}
+    {{- with .Values.node.resources }}
+    resources:
+      {{- toYaml . | nindent 6 }}
+    {{- end }}
+{{ end }}
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "tdarr.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
