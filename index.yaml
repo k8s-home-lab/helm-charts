@@ -44,6 +44,41 @@ entries:
           description: update lib chart, fix formatting
     apiVersion: v2
     appVersion: "0.1"
+    created: "2022-12-05T16:15:08.60849816Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    - condition: dynamo-db.enabled
+      name: dynamo-db
+      repository: https://aste88.github.io/helm-charts/
+      version: 0.0.3
+    description: brave-sync helm package
+    digest: e1dee005783f2cf55fc0e9520159b6d2fc7b132ec3226b412b45edf0fea83b2d
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/incubator/brave-sync
+    icon: https://cdn.icon-icons.com/icons2/3053/PNG/512/brave_macos_bigsur_icon_190322.png
+    keywords:
+    - brave-sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: brave-sync
+    sources:
+    - https://github.com/brave/go-sync
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/brave-sync-0.0.5/brave-sync-0.0.5.tgz
+    version: 0.0.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: update lib chart, fix formatting
+    apiVersion: v2
+    appVersion: "0.1"
     created: "2022-11-12T17:05:52.63298041Z"
     dependencies:
     - name: common
@@ -292,6 +327,46 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/dynamo-db-0.0.1/dynamo-db-0.0.1.tgz
     version: 0.0.1
   gitea:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: update lib chart, fix formatting
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2022-12-05T16:15:08.790710117Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.29
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.4.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 8acaad2027340c35318429caf2942b2956746a2c4a2bcaa160f7c4b1768a5de8
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/gitea-1.0.4/gitea-1.0.4.tgz
+    version: 1.0.4
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -760,6 +835,39 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
+  tdarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Updated to use the latest linuxserver docker image.
+    apiVersion: v2
+    appVersion: 2.00.18.2
+    created: "2022-12-05T16:15:09.127009729Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Tdarr is a self hosted web-app for automating media library transcode/remux
+      management and making sure your files are exactly how you need them to be in
+      terms of codecs/streams/containers etc.
+    digest: a7e4cd131b77afba33d0a98e1fdc7ed0e46912befdfeda5c8a98d96b427991ae
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/tdarr
+    icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+    keywords:
+    - transcoding
+    - remux
+    - media
+    - video
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: tdarr
+    sources:
+    - https://www.github.com/HaveAGitGat/Tdarr
+    - https://tdarr.io/docs/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/tdarr-5.0.0/tdarr-5.0.0.tgz
+    version: 5.0.0
   wireguard:
   - annotations:
       artifacthub.io/changes: |-
@@ -915,4 +1023,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2022-11-21T19:05:57.217374525Z"
+generated: "2022-12-05T16:15:09.127365735Z"
