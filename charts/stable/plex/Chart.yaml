@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 1.29.1
+appVersion: 1.29.2
 description: Plex Media Server
 name: plex
 version: 7.0.0
@@ -7,11 +7,10 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - plex
   - plex-media-server
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/plex
+home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/plex
 icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
 sources:
-  - https://github.com/k8s-at-home/charts/tree/master/charts/stable/plex
-  - https://fleet.linuxserver.io/
+  - https://hub.docker.com/r/linuxserver/plex/
 maintainers:
   - name: Aste88
     email: admin@aste.tools
@@ -20,8 +19,6 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version `4.5.2`.
-    - kind: changed
-      description: Updated to use the latest linuxserver docker image.
+      description: Updated to use the 1.29.2 linuxserver docker image.
