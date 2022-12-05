@@ -1,6 +1,6 @@
 # plex
 
-![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: 1.29.1](https://img.shields.io/badge/AppVersion-1.29.1-informational?style=flat-square)
+![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: 1.29.2](https://img.shields.io/badge/AppVersion-1.29.2-informational?style=flat-square)
 
 Plex Media Server
 
@@ -8,8 +8,7 @@ Plex Media Server
 
 ## Source Code
 
-* <https://github.com/k8s-at-home/charts/tree/master/charts/stable/plex>
-* <https://fleet.linuxserver.io/>
+* <https://hub.docker.com/r/linuxserver/plex/>
 
 ## Requirements
 
@@ -100,8 +99,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest linuxserver docker image.
+* Updated to use the 1.29.2 linuxserver docker image.
 
 #### Fixed
 
