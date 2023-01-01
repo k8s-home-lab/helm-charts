@@ -31,6 +31,6 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: update lib chart, fix formatting
+      description: Upgraded `postgresql` chart dependency to version `12.1.6`.
