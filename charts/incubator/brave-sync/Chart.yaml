@@ -28,4 +28,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: update lib chart, fix formatting
+      description: Upgraded `redis` chart dependency to version `16.13.2`.
