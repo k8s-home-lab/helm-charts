@@ -1,6 +1,6 @@
 # calibre-web
 
-![Version: 9.0.0](https://img.shields.io/badge/Version-9.0.0-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
+![Version: 9.0.1](https://img.shields.io/badge/Version-9.0.1-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
 
 Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 
@@ -81,7 +81,7 @@ N/A
 | env.PUID | string | `"568"` | Specify the user ID the application will run as |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"linuxserver/calibre-web"` | image repository |
+| image.repository | string | `"ghcr.io/linuxserver/calibre-web"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 9.0.0
+### Version 9.0.1
 
 #### Added
 
@@ -97,11 +97,11 @@ N/A
 
 #### Changed
 
-* Bump chart version
+N/A
 
 #### Fixed
 
-N/A
+* Change chart source to ghcr.io.
 
 ### Older versions
 
