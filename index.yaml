@@ -250,6 +250,36 @@ entries:
   calibre-web:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Change chart source to ghcr.io.
+    apiVersion: v2
+    appVersion: 0.6.19
+    created: "2023-01-10T14:10:15.576068046Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Calibre-Web is a web app providing a clean interface for browsing,
+      reading and downloading eBooks using an existing Calibre database.
+    digest: 7ab0c32ebb2e4c636ae81b5679ec6b2eed6e53c11c626f025aa5d41c5be014e2
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/calibre-web
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
+    keywords:
+    - calibre
+    - ebook
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: calibre-web
+    sources:
+    - https://github.com/janeczku/calibre-web
+    - https://hub.docker.com/r/linuxserver/calibre-web/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/calibre-web-9.0.1/calibre-web-9.0.1.tgz
+    version: 9.0.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Bump chart version
     apiVersion: v2
@@ -1116,4 +1146,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-01-10T14:02:34.180650806Z"
+generated: "2023-01-10T14:10:15.576110647Z"
