@@ -9,6 +9,9 @@
   "helm-values": {
     "enabled": false
   },
+  "docker": {
+    "enabled": true
+  },
   "helmv3": {
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
