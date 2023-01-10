@@ -797,6 +797,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Updated docker image to 4.5.0.
+    apiVersion: v2
+    appVersion: 4.5.0
+    created: "2023-01-10T14:15:11.469427473Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: bf480772a6e0d382205fa4666ab4170f6172f73269ca0b28e0f0ff44f67fa176
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/qbittorrent-14.0.1/qbittorrent-14.0.1.tgz
+    version: 14.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -1146,4 +1175,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-01-10T14:10:15.576110647Z"
+generated: "2023-01-10T14:15:11.47065548Z"
