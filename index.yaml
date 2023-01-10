@@ -858,6 +858,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Updated docker image to 4.3.2.
+    apiVersion: v2
+    appVersion: 4.3.2
+    created: "2023-01-10T14:17:31.7962093Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: a10197ea3f82765a50d34a44e64cdf893263197c120167cb669e9877a28cafb0
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/radarr-17.0.1/radarr-17.0.1.tgz
+    version: 17.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -1175,4 +1205,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-01-10T14:15:11.47065548Z"
+generated: "2023-01-10T14:17:31.796262201Z"
