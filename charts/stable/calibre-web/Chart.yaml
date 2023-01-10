@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.6.19
 description: Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 name: calibre-web
-version: 9.0.0
+version: 9.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - calibre
@@ -22,5 +22,5 @@ dependencies:
     version: 4.5.2
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Bump chart version
+    - kind: fixed
+      description: Change chart source to ghcr.io.
