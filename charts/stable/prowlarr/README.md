@@ -1,6 +1,6 @@
 # prowlarr
 
-![Version: 5.0.0](https://img.shields.io/badge/Version-5.0.0-informational?style=flat-square) ![AppVersion: 0.4.7-nightly](https://img.shields.io/badge/AppVersion-0.4.7--nightly-informational?style=flat-square)
+![Version: 5.0.1](https://img.shields.io/badge/Version-5.0.1-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
 
 Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 5.0.0
+### Version 5.0.1
 
 #### Added
 
@@ -97,8 +97,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest linuxserver docker image.
+* Updated docker image to 1.0.1.
 
 #### Fixed
 
