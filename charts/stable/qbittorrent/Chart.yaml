@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 4.4.5
+appVersion: 4.5.0
 description: qBittorrent is a cross-platform free and open-source BitTorrent client
 name: qbittorrent
 version: 14.0.0
@@ -22,6 +22,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `common` chart dependency to version `4.5.2`.
-    - kind: changed
-      description: Updated to use the latest linuxserver docker image.
+      description: Updated docker image to 4.5.0.
