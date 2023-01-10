@@ -2,6 +2,40 @@ apiVersion: v1
 entries:
   bazarr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Updated docker image to 1.1.4.
+    apiVersion: v2
+    appVersion: 1.1.4
+    created: "2023-01-10T14:02:34.019988328Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: 260379d2f00e12744772dba5a754bc43065014a79e17d71e298a45d7fad5defb
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://hub.docker.com/r/linuxserver/bazarr
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/bazarr-11.0.1/bazarr-11.0.1.tgz
+    version: 11.0.1
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
@@ -668,6 +702,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Updated docker image to 1.0.1.
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-01-10T14:02:34.180482103Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: 820238b7e5e52aa00eff42faa539ebf74cb0729f433af0e25aeabd9724069803
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/prowlarr-5.0.1/prowlarr-5.0.1.tgz
+    version: 5.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -1051,4 +1116,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2022-12-15T08:49:30.727437194Z"
+generated: "2023-01-10T14:02:34.180650806Z"
