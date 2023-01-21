@@ -1,6 +1,6 @@
 # plex
 
-![Version: 7.0.1](https://img.shields.io/badge/Version-7.0.1-informational?style=flat-square) ![AppVersion: 1.30.0](https://img.shields.io/badge/AppVersion-1.30.0-informational?style=flat-square)
+![Version: 7.0.2](https://img.shields.io/badge/Version-7.0.2-informational?style=flat-square) ![AppVersion: 1.30.1](https://img.shields.io/badge/AppVersion-1.30.1-informational?style=flat-square)
 
 Plex Media Server
 
@@ -91,7 +91,7 @@ N/A
 
 ## Changelog
 
-### Version 7.0.1
+### Version 7.0.2
 
 #### Added
 
@@ -99,7 +99,7 @@ N/A
 
 #### Changed
 
-* Updated to use the 1.30.0 linuxserver docker image.
+* Updated to use the 1.30.1 linuxserver docker image.
 
 #### Fixed
 
