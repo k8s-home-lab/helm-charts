@@ -672,6 +672,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Updated to use the 1.30.1 linuxserver docker image.
+    apiVersion: v2
+    appVersion: 1.30.1
+    created: "2023-01-21T20:01:18.928398508Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Plex Media Server
+    digest: 1a46ee4aa764e9db62da24737dd5f686dc5ad8c03e1be141d11a9faa2350a5ee
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/plex
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    - plex-media-server
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: plex
+    sources:
+    - https://hub.docker.com/r/linuxserver/plex/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/plex-7.0.2/plex-7.0.2.tgz
+    version: 7.0.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Updated to use the 1.30.0 linuxserver docker image.
     apiVersion: v2
     appVersion: 1.30.0
@@ -1205,4 +1233,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-01-10T14:17:31.796262201Z"
+generated: "2023-01-21T20:01:18.928453008Z"
