@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
+![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -19,9 +19,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 10.4.2 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.1.9 |
-| https://charts.bitnami.com/bitnami | redis | 16.6.0 |
+| https://charts.bitnami.com/bitnami | mariadb | 10.4.6 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.1.29 |
+| https://charts.bitnami.com/bitnami | redis | 17.4.0 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -123,7 +123,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 1.0.3
+### Version 2.0.0
 
 #### Added
 
@@ -131,7 +131,7 @@ N/A
 
 #### Changed
 
-* update lib chart, fix formatting
+* Upgraded `redis` chart dependency to version `17.4.0`.
 
 #### Fixed
 
