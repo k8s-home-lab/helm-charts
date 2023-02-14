@@ -1,0 +1,82 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/oznu/homebridge
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. See [image docs](https://github.com/oznu/docker-homebridge#parameters) for more details.
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC
+  # -- Specify the user ID the application will run as
+  PUID: "1000"
+  # -- Specify the group ID the application will run as
+  PGID: "1000"
+  # -- Enable the Homebridge UI
+  HOMEBRIDGE_CONFIG_UI: 1
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8581
+
+# -- Enable hostNetwork - needed for discovery to work
+hostNetwork: false
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  config:
+    enabled: false
+    mountPath: /homebridge
+
+configmap:
+  scripts:
+    # -- Enable custom homebridge startup script
+    enabled: false
+
+    data:
+      # -- Custom homebridge startup script contents
+      # @default -- See values.yaml
+      startup.sh: |
+        #!/bin/sh
+
+        #
+        # Docker Homebridge Custom Startup Script - oznu/homebridge
+        #
+        # This script can be used to customise the environment and will be executed as
+        # the root user each time the container starts.
+        #
+        # If using this to install plugins DO NOT use the global flag (-g).
+        #
+        # Example installing homebridge plugin:
+        #
+        # npm install homebridge-hue
+        #
+        # Example installing packages using default image (Alpine Linux):
+        #
+        # apk add --no-cache ffmpeg ffmpeg-libs libpcap-dev
+        #
+        # If you're running a debian based version of this container please use apt-get to install packages.
+        #
+        echo "Started successfully."

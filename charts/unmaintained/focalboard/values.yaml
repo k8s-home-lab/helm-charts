@@ -1,0 +1,58 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: mattermost/focalboard
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: 0.9.0
+
+# -- environment variables.
+# @default -- See below
+env: {}
+
+# See the Administrator's Guide for config reference: https://www.focalboard.com/guide/admin/
+config: |
+  {
+    "serverRoot": "http://localhost:8000",
+    "port": 8000,
+    "dbtype": "sqlite3",
+    "dbconfig": "/data/focalboard.db",
+    "postgres_dbconfig": "dbname=focalboard sslmode=disable",
+    "useSSL": false,
+    "webpath": "./pack",
+    "filespath": "/data/files",
+    "telemetry": true,
+    "session_expire_time": 2592000,
+    "session_refresh_time": 18000,
+    "localOnly": false,
+    "enableLocalMode": true,
+    "localModeSocketLocation": "/var/tmp/focalboard_local.socket"
+  }
+
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  data:
+    enabled: false

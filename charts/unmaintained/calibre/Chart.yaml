@@ -1,0 +1,25 @@
+---
+apiVersion: v2
+appVersion: version-v5.21.0
+description: Calibre is a powerful and easy to use e-book manager.
+name: calibre
+version: 5.4.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - calibre
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre
+icon: https://github.com/kovidgoyal/calibre/raw/master/resources/images/lt.png
+sources:
+  - https://hub.docker.com/r/linuxserver/calibre/
+  - https://github.com/kovidgoyal/calibre/
+maintainers:
+  - name: rolfberkenbosch
+    email: rolf@berkenbosch.nl
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

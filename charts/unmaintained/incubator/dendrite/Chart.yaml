@@ -1,0 +1,85 @@
+---
+apiVersion: v2
+appVersion: v0.9.4
+description: Dendrite Matrix Homeserver
+name: dendrite
+version: 6.3.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - dendrite
+  - matrix
+  - homeserver
+  - monolith
+  - federation
+  - polylith
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/dendrite
+sources:
+  - https://github.com/matrix-org/dendrite
+  - https://github.com/matrix-org/dendrite/tree/master/build/docker
+maintainers:
+  - name: jonnobrow
+    email: jonathan@jonnobrow.co.uk
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+  - name: postgresql
+    version: 11.6.21
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+  - name: nats
+    version: 0.17.1
+    repository: https://nats-io.github.io/k8s/helm/charts/
+    condition: nats.enabled
+  # Client API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: clientapi
+    condition: dendrite.polylithEnabled
+  # Media API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: mediaapi
+    condition: dendrite.polylithEnabled
+  # Sync API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: syncapi
+    condition: dendrite.polylithEnabled
+  # Room Server
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: roomserver
+    condition: dendrite.polylithEnabled
+  # Federation API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: federationapi
+    condition: dendrite.polylithEnabled
+  # Key Server
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: keyserver
+    condition: dendrite.polylithEnabled
+  # User API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: userapi
+    condition: dendrite.polylithEnabled
+  # App Service API
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+    alias: appserviceapi
+    condition: dendrite.polylithEnabled
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded dendrite to 0.9.4

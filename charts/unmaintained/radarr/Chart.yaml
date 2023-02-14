@@ -1,0 +1,27 @@
+---
+apiVersion: v2
+appVersion: v4.1.0.6175
+description: A fork of Sonarr to work with movies à la Couchpotato
+name: radarr
+version: 16.3.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - radarr
+  - torrent
+  - usenet
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+sources:
+  - https://github.com/Radarr/Radarr
+  - https://github.com/k8s-at-home/container-images
+maintainers:
+  - name: billimek
+    email: jeff@billimek.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

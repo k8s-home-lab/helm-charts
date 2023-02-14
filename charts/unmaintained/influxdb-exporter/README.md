@@ -1,0 +1,134 @@
+# influxdb-exporter
+
+![Version: 1.2.2](https://img.shields.io/badge/Version-1.2.2-informational?style=flat-square) ![AppVersion: v0.9.0](https://img.shields.io/badge/AppVersion-v0.9.0-informational?style=flat-square)
+
+An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
+
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+
+## Source Code
+
+* <https://github.com/prometheus/influxdb_exporter>
+
+## Requirements
+
+Kubernetes: `>=1.16.0-0`
+
+## Dependencies
+
+| Repository | Name | Version |
+|------------|------|---------|
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+
+## TL;DR
+
+```console
+helm repo add k8s-at-home https://k8s-at-home.com/charts/
+helm repo update
+helm install influxdb-exporter k8s-at-home/influxdb-exporter
+```
+
+## Installing the Chart
+
+To install the chart with the release name `influxdb-exporter`
+
+```console
+helm install influxdb-exporter k8s-at-home/influxdb-exporter
+```
+
+## Uninstalling the Chart
+
+To uninstall the `influxdb-exporter` deployment
+
+```console
+helm uninstall influxdb-exporter
+```
+
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
+
+## Configuration
+
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
+
+```console
+helm install influxdb-exporter \
+  --set env.TZ="America/New York" \
+    k8s-at-home/influxdb-exporter
+```
+
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
+
+```console
+helm install influxdb-exporter k8s-at-home/influxdb-exporter -f values.yaml
+```
+
+## Custom configuration
+
+Override the default container `args:` with optons:
+
+    --web.listen-address=":9122"
+                          Address on which to expose metrics and web interface.
+    --web.telemetry-path="/metrics"
+                          Path under which to expose Prometheus metrics.
+    --web.exporter-telemetry-path="/metrics/exporter"
+                          Path under which to expose exporter metrics.
+    --influxdb.sample-expiry=5m
+                          How long a sample is valid for.
+    --udp.bind-address=":9122"
+                          Address on which to listen for udp packets.
+    --timestamps         Export timestamps of points.
+    --log.level=info     Only log messages with the given severity or above. One of: [debug, info, warn, error]
+    --log.format=logfmt  Output format of log messages. One of: [logfmt, json]
+
+(adapt service address/path/port accordingly)
+
+## Values
+
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| args | list | `["--udp.bind-address=0.0.0.0:9123"]` | Override the args for the default container |
+| env | object | See below | environment variables. See more environment variables in the [influxdb-exporter documentation](https://influxdb-exporter.org/docs). |
+| env.TZ | string | `"UTC"` | Set the container timezone |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"prom/influxdb-exporter"` | image repository |
+| image.tag | string | `"v0.9.0"` | image tag |
+| metrics.enabled | bool | See values.yaml | Enable and configure prometheus-qbittorrent-exporter sidecar and Prometheus podMonitor. |
+| metrics.serviceMonitor.interval | string | `"15s"` |  |
+| metrics.serviceMonitor.labels | object | `{}` |  |
+| metrics.serviceMonitor.scrapeTimeout | string | `"5s"` |  |
+| service | object | See values.yaml | Configures service settings for the chart. |
+
+## Changelog
+
+### Version 1.2.2
+
+#### Added
+
+N/A
+
+#### Changed
+
+* Upgraded `common` chart dependency to version 4.5.2
+
+#### Fixed
+
+N/A
+
+### Older versions
+
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-at-home/influxdb-exporter?modal=changelog)
+
+## Support
+
+- See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
+- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Ask a [question](https://github.com/k8s-at-home/organization/discussions)
+- Join our [Discord](https://discord.gg/sTMX7Vh) community
+
+----------------------------------------------
+Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/k8s-at-home/helm-docs/releases/v0.1.1)

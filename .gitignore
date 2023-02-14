@@ -1,6 +1,9 @@
 # Developer dependencies
 .bin
 
+# Mac stuff
+.DS_Store
+
 # IDE resources
 .vscode
 .idea

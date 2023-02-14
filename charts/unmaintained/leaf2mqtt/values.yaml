@@ -1,0 +1,29 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- Image repository
+  repository: ghcr.io/k8s-at-home/leaf2mqtt
+  # -- Image tag
+  tag: v0.1
+  # -- Image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. See [image docs](https://github.com/mitsumaui/leaf2mqtt) for more details.
+# @default -- See below
+env: {}
+  # LEAF_USERNAME:
+  # LEAF_PASSWORD:
+  # LEAF_TYPE:
+  # MQTT_HOST:
+  # MQTT_PORT:
+  # MQTT_USERNAME:
+  # MQTT_PASSWORD:
+  # MQTT_BASE_TOPIC:
+  # UPDATE_INTERVAL_MINUTES:
+  # CHARGING_UPDATE_INTERVAL_MINUTES:
+  # LOG_LEVEL:

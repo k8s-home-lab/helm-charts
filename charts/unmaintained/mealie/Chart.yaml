@@ -1,0 +1,26 @@
+---
+apiVersion: v2
+appVersion: v1.0.0beta-2
+description: Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family.
+name: mealie
+version: 5.1.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - grocy
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mealie
+icon: https://raw.githubusercontent.com/hay-kot/mealie/gh-pages/assets/img/favicon.png
+sources:
+  - https://github.com/hay-kot/mealie
+maintainers:
+  - name: bjw-s
+    email: me@bjw-s.dev
+  - name: jonnobrow
+    email: jonathan@jonnobrow.co.uk
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

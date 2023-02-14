@@ -1,0 +1,50 @@
+{{/* Make sure all variables are set properly */}}
+{{- include "common.values.setup" . }}
+
+{{/* Append the hardcoded settings */}}
+{{- define "sonarr.harcodedValues" -}}
+{{ if .Values.metrics.enabled }}
+additionalContainers:
+  exporter:
+    name: exporter
+    image: "{{ .Values.metrics.exporter.image.repository }}:{{ .Values.metrics.exporter.image.tag }}"
+    imagePullPolicy: {{ .Values.metrics.exporter.image.pullPolicy }}
+    args: ["sonarr"]
+    env:
+      - name: URL
+        value: "http://localhost"
+      - name: CONFIG
+        value: "/config/config.xml"
+      - name: PORT
+        value: "{{ .Values.metrics.exporter.env.port }}"
+      - name: ENABLE_ADDITIONAL_METRICS
+        value: "{{ .Values.metrics.exporter.env.additionalMetrics }}"
+      - name: ENABLE_UNKNOWN_QUEUE_ITEMS
+        value: "{{ .Values.metrics.exporter.env.unknownQueueItems }}"
+    ports:
+      - name: metrics
+        containerPort: {{ .Values.metrics.exporter.env.port }}
+    volumeMounts:
+      {{ if .Values.persistence.config.enabled }}
+      - name: config
+        mountPath: /config
+        readOnly: true
+        {{ if .Values.persistence.config.subPath }}
+        subPath: {{ .Values.persistence.config.subPath }}
+        {{ end }}
+      {{ end }}
+
+service:
+  metrics:
+    enabled: true
+    ports:
+      metrics:
+        enabled: true
+        protocol: TCP
+        port: {{ .Values.metrics.exporter.env.port }}
+{{ end }}
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "sonarr.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}

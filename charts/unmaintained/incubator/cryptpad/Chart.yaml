@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: v4.14.1-nginx
+description: cryptpad helm package
+name: cryptpad
+version: 0.4.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - cryptpad
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/cryptpad
+icon: https://cryptpad.fr/customize/CryptPad_logo.svg
+sources:
+  - https://github.com/xwiki-labs/cryptpad-docker
+maintainers:
+  - name: roobre
+    email: roobre@roobre.es
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

@@ -1,0 +1,59 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/linuxserver/bookstack
+  # -- image tag
+  pullPolicy: IfNotPresent
+  # -- image pull policy
+  tag: version-v21.12
+
+# -- environment variables. See more environment variables in the [bookstack documentation](https://hub.docker.com/r/linuxserver/bookstack)
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC
+  # DB_HOST:
+  # DB_USER:
+  # DB_PASS:
+  # DB_DATABASE:
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 80
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence: {}
+  # config:
+  #   enabled: false
+  #   mountPath: /config
+
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb).
+# @default -- See values.yaml
+mariadb:
+  enabled: false
+  architecture: standalone
+  auth:
+    database: bookstack
+    username: bookstack
+    password: bookstack
+  primary:
+    persistence:
+      enabled: false

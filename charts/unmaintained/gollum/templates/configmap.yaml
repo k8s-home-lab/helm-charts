@@ -1,0 +1,12 @@
+{{- include "common.values.setup" . -}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "common.names.fullname" . }}
+data:
+  git-sync: |
+    #!/bin/sh
+    cd /wiki && {{ .Values.gollum.syncCommand }}
+  config.rb: |
+    {{- .Values.gollum.config | nindent 4 }}

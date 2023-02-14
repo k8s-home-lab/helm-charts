@@ -1,0 +1,25 @@
+apiVersion: v2
+appVersion: 1.22.1
+description: Open Source Continuous File Synchronization
+name: syncthing
+version: 4.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - syncthing
+  - file sync
+home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/syncthing
+icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+sources:
+  - https://syncthing.net/
+  - https://hub.docker.com/r/linuxserver/sonarr
+maintainers:
+  - name: Aste88
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description:switch to linuxserver.io container image
