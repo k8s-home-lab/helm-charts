@@ -9,14 +9,15 @@
   "helm-values": {
     "enabled": false
   },
-  "docker": {
-    "enabled": true
-  },
   "helmv3": {
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
   "packageRules": [
     // Setup datasources
+    {
+      "matchDatasources": ["docker"],
+      "commitMessageTopic": "Docker image {{depName}}"
+    },
     {
       "matchDatasources": ["helm"],
       "commitMessageTopic": "Helm chart {{depName}}",
