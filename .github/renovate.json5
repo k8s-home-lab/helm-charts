@@ -7,7 +7,7 @@
   "suppressNotifications": ["prIgnoreNotification"],
   "prConcurrentLimit": 5,
   "helm-values": {
-    "enabled": false
+    "enabled": true
   },
   "helmv3": {
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
