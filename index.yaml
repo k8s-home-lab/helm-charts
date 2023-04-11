@@ -392,6 +392,46 @@ entries:
     version: 0.0.1
   gitea:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `redis` chart dependency to version `17.4.0`.
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2023-04-11T21:38:40.245278097Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.2.7
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.3
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 2c354dc42fd5a29a3e894d047d63101b5300eae66c0555df6edcf858d5e62420
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/gitea-2.0.0/gitea-2.0.0.tgz
+    version: 2.0.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: update lib chart, fix formatting
@@ -1233,4 +1273,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-01-21T20:01:18.928453008Z"
+generated: "2023-04-11T21:38:40.361309222Z"
