@@ -19,9 +19,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 10.4.6 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.1.29 |
-| https://charts.bitnami.com/bitnami | redis | 17.4.0 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.5.6 |
+| https://charts.bitnami.com/bitnami | postgresql | 12.2.7 |
+| https://charts.bitnami.com/bitnami | redis | 17.9.3 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
