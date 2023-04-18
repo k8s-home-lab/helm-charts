@@ -90,7 +90,7 @@ N/A
 | metrics.exporter.env.unknownQueueItems | bool | `false` | Set to true to enable gathering unknown queue items |
 | metrics.exporter.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | metrics.exporter.image.repository | string | `"ghcr.io/onedr0p/exportarr"` | image repository |
-| metrics.exporter.image.tag | string | `"v1.0.0"` | image tag |
+| metrics.exporter.image.tag | string | `"v1.3.1"` | image tag |
 | metrics.prometheusRule | object | See values.yaml | Enable and configure Prometheus Rules for the chart under this key. |
 | metrics.prometheusRule.rules | list | See prometheusrules.yaml | Configure additionial rules for the chart under this key. |
 | metrics.serviceMonitor.interval | string | `"3m"` |  |

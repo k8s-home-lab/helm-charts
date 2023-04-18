@@ -1,6 +1,6 @@
 # lidarr
 
-![Version: 15.0.0](https://img.shields.io/badge/Version-15.0.0-informational?style=flat-square) ![AppVersion: 1.0.2](https://img.shields.io/badge/AppVersion-1.0.2-informational?style=flat-square)
+![Version: 15.0.1](https://img.shields.io/badge/Version-15.0.1-informational?style=flat-square) ![AppVersion: 1.0.2](https://img.shields.io/badge/AppVersion-1.0.2-informational?style=flat-square)
 
 Looks and smells like Sonarr but made for music
 
@@ -90,7 +90,7 @@ N/A
 | metrics.exporter.env.unknownQueueItems | bool | `false` | Set to true to enable gathering unknown queue items |
 | metrics.exporter.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | metrics.exporter.image.repository | string | `"ghcr.io/onedr0p/exportarr"` | image repository |
-| metrics.exporter.image.tag | string | `"v1.0.0"` | image tag |
+| metrics.exporter.image.tag | string | `"v1.3.1"` | image tag |
 | metrics.prometheusRule | object | See values.yaml | Enable and configure Prometheus Rules for the chart under this key. |
 | metrics.prometheusRule.rules | list | See prometheusrules.yaml | Configure additionial rules for the chart under this key. |
 | metrics.serviceMonitor.interval | string | `"3m"` |  |
@@ -102,7 +102,7 @@ N/A
 
 ## Changelog
 
-### Version 15.0.0
+### Version 15.0.1
 
 #### Added
 
@@ -110,8 +110,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest linuxserver docker image.
+* Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
 
 #### Fixed
 
