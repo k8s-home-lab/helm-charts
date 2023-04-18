@@ -20,5 +20,4 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
-| [brave-sync](incubator/brave-sync) | brave-sync helm package |
 | [dynamo-db](incubator/dynamo-db) | dynamo-db helm package |
