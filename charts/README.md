@@ -20,4 +20,3 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
-| [dynamo-db](incubator/dynamo-db) | dynamo-db helm package |
