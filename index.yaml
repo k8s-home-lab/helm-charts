@@ -683,6 +683,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
+    apiVersion: v2
+    appVersion: 1.0.2
+    created: "2023-04-18T12:36:57.655028306Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Looks and smells like Sonarr but made for music
+    digest: 6a53821ca4b127d88a7543d497988f5d556c3f3c64f7b9e3981b994df863126a
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://fleet.linuxserver.io/
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/lidarr-15.0.1/lidarr-15.0.1.tgz
+    version: 15.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -1313,4 +1343,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-04-18T12:33:55.212619544Z"
+generated: "2023-04-18T12:36:58.135741449Z"
