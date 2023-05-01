@@ -33,4 +33,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update docker image codercom/code-server to 4.12.0
+      description: Upgraded `mariadb` chart dependency to version `11.5.7`.
+    - kind: changed
+      description: Upgraded `postgresql` chart dependency to version `12.2.8`.
+    - kind: changed
+      description: Upgraded `redis` chart dependency to version `17.9.5`.
