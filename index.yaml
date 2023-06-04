@@ -390,7 +390,81 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/dynamo-db-0.0.1/dynamo-db-0.0.1.tgz
     version: 0.0.1
+  flaresolverr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump version
+    apiVersion: v2
+    appVersion: v1.2.8
+    created: "2023-06-04T18:47:26.823740686Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: FlareSolverr is a proxy server to bypass Cloudflare protection
+    digest: fc80a4980093bbf531a596e16377e2f1d93f081da332c2a8e49892132697f561
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flaresolverr
+    icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
+    keywords:
+    - flaresolverr
+    - jackett
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: flaresolverr
+    sources:
+    - https://github.com/FlareSolverr/FlareSolverr
+    - https://hub.docker.com/r/flaresolverr/flaresolverr
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/flaresolverr-6.0.0/flaresolverr-6.0.0.tgz
+    version: 6.0.0
   gitea:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version `11.5.7`.
+        - kind: changed
+          description: Upgraded `postgresql` chart dependency to version `12.4.3`.
+        - kind: changed
+          description: Upgraded `redis` chart dependency to version `17.10.3`.
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2023-06-04T18:47:26.945216069Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.10.3
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 97fa5a9400f82bfd4c530c56b3f91e959fcd0ad3c590454ff7cfb1d5b2002432
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/gitea-2.1.1/gitea-2.1.1.tgz
+    version: 2.1.1
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1443,4 +1517,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-04-23T07:26:00.497645977Z"
+generated: "2023-06-04T18:47:26.94529427Z"
