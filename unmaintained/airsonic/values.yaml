@@ -10,7 +10,7 @@ image:
   repository: airsonicadvanced/airsonic-advanced
   # -- image tag
   # The specific digest is for the `amd64` image, but arm compatible images are also available.
-  tag: latest@sha256:f7cbafac28063dce99b443037547b4fe40ae270b7bc5e47efea9bb5d6751ca9d
+  tag: latest@sha256:5bccec0e8bfdf63fe768e3ff48f38f46f6d183c29e04e608addfd14e4978b374
   # -- image pull policy
   pullPolicy: IfNotPresent
 
