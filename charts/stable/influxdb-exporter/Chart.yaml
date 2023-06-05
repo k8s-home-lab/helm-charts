@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: v0.10.0
+appVersion: v0.11.4
 description: An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 name: influxdb-exporter
-version: 1.1.1
+version: 1.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - influxdb-exporter
@@ -21,4 +21,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Bump version
+      description: Update image to 0.11.4
