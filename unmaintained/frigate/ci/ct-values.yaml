@@ -1,0 +1,26 @@
+persistence:
+  data:
+    enabled: true
+    type: emptyDir
+    mountPath: /data
+
+configmap:
+  config:
+    enabled: true
+    data:
+      config.yml: |
+        database:
+          path: /data/frigate.db
+        mqtt:
+          host: test.mosquitto.org
+        cameras:
+          back:
+            ffmpeg:
+              inputs:
+                - path: rtsp://10.0.10.10:554/rtsp
+                  roles:
+                    - detect
+                    - rtmp
+            detect:
+              width: 1280
+              height: 720

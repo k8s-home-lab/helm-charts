@@ -1,0 +1,86 @@
+{{/* Make sure all variables are set properly */}}
+{{- include "common.values.setup" . }}
+
+{{/* Append the hardcoded settings */}}
+{{- define "gollum.hardcodedValues" -}}
+command: gollum
+args:
+  - "/wiki"
+  - "--config"
+  - "/config/config.rb"
+  - "--ref"
+  - {{ (required "gollum.gitBranch is required but not set" .Values.gollum.gitBranch) }}
+  {{ with .Values.gollum.additionalArgs }}
+  {{ range . }}
+  - {{ . | toYaml }}
+  {{ end }}
+  {{ end }}
+
+initContainers:
+  clear-wiki:
+    image: alpine
+    command:
+      - sh
+      - -c
+      - rm -fr /wiki/*; rm -fr /wiki/.*; ls -la /wiki/;
+    volumeMounts:
+      - mountPath: /wiki
+        name: wiki
+
+  git-init:
+    image: alpine/git
+    args:
+      - clone
+      - -b
+      - {{ (required "gollum.gitBranch is required but not set" .Values.gollum.gitBranch) }}
+      - {{ (required "gollum.gitUrl is required but not set" .Values.gollum.gitUrl)  }}
+      - /wiki
+    volumeMounts:
+      - mountPath: /wiki
+        name: wiki
+
+additionalContainers:
+  cron:
+    image: alpine/git
+    command: ["crond", "-f", "-l", "8"]
+    volumeMounts:
+      - mountPath: /etc/periodic/15min/
+        name: git-sync
+      - mountPath: /wiki
+        name: wiki
+
+persistence:
+  gollum-config:
+    enabled: "true"
+    mountPath: "/config"
+    type: "custom"
+    volumeSpec:
+      configMap:
+        name: {{ printf "%v" (include "common.names.fullname" .) }}
+        defaultMode: 0755
+        items:
+          - key: config.rb
+            path: config.rb
+
+  git-sync:
+    enabled: "true"
+    mountPath: "-"
+    type: "custom"
+    volumeSpec:
+      configMap:
+        name: {{ printf "%v" (include "common.names.fullname" .) }}
+        defaultMode: 0755
+        items:
+          - key: git-sync
+            path: git-sync
+
+  {{- if not .Values.persistence.wiki.enabled }}
+  wiki:
+    enabled: "true"
+    type: "emptyDir"
+  {{- end }}
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "gollum.hardcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
