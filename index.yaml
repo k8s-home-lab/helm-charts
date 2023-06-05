@@ -709,6 +709,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update image to 0.11.4
+    apiVersion: v2
+    appVersion: v0.11.4
+    created: "2023-06-05T14:29:40.007220073Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: An exporter for metrics in the InfluxDB format, transforms them and
+      exposes them for consumption by Prometheus.
+    digest: e6fae68b441029f5cf55d2b85c7c11ce6f6810c834f7623b04981f11ca8058fb
+    home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
+    keywords:
+    - influxdb-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: influxdb-exporter
+    sources:
+    - https://github.com/prometheus/influxdb_exporter
+    - https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+    urls:
+    - https://github.com/Aste88/helm-charts/releases/download/influxdb-exporter-1.1.2/influxdb-exporter-1.1.2.tgz
+    version: 1.1.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Bump version
     apiVersion: v2
     appVersion: v0.10.0
@@ -1517,4 +1546,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-04T18:47:26.94529427Z"
+generated: "2023-06-05T14:29:40.007318374Z"
