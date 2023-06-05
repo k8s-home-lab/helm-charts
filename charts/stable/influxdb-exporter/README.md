@@ -1,6 +1,6 @@
 # influxdb-exporter
 
-![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-informational?style=flat-square) ![AppVersion: v0.10.0](https://img.shields.io/badge/AppVersion-v0.10.0-informational?style=flat-square)
+![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-informational?style=flat-square) ![AppVersion: v0.11.4](https://img.shields.io/badge/AppVersion-v0.11.4-informational?style=flat-square)
 
 An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 
@@ -108,7 +108,7 @@ Proxmox grafana chart adapted for translated metrics: [Proxmox metric-server via
 
 ## Changelog
 
-### Version 1.1.1
+### Version 1.1.2
 
 #### Added
 
@@ -116,7 +116,7 @@ N/A
 
 #### Changed
 
-* Bump version
+* Update image to 0.11.4
 
 #### Fixed
 
