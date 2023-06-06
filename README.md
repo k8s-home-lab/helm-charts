@@ -8,7 +8,7 @@
 
 Work inspired and in the most part based on the [k8s-at-home](https://k8s-at-home.com/)'s team.
 
-Container images mostly from [linuxserver.io](https://www.linuxserver.io/).
+Container images mostly from [onedr0p](https://github.com/onedr0p/containers) or [linuxserver.io](https://www.linuxserver.io/).
 
 ## Usage
 
