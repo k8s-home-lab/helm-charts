@@ -1,6 +1,6 @@
 # bazarr
 
-![Version: 11.0.0](https://img.shields.io/badge/Version-11.0.0-informational?style=flat-square) ![AppVersion: 1.1.2](https://img.shields.io/badge/AppVersion-1.1.2-informational?style=flat-square)
+![Version: 11.1.0](https://img.shields.io/badge/Version-11.1.0-informational?style=flat-square) ![AppVersion: 1.1.4](https://img.shields.io/badge/AppVersion-1.1.4-informational?style=flat-square)
 
 Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 
@@ -9,7 +9,7 @@ Bazarr is a companion application to Sonarr and Radarr. It manages and downloads
 ## Source Code
 
 * <https://github.com/morpheus65535/bazarr>
-* <https://hub.docker.com/r/linuxserver/ombi>
+* <https://github.com/onedr0p/containers>
 
 ## Requirements
 
@@ -77,11 +77,9 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
-| env.PGID | string | `"568"` | Specify the group ID the application will run as |
-| env.PUID | string | `"568"` | Specify the user ID the application will run as |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/linuxserver/bazarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/bazarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -89,7 +87,7 @@ N/A
 
 ## Changelog
 
-### Version 11.0.0
+### Version 11.1.0
 
 #### Added
 
@@ -97,8 +95,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest docker image.
+* Switch to onedr0p images
 
 #### Fixed
 
