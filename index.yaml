@@ -4,6 +4,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Switch to onedr0p images
+    apiVersion: v2
+    appVersion: 1.1.4
+    created: "2023-06-08T13:22:27.06826434Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: 892d6261b41798e03d234e41126dfb78879319128a1bd80c51ae1fc4cd9f17a0
+    home: https://github.com/k8s-home-lab/charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: Aste88
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/bazarr-11.1.0/bazarr-11.1.0.tgz
+    version: 11.1.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Updated docker image to 1.1.4.
     apiVersion: v2
     appVersion: 1.1.4
@@ -1546,4 +1580,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-05T14:29:40.007318374Z"
+generated: "2023-06-08T13:22:27.068786638Z"
