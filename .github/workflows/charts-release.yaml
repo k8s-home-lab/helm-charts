@@ -94,7 +94,7 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://aste88.github.io/helm-charts/
+          charts_repo_url: https://k8s-home-lab.github.io/helm-charts/
         env:
           CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
           CR_SKIP_EXISTING: "true"

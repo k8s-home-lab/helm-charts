@@ -11,17 +11,17 @@ concurrency:
 
 jobs:
   pr-metadata:
-    uses: Aste88/helm-charts/.github/workflows/pr-metadata.yaml@master
+    uses: k8s-home-lab/helm-charts/.github/workflows/pr-metadata.yaml@master
 
   pre-commit-check:
-    uses: Aste88/helm-charts/.github/workflows/pre-commit-check.yaml@master
+    uses: k8s-home-lab/helm-charts/.github/workflows/pre-commit-check.yaml@master
     needs:
       - pr-metadata
     with:
       modifiedFiles: ${{ needs.pr-metadata.outputs.addedOrModifiedFiles }}
 
   charts-changelog:
-    uses: Aste88/helm-charts/.github/workflows/charts-changelog.yaml@master
+    uses: k8s-home-lab/helm-charts/.github/workflows/charts-changelog.yaml@master
     needs:
       - pr-metadata
       - pre-commit-check
@@ -30,7 +30,7 @@ jobs:
       modifiedCharts: ${{ needs.pr-metadata.outputs.addedOrModifiedCharts }}
 
   charts-lint:
-    uses: Aste88/helm-charts/.github/workflows/charts-lint.yaml@master
+    uses: k8s-home-lab/helm-charts/.github/workflows/charts-lint.yaml@master
     needs:
       - pr-metadata
       - charts-changelog
@@ -39,7 +39,7 @@ jobs:
       chartChangesDetected: ${{ needs.pr-metadata.outputs.addedOrModified }}
 
   charts-test:
-    uses: Aste88/helm-charts/.github/workflows/charts-test.yaml@master
+    uses: k8s-home-lab/helm-charts/.github/workflows/charts-test.yaml@master
     needs:
       - pr-metadata
       - charts-changelog
