@@ -1906,6 +1906,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 3.0.10.1567
+    apiVersion: v2
+    appVersion: 3.0.10.1567
+    created: "2023-06-12T11:35:34.359948064Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 3661e146209431285e4f0598fc0c62677be4ce978d4d926348b75a6b0d1fe1e4
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr
+    icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
+    keywords:
+    - sonarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/sonarr-17.1.1/sonarr-17.1.1.tgz
+    version: 17.1.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image to ghcr.io/onedr0p
         - kind: changed
           description: Update README
@@ -2217,4 +2247,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T11:33:50.024468922Z"
+generated: "2023-06-12T11:35:34.360063267Z"
