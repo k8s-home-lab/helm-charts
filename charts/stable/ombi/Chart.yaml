@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 4.22.5
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
 name: ombi
-version: 12.0.0
+version: 12.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - ombi
@@ -11,13 +11,13 @@ keywords:
   - sonarr
   - radarr
   - couchpotato
-home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/influxdb-exporter
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
 icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
 sources:
   - https://github.com/tidusjar/Ombi
-  - https://fleet.linuxserver.io/
+  - https://github.com/onedr0p/containers
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common
@@ -26,6 +26,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `common` chart dependency to version `4.5.2`.
-    - kind: changed
-      description: Updated to use the latest linuxserver docker image.
+      description: Update README
