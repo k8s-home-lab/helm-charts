@@ -1152,6 +1152,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 4.22.5
+    created: "2023-06-12T11:19:09.16733046Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
+    digest: 841818c9909facf104fbccd12ac008feae965bba2dcda244060afb3d5801a147
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
+    keywords:
+    - ombi
+    - plex
+    - emby
+    - sonarr
+    - radarr
+    - couchpotato
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ombi
+    sources:
+    - https://github.com/tidusjar/Ombi
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ombi-12.0.2/ombi-12.0.2.tgz
+    version: 12.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -2033,4 +2066,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T10:41:25.962635637Z"
+generated: "2023-06-12T11:19:10.035582729Z"
