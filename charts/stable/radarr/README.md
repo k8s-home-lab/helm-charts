@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 17.1.0](https://img.shields.io/badge/Version-17.1.0-informational?style=flat-square) ![AppVersion: 4.3.2](https://img.shields.io/badge/AppVersion-4.3.2-informational?style=flat-square)
+![Version: 17.1.1](https://img.shields.io/badge/Version-17.1.1-informational?style=flat-square) ![AppVersion: 4.5.2.7388](https://img.shields.io/badge/AppVersion-4.5.2.7388-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -100,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 17.1.0
+### Version 17.1.1
 
 #### Added
 
@@ -108,8 +108,7 @@ N/A
 
 #### Changed
 
-* Update README
-* Use docker image from ghcr.io/onedr0p
+* Update image to 4.5.2.7388
 
 #### Fixed
 
