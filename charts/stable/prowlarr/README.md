@@ -1,6 +1,6 @@
 # prowlarr
 
-![Version: 5.0.1](https://img.shields.io/badge/Version-5.0.1-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
+![Version: 5.1.1](https://img.shields.io/badge/Version-5.1.1-informational?style=flat-square) ![AppVersion: 1.5.2.3484](https://img.shields.io/badge/AppVersion-1.5.2.3484-informational?style=flat-square)
 
 Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 
@@ -77,11 +77,9 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
-| env.PGID | string | `"568"` | Specify the group ID the application will run as |
-| env.PUID | string | `"568"` | Specify the user ID the application will run as |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/linuxserver/prowlarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/prowlarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -89,7 +87,7 @@ N/A
 
 ## Changelog
 
-### Version 5.0.1
+### Version 5.1.1
 
 #### Added
 
@@ -97,7 +95,7 @@ N/A
 
 #### Changed
 
-* Updated docker image to 1.0.1.
+* Update image to 1.5.2.3484
 
 #### Fixed
 
