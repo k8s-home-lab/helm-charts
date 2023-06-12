@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 17.1.0](https://img.shields.io/badge/Version-17.1.0-informational?style=flat-square) ![AppVersion: 3.0.9](https://img.shields.io/badge/AppVersion-3.0.9-informational?style=flat-square)
+![Version: 17.1.1](https://img.shields.io/badge/Version-17.1.1-informational?style=flat-square) ![AppVersion: 3.0.10.1567](https://img.shields.io/badge/AppVersion-3.0.10.1567-informational?style=flat-square)
 
 Smart PVR for newsgroup and bittorrent users
 
@@ -100,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 17.1.0
+### Version 17.1.1
 
 #### Added
 
@@ -108,8 +108,7 @@ N/A
 
 #### Changed
 
-* Update README
-* Use docker image from ghcr.io/onedr0p
+* Update image to 3.0.10.1567
 
 #### Fixed
 
