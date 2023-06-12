@@ -12,10 +12,10 @@ keywords:
   - wireguard
 sources:
   - https://git.zx2c4.com/wireguard-tools
-  - https://github.com/Aste88/container-images
+  - https://github.com/k8s-home-lab/container-images
 icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common

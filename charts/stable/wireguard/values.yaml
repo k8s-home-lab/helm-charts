@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/aste88/wireguard
+  repository: ghcr.io/k8s-home-lab/wireguard
   # -- image tag
   tag:
   # -- image pull policy
@@ -61,8 +61,8 @@ persistence:
 securityContext:
   capabilities:
     add:
-    - NET_ADMIN
-    - SYS_MODULE
+      - NET_ADMIN
+      - SYS_MODULE
 
 # -- Configures the probes for the main Pod.
 # @default -- See values.yaml
@@ -75,7 +75,12 @@ probes:
     ## If you selected custom: true, this field holds the definition of the livenessProbe.
     spec:
       exec:
-        command: ["bash", "-c", "if [[ $(curl -s https://ipinfo.io) ]]; then exit 0; else exit $?; fi"]
+        command:
+          [
+            "bash",
+            "-c",
+            "if [[ $(curl -s https://ipinfo.io) ]]; then exit 0; else exit $?; fi",
+          ]
       initialDelaySeconds: 0
       timeoutSeconds: 1
       periodSeconds: 5
