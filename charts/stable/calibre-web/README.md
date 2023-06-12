@@ -1,6 +1,6 @@
 # calibre-web
 
-![Version: 9.0.1](https://img.shields.io/badge/Version-9.0.1-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
+![Version: 9.0.2](https://img.shields.io/badge/Version-9.0.2-informational?style=flat-square) ![AppVersion: 0.6.19](https://img.shields.io/badge/AppVersion-0.6.19-informational?style=flat-square)
 
 Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 9.0.1
+### Version 9.0.2
 
 #### Added
 
@@ -101,7 +101,7 @@ N/A
 
 #### Fixed
 
-* Change chart source to ghcr.io.
+* Update README
 
 ### Older versions
 
