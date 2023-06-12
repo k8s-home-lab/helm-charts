@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.0.2](https://img.shields.io/badge/Version-2.0.2-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
+![Version: 2.1.2](https://img.shields.io/badge/Version-2.1.2-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -19,9 +19,9 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.5.6 |
-| https://charts.bitnami.com/bitnami | postgresql | 12.2.7 |
-| https://charts.bitnami.com/bitnami | redis | 17.9.3 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.5.7 |
+| https://charts.bitnami.com/bitnami | postgresql | 12.4.3 |
+| https://charts.bitnami.com/bitnami | redis | 17.10.3 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -123,7 +123,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 2.0.2
+### Version 2.1.2
 
 #### Added
 
@@ -131,7 +131,7 @@ N/A
 
 #### Changed
 
-* Update docker image codercom/code-server to 4.12.0
+* Update README
 
 #### Fixed
 

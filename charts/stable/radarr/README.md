@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 17.0.2](https://img.shields.io/badge/Version-17.0.2-informational?style=flat-square) ![AppVersion: 4.3.2](https://img.shields.io/badge/AppVersion-4.3.2-informational?style=flat-square)
+![Version: 17.1.0](https://img.shields.io/badge/Version-17.1.0-informational?style=flat-square) ![AppVersion: 4.3.2](https://img.shields.io/badge/AppVersion-4.3.2-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -77,11 +77,9 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
-| env.PGID | string | `"568"` | Specify the group ID the application will run as |
-| env.PUID | string | `"568"` | Specify the user ID the application will run as |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/linuxserver/radarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/radarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
@@ -102,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 17.0.2
+### Version 17.1.0
 
 #### Added
 
@@ -110,7 +108,8 @@ N/A
 
 #### Changed
 
-* Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
+* Update docker image to ghcr.io/onedr0p
+* Update README
 
 #### Fixed
 
