@@ -1022,6 +1022,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 1.1.4.3027
+    apiVersion: v2
+    appVersion: 1.1.4.3027
+    created: "2023-06-12T11:27:45.541720021Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Looks and smells like Sonarr but made for music
+    digest: 5d64ab9a670e1207b1ec37671e96f7e37379b0ee116eb718bb2b66ce24340ca1
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/lidarr-15.1.1/lidarr-15.1.1.tgz
+    version: 15.1.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image to ghcr.io/onedr0p
         - kind: changed
           description: Update README
@@ -2066,4 +2096,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T11:19:10.035582729Z"
+generated: "2023-06-12T11:27:46.089168529Z"
