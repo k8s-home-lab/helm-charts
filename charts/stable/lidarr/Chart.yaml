@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.0.2
+appVersion: 1.1.4.3027
 description: Looks and smells like Sonarr but made for music
 name: lidarr
-version: 15.1.0
+version: 15.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - lidarr
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
-    - kind: changed
-      description: Use docker image from ghcr.io/onedr0p
+      description: Update image to 1.1.4.3027
