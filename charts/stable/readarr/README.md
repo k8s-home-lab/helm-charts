@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 7.1.0](https://img.shields.io/badge/Version-7.1.0-informational?style=flat-square) ![AppVersion: 0.1.1-nightly](https://img.shields.io/badge/AppVersion-0.1.1--nightly-informational?style=flat-square)
+![Version: 7.1.1](https://img.shields.io/badge/Version-7.1.1-informational?style=flat-square) ![AppVersion: 0.1.8.1889](https://img.shields.io/badge/AppVersion-0.1.8.1889-informational?style=flat-square)
 
 A fork of Radarr to work with Books & AudioBooks
 
@@ -80,7 +80,7 @@ helm install readarr k8s-home-lab/readarr -f values.yaml
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/readarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -89,7 +89,7 @@ helm install readarr k8s-home-lab/readarr -f values.yaml
 
 ## Changelog
 
-### Version 7.1.0
+### Version 7.1.1
 
 #### Added
 
@@ -97,8 +97,7 @@ N/A
 
 #### Changed
 
-* Update README
-* Use docker image from ghcr.io/onedr0p
+* Update image to 0.1.8.1889
 
 #### Fixed
 
