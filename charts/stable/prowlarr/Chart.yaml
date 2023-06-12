@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.0.1
+appVersion: 1.5.2.3484
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 5.1.0
+version: 5.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - prowlarr
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
-    - kind: changed
-      description: Use docker image from ghcr.io/onedr0p
+      description: Update image to 1.5.2.3484
