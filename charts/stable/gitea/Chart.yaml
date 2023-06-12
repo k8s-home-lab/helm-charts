@@ -2,17 +2,17 @@ apiVersion: v2
 appVersion: 1.16.6
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.1.1
+version: 2.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
-home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
 icon: https://docs.gitea.io/images/gitea.png
 sources:
   - https://github.com/go-gitea/gitea
-  - https://github.com/Aste88/helm-charts/tree/master/charts/stable/gitea
+  - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common
@@ -33,8 +33,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `mariadb` chart dependency to version `11.5.7`.
-    - kind: changed
-      description: Upgraded `postgresql` chart dependency to version `12.4.3`.
-    - kind: changed
-      description: Upgraded `redis` chart dependency to version `17.10.3`.
+      description: Update README
