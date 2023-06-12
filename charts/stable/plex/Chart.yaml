@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.30.1
+appVersion: 1.32.3.7162-b0a36929b
 description: Plex Media Server
 name: plex
-version: 7.1.0
+version: 7.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - plex
@@ -21,6 +21,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
-    - kind: changed
-      description: Use docker image from ghcr.io/onedr0p
+      description: Update image to 1.32.3.7162-b0a36929b
