@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 4.3.2
+appVersion: 4.5.2.7388
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr
-version: 17.1.0
+version: 17.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - radarr
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
-    - kind: changed
-      description: Use docker image from ghcr.io/onedr0p
+      description: Update image to 4.5.2.7388
