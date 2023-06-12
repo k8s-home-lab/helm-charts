@@ -1,6 +1,6 @@
 # lidarr
 
-![Version: 15.0.1](https://img.shields.io/badge/Version-15.0.1-informational?style=flat-square) ![AppVersion: 1.0.2](https://img.shields.io/badge/AppVersion-1.0.2-informational?style=flat-square)
+![Version: 15.1.1](https://img.shields.io/badge/Version-15.1.1-informational?style=flat-square) ![AppVersion: 1.1.4.3027](https://img.shields.io/badge/AppVersion-1.1.4.3027-informational?style=flat-square)
 
 Looks and smells like Sonarr but made for music
 
@@ -77,11 +77,9 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. |
-| env.PGID | string | `"568"` | Specify the group ID the application will run as |
-| env.PUID | string | `"568"` | Specify the user ID the application will run as |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/linuxserver/lidarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/lidarr"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
@@ -102,7 +100,7 @@ N/A
 
 ## Changelog
 
-### Version 15.0.1
+### Version 15.1.1
 
 #### Added
 
@@ -110,7 +108,7 @@ N/A
 
 #### Changed
 
-* Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
+* Update image to 1.1.4.3027
 
 #### Fixed
 
