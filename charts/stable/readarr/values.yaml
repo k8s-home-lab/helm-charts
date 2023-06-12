@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/onedr0p/readarr
+  repository: ghcr.io/onedr0p/readarr-develop
   # -- image tag
   tag:
   # -- image pull policy
