@@ -1,6 +1,6 @@
 # ombi
 
-![Version: 12.0.0](https://img.shields.io/badge/Version-12.0.0-informational?style=flat-square) ![AppVersion: 4.22.5](https://img.shields.io/badge/AppVersion-4.22.5-informational?style=flat-square)
+![Version: 12.0.2](https://img.shields.io/badge/Version-12.0.2-informational?style=flat-square) ![AppVersion: 4.22.5](https://img.shields.io/badge/AppVersion-4.22.5-informational?style=flat-square)
 
 Want a Movie or TV Show on Plex or Emby? Use Ombi!
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 12.0.0
+### Version 12.0.2
 
 #### Added
 
@@ -97,8 +97,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version `4.5.2`.
-* Updated to use the latest linuxserver docker image.
+* Update README
 
 #### Fixed
 
