@@ -492,6 +492,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: v1.2.8
+    created: "2023-06-12T10:41:24.299053035Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: FlareSolverr is a proxy server to bypass Cloudflare protection
+    digest: ec2e4440ddc6477ea6b111e56f75d10f6f9fef566c741e1fd825678108fb4318
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flaresolverr
+    icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
+    keywords:
+    - flaresolverr
+    - jackett
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flaresolverr
+    sources:
+    - https://github.com/FlareSolverr/FlareSolverr
+    - https://hub.docker.com/r/flaresolverr/flaresolverr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flaresolverr-6.0.1/flaresolverr-6.0.1.tgz
+    version: 6.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump version
     apiVersion: v2
     appVersion: v1.2.8
@@ -519,6 +548,46 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/flaresolverr-6.0.0/flaresolverr-6.0.0.tgz
     version: 6.0.0
   gitea:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2023-06-12T10:41:24.451948387Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.10.3
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 1041a20b68cfd26e4c0d19e68423e125cf8bf44aedf3065127e8f30fc856761a
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.1.2/gitea-2.1.2.tgz
+    version: 2.1.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -807,6 +876,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: v0.11.4
+    created: "2023-06-12T10:41:24.594198582Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: An exporter for metrics in the InfluxDB format, transforms them and
+      exposes them for consumption by Prometheus.
+    digest: 2c0eb522a4bc2c57f27dc88a9a136d9bf9c19e9fe6e323adb288faf59a5ef9dd
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.jpg
+    keywords:
+    - influxdb-exporter
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: influxdb-exporter
+    sources:
+    - https://github.com/prometheus/influxdb_exporter
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/influxdb-exporter-1.1.3/influxdb-exporter-1.1.3.tgz
+    version: 1.1.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update image to 0.11.4
     apiVersion: v2
     appVersion: v0.11.4
@@ -924,6 +1022,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 1.0.2
+    created: "2023-06-12T10:41:24.700432647Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Looks and smells like Sonarr but made for music
+    digest: 5cea2ae486c766f281a2ce3ae23a4cb836954c387c1222a1337bc2161215157d
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/lidarr-15.1.0/lidarr-15.1.0.tgz
+    version: 15.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
     apiVersion: v2
     appVersion: 1.0.2
@@ -987,6 +1117,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 4.22.5
+    created: "2023-06-12T10:41:24.82967825Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
+    digest: 1a730ca3b0144e09f0a7355b743c75ae6bd65061d29b1c70fed007b0c47372db
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
+    keywords:
+    - ombi
+    - plex
+    - emby
+    - sonarr
+    - radarr
+    - couchpotato
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ombi
+    sources:
+    - https://github.com/tidusjar/Ombi
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ombi-12.1.0/ombi-12.1.0.tgz
+    version: 12.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Upgraded `common` chart dependency to version `4.5.2`.
         - kind: changed
           description: Updated to use the latest linuxserver docker image.
@@ -1020,6 +1185,36 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/ombi-12.0.0/ombi-12.0.0.tgz
     version: 12.0.0
   plex:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 1.30.1
+    created: "2023-06-12T10:41:24.99734662Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Plex Media Server
+    digest: 5568ac1ca41b623203f4edaf37abd07611dbe4c623333f62bfc3e914b5d1f55b
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/plex
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    - plex-media-server
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: plex
+    sources:
+    - https://hub.docker.com/r/linuxserver/plex/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/plex-7.1.0/plex-7.1.0.tgz
+    version: 7.1.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1111,6 +1306,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-06-12T10:41:25.125485707Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: 8b1d22fcea96623568120c485338c9e8c092f817064defb5af6fe91d5955509c
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/prowlarr-5.1.0/prowlarr-5.1.0.tgz
+    version: 5.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Updated docker image to 1.0.1.
     apiVersion: v2
     appVersion: 1.0.1
@@ -1176,6 +1404,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 4.5.0
+    created: "2023-06-12T10:41:25.246688392Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: 476593df5e0c2e6fafae6e131af9280ecff2d75f9c1c698bcea67f92c4c1ab99
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.1.0/qbittorrent-14.1.0.tgz
+    version: 14.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Updated docker image to 4.5.0.
     apiVersion: v2
     appVersion: 4.5.0
@@ -1234,6 +1493,38 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/qbittorrent-14.0.0/qbittorrent-14.0.0.tgz
     version: 14.0.0
   radarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 4.3.2
+    created: "2023-06-12T10:41:25.3558355Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: feec54e3b64584934506f3d0fe22ef4049b9093df7e19d4d4d1fd0053de10079
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/radarr-17.1.0/radarr-17.1.0.tgz
+    version: 17.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1329,6 +1620,40 @@ entries:
   readarr:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 0.1.1-nightly
+    created: "2023-06-12T10:41:25.477491592Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Radarr to work with Books & AudioBooks
+    digest: 7e99e5b58da6273fa43f33307283e30de006b5a1699a03cfa2e4e992aa6988a7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
+    icon: https://readarr.com/img/logo.png
+    keywords:
+    - readarr
+    - torrent
+    - usenet
+    - AudioBooks
+    - ebooks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mark@markmcw.uk
+      name: mcmarkj
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/readarr-7.1.0/readarr-7.1.0.tgz
+    version: 7.1.0
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: chart version fix
     apiVersion: v2
@@ -1397,6 +1722,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update docker image to ghcr.io/onedr0p
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 3.0.9
+    created: "2023-06-12T10:41:25.600036397Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 07d4da1632aa8b268452e6d6159fd6dc9232cbb61fe84ef6555f742d683b5ab3
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr
+    icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
+    keywords:
+    - sonarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/sonarr-17.1.0/sonarr-17.1.0.tgz
+    version: 17.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
     apiVersion: v2
     appVersion: 3.0.9
@@ -1457,6 +1814,38 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
   tdarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update README
+    apiVersion: v2
+    appVersion: 2.00.18.2
+    created: "2023-06-12T10:41:25.726046052Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Tdarr is a self hosted web-app for automating media library transcode/remux
+      management and making sure your files are exactly how you need them to be in
+      terms of codecs/streams/containers etc.
+    digest: f75a4789d4ec191107e8f9d554e6b406c44a39d1d96d8ddd0b8b2a03fdf27052
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/tdarr
+    icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+    keywords:
+    - transcoding
+    - remux
+    - media
+    - video
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tdarr
+    sources:
+    - https://www.github.com/HaveAGitGat/Tdarr
+    - https://tdarr.io/docs/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tdarr-5.0.1/tdarr-5.0.1.tgz
+    version: 5.0.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1644,4 +2033,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T10:36:12.269547621Z"
+generated: "2023-06-12T10:41:25.962635637Z"
