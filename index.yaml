@@ -1251,6 +1251,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 1.32.3.7162-b0a36929b
+    apiVersion: v2
+    appVersion: 1.32.3.7162-b0a36929b
+    created: "2023-06-12T11:29:10.695018499Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Plex Media Server
+    digest: 0a7adca2da56b05b200e2de625d26936573adfb90036fc3cb8a4f88603c2a87d
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/plex
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    - plex-media-server
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: plex
+    sources:
+    - https://hub.docker.com/r/linuxserver/plex/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/plex-7.1.1/plex-7.1.1.tgz
+    version: 7.1.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image to ghcr.io/onedr0p
         - kind: changed
           description: Update README
@@ -2096,4 +2124,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T11:27:46.089168529Z"
+generated: "2023-06-12T11:29:10.695133106Z"
