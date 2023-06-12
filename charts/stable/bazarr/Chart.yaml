@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.1.4
 description: Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 name: bazarr
-version: 11.1.0
+version: 11.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - bazarr
@@ -17,7 +17,7 @@ sources:
   - https://github.com/morpheus65535/bazarr
   - https://github.com/onedr0p/containers
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common
@@ -26,4 +26,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Switch to onedr0p images
+      description: Update README
