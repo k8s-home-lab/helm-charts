@@ -1,5 +1,35 @@
 apiVersion: v1
 entries:
+  audiobookshelf:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 2.2.23
+    created: "2023-06-13T21:31:42.338467434Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Self-hosted audiobook server for managing and playing your audiobooks
+    digest: 27b27a8b436e117a3a5ca8dd5097d9a1e752914c3dfbfa3b7ad9487d9f877710
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/audiobookshelf
+    icon: https://github.com/advplyr/audiobookshelf/blob/master/static/Logo.png
+    keywords:
+    - audiobookshelf
+    - books
+    - audiobooks
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: audiobookshelf
+    sources:
+    - https://github.com/advplyr/audiobookshelf
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/audiobookshelf-2.0.0/audiobookshelf-2.0.0.tgz
+    version: 2.0.0
   bazarr:
   - annotations:
       artifacthub.io/changes: |-
@@ -2247,4 +2277,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-12T11:35:34.360063267Z"
+generated: "2023-06-13T21:31:42.338626635Z"
