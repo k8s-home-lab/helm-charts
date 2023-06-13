@@ -8,11 +8,11 @@
 image:
   # -- image repository
   repository: vaultwarden/server
-  # -- image pull policy
-  pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
   tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
 
 strategy:
   type: Recreate
