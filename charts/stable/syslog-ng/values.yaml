@@ -20,9 +20,9 @@ env:
   # -- Set the container timezone
   TZ: UTC
   # -- Set the container user id
-  PUID: "1001"
+  PUID: "568"
   # -- Set the container group id
-  PGID: "1001"
+  PGID: "568"
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
