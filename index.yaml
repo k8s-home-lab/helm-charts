@@ -1540,6 +1540,42 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/organizr-8.0.0/organizr-8.0.0.tgz
     version: 8.0.0
+  paperless:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 1.15.1
+    created: "2023-06-13T23:34:50.355435322Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 5af74822d15afce8570080c248b33e218c822be592df5f67ac190b2acfac9172
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.0.0/paperless-10.0.0.tgz
+    version: 10.0.0
   plex:
   - annotations:
       artifacthub.io/changes: |
@@ -2540,4 +2576,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:29:05.182890203Z"
+generated: "2023-06-13T23:34:50.355655135Z"
