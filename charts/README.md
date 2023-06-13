@@ -9,6 +9,7 @@
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
 | [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
 | [freshrss](stable/freshrss) | FreshRSS is a self-hosted RSS feed aggregator |
+| [frigate](stable/frigate) | NVR With Realtime Object Detection for IP Cameras |
 | [gitea](stable/gitea) | Gitea self-hosted github-styled git repository manager |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
