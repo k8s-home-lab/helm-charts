@@ -1576,6 +1576,43 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.0.0/paperless-10.0.0.tgz
     version: 10.0.0
+  photoprism:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 230607-ce
+    created: "2023-06-13T23:37:32.166415991Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 0ecf727827be680f4ca3245fa86d7feeb2f978743e217d13b15af501ff6a1e20
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-8.0.0/photoprism-8.0.0.tgz
+    version: 8.0.0
   plex:
   - annotations:
       artifacthub.io/changes: |
@@ -2576,4 +2613,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:34:50.355655135Z"
+generated: "2023-06-13T23:37:32.166555591Z"
