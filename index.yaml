@@ -2547,6 +2547,43 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/tdarr-5.0.0/tdarr-5.0.0.tgz
     version: 5.0.0
+  vaultwarden:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 1.28.1
+    created: "2023-06-13T23:47:39.112087444Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 176828f6a3de38762bd5274f0a958e0d4670869969625185b7576816fc7ac4e9
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.0.0/vaultwarden-6.0.0.tgz
+    version: 6.0.0
   wireguard:
   - annotations:
       artifacthub.io/changes: |-
@@ -2702,4 +2739,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:45:20.975179138Z"
+generated: "2023-06-13T23:47:39.112309458Z"
