@@ -12,6 +12,7 @@
 | [frigate](stable/frigate) | NVR With Realtime Object Detection for IP Cameras |
 | [ghost](stable/ghost) | Ghost is a blogging and publishing software |
 | [gitea](stable/gitea) | Gitea self-hosted github-styled git repository manager |
+| [home-assistant](stable/home-assistant) | Home Assistant |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
