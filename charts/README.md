@@ -7,6 +7,7 @@
 | [beets](stable/beets) | beets helm package |
 | [calibre-web](stable/calibre-web) | Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. |
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
+| [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
 | [gitea](stable/gitea) | Gitea self-hosted github-styled git repository manager |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
