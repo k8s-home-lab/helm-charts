@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 4.37.0
+appVersion: 5.51.1
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 2.1.2
+version: 3.0.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -14,8 +14,8 @@ sources:
   - https://github.com/TryGhost/Ghost
   - https://github.com/TryGhost/Ghost-CLI
 maintainers:
-  - name: samip5
-    email: sm+k8s-at-home+git@samip.fi
+  - name: k8s-home-lab
+    email: admin@aste.tools
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -25,6 +25,6 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Add chart
