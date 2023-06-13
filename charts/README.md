@@ -27,6 +27,7 @@
 | [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
 | [sonarr](stable/sonarr) | Smart PVR for newsgroup and bittorrent users |
 | [syncthing](stable/syncthing) | Open Source Continuous File Synchronization |
+| [syslog-ng](stable/syslog-ng) | syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs. |
 | [tdarr](stable/tdarr) | Tdarr is a self hosted web-app for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers etc. |
 | [wireguard-pia](stable/wireguard-pia) | Fast, modern, secure VPN tunnel with PIA connect scripts |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
