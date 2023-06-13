@@ -18,6 +18,7 @@
 | [maddy](stable/maddy) | Maddy Mail Server |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
 | [organizr](stable/organizr) | HTPC/Homelab Services Organizer |
+| [paperless](stable/paperless) | Paperless - Index and archive all of your scanned paper documents |
 | [plex](stable/plex) | Plex Media Server |
 | [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
 | [qbittorrent](stable/qbittorrent) | qBittorrent is a cross-platform free and open-source BitTorrent client |
