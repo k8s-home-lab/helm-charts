@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: organizr/organizr
   # -- image tag
-  tag: latest
+  tag:
   # -- image pull policy
   pullPolicy: Always
 
@@ -19,9 +19,9 @@ env:
   # -- Set the container timezone
   TZ: UTC
   # -- Specify the user ID the application will run as
-  PUID: "1001"
+  PUID: "568"
   # -- Specify the group ID the application will run as
-  PGID: "1001"
+  PGID: "568"
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
