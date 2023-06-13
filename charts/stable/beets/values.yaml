@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: linuxserver/beets
   # -- image tag
-  tag: 1.5.0
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -18,10 +18,10 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
-  # -- Set the container user id
-  PUID: "1001"
-  # -- Set the container group id
-  PGID: "1001"
+  # -- Specify the user ID the application will run as
+  PUID: "568"
+  # -- Specify the group ID the application will run as
+  PGID: "568"
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
