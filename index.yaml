@@ -2393,6 +2393,36 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/sonarr-17.0.0/sonarr-17.0.0.tgz
     version: 17.0.0
+  syncthing:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 1.23.5
+    created: "2023-06-13T23:41:36.991071286Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Open Source Continuous File Synchronization
+    digest: 3bdb97752046bb2a2a500e436ceb46c91cd8d1211f1c5982c85705995ab98cf8
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - syncthing
+    - file sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://github.com/syncthing/syncthing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syncthing-4.0.0/syncthing-4.0.0.tgz
+    version: 4.0.0
   tdarr:
   - annotations:
       artifacthub.io/changes: |
@@ -2613,4 +2643,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:37:32.166555591Z"
+generated: "2023-06-13T23:41:36.991287285Z"
