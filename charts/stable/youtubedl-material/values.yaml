@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: tzahi12345/youtubedl-material
   # -- image tag
-  tag: "4.2"
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -19,9 +19,9 @@ env:
   # -- Set the container timezone
   TZ: UTC
   # -- Specify the user ID the application will run as
-  UID: "1000"
+  UID: "568"
   # -- Specify the group ID the application will run as
-  GID: "1000"
+  GID: "568"
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
