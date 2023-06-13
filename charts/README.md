@@ -15,6 +15,7 @@
 | [home-assistant](stable/home-assistant) | Home Assistant |
 | [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
+| [maddy](stable/maddy) | Maddy Mail Server |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
 | [plex](stable/plex) | Plex Media Server |
 | [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
