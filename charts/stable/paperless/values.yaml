@@ -8,11 +8,11 @@
 image:
   # -- image repository
   repository: ghcr.io/paperless-ngx/paperless-ngx
-  # -- image pull policy
-  pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
   tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
 
 # -- See the following files for additional environment variables:
 # https://github.com/paperless-ngx/paperless-ngx/tree/main/docker/compose/
