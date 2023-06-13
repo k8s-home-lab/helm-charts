@@ -17,6 +17,7 @@
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
 | [maddy](stable/maddy) | Maddy Mail Server |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
+| [organizr](stable/organizr) | HTPC/Homelab Services Organizer |
 | [plex](stable/plex) | Plex Media Server |
 | [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
 | [qbittorrent](stable/qbittorrent) | qBittorrent is a cross-platform free and open-source BitTorrent client |
