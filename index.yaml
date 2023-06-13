@@ -701,6 +701,40 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/frigate-9.0.0/frigate-9.0.0.tgz
     version: 9.0.0
+  ghost:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 5.51.1
+    created: "2023-06-13T23:22:24.043738264Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    description: Ghost is a blogging and publishing software
+    digest: b1dcc775b2054852b5df88e7d4dab46103c162846d8c38227353b296cce8dea2
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-3.0.0/ghost-3.0.0.tgz
+    version: 3.0.0
   gitea:
   - annotations:
       artifacthub.io/changes: |
@@ -2401,4 +2435,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T21:44:32.035760685Z"
+generated: "2023-06-13T23:22:24.043842366Z"
