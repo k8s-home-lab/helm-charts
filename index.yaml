@@ -1511,6 +1511,35 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/ombi-12.0.0/ombi-12.0.0.tgz
     version: 12.0.0
+  organizr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-06-13T23:29:05.182771102Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: HTPC/Homelab Services Organizer
+    digest: 599b9e413eef762fa3dceb85054e27db7f614ca43d1ca45b3fb9da9c1c5ab80c
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/organizr
+    icon: https://github.com/causefx/Organizr/blob/v2-master/plugins/images/organizr/logo.png?raw=true
+    keywords:
+    - organizr
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: organizr
+    sources:
+    - https://github.com/causefx/Organizr
+    - https://hub.docker.com/r/organizr/organizr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/organizr-8.0.0/organizr-8.0.0.tgz
+    version: 8.0.0
   plex:
   - annotations:
       artifacthub.io/changes: |
@@ -2511,4 +2540,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:26:13.034457077Z"
+generated: "2023-06-13T23:29:05.182890203Z"
