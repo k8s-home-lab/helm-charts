@@ -2452,6 +2452,36 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/syslog-ng-2.0.0/syslog-ng-2.0.0.tgz
     version: 2.0.0
+  tautulli:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: v2.10.5
+    created: "2023-06-13T23:45:20.974987839Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Python based monitoring and tracking tool for Plex Media Server
+    digest: 0cc0ace804715b8c954ce26931f08b189066590de267a1e06b947b79c70d900d
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/tautulli
+    icon: https://github.com/Tautulli/Tautulli/blob/master/data/interfaces/default/images/logo.png?raw=true
+    keywords:
+    - tautulli
+    - plex
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tautulli
+    sources:
+    - https://github.com/Tautulli/Tautulli
+    - https://github.com/k8s-at-home/container-images
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tautulli-12.0.0/tautulli-12.0.0.tgz
+    version: 12.0.0
   tdarr:
   - annotations:
       artifacthub.io/changes: |
@@ -2672,4 +2702,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:43:26.856463083Z"
+generated: "2023-06-13T23:45:20.975179138Z"
