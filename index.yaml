@@ -1375,6 +1375,38 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/lidarr-15.0.0/lidarr-15.0.0.tgz
     version: 15.0.0
+  maddy:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 0.7.0
+    created: "2023-06-13T23:26:13.034283677Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Maddy Mail Server
+    digest: b00ad35a8e83b2a7cb73f068c3580d529586ad5542ca6c18935256e90d2b9bdb
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/maddy
+    keywords:
+    - maddy
+    - mail
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: maddy
+    sources:
+    - https://github.com/foxcpp/maddy
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/maddy-4.0.0/maddy-4.0.0.tgz
+    version: 4.0.0
   ombi:
   - annotations:
       artifacthub.io/changes: |
@@ -2479,4 +2511,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T23:24:46.909883873Z"
+generated: "2023-06-13T23:26:13.034457077Z"
