@@ -33,6 +33,7 @@
 | [vaultwarden](stable/vaultwarden) | Vaultwarden is a Bitwarden compatable server in Rust |
 | [wireguard-pia](stable/wireguard-pia) | Fast, modern, secure VPN tunnel with PIA connect scripts |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
+| [youtubedl-material](stable/youtubedl-material) | Self-hosted YouTube downloader built on Material Design |
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
