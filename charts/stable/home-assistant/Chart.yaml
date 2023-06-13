@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: 2022.5.4
+appVersion: 2023.6.1
 description: Home Assistant
 name: home-assistant
-version: 13.4.2
+version: 14.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -16,8 +16,8 @@ sources:
   - https://github.com/cdr/code-server
   - https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
 maintainers:
-  - name: billimek
-    email: jeff@billimek.com
+  - name: k8s-home-lab
+    email: admin@aste.tools
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -35,6 +35,6 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: influxdb.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Add chart
