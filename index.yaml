@@ -606,6 +606,38 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/flaresolverr-6.0.0/flaresolverr-6.0.0.tgz
     version: 6.0.0
+  flood:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 4.7.0
+    created: "2023-06-13T21:36:49.637384489Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Flood is a monitoring service for various torrent clients
+    digest: 85617ac389d76123e86e9fe339fb42928c0a25c66ae8d279ba0513c3e47e9d63
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flood
+    icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
+    keywords:
+    - flood
+    - rtorrent
+    - qbittorrent
+    - transmission
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flood
+    sources:
+    - https://github.com/jesec/flood
+    - https://hub.docker.com/r/jesec/flood
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flood-7.0.0/flood-7.0.0.tgz
+    version: 7.0.0
   gitea:
   - annotations:
       artifacthub.io/changes: |
@@ -2306,4 +2338,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T21:34:33.151632087Z"
+generated: "2023-06-13T21:36:49.637668687Z"
