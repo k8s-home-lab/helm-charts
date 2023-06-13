@@ -169,6 +169,35 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/bazarr-11.0.0/bazarr-11.0.0.tgz
     version: 11.0.0
+  beets:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: 1.6.0
+    created: "2023-06-13T21:34:33.151484787Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: beets helm package
+    digest: f05c91ddbd087a54b1559eebc02febd722e7e128b7eda5b0fe70effa7d1231d6
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/beets
+    icon: https://pbs.twimg.com/profile_images/934307246/logo-square_400x400.png
+    keywords:
+    - beets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: beets
+    sources:
+    - https://github.com/beetbox/beets
+    - https://github.com/linuxserver/docker-beets
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/beets-2.0.0/beets-2.0.0.tgz
+    version: 2.0.0
   brave-sync:
   - annotations:
       artifacthub.io/changes: |
@@ -2277,4 +2306,4 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/wireguard-pia-1.5.2/wireguard-pia-1.5.2.tgz
     version: 1.5.2
-generated: "2023-06-13T21:31:42.338626635Z"
+generated: "2023-06-13T21:34:33.151632087Z"
