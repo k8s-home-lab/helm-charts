@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: dev
+appVersion: latest
 description: shinobi helm package
 name: shinobi
-version: 1.2.2
+version: 2.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - shinobi
@@ -12,13 +12,13 @@ icon: https://shinobi.org/icon
 sources:
   - https://gitlab.com/Shinobi-Systems/Shinobi-Installer
 maintainers:
-  - name: giannoug
-    email: 509474+giannoug@users.noreply.github.com
+  - name: k8s-home-lab
+    email: admin@aste.tools
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Add chart
