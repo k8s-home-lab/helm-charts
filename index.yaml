@@ -2268,6 +2268,34 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/readarr-7.0.0/readarr-7.0.0.tgz
     version: 7.0.0
+  shinobi:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Add chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-06-17T13:56:08.431966448Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: shinobi helm package
+    digest: 21fe4157cff227c32fd3f6e48a7fa3ef6d9892b92e75de627ec2baef23639376
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/shinobi
+    icon: https://shinobi.org/icon
+    keywords:
+    - shinobi
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: shinobi
+    sources:
+    - https://gitlab.com/Shinobi-Systems/Shinobi-Installer
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/shinobi-2.0.0/shinobi-2.0.0.tgz
+    version: 2.0.0
   sonarr:
   - annotations:
       artifacthub.io/changes: |
@@ -2768,4 +2796,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-06-13T23:49:31.364732152Z"
+generated: "2023-06-17T13:56:08.43225645Z"
