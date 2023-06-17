@@ -25,6 +25,7 @@
 | [qbittorrent](stable/qbittorrent) | qBittorrent is a cross-platform free and open-source BitTorrent client |
 | [radarr](stable/radarr) | A fork of Sonarr to work with movies à la Couchpotato |
 | [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
+| [shinobi](stable/shinobi) | shinobi helm package |
 | [sonarr](stable/sonarr) | Smart PVR for newsgroup and bittorrent users |
 | [syncthing](stable/syncthing) | Open Source Continuous File Synchronization |
 | [syslog-ng](stable/syslog-ng) | syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs. |
