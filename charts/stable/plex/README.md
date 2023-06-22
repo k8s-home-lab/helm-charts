@@ -1,6 +1,6 @@
 # plex
 
-![Version: 7.1.1](https://img.shields.io/badge/Version-7.1.1-informational?style=flat-square) ![AppVersion: 1.32.3.7162-b0a36929b](https://img.shields.io/badge/AppVersion-1.32.3.7162--b0a36929b-informational?style=flat-square)
+![Version: 7.1.2](https://img.shields.io/badge/Version-7.1.2-informational?style=flat-square) ![AppVersion: 1.32.4.7195-7c8f9d3b6](https://img.shields.io/badge/AppVersion-1.32.4.7195--7c8f9d3b6-informational?style=flat-square)
 
 Plex Media Server
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 7.1.1
+### Version 7.1.2
 
 #### Added
 
@@ -97,7 +97,7 @@ N/A
 
 #### Changed
 
-* Update image to 1.32.3.7162-b0a36929b
+* Update image to 1.32.4.7195-7c8f9d3b6
 
 #### Fixed
 
