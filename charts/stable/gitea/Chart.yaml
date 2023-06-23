@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.16.6
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.1.0
+version: 2.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -33,6 +33,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `postgresql` chart dependency to version `12.4.2`.
-    - kind: changed
-      description: Upgraded `redis` chart dependency to version `17.10.1`.
+      description: update docker image codercom/code-server to v4.13.0
