@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.16.6
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.1.2
+version: 2.1.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -33,4 +33,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
+      description: update docker image codercom/code-server to v4.13.0

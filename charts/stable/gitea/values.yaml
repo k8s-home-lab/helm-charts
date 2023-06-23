@@ -108,7 +108,7 @@ addons:
       # -- Specify the code-server image
       repository: codercom/code-server
       # -- Specify the code-server image tag
-      tag: 4.12.0
+      tag: 4.13.0
       # -- Specify the code-server image pull policy
       pullPolicy: IfNotPresent
 
