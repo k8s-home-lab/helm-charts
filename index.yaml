@@ -739,6 +739,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: update docker image codercom/code-server to v4.13.0
+    apiVersion: v2
+    appVersion: 1.16.6
+    created: "2023-06-23T08:46:16.345741399Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.10.3
+    description: Gitea self-hosted github-styled git repository manager
+    digest: a932327bb81e679ddd4c95a1d0b88e1063be67fb7c4e2684c8853a1a1bd2bc0d
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.1.3/gitea-2.1.3.tgz
+    version: 2.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update README
     apiVersion: v2
     appVersion: 1.16.6
@@ -2824,4 +2864,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-06-22T12:18:30.884404738Z"
+generated: "2023-06-23T08:46:16.346080905Z"
