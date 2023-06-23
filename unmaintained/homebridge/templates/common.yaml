@@ -1,0 +1,25 @@
+{{/* Make sure all variables are set properly */}}
+{{- include "common.values.setup" . }}
+
+{{/* Append the configMap volume to the volumes */}}
+{{- define "homebridge.harcodedValues" -}}
+  {{- if .Values.configmap.scripts.enabled }}
+  {{/* merge homebridge specific annotations with podAnnotations*/}}
+  podAnnotations:
+    configmap/checksum: "{{ .Values.configmap.scripts.data | toYaml | sha256sum }}"
+
+  {{/* Append the configMap volume to the volumes */}}
+  persistence:
+    scripts:
+      enabled: true
+      type: "configMap"
+      name: "{{ printf "%v-scripts" (include "common.names.fullname" .) }}"
+      mountPath: "/homebridge/startup.sh"
+      subPath: "startup.sh"
+      defaultMode: 0755
+  {{- end }}
+{{- end -}}
+{{- $_ := mergeOverwrite .Values (include "homebridge.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}

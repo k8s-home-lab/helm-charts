@@ -5,18 +5,18 @@ name: ${CHARTNAME}
 version: 1.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
-- ${CHARTNAME}
-home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/${CHARTNAME}
+  - ${CHARTNAME}
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/${CHARTNAME}
 icon: https://${CHARTNAME}.org/icon
 sources:
-- https://github.com/${CHARTNAME}/${CHARTNAME}-docker
+  - https://github.com/${CHARTNAME}/${CHARTNAME}-docker
 maintainers:
-- name: ${CHARTNAME}
-  email: ${CHARTNAME}@${CHARTNAME}.com
+  - name: ${CHARTNAME}
+    email: ${CHARTNAME}@${CHARTNAME}.com
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.5.2
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
 annotations:
   artifacthub.io/changes: |
     - kind: added

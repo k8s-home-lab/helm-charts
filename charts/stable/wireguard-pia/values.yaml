@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/aste88/wireguard-pia
+  repository: ghcr.io/k8s-home-lab/wireguard-pia
   # -- image tag
   tag:
   # -- image pull policy
@@ -16,9 +16,9 @@ image:
 # @default -- See below
 env:
   # -- Set the container timezone
-  TZ: UTC  # -- Sets UID Photoprism runs under.
+  TZ: UTC # -- Sets UID Photoprism runs under.
   # -- Sets UMASK.
-  UMASK:  # 0000
+  UMASK: # 0000
   # -- Override the backend used by iptables. Valid values are nft and legacy
   IPTABLES_BACKEND: nft
   # -- Enable a killswitch that kills all trafic when the VPN is not connected
@@ -77,8 +77,8 @@ ingress:
 securityContext:
   capabilities:
     add:
-    - NET_ADMIN
-    - SYS_MODULE
+      - NET_ADMIN
+      - SYS_MODULE
 
 # -- Configures the probes for the main Pod.
 # @default -- See values.yaml
@@ -91,7 +91,12 @@ probes:
     ## If you selected custom: true, this field holds the definition of the livenessProbe.
     spec:
       exec:
-        command: ["bash", "-c", "if [[ $(curl -s https://ipinfo.io) ]]; then exit 0; else exit $?; fi"]
+        command:
+          [
+            "bash",
+            "-c",
+            "if [[ $(curl -s https://ipinfo.io) ]]; then exit 0; else exit $?; fi",
+          ]
       initialDelaySeconds: 0
       timeoutSeconds: 1
       periodSeconds: 5

@@ -1,0 +1,26 @@
+---
+apiVersion: v2
+appVersion: 2.0.14
+description: Eclipse Mosquitto - An open source MQTT broker
+name: mosquitto
+version: 4.8.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - mosquitto
+  - MQTT
+  - eclipse-iot
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto
+icon: https://raw.githubusercontent.com/eclipse/mosquitto/master/logo/mosquitto-logo-min.svg
+sources:
+  - https://github.com/eclipse/mosquitto
+maintainers:
+  - name: bjw-s
+    email: me@bjw-s.dev
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

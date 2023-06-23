@@ -3,18 +3,18 @@ apiVersion: v2
 appVersion: 0.6.19
 description: Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 name: calibre-web
-version: 9.0.1
+version: 9.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - calibre
   - ebook
-home: https://github.com/Aste88/helm-charts/tree/master/charts/stable/calibre-web
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/calibre-web
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
 sources:
   - https://github.com/janeczku/calibre-web
   - https://hub.docker.com/r/linuxserver/calibre-web/
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: fixed
-      description: Change chart source to ghcr.io.
+      description: Update README

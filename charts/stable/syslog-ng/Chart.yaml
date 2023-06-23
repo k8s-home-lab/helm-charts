@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: 3.38.1
+description: syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs.
+name: syslog-ng
+version: 2.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - syslog-ng
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/syslog-ng
+icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png
+sources:
+  - https://hub.docker.com/r/linuxserver/syslog-ng
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Add chart

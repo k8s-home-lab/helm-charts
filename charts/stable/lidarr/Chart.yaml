@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 1.0.2
+appVersion: 1.1.4.3027
 description: Looks and smells like Sonarr but made for music
 name: lidarr
-version: 15.0.1
+version: 15.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - lidarr
@@ -12,9 +12,9 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
 icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
 sources:
   - https://github.com/Lidarr/Lidarr
-  - https://fleet.linuxserver.io/
+  - https://github.com/onedr0p/containers
 maintainers:
-  - name: Aste88
+  - name: k8s-home-lab
     email: admin@aste.tools
 dependencies:
   - name: common
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update docker image ghcr.io/onedr0p/exportarr to v1.3.1
+      description: Update image to 1.1.4.3027

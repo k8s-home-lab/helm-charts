@@ -1,0 +1,9 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+To view more environment variables [see here](https://github.com/k8s-at-home/container-images/tree/main/apps/transmission/settings.json.tmpl)
+{{- end -}}

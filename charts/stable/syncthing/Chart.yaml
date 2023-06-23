@@ -1,0 +1,26 @@
+---
+apiVersion: v2
+appVersion: 1.23.5
+description: Open Source Continuous File Synchronization
+name: syncthing
+version: 4.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - syncthing
+  - file sync
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/syncthing
+icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+sources:
+  - https://syncthing.net/
+  - https://github.com/syncthing/syncthing
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Add chart

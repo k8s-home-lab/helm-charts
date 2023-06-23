@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 0.1.1-nightly
+appVersion: 0.1.8.1889
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
-version: 7.0.1
+version: 7.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - readarr
@@ -14,7 +14,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
 icon: https://readarr.com/img/logo.png
 sources:
   - https://github.com/Readarr/Readarr
-  - https://fleet.linuxserver.io/
+  - https://github.com/onedr0p/containers
 maintainers:
   - name: mcmarkj
     email: mark@markmcw.uk
@@ -24,5 +24,5 @@ dependencies:
     version: 4.5.2
 annotations:
   artifacthub.io/changes: |
-    - kind: fixed
-      description: chart version fix
+    - kind: changed
+      description: Update image to 0.1.8.1889

@@ -1,0 +1,45 @@
+{{- include "common.values.setup" . -}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "common.names.fullname" . }}-config
+  labels:
+    {{- include "common.labels" . | nindent 4 }}
+data:
+  Caddyfile: |-
+    {
+      admin off
+    {{- if .Values.caddy.noTls }}
+      auto_https off
+    {{- end }}
+    }
+
+    :{{ .Values.service.main.ports.http.port }} {
+        log {
+            output stdout
+        }
+
+        @api {
+            path /api/*
+            path /.well-known/*
+            path /dav/*
+        }
+
+        header {
+            # Remove Server header
+            -Server
+        }
+
+        # API
+        handle @api {
+            reverse_proxy localhost:3456
+        }
+
+        # Filtron
+        handle {
+            reverse_proxy localhost:80
+        }
+    }
+  Vikunja.yaml: |-
+{{ .Values.vikunja.config | indent 4 }}

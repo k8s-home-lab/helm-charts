@@ -1,0 +1,26 @@
+---
+apiVersion: v2
+appVersion: 2.2.23
+description: Self-hosted audiobook server for managing and playing your audiobooks
+name: audiobookshelf
+version: 2.0.0
+kubeVersion: ">= 1.16.0-0"
+keywords:
+  - audiobookshelf
+  - books
+  - audiobooks
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/audiobookshelf
+icon: https://github.com/advplyr/audiobookshelf/blob/master/static/Logo.png
+sources:
+  - https://github.com/advplyr/audiobookshelf
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Add chart

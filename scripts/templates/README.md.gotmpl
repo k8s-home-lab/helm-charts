@@ -1,13 +1,13 @@
 {{- define "custom.repository.organization" -}}
-Aste88
+k8s-home-lab
 {{- end -}}
 
 {{- define "custom.repository.url" -}}
-https://github.com/Aste88/helm-charts
+https://github.com/k8s-home-lab/helm-charts
 {{- end -}}
 
 {{- define "custom.helm.url" -}}
-https://aste88.github.io/helm-charts/
+https://k8s-home-lab.github.io/helm-charts/
 {{- end -}}
 
 {{- define "custom.helm.path" -}}
@@ -15,7 +15,7 @@ https://aste88.github.io/helm-charts/
 {{- end -}}
 
 {{- define "custom.notes" -}}
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/Aste88/helm-charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-home-lab/helm-charts/issues/new/choose)**
 {{- end -}}
 
 {{- define "custom.requirements" -}}
@@ -101,7 +101,7 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/Aste88/helm-charts/issues/new/choose)
+- Open an [issue](https://github.com/k8s-home-lab/helm-charts/issues/new/choose)
 {{- end -}}
 
 {{- define "custom.changelog" -}}
@@ -131,7 +131,7 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/aste88-helm-charts/{{- template "chart.name" . }}?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/k8s-home-lab-helm-charts/{{- template "chart.name" . }}?modal=changelog)
 
 {{- end -}}
 

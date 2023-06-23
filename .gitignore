@@ -18,3 +18,4 @@ charts/**/charts
 .envrc
 Gemfile.lock
 angel.yaml
+.metals/metals.mv.db

@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: 4.15.5
+description: A simple in-cluster Samba server
+name: samba
+version: 6.2.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - samba
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/samba
+icon: https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Samba_logo_2010.svg/500px-Samba_logo_2010.svg.png
+sources:
+  - https://github.com/dperson/samba
+maintainers:
+  - name: billimek
+    email: jeff@billimek.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2

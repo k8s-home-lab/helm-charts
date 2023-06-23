@@ -1,0 +1,55 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### Running with separate MongoDB
+
+By default the Unifi controller runs an internal MongoDB.
+If you wish to run the chart with a separate MongoDB instance our chart provides the option to enable a MongoDB instance by adding the following in your `values.yaml`:
+
+```yaml
+mongodb:
+  enabled: true
+```
+
+(For more configuration options see the [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb).)
+
+If you do not specify any other configuration, the required environment variables will be inferred automatically.
+It is also possible to override the environment variables to configure the image. See [here](https://github.com/jacobalberty/unifi-docker#external-mongodb-environment-variables) for more details.
+
+### Regarding the services
+
+By default it is not possible to combine TCP and UDP ports on a service with `type: LoadBalancer`. This can be solved in a number of ways:
+
+1. Create a separate service containing the UDP ports. This could be done by setting disabling the UDP ports under `service.main.ports` and adding the following in your `values.yaml`:
+
+```yaml
+service:
+  udp:
+    enabled: true
+    type: LoadBalancer
+    # <your other service configuration>
+    ports:
+      stun:
+        enabled: true
+        port: 3478
+        protocol: UDP
+      syslog:
+        enabled: true
+        port: 5514
+        protocol: UDP
+      discovery:
+        enabled: true
+        port: 10001
+        protocol: UDP
+```
+
+2. Since Kubernetes 1.20 there is a feature gate that can be enabled to allow TCP and UDP ports to coexist on Services with `type: Loadbalancer`.
+   You will need to enable the `MixedProtocolLBService` feature gate in order to achieve this.
+
+   For more information about feature gates, please see [the docs](https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/).
+
+{{- end -}}

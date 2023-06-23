@@ -1,0 +1,51 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: eclipse-mosquitto
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- Configures service settings for the chart. Normally this does not need to be modified.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        enabled: false
+      mqtt:
+        enabled: true
+        port: 1883
+
+auth:
+  # -- By enabling this, `allow_anonymous` gets set to `false` in the mosquitto config.
+  enabled: false
+
+# -- By enabling this, authentication and access control settings will be controlled on a per-listener basis
+perListenerSettings: false
+
+# -- When enabled, this adds the `listener` option to the mosquitto config.
+# Change this to false when using TLS.
+addListener: true
+
+persistence:
+  # -- Configure a persistent volume to place mosquitto data in.
+  # When enabled, this enables `persistence` and `persistence_location` in the mosquitto config.
+  # @default -- See values.yaml
+  data:
+    enabled: false
+    mountPath: /mosquitto/data
+  # -- Configure a persistent volume to place *.conf mosquitto-config-files in.
+  # When enabled, this gets set as `include_dir` in the mosquitto config.
+  # @default -- See values.yaml
+  configinc:
+    enabled: false
+    mountPath: /mosquitto/configinc
