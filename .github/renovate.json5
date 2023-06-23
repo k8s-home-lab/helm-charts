@@ -13,7 +13,7 @@
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
   "helm-values": {
-    "fileMatch": ["charts/.+/values\\.ya?ml$""]
+    "fileMatch": ["charts/.+/values\\.ya?ml$"]
   },
   "packageRules": [
     // Setup datasources
