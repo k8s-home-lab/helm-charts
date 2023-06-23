@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.1.2](https://img.shields.io/badge/Version-2.1.2-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
+![Version: 2.1.3](https://img.shields.io/badge/Version-2.1.3-informational?style=flat-square) ![AppVersion: 1.16.6](https://img.shields.io/badge/AppVersion-1.16.6-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -100,7 +100,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 | addons.codeserver.git.deployKeySecret | string | `""` | Existing secret containing SSH private key The chart expects it to be present under the `id_rsa` key. |
 | addons.codeserver.image.pullPolicy | string | `"IfNotPresent"` | Specify the code-server image pull policy |
 | addons.codeserver.image.repository | string | `"codercom/code-server"` | Specify the code-server image |
-| addons.codeserver.image.tag | string | `"4.12.0"` | Specify the code-server image tag |
+| addons.codeserver.image.tag | string | `"4.13.0"` | Specify the code-server image tag |
 | addons.codeserver.ingress.enabled | bool | `false` | Enable an ingress for the code-server add-on. |
 | addons.codeserver.ingress.labels | object | `{}` |  kubernetes.io/tls-acme: "true" |
 | addons.codeserver.service.enabled | bool | `true` | Enable a service for the code-server add-on. |
@@ -123,7 +123,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 2.1.2
+### Version 2.1.3
 
 #### Added
 
@@ -131,7 +131,7 @@ N/A
 
 #### Changed
 
-* Update README
+* update docker image codercom/code-server to v4.13.0
 
 #### Fixed
 
