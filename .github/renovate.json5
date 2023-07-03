@@ -15,6 +15,9 @@
   "helm-values": {
     "fileMatch": ["charts/.+/values\\.ya?ml$"]
   },
+  "docker": {
+    "fileMatch": ["/!(unmaintained)/"]
+  },
   "packageRules": [
     // Setup datasources
     {
