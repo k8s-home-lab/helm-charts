@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: dchesterton/amcrest2mqtt
   # -- image tag
-  tag: 1.0.9
+  tag: 1.0.16
   # -- image pull policy
   pullPolicy: IfNotPresent
 
