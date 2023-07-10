@@ -20,7 +20,7 @@ image:
   # -- image repository
   repository: jesec/rtorrent-flood
   # -- image tag
-  tag: latest@sha256:f0c894ec459e52d85bc69685247ddbd8e8fcf3709b50bf8ee8b0df3bf69b7b49
+  tag: latest@sha256:96725d847ac762a90d98bd61d2a8b2e8bd21af97cdf341a181ff220f3f02e5ce
   # -- image pull policy
   pullPolicy: IfNotPresent
 
