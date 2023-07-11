@@ -15,7 +15,7 @@
   "helm-values": {
     "fileMatch": ["charts/.+/values\\.ya?ml$"]
   },
-  "ignorePaths": ["/unmaintained/"],
+  "ignorePaths": ["unmaintained/"],
   "packageRules": [
     // Setup datasources
     {
