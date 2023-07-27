@@ -1657,6 +1657,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 1.32.5.7349-8f4248874
+    apiVersion: v2
+    appVersion: 1.32.5.7349-8f4248874
+    created: "2023-07-27T15:13:05.103762985Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Plex Media Server
+    digest: 951f062819d499c096de57bdd103c1df14a6a94504a5356f2910fbf81314dbd5
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/plex
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    - plex-media-server
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: plex
+    sources:
+    - https://hub.docker.com/r/linuxserver/plex/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/plex-7.1.3/plex-7.1.3.tgz
+    version: 7.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 1.32.4.7195-7c8f9d3b6
     apiVersion: v2
     appVersion: 1.32.4.7195-7c8f9d3b6
@@ -2864,4 +2892,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-06-23T08:46:16.346080905Z"
+generated: "2023-07-27T15:13:05.103876385Z"
