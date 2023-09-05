@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2023.6.1
 description: Home Assistant
 name: home-assistant
-version: 14.0.0
+version: 14.0.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -37,4 +37,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add chart
+      description: Update postgresql to 14.9
