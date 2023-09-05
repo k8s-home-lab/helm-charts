@@ -551,6 +551,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to v3.3.4
+    apiVersion: v2
+    appVersion: v3.3.4
+    created: "2023-09-05T13:04:16.600233592Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: FlareSolverr is a proxy server to bypass Cloudflare protection
+    digest: 65109ca421635d3107e118dbb9c3de09286892e8dc8386fa45eac7229a5f75c7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flaresolverr
+    icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
+    keywords:
+    - flaresolverr
+    - jackett
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flaresolverr
+    sources:
+    - https://github.com/FlareSolverr/FlareSolverr
+    - https://hub.docker.com/r/flaresolverr/flaresolverr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flaresolverr-6.0.2/flaresolverr-6.0.2.tgz
+    version: 6.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update README
     apiVersion: v2
     appVersion: v1.2.8
@@ -2937,4 +2966,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-09-05T12:50:58.509722859Z"
+generated: "2023-09-05T13:04:16.807640238Z"
