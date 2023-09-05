@@ -1,6 +1,6 @@
 ---
 apiVersion: v2
-appVersion: 2023.6.1
+appVersion: 2023.8.4
 description: Home Assistant
 name: home-assistant
 version: 14.0.1
@@ -36,5 +36,7 @@ dependencies:
     condition: influxdb.enabled
 annotations:
   artifacthub.io/changes: |
+    - kind: changed
+      description: Update app to 2023.8.4
     - kind: changed
       description: Update postgresql to 14.9
