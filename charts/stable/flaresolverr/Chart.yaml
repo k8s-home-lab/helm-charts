@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: v1.2.8
+appVersion: v3.3.4
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 6.0.1
+version: 6.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flaresolverr
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
+      description: Update image to v3.3.4
