@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: 0.1.8.1889
+appVersion: 0.3.3.2171
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
-version: 7.1.1
+version: 7.1.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - readarr
@@ -25,4 +25,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to 0.1.8.1889
+      description: Update image to 0.3.3.2171
