@@ -1962,6 +1962,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 1.7.4.3769
+    apiVersion: v2
+    appVersion: 1.7.4.3769
+    created: "2023-09-08T10:18:28.497671122Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: 4ba94bebb7a3b70ac59fc0292692aef1c0b3dd35f707fc34b133e8d471087d8a
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/prowlarr-5.1.2/prowlarr-5.1.2.tgz
+    version: 5.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 1.5.2.3484
     apiVersion: v2
     appVersion: 1.5.2.3484
@@ -2995,4 +3026,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-09-08T08:43:27.392833225Z"
+generated: "2023-09-08T10:18:28.497929924Z"
