@@ -2214,6 +2214,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 4.7.5.7809
+    apiVersion: v2
+    appVersion: 4.7.5.7809
+    created: "2023-09-08T11:14:02.529657082Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 8e777cba845bfae46c17361815e106248fca80e2371722719040fec80eab17c4
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/radarr-17.1.2/radarr-17.1.2.tgz
+    version: 17.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 4.5.2.7388
     apiVersion: v2
     appVersion: 4.5.2.7388
@@ -3058,4 +3088,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-09-08T11:11:48.498681591Z"
+generated: "2023-09-08T11:14:02.529801183Z"
