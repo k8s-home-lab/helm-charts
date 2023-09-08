@@ -2369,6 +2369,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update image to 0.3.3.2171
+    apiVersion: v2
+    appVersion: 0.3.3.2171
+    created: "2023-09-08T11:11:48.498309677Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Radarr to work with Books & AudioBooks
+    digest: 61e703e428f1bf6a23a08a589628df32b49dc6c12e0d95201bc363f11873ea7e
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
+    icon: https://readarr.com/img/logo.png
+    keywords:
+    - readarr
+    - torrent
+    - usenet
+    - AudioBooks
+    - ebooks
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mark@markmcw.uk
+      name: mcmarkj
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/readarr-7.1.2/readarr-7.1.2.tgz
+    version: 7.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 0.1.8.1889
     apiVersion: v2
     appVersion: 0.1.8.1889
@@ -3026,4 +3058,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-09-08T10:18:28.497929924Z"
+generated: "2023-09-08T11:11:48.498681591Z"
