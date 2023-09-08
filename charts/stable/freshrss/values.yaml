@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: linuxserver/freshrss
+  repository: ghcr.io/linuxserver/freshrss
   # -- image tag
   tag:
   # -- image pull policy
