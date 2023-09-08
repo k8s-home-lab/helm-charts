@@ -671,6 +671,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Use ghcr.io image
+    apiVersion: v2
+    appVersion: 1.21.0
+    created: "2023-09-08T08:43:27.392377126Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: FreshRSS is a self-hosted RSS feed aggregator
+    digest: 14c1e40cfa5b07784e184fd2fcbbcc96210785782eca87c8c022c26b2c584d87
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/freshrss
+    icon: https://avatars.githubusercontent.com/u/9414285?s=200&v=4
+    keywords:
+    - freshrss
+    - rss
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: freshrss
+    sources:
+    - https://github.com/FreshRSS/FreshRSS
+    - https://hub.docker.com/r/linuxserver/freshrss
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/freshrss-7.0.1/freshrss-7.0.1.tgz
+    version: 7.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 1.21.0
@@ -2966,4 +2995,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2023-09-05T13:04:16.807640238Z"
+generated: "2023-09-08T08:43:27.392833225Z"
