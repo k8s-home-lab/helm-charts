@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Generate Token
-        uses: tibdex/github-app-token@v1
+        uses: tibdex/github-app-token@v2
         id: generate-token
         with:
           app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
