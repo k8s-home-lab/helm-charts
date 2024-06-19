@@ -1,14 +1,14 @@
 ---
 apiVersion: v2
-appVersion: v3.3.4
+appVersion: v3.3.19
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 6.0.2
+version: 6.0.3
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flaresolverr
   - jackett
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flaresolverr
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flaresolverr
 icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
 sources:
   - https://github.com/FlareSolverr/FlareSolverr
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to v3.3.4
+      description: Update image to v3.3.19
