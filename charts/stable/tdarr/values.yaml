@@ -59,7 +59,7 @@ node:
     # -- image repository
     repository: haveagitgat/tdarr_node
     # -- image tag
-    tag: 2.11.01@sha256:199784203fedf4465caf15c361b398558cd59b5f833c5a929af916590b335bbe
+    tag: 2.40.01@sha256:ac6d8451148b311d99be1e0e3978bc866009ee412f9644f521374a5dd7f3c4c5
     # -- image pull policy
     pullPolicy: IfNotPresent
   # -- Node resources
