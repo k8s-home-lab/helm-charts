@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/onedr0p/plex
+  repository: ghcr.io/home-operations/plex
   # @default -- chart.appVersion
   tag:
   # -- image pull policy
@@ -40,25 +40,21 @@ service:
     ports:
       http:
         port: 32400
+    # externalTrafficPolicy: Local
   dnla-tcp:
     enabled: false
-    type: NodePort
     ports:
       dnla-tcp:
         enabled: true
         port: 32469
-        protocol: TCP
-        targetPort: 32469
     externalTrafficPolicy: Local
   dnla-udp:
     enabled: false
-    type: NodePort
     ports:
       dnla-udp:
         enabled: true
         port: 1900
-        protocol: TCP
-        targetPort: 1900
+        protocol: UDP
     externalTrafficPolicy: Local
 
 ingress:
