@@ -16,7 +16,7 @@ runs:
   using: "composite"
   steps:
     - name: Collect changed files
-      uses: dorny/paths-filter@v2
+      uses: dorny/paths-filter@v3
       id: filter
       with:
         list-files: shell

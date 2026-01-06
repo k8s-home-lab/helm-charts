@@ -13,33 +13,34 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Generate Token
-        uses: tibdex/github-app-token@v1
+        uses: actions/create-github-app-token@v2
         id: generate-token
         with:
           app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
           private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.9.3
+        uses: yokawasa/action-setup-kube-tools@v0.13.1
         with:
           setup-tools: |
             helmv3
             yq
-          helm: "3.8.0"
-          yq: "4.16.2"
+          # helm: "3.8.0"
+          # yq: "4.16.2"
 
       - name: Install helm-docs
         run: |
-          wget -O /tmp/helm-docs.deb https://github.com/norwoodj/helm-docs/releases/download/v1.10.0/helm-docs_1.10.0_Linux_x86_64.deb
+          wget -O /tmp/helm-docs.deb https://github.com/norwoodj/helm-docs/releases/download/v1.14.2/helm-docs_1.14.2_Linux_x86_64.deb
           sudo dpkg -i /tmp/helm-docs.deb
 
       - name: Collect changes
@@ -61,7 +62,7 @@ jobs:
 
       - name: Create commit
         id: create-commit
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           file_pattern: charts/**/*
           commit_message: "chore: Auto-update chart README [skip ci]"
@@ -79,11 +80,12 @@ jobs:
           fi
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           ref: ${{ steps.save-commit-hash.outputs.commit_hash }}
           fetch-depth: 0
+          persist-credentials: falsemit-hash.outputs.commit_hash }}
 
       - name: Configure Git
         run: |
@@ -91,7 +93,7 @@ jobs:
           git config user.email "helm[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.7.0
         with:
           charts_dir: charts/*
           charts_repo_url: https://k8s-home-lab.github.io/helm-charts/
@@ -101,35 +103,35 @@ jobs:
 
   generate-summary:
     name: Auto-generate charts summary
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     needs:
       - release
     steps:
       - name: Generate Token
-        uses: tibdex/github-app-token@v1
+        uses: actions/create-github-app-token@v2
         id: generate-token
         with:
           app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
           private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          ref: master
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Install yq
         uses: chrisdickinson/setup-yq@latest
         with:
-          yq-version: v4.9.3
+          yq-version: v4.50.1
 
       - name: Run script
         run: |
           ./scripts/gen-chart-summary.sh
 
       - name: Create Commit
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
