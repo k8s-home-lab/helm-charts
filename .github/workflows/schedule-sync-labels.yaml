@@ -16,8 +16,8 @@ jobs:
         uses: actions/create-github-app-token@v2
         id: generate-token
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v4
