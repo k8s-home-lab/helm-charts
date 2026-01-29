@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghcr.io/home-assistant/home-assistant
 appVersion: 2023.8.4
 description: Home Assistant
 name: home-assistant

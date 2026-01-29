@@ -1,3 +1,4 @@
+ghcr.io/linuxserver/ombi
 apiVersion: v2
 appVersion: 4.22.5
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!

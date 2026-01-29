@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghcr.io/linuxserver/freshrss
 appVersion: 1.21.0
 description: FreshRSS is a self-hosted RSS feed aggregator
 name: freshrss

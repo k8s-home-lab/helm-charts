@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: 2.6.0
 description: Server error pages in the docker image

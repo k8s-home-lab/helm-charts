@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=photoprism/photoprism
 appVersion: "230607-ce"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism

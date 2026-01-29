@@ -1,3 +1,4 @@
+ghcr.io/onedr0p/sonarr
 apiVersion: v2
 appVersion: 3.0.10.1567
 description: Smart PVR for newsgroup and bittorrent users

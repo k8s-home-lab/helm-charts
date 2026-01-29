@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=shinobisystems/shinobi
 appVersion: latest
 description: shinobi helm package
 name: shinobi

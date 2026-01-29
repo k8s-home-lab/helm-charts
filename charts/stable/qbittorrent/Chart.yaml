@@ -1,3 +1,4 @@
+ghcr.io/onedr0p/qbittorrent
 apiVersion: v2
 appVersion: 4.5.0
 description: qBittorrent is a cross-platform free and open-source BitTorrent client

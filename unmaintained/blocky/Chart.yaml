@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v0.18
 description: DNS proxy as ad-blocker for local network

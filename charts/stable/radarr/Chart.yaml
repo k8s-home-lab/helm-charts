@@ -1,3 +1,4 @@
+ghcr.io/onedr0p/radarr
 apiVersion: v2
 appVersion: 4.7.5.7809
 description: A fork of Sonarr to work with movies à la Couchpotato

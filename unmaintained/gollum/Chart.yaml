@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: latest
 description: Gollum is a simple wiki system built on top of Git

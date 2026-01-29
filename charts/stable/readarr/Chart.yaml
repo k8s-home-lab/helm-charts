@@ -1,3 +1,4 @@
+ghcr.io/onedr0p/readarr-develop
 apiVersion: v2
 appVersion: 0.3.3.2171
 description: A fork of Radarr to work with Books & AudioBooks

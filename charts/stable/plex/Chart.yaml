@@ -1,3 +1,4 @@
+ghcr.io/home-operations/plex
 apiVersion: v2
 appVersion: 1.42.2.10156
 description: Plex Media Server

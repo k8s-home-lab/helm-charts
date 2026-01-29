@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v0.90.74
 description: Status page for monitoring your websites and applications

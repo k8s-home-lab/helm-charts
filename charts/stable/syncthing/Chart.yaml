@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=syncthing/syncthing
 appVersion: 1.23.5
 description: Open Source Continuous File Synchronization
 name: syncthing

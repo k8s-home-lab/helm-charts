@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghcr.io/k8s-home-lab/wireguard
 appVersion: v1.0.20210914
 description: Fast, modern, secure VPN tunnel
 name: wireguard

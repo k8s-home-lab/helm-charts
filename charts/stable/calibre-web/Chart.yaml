@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghcr.io/linuxserver/calibre-web
 appVersion: 0.6.19
 description: Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 name: calibre-web

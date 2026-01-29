@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v1.27.2
 description: "Send push notifications to your phone or desktop using PUT/POST"

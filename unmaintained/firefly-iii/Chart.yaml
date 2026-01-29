@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: version-5.6.14
 description: "Firefly III: a personal finances manager"

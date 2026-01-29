@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v0.2.4
 description: A PowerDNS web interface with advanced features

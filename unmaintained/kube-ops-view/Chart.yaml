@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: 20.4.0
 description: A read-only system dashboard for multiple K8s clusters

@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghost
 appVersion: 5.51.1
 description: Ghost is a blogging and publishing software
 name: ghost

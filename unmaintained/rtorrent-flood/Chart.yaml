@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: latest
 description: rTorrent is a stable, high-performance and low resource consumption BitTorrent client.

@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=foxcpp/maddy
 appVersion: 0.7.0
 description: Maddy Mail Server
 name: maddy

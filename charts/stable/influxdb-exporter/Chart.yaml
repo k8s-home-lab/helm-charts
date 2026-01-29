@@ -1,3 +1,4 @@
+prom/influxdb-exporter
 apiVersion: v2
 appVersion: v0.11.4
 description: An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.

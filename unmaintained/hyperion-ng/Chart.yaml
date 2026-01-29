@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: 2.0.0-alpha9
 description: Hyperion is an opensource Bias or Ambient Lighting implementation

@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v3.00
 description: Transmission is a cross-platform BitTorrent client

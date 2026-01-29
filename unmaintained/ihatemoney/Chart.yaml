@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: 5.2.0
 description: A web application made to ease shared budget management

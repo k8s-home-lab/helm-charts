@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=vaultwarden/server
 appVersion: 1.28.1
 description: Vaultwarden is a Bitwarden compatable server in Rust
 name: vaultwarden

@@ -1,3 +1,4 @@
+ghcr.io/onedr0p/lidarr
 apiVersion: v2
 appVersion: 1.1.4.3027
 description: Looks and smells like Sonarr but made for music

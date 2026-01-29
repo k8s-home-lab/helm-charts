@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v3.2.2
 description: Speedtest Exporter made in python using the official speedtest bin

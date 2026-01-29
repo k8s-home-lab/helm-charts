@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: 2.4.0
 description: Nginx and PHP FPM for running PHP applications

@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=blakeblackshear/frigate
 appVersion: 0.11.1
 description: NVR With Realtime Object Detection for IP Cameras
 name: frigate

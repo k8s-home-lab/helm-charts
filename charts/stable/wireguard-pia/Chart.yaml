@@ -1,3 +1,4 @@
+ghcr.io/k8s-home-lab/wireguard-pia
 apiVersion: v2
 appVersion: v2.0.0
 description: Fast, modern, secure VPN tunnel with PIA connect scripts

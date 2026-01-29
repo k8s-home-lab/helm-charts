@@ -1,5 +1,5 @@
----
 apiVersion: v2
+# renovate: image=ghcr.io/k8s-at-home/tautulli
 appVersion: v2.10.5
 description: A Python based monitoring and tracking tool for Plex Media Server
 name: tautulli

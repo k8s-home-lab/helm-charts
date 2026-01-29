@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: latest
 description: Valheim dedicated gameserver with automatic update and world backup support

@@ -11,13 +11,13 @@
 
   "helmv3": {
     "managerFilePatterns": [
-      "/^charts/.+/Chart\\.yaml$/"
+      "charts/stable/**/Chart.yaml"
     ]
   },
 
   "helm-values": {
     "managerFilePatterns": [
-      "/^charts/.+/values\\.ya?ml$/"
+      "charts/stable/**/Chart.yaml"
     ]
   },
 
@@ -33,14 +33,13 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Update renovate docker image references",
-      "managerFilePatterns": ["/^charts/.+/Chart\\.yaml$/"],
-      "matchStrings": [
-        "appVersion: '(?<currentValue>.*?)'\\s+",
-        "version: '(?<currentValue>.*?)'\\s+"
+      "datasourceTemplate": "docker",
+      "managerFilePatterns": [
+        "charts/stable/**/Chart.yaml"
       ],
-      "depNameTemplate": "renovate/renovate",
-      "datasourceTemplate": "docker"
+      "matchStrings": [
+        "#\\s*renovate: image=(?<depName>.*?)\\s+appVersion:\\s*[\"']?(?<currentValue>[\\w+\\.\\-]*)"
+      ]
     }
   ],
 

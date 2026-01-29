@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: v1.6.1
 description: Admision controller to change the default gateway and DNS server of PODs

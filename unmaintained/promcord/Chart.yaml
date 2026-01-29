@@ -1,4 +1,3 @@
----
 apiVersion: v2
 appVersion: latest
 description: Discord bot that provides metrics from a Discord server
