@@ -46,12 +46,24 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
+      "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "Docker image {{depName}}"
     },
     {
       "matchDatasources": ["helm"],
+      "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "Helm chart {{depName}}",
       "separateMinorPatch": true
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchManagers": ["custom.regex"],
+      "commitMessagePrefix": "[{{{parentDir}}}]",
+      "postUpgradeTasks": {
+        "commands": [
+          "bash scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' '{{{currentValue}}}'"
+        ]
+      }
     },
     {
       "matchDatasources": ["github-tags"],
