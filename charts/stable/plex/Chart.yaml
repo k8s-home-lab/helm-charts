@@ -1,5 +1,5 @@
-ghcr.io/home-operations/plex
 apiVersion: v2
+# renovate: image=ghcr.io/home-operations/plex
 appVersion: 1.42.2.10156
 description: Plex Media Server
 name: plex

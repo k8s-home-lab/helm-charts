@@ -1,5 +1,5 @@
-ghcr.io/onedr0p/radarr
 apiVersion: v2
+# renovate: image=ghcr.io/onedr0p/radarr
 appVersion: 4.7.5.7809
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr

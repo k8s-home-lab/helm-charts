@@ -1,5 +1,5 @@
-gitea/gitea
 apiVersion: v2
+# renovate: image=gitea/gitea
 appVersion: 1.16.6
 description: Gitea self-hosted github-styled git repository manager
 name: gitea

@@ -1,5 +1,5 @@
-ghcr.io/linuxserver/ombi
 apiVersion: v2
+# renovate: image=ghcr.io/linuxserver/ombi
 appVersion: 4.22.5
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
 name: ombi

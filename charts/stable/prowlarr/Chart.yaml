@@ -1,5 +1,5 @@
-ghcr.io/onedr0p/prowlarr
 apiVersion: v2
+# renovate: image=ghcr.io/onedr0p/prowlarr
 appVersion: 1.7.4.3769
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr

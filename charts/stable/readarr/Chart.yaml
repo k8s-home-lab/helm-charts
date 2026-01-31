@@ -1,5 +1,5 @@
-ghcr.io/onedr0p/readarr-develop
 apiVersion: v2
+# renovate: image=ghcr.io/onedr0p/readarr-develop
 appVersion: 0.3.3.2171
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
