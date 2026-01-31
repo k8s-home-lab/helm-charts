@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-assistant/home-assistant
-appVersion: 2023.8.4
+appVersion: 2023.12.4
 description: Home Assistant
 name: home-assistant
-version: 14.0.1
+version: 14.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -37,6 +37,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update app to 2023.8.4
+      description: Applied minor update of image ghcr.io/home-assistant/home-assistant to 2023.12.4
     - kind: changed
-      description: Update postgresql to 14.9
+      description: Applied minor update of image ghcr.io/home-assistant/home-assistant to 2023.12.4
