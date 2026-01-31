@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/flaresolverr/flaresolverr
-appVersion: v3.3.19
+appVersion: v3.4.6
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 6.0.3
+version: 6.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flaresolverr
