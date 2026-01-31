@@ -65,7 +65,7 @@
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "postUpgradeTasks": {
         "commands": [
-          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{currentValue}}}'"
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
         ]
       }
     },
