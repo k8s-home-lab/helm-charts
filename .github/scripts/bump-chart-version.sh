@@ -3,9 +3,13 @@ set -eu
 
 parent_dir="$1"
 update_type="$2"
-app_version="$2"
+docker_image="$3"
+docker_version="$4"
 
-version=$(grep "^version:" "charts/${parent_dir}/Chart.yaml" | awk '{print $2}')
+# Absolute path of repository
+repository=$(git rev-parse --show-toplevel)
+
+version=$(grep "^version:" "${repository}/charts/**/${parent_dir}/Chart.yaml" | awk '{print $2}')
 if [[ ! $version ]]; then
   echo "No valid version was found"
   exit 1
@@ -27,8 +31,8 @@ else
 fi
 
 echo "Bumping version for $parent_dir from $version to $major.$minor.$patch"
-sed -i "s/^version:.*/version: ${major}.${minor}.${patch}/g" "charts/${parent_dir}/Chart.yaml"
+sed -i "s/^version:.*/version: ${major}.${minor}.${patch}/g" "${repository}/charts/**/${parent_dir}/Chart.yaml"
 
 echo "Updating artifacthub.io/changes"
-sed -i "s/^    - kind:.*/    - kind: changed/g" "charts/${parent_dir}/Chart.yaml"
-sed -i "s/^      description:.*/      description: ${update_type} image update to ${app_version}/g" "charts/${parent_dir}/Chart.yaml"
+sed -i "s/^    - kind:.*/    - kind: changed/g" "${repository}/charts/**/${parent_dir}/Chart.yaml"
+sed -i "s/^      description:.*/      description: ${update_type} update ${docker_image} to ${docker_version}/g" "${repository}/charts/**/${parent_dir}/Chart.yaml"
