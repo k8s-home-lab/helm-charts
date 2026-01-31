@@ -16,21 +16,21 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Generate Token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
           persist-credentials: false
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: yokawasa/action-setup-kube-tools@3e3886c11bfa25fe33f8eb90f59542dd151da442 # v0.13.1
         with:
           setup-tools: |
             helmv3
@@ -62,7 +62,7 @@ jobs:
 
       - name: Create commit
         id: create-commit
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
         with:
           file_pattern: charts/**/*
           commit_message: "chore: Auto-update chart README [skip ci]"
@@ -80,7 +80,7 @@ jobs:
           fi
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           ref: ${{ steps.save-commit-hash.outputs.commit_hash }}
@@ -93,7 +93,7 @@ jobs:
           git config user.email "helm[bot]@users.noreply.github.com"
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1
+        uses: helm/chart-releaser-action@cae68fefc6b5f367a0275617c9f83181ba54714f # v1
         with:
           charts_dir: charts/*
           charts_repo_url: https://k8s-home-lab.github.io/helm-charts/
@@ -108,14 +108,14 @@ jobs:
       - release
     steps:
       - name: Generate Token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
@@ -131,7 +131,7 @@ jobs:
           ./scripts/gen-chart-summary.sh
 
       - name: Create Commit
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]

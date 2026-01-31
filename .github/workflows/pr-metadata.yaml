@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: Get branch name
         id: branch-name
-        uses: tj-actions/branch-names@v9
+        uses: tj-actions/branch-names@5250492686b253f06fa55861556d1027b067aeb5 # v9
 
       - name: Save PR data to file
         env:
@@ -38,7 +38,7 @@ jobs:
           echo $PR_NUMBER > pr_number.txt
 
       - name: Store pr data in artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: pr_metadata
           path: ./pr_number.txt
@@ -53,7 +53,7 @@ jobs:
       addedOrModifiedCharts: ${{ steps.collect-changes.outputs.addedOrModifiedCharts }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Collect changes
         id: collect-changes

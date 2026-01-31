@@ -14,19 +14,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate Token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
       - name: Download workflow artifact
-        uses: dawidd6/action-download-artifact@v12
+        uses: dawidd6/action-download-artifact@0bd50d53a6d7fb5cb921e607957e9cc12b4ce392 # v12
         with:
           github_token: ${{ steps.generate-token.outputs.token }}
           workflow: pr-validate.yaml
@@ -36,12 +36,12 @@ jobs:
 
       - name: Read the pr_number file
         id: pr_num_reader
-        uses: juliangruber/read-file-action@v1
+        uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # v1
         with:
           path: ./pr_metadata/pr_number.txt
 
       - name: "Get workflow job status"
-        uses: actions/github-script@v8
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         id: get-workflow-jobs
         with:
           github-token: ${{ steps.generate-token.outputs.token }}

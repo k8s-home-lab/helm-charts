@@ -22,20 +22,20 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Generate Token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
           ref: master
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: peaceiris/actions-label-commenter@v1
+      - uses: peaceiris/actions-label-commenter@f0dbbef043eb1b150b566db36b0bdc8b7f505579 # v1
         with:
           github_token: ${{ steps.generate-token.outputs.token }}

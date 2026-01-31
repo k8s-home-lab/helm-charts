@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -45,14 +45,14 @@ jobs:
       commitHash: ${{ steps.save-commit-hash.outputs.commit_hash }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: Install Kubernetes tools
         if: inputs.isRenovatePR == 'true'
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: yokawasa/action-setup-kube-tools@3e3886c11bfa25fe33f8eb90f59542dd151da442 # v0.13.1
         with:
           setup-tools: |
             yq
@@ -74,7 +74,7 @@ jobs:
       - name: Create commit
         id: create-commit
         if: inputs.isRenovatePR == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
         with:
           file_pattern: charts/**/*
           commit_message: "chore: Auto-update chart metadata [skip ci]"
