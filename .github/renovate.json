@@ -1,36 +1,36 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-
+  "extends": [
+    "config:recommended"
+  ],
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
   "abandonmentThreshold": "10 years",
   "assigneesFromCodeOwners": true,
   "reviewersFromCodeOwners": true,
-  "suppressNotifications": ["prIgnoreNotification"],
+  "suppressNotifications": [
+    "prIgnoreNotification"
+  ],
   "prConcurrentLimit": 10,
-
   "helmv3": {
     "managerFilePatterns": [
       "charts/stable/**/Chart.yaml"
     ]
   },
-
   "helm-values": {
     "managerFilePatterns": [
       "charts/stable/**/Chart.yaml"
     ]
   },
-
-  "ignorePaths": ["unmaintained/"],
-
+  "ignorePaths": [
+    "unmaintained/"
+  ],
   "hostRules": [
     {
       "matchHost": "api.github.com",
       "concurrentRequestLimit": 1
     }
   ],
-
   "customManagers": [
     {
       "customType": "regex",
@@ -43,39 +43,49 @@
       ]
     }
   ],
-
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
+      "matchDatasources": [
+        "docker"
+      ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "Docker image {{depName}}"
     },
     {
-      "matchDatasources": ["helm"],
+      "matchDatasources": [
+        "helm"
+      ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "Helm chart {{depName}}",
       "separateMinorPatch": true
     },
     {
-      // "matchDatasources": ["docker"],
-      "matchManagers": ["custom.regex"],
+      "matchManagers": [
+        "custom.regex"
+      ],
       "matchFileNames": [
         "charts/stable/**/Chart.yaml"
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "postUpgradeTasks": {
         "commands": [
-          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{currentValue}}}'"
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
         ]
       }
     },
     {
-      "matchDatasources": ["github-tags"],
-      "matchPackageNames": ["potiuk/get-workflow-origin"],
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "potiuk/get-workflow-origin"
+      ],
       "versioning": "regex:^v(?<major>\\d+)_(?<minor>\\d+)(_(?<patch>\\d+))?$"
     },
     {
-      "matchManagers": ["github-actions"],
+      "matchManagers": [
+        "github-actions"
+      ],
       "automerge": true,
       "automergeType": "branch",
       "matchUpdateTypes": [
@@ -84,61 +94,109 @@
       ]
     },
     {
-      "matchDatasources": ["helm"],
+      "matchDatasources": [
+        "helm"
+      ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "branchTopic": "{{{parentDir}}}-{{{depNameSanitized}}}-{{{newMajor}}}{{#if isPatch}}.{{{newMinor}}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "bumpVersion": "major",
-      "labels": ["type/major"],
-      "matchPackageNames": ["common"],
+      "labels": [
+        "type/major"
+      ],
+      "matchPackageNames": [
+        "common"
+      ],
       "groupName": "common library major"
     },
     {
-      "matchDatasources": ["helm"],
-      "matchUpdateTypes": ["minor"],
+      "matchDatasources": [
+        "helm"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
       "bumpVersion": "minor",
-      "labels": ["type/minor"],
-      "matchPackageNames": ["common"],
+      "labels": [
+        "type/minor"
+      ],
+      "matchPackageNames": [
+        "common"
+      ],
       "groupName": "common library minor"
     },
     {
-      "matchDatasources": ["helm"],
-      "matchUpdateTypes": ["patch"],
+      "matchDatasources": [
+        "helm"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
       "bumpVersion": "patch",
-      "labels": ["type/patch"],
-      "matchPackageNames": ["common"],
+      "labels": [
+        "type/patch"
+      ],
+      "matchPackageNames": [
+        "common"
+      ],
       "groupName": "common library patch"
     },
     {
-      "matchDatasources": ["helm"],
+      "matchDatasources": [
+        "helm"
+      ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "branchTopic": "{{{parentDir}}}-{{{depNameSanitized}}}-{{{newMajor}}}{{#if isPatch}}.{{{newMinor}}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "bumpVersion": "major",
-      "labels": ["type/major"],
-      "schedule": ["every 3 months on the first day of the month"],
+      "labels": [
+        "type/major"
+      ],
+      "schedule": [
+        "every 3 months on the first day of the month"
+      ],
       "matchPackageNames": [
         "!common"
       ]
     },
     {
-      "matchDatasources": ["helm"],
-      "matchUpdateTypes": ["minor"],
+      "matchDatasources": [
+        "helm"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
       "bumpVersion": "minor",
-      "labels": ["type/minor"],
+      "labels": [
+        "type/minor"
+      ],
       "groupName": "external dependency minor",
-      "schedule": ["every 2 months on the first day of the month"],
+      "schedule": [
+        "every 2 months on the first day of the month"
+      ],
       "matchPackageNames": [
         "!common"
       ]
     },
     {
-      "matchDatasources": ["helm"],
-      "matchUpdateTypes": ["patch"],
+      "matchDatasources": [
+        "helm"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
       "bumpVersion": "patch",
-      "labels": ["type/patch"],
+      "labels": [
+        "type/patch"
+      ],
       "groupName": "external dependency patch",
-      "schedule": ["every 1 months on the first day of the month"],
+      "schedule": [
+        "every 1 months on the first day of the month"
+      ],
       "matchPackageNames": [
         "!common"
       ]
