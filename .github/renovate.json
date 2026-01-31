@@ -4,10 +4,11 @@
 
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
+  "abandonmentThreshold": "10 years",
   "assigneesFromCodeOwners": true,
   "reviewersFromCodeOwners": true,
   "suppressNotifications": ["prIgnoreNotification"],
-  "prConcurrentLimit": 5,
+  "prConcurrentLimit": 10,
 
   "helmv3": {
     "managerFilePatterns": [

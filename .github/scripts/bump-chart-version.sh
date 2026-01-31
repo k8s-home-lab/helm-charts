@@ -35,4 +35,4 @@ sed -i "s/^version:.*/version: ${major}.${minor}.${patch}/g" ${repository}/chart
 
 echo "Updating artifacthub.io/changes"
 sed -i "s/^    - kind:.*/    - kind: changed/g" ${repository}/charts/**/${parent_dir}/Chart.yaml
-sed -i "s/^      description:.*/      description: ${update_type} update ${docker_image} to ${docker_version}/g" ${repository}/charts/**/${parent_dir}/Chart.yaml
+sed -i "s%^      description:.*%      description: ${update_type} update ${docker_image} to ${docker_version}%g" ${repository}/charts/**/${parent_dir}/Chart.yaml
