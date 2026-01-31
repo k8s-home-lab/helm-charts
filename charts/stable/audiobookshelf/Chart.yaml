@@ -1,6 +1,6 @@
 apiVersion: v2
 # renovate: image=ghcr.io/advplyr/audiobookshelf
-appVersion: 2.2.23
+appVersion: 2.32.1
 description: Self-hosted audiobook server for managing and playing your audiobooks
 name: audiobookshelf
 version: 2.0.0
