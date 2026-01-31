@@ -56,12 +56,15 @@
       "separateMinorPatch": true
     },
     {
-      "matchDatasources": ["docker"],
+      // "matchDatasources": ["docker"],
       "matchManagers": ["custom.regex"],
+      "matchFileNames": [
+        "charts/stable/**/Chart.yaml"
+      ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "postUpgradeTasks": {
         "commands": [
-          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' '{{{currentValue}}}'"
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{currentValue}}}'"
         ]
       }
     },
