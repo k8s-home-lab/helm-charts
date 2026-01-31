@@ -1,6 +1,6 @@
 apiVersion: v2
 # renovate: image=ghcr.io/onedr0p/bazarr
-appVersion: 1.4.3
+appVersion: v1.5.1
 description: Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 name: bazarr
 version: 11.1.2
