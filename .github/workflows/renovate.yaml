@@ -1,0 +1,25 @@
+name: "Run Renovate bot"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run the renovatebot every day at 9pm UTC
+    - cron: "00 21 * * *"
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Generate Token
+        uses: actions/create-github-app-token@v2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@v43
+        with:
+          configurationFile: .github/renovate-config.js
+          token: '${{ steps.get_token.outputs.token }}'
