@@ -64,7 +64,7 @@ jobs:
           persist-credentials: false
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.8.0
+        uses: helm/chart-testing-action@v2
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -109,7 +109,7 @@ jobs:
           python-version: "3.14"
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.480
+        uses: helm/chart-testing-action@v2
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
