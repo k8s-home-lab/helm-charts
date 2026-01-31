@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=jesec/flood
-appVersion: 4.7.0
+appVersion: 4.11.0
 description: Flood is a monitoring service for various torrent clients
 name: flood
-version: 7.0.0
+version: 7.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flood
