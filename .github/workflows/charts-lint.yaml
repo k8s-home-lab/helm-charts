@@ -27,14 +27,14 @@ jobs:
         with:
           setup-tools: |
             helmv3
-          # helm: "3.8.0"
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.0.0
         with:
-          python-version: "3.14"
+          python-version: '3.x'
+          check-latest: true
 
       - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2
+        uses: helm/chart-testing-action@v2.8.0
 
       - name: Collect changes
         id: list-changed
