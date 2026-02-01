@@ -95,9 +95,9 @@ metrics:
   exporter:
     image:
       # -- image repository
-      repository: ghcr.io/home-operations/exportarr
+      repository: ghcr.io/onedr0p/exportarr
       # -- image tag
-      tag: v1.3.1
+      tag: v2.3.0
       # -- image pull policy
       pullPolicy: IfNotPresent
     env:
