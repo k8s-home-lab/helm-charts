@@ -9,7 +9,7 @@ A fork of Radarr to work with Books & AudioBooks
 ## Source Code
 
 * <https://github.com/Readarr/Readarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -80,7 +80,7 @@ helm install readarr k8s-home-lab/readarr -f values.yaml
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/readarr-develop"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |

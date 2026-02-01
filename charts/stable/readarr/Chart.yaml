@@ -1,6 +1,6 @@
 apiVersion: v2
-# renovate: image=ghcr.io/onedr0p/readarr-develop
-appVersion: 0.3.3.2171
+# renovate: image=ghcr.io/home-operations/readarr
+appVersion: 0.4.18
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
 version: 7.1.2
@@ -15,7 +15,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
 icon: https://readarr.com/img/logo.png
 sources:
   - https://github.com/Readarr/Readarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: mcmarkj
     email: mark@markmcw.uk
@@ -26,4 +26,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to 0.3.3.2171
+      description: Switch to ghcr.io/home-operations/readarr 0.4.18
