@@ -1,9 +1,9 @@
 apiVersion: v2
-# renovate: image=ghcr.io/onedr0p/radarr
-appVersion: 4.7.5.7809
+# renovate: image=ghcr.io/home-operations/radarr
+appVersion: 0.4.18
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr
-version: 17.1.2
+version: 17.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - radarr
@@ -13,7 +13,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
 icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
 sources:
   - https://github.com/Radarr/Radarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to 4.7.5.7809
+      description: Switch to ghcr.io/home-operations/radarr 0.4.18

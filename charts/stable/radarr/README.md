@@ -9,7 +9,7 @@ A fork of Sonarr to work with movies à la Couchpotato
 ## Source Code
 
 * <https://github.com/Radarr/Radarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/radarr"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/radarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
@@ -87,7 +87,7 @@ N/A
 | metrics.exporter.env.port | int | `9793` | metrics port |
 | metrics.exporter.env.unknownQueueItems | bool | `false` | Set to true to enable gathering unknown queue items |
 | metrics.exporter.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| metrics.exporter.image.repository | string | `"ghcr.io/onedr0p/exportarr"` | image repository |
+| metrics.exporter.image.repository | string | `"ghcr.io/home-operations/exportarr"` | image repository |
 | metrics.exporter.image.tag | string | `"v1.3.1"` | image tag |
 | metrics.prometheusRule | object | See values.yaml | Enable and configure Prometheus Rules for the chart under this key. |
 | metrics.prometheusRule.rules | list | See prometheusrules.yaml | Configure additionial rules for the chart under this key. |
