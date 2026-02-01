@@ -1,9 +1,9 @@
 apiVersion: v2
-# renovate: image=ghcr.io/onedr0p/prowlarr
-appVersion: 1.7.4.3769
+# renovate: image=ghcr.io/home-operations/prowlarr
+appVersion: 2.3.2
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 5.1.2
+version: 5.2.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - prowlarr
@@ -13,7 +13,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
 icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
 sources:
   - https://github.com/Prowlarr/Prowlarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to 1.7.4.3769
+      description: Switch to ghcr.io/home-operations/prowlarr 2.3.2
