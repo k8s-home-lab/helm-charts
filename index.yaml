@@ -3302,6 +3302,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Switch to ghcr.io/home-operations/tautulli 2.16.0
+    apiVersion: v2
+    appVersion: 2.16.0
+    created: "2026-02-01T10:57:45.83182383Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A Python based monitoring and tracking tool for Plex Media Server
+    digest: 188c3ffb76e3f5eb3297432ac83e11b1333b3e721db5ba9586fc6150d9e7ae08
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/tautulli
+    icon: https://github.com/Tautulli/Tautulli/blob/master/data/interfaces/default/images/logo.png?raw=true
+    keywords:
+    - tautulli
+    - plex
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tautulli
+    sources:
+    - https://github.com/Tautulli/Tautulli
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tautulli-12.1.0/tautulli-12.1.0.tgz
+    version: 12.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: v2.10.5
@@ -3614,4 +3643,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T10:56:51.167504278Z"
+generated: "2026-02-01T10:57:45.831990009Z"
