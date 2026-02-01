@@ -34,6 +34,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Switch to ghcr.io/home-operations/bazarr 1.5.4
+    apiVersion: v2
+    appVersion: 1.5.4
+    created: "2026-02-01T10:37:50.778730075Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: cd7bce535064aded178f680dfef5f6e772c0cc691aafa73226a9d211c0db5702
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/bazarr-11.2.0/bazarr-11.2.0.tgz
+    version: 11.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update to version 1.4.3
     apiVersion: v2
     appVersion: 1.4.3
@@ -1302,6 +1336,51 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/gitea-1.0.2/gitea-1.0.2.tgz
     version: 1.0.2
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Applied minor update of image ghcr.io/home-assistant/home-assistant to 2023.12.4
+        - kind: changed
+          description: Applied minor update of image ghcr.io/home-assistant/home-assistant to 2023.12.4
+    apiVersion: v2
+    appVersion: 2023.12.4
+    created: "2026-02-01T10:37:50.957228727Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    description: Home Assistant
+    digest: c9e92d9b311c7a532b1a20eb467f2a1717b0dbd3c22a0296c562ffbebda0fcd4
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/cdr/code-server
+    - https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/home-assistant-14.1.0/home-assistant-14.1.0.tgz
+    version: 14.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3287,4 +3366,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T09:24:01.552680065Z"
+generated: "2026-02-01T10:37:50.957457428Z"
