@@ -1,9 +1,9 @@
 apiVersion: v2
-# renovate: image=ghcr.io/k8s-at-home/tautulli
-appVersion: v2.10.5
+# renovate: image=ghcr.io/home-operations/tautulli
+appVersion: 2.16.0
 description: A Python based monitoring and tracking tool for Plex Media Server
 name: tautulli
-version: 12.0.0
+version: 12.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - tautulli
@@ -12,7 +12,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/tautulli
 icon: https://github.com/Tautulli/Tautulli/blob/master/data/interfaces/default/images/logo.png?raw=true
 sources:
   - https://github.com/Tautulli/Tautulli
-  - https://github.com/k8s-at-home/container-images
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add chart
+      description: Switch to ghcr.io/home-operations/tautulli 2.16.0
