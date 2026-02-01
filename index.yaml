@@ -3088,6 +3088,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Switch to ghcr.io/home-operations/sonarr 4.0.16
+    apiVersion: v2
+    appVersion: 4.0.16
+    created: "2026-02-01T10:56:51.167149068Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: bd170c30e6cc514d61916a9f2bf408e4169f33b20ccfe488f015d4ef77667f79
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr
+    icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
+    keywords:
+    - sonarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/sonarr-17.2.0/sonarr-17.2.0.tgz
+    version: 17.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 3.0.10.1567
     apiVersion: v2
     appVersion: 3.0.10.1567
@@ -3584,4 +3614,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T10:54:33.490811175Z"
+generated: "2026-02-01T10:56:51.167504278Z"
