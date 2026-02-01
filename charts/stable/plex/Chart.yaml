@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/plex
-appVersion: 1.42.2.10156
+appVersion: 1.43.0.10467
 description: Plex Media Server
 name: plex
-version: 7.2.0
+version: 7.3.0
 kubeVersion: ">=1.30.0"
 keywords:
   - plex
@@ -22,4 +22,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update ghcr.io/home-operations/plex:1.42.2.10156
+      description: Applied minor update of image ghcr.io/home-operations/plex to 1.43.0.10467
