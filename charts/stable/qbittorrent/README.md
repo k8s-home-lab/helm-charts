@@ -9,7 +9,7 @@ qBittorrent is a cross-platform free and open-source BitTorrent client
 ## Source Code
 
 * <https://github.com/qbittorrent/qBittorrent>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. See [image docs](https://docs.k8s-at-home.com/our-container-images/configuration/) for more details. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/qbittorrent"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/qbittorrent"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure prometheus-qbittorrent-exporter sidecar and Prometheus podMonitor. |
@@ -110,7 +110,7 @@ N/A
 #### Changed
 
 * Update README
-* Use docker image from ghcr.io/onedr0p
+* Use docker image from ghcr.io/home-operations
 
 #### Fixed
 

@@ -1,9 +1,9 @@
 apiVersion: v2
-# renovate: image=ghcr.io/onedr0p/qbittorrent
-appVersion: 4.5.0
+# renovate: image=ghcr.io/home-operations/qbittorrent
+appVersion: 5.1.4
 description: qBittorrent is a cross-platform free and open-source BitTorrent client
 name: qbittorrent
-version: 14.1.0
+version: 14.2.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - qbittorrent
@@ -12,7 +12,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorren
 icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
 sources:
   - https://github.com/qbittorrent/qBittorrent
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update README
-    - kind: changed
-      description: Use docker image from ghcr.io/onedr0p
+      description: Switch to ghcr.io/home-operations/qbittorrent 5.1.4
