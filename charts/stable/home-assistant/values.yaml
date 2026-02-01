@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/home-assistant/home-assistant
+  repository: ghcr.io/home-operations/home-assistant
   # -- image tag
   # @default -- chart.appVersion
   tag:
