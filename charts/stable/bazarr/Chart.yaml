@@ -16,7 +16,7 @@ home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/baza
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
 sources:
   - https://github.com/morpheus65535/bazarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools

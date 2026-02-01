@@ -9,7 +9,7 @@ Bazarr is a companion application to Sonarr and Radarr. It manages and downloads
 ## Source Code
 
 * <https://github.com/morpheus65535/bazarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/bazarr"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/bazarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
