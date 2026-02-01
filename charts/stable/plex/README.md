@@ -79,7 +79,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | hostNetwork | bool | `false` | Enable devices to be discoverable |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/plex"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/plex"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
