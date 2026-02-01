@@ -1689,6 +1689,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Switch to ghcr.io/home-operations/lidarr 3.1.2
+    apiVersion: v2
+    appVersion: 3.1.2
+    created: "2026-02-01T10:47:56.056642629Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Looks and smells like Sonarr but made for music
+    digest: fd4dfc98c9b00a710665b02ad3f8741857843f716a057c4ee0b5b12131bb7600
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/lidarr-15.2.0/lidarr-15.2.0.tgz
+    version: 15.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update image to 1.1.4.3027
     apiVersion: v2
     appVersion: 1.1.4.3027
@@ -3436,4 +3466,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T10:46:25.47742315Z"
+generated: "2026-02-01T10:47:56.056814359Z"
