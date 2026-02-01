@@ -241,6 +241,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Switch to ghcr.io/home-operations/beets 3.2.1
+    apiVersion: v2
+    appVersion: 2.3.1
+    created: "2026-02-01T10:42:51.864594778Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: beets helm package
+    digest: 834bfba0227a53734d5fe7d77728c93aa62dd5d612fd63760a48892004032c2b
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/beets
+    icon: https://pbs.twimg.com/profile_images/934307246/logo-square_400x400.png
+    keywords:
+    - beets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: beets
+    sources:
+    - https://github.com/beetbox/beets
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/beets-3.0.0/beets-3.0.0.tgz
+    version: 3.0.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 1.6.0
@@ -3366,4 +3394,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T10:37:50.957457428Z"
+generated: "2026-02-01T10:42:51.864756721Z"
