@@ -1,9 +1,9 @@
 apiVersion: v2
-# renovate: image=linuxserver/beets
-appVersion: 1.6.0
+# renovate: image=ghcr.io/home-operations/beets
+appVersion: 2.3.1
 description: beets helm package
 name: beets
-version: 2.0.0
+version: 3.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - beets
@@ -11,7 +11,7 @@ home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/beets
 icon: https://pbs.twimg.com/profile_images/934307246/logo-square_400x400.png
 sources:
   - https://github.com/beetbox/beets
-  - https://github.com/linuxserver/docker-beets
+  - https://github.com/home-operations/containers
 maintainers:
   - name: k8s-home-lab
     email: admin@aste.tools
@@ -22,4 +22,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add chart
+      description: Switch to ghcr.io/home-operations/beets 3.2.1

@@ -9,7 +9,7 @@ beets helm package
 ## Source Code
 
 * <https://github.com/beetbox/beets>
-* <https://github.com/linuxserver/docker-beets>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
