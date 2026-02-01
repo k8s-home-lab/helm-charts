@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 4.0.16
 description: Smart PVR for newsgroup and bittorrent users
 name: sonarr
-version: 17.2.0
+version: 17.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - sonarr
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Switch to ghcr.io/home-operations/sonarr 4.0.16
+      description: Fix and update exportarr
