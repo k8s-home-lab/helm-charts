@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/onedr0p/sonarr
+  repository: ghcr.io/home-operations/sonarr
   # @default -- chart.appVersion
   tag:
   # -- image pull policy
@@ -95,7 +95,7 @@ metrics:
   exporter:
     image:
       # -- image repository
-      repository: ghcr.io/onedr0p/exportarr
+      repository: ghcr.io/home-operations/exportarr
       # -- image tag
       tag: v1.3.1
       # -- image pull policy
