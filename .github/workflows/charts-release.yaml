@@ -27,7 +27,6 @@ jobs:
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Install Kubernetes tools
         uses: yokawasa/action-setup-kube-tools@v0.13.1
