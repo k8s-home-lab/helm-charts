@@ -2559,6 +2559,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Switch to ghcr.io/home-operations/qbittorrent 5.1.4
+    apiVersion: v2
+    appVersion: 5.1.4
+    created: "2026-02-01T10:53:12.895722534Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: fda74231423eed7d109de25147e5e4e215c68554e61b42793155d9b03a4d2816
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.2.0/qbittorrent-14.2.0.tgz
+    version: 14.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update docker image to ghcr.io/onedr0p
         - kind: changed
           description: Update README
@@ -3525,4 +3554,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-01T10:51:52.602319489Z"
+generated: "2026-02-01T10:53:12.895879497Z"
