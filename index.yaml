@@ -1370,6 +1370,48 @@ entries:
           description: Switch to ghcr.io/home-operations/home-assistant 2026.1.3
     apiVersion: v2
     appVersion: 2026.1.3
+    created: "2026-02-02T08:30:51.227411548Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.2.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 24.0.3
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.3.5
+    description: Home Assistant
+    digest: 87d27339e4898b9cdeeb926faf0643cde80354ee209b19f050717bb76b1dcb8a
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/home-assistant-16.0.0/home-assistant-16.0.0.tgz
+    version: 16.0.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Switch to ghcr.io/home-operations/home-assistant 2026.1.3
+    apiVersion: v2
+    appVersion: 2026.1.3
     created: "2026-02-02T08:03:25.986649932Z"
     dependencies:
     - name: common
@@ -3775,4 +3817,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-02T08:03:25.986873197Z"
+generated: "2026-02-02T08:30:51.227558131Z"
