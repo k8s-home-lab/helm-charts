@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/flaresolverr/flaresolverr
-appVersion: v3.3.19
+appVersion: v3.4.6
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 6.0.3
+version: 6.0.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - flaresolverr
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update image to v3.3.19
+      description: Applied minor update of image ghcr.io/flaresolverr/flaresolverr to v3.4.6
