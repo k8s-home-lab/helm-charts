@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/radarr
-appVersion: 0.4.18
+appVersion: 6.1.1
 description: A fork of Sonarr to work with movies à la Couchpotato
 name: radarr
-version: 17.3.1
+version: 17.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - radarr
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Fix and update exportarr
+      description: Applied major update of image ghcr.io/home-operations/radarr to 6.1.1
