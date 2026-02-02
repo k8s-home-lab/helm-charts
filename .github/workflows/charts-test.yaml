@@ -27,12 +27,11 @@ jobs:
         with:
           setup-tools: |
             helmv3
-          # helm: "3.8.0"
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 4.0
 
       - name: Install dependencies
         env:
@@ -102,7 +101,6 @@ jobs:
         with:
           setup-tools: |
             helmv3
-          # helm: "3.6.3"
 
       - uses: actions/setup-python@v6
         with:
@@ -111,14 +109,9 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2
 
-      - name: Create k3d cluster
-        uses: nolar/setup-k3d-k3s@v1
-        with:
-          version: v1.21
-
-      - name: Remove node taints
-        run: |
-          kubectl taint --all=true nodes node.cloudprovider.kubernetes.io/uninitialized- || true
+      - name: Create minikube cluster
+        id: minikube
+        uses: medyagh/setup-minikube@latest
 
       - name: Run chart-testing (install)
         run: ct install --config .github/ct-install.yaml --charts ${{ matrix.chart }}
