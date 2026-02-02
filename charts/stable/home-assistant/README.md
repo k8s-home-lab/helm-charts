@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 14.2.0](https://img.shields.io/badge/Version-14.2.0-informational?style=flat-square) ![AppVersion: 2026.1.3](https://img.shields.io/badge/AppVersion-2026.1.3-informational?style=flat-square)
+![Version: 15.0.0](https://img.shields.io/badge/Version-15.0.0-informational?style=flat-square) ![AppVersion: 2026.1.3](https://img.shields.io/badge/AppVersion-2026.1.3-informational?style=flat-square)
 
 Home Assistant
 
@@ -21,7 +21,7 @@ Kubernetes: `>=1.16.0-0`
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | influxdb | 5.3.5 |
 | https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://charts.bitnami.com/bitnami | postgresql | 18.2.3 |
 | https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
@@ -175,5 +175,5 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 ## Changelog
 
-### Version 14.2.0
+### Version 15.0.0
 
