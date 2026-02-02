@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 5.51.1
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 3.0.0
+version: 3.1.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -21,7 +21,7 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: mariadb
-    version: 11.0.14
+    version: 11.5.7
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
