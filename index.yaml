@@ -2823,6 +2823,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied major update of image ghcr.io/home-operations/radarr to 6.1.1
+    apiVersion: v2
+    appVersion: 6.1.1
+    created: "2026-02-03T00:01:32.860777929Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 77a7c63278738cc946ddd6d1a55217f29ba115388d1b27c189983b14ce94390f
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/radarr-17.4.0/radarr-17.4.0.tgz
+    version: 17.4.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Fix and update exportarr
     apiVersion: v2
     appVersion: 0.4.18
@@ -3846,4 +3876,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-02T08:40:17.452512262Z"
+generated: "2026-02-03T00:01:32.860945409Z"
