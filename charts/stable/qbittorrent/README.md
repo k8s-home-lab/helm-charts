@@ -1,6 +1,6 @@
 # qbittorrent
 
-![Version: 14.2.0](https://img.shields.io/badge/Version-14.2.0-informational?style=flat-square) ![AppVersion: 5.1.4](https://img.shields.io/badge/AppVersion-5.1.4-informational?style=flat-square)
+![Version: 14.2.1](https://img.shields.io/badge/Version-14.2.1-informational?style=flat-square) ![AppVersion: 5.1.4](https://img.shields.io/badge/AppVersion-5.1.4-informational?style=flat-square)
 
 qBittorrent is a cross-platform free and open-source BitTorrent client
 
@@ -78,6 +78,10 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. See [image docs](https://docs.k8s-at-home.com/our-container-images/configuration/) for more details. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
+| global.annotations | object | `{}` | Set additional global annotations. Helm templates can be used. |
+| global.fullnameOverride | string | `nil` | Set the entire name definition |
+| global.labels | object | `{}` | Set additional global labels. Helm templates can be used. |
+| global.nameOverride | string | `nil` | Set an override for the prefix of the fullname |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/home-operations/qbittorrent"` | image repository |
 | image.tag | string | `nil` |  |
@@ -101,5 +105,5 @@ N/A
 
 ## Changelog
 
-### Version 14.2.0
+### Version 14.2.1
 
