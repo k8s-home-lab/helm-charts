@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.3.2
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 5.2.0
+version: 5.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - prowlarr
@@ -24,4 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Switch to ghcr.io/home-operations/prowlarr 2.3.2
+      description: Added liveness probe
