@@ -2551,6 +2551,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Added liveness probe
+    apiVersion: v2
+    appVersion: 2.3.2
+    created: "2026-02-04T06:40:15.381723818Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: 04d25a69db754108ff70337ac35d797e1088e66c1e7b255d8289f18f099618e7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/prowlarr-5.2.1/prowlarr-5.2.1.tgz
+    version: 5.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Switch to ghcr.io/home-operations/prowlarr 2.3.2
     apiVersion: v2
     appVersion: 2.3.2
@@ -3945,4 +3976,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-04T06:35:44.680194105Z"
+generated: "2026-02-04T06:40:15.381856274Z"
