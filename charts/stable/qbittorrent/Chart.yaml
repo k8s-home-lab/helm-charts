@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 5.1.4
 description: qBittorrent is a cross-platform free and open-source BitTorrent client
 name: qbittorrent
-version: 14.2.0
+version: 14.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - qbittorrent
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Switch to ghcr.io/home-operations/qbittorrent 5.1.4
+      description: Added global values to fix library merging
