@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/bazarr
-appVersion: 1.5.4
+appVersion: 1.5.5
 description: Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 name: bazarr
-version: 11.2.0
+version: 11.2.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - bazarr
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Switch to ghcr.io/home-operations/bazarr 1.5.4
+      description: Applied patch update of image ghcr.io/home-operations/bazarr to 1.5.5
