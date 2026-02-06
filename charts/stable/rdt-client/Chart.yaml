@@ -1,0 +1,24 @@
+apiVersion: v2
+# renovate: image=ghcr.io/rogerfar/rdtclient
+appVersion: 2.0.119
+description: rdt-client helm package
+name: rdt-client
+version: 1.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - rdt-client
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/rdt-client
+icon: https://github.com/rogerfar/rdt-client/blob/main/client/src/assets/logo.png?raw=true
+sources:
+  - https://github.com/rogerfar/rdt-client
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
