@@ -115,7 +115,6 @@ jobs:
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Install yq
         uses: chrisdickinson/setup-yq@latest
