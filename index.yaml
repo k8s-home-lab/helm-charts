@@ -3194,6 +3194,34 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/radarr-17.0.0/radarr-17.0.0.tgz
     version: 17.0.0
+  rdt-client:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 2.0.119
+    created: "2026-02-06T23:16:06.340430601Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: rdt-client helm package
+    digest: fbb7bb6df73f53eb807a330379677c49eab32597d873dfe456d9b4a0498ffd2d
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/rdt-client
+    icon: https://github.com/rogerfar/rdt-client/blob/main/client/src/assets/logo.png?raw=true
+    keywords:
+    - rdt-client
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: rdt-client
+    sources:
+    - https://github.com/rogerfar/rdt-client
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/rdt-client-1.1.0/rdt-client-1.1.0.tgz
+    version: 1.1.0
   readarr:
   - annotations:
       artifacthub.io/changes: |
@@ -3976,4 +4004,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-04T06:40:15.381856274Z"
+generated: "2026-02-06T23:16:06.34059559Z"
