@@ -6,6 +6,7 @@
 | [beets](stable/beets) | beets helm package |
 | [blocky](stable/blocky) | DNS proxy as ad-blocker for local network |
 | [calibre-web](stable/calibre-web) | Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. |
+| [common](stable/common) | Function library for k8s-at-home charts |
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
 | [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
 | [freshrss](stable/freshrss) | FreshRSS is a self-hosted RSS feed aggregator |
