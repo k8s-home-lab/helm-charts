@@ -2,7 +2,6 @@
 ### Stable charts:
 | Chart | Description |
 | ----- | ----------- |
-| [audiobookshelf](stable/audiobookshelf) | Self-hosted audiobook server for managing and playing your audiobooks |
 | [bazarr](stable/bazarr) | Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements |
 | [beets](stable/beets) | beets helm package |
 | [blocky](stable/blocky) | DNS proxy as ad-blocker for local network |
@@ -37,6 +36,7 @@
 | [wireguard-pia](stable/wireguard-pia) | Fast, modern, secure VPN tunnel with PIA connect scripts |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
 | [youtubedl-material](stable/youtubedl-material) | Self-hosted YouTube downloader built on Material Design |
+| [zurg](stable/zurg) | A self-hosted Real-Debrid webdav server |
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
