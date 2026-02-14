@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/home-assistant
-appVersion: 2026.1.3
+appVersion: 2026.2.2
 description: Home Assistant
 name: home-assistant
-version: 16.0.0
+version: 16.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - home-assistant
@@ -36,4 +36,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Switch to ghcr.io/home-operations/home-assistant 2026.1.3
+      description: Applied minor update of image ghcr.io/home-operations/home-assistant to 2026.2.2
