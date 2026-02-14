@@ -11,40 +11,6 @@ on:
         type: string
 
 jobs:
-  unit-test:
-    name: Run unit tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ inputs.checkoutCommit }}
-          persist-credentials: false
-
-      - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
-        with:
-          setup-tools: |
-            helmv3
-
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 4.0
-
-      - name: Install dependencies
-        env:
-          RUBYJQ_USE_SYSTEM_LIBRARIES: 1
-        run: |
-          sudo apt-get update
-          sudo apt-get install libjq-dev
-          bundle install
-
-      - name: Run tests
-        run: |
-          bundle exec m -r ./test/
-
   generate-install-matrix:
     name: Generate matrix for install
     runs-on: ubuntu-latest
@@ -77,6 +43,35 @@ jobs:
           if [[ $(echo ${OUTPUT_JSON} | jq -c '. | length') -gt 0 ]]; then
             echo "::set-output name=detected::true"
           fi
+
+
+  unit-test:
+    needs:
+      - generate-install-matrix
+    if: needs.generate-install-matrix.outputs.detected == 'true'
+    name: Run unit tests
+    strategy:
+      matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
+      fail-fast: true
+      max-parallel: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ inputs.checkoutCommit }}
+          persist-credentials: false
+
+      - name: Install Kubernetes tools
+        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        with:
+          setup-tools: |
+            helmv3
+
+      - name: Run tests
+        run: |
+          helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml
 
   install-charts:
     needs:
