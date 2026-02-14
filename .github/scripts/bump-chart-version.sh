@@ -20,6 +20,10 @@ minor=$(echo "$version" | cut -d. -f2)
 patch=$(echo "$version" | cut -d. -f3)
 
 if [[ "$update_type" =~ (major|replacement) ]]; then
+  major=$(( major + 1 ))
+  minor=0
+  patch=0
+elif [[ "$update_type" =~ 'minor' ]]; then
   minor=$(( minor + 1 ))
   patch=0
 else

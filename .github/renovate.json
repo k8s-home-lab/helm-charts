@@ -49,15 +49,22 @@
         "docker"
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
-      "commitMessageTopic": "Docker image {{depName}}"
+      "commitMessageTopic": "Docker image {{depName}}",
+      "postUpgradeTasks": {
+        "commands": [
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
+        ]
+      }
     },
     {
       "matchDatasources": [
         "helm"
       ],
-      "commitMessagePrefix": "[{{{parentDir}}}]",
-      "commitMessageTopic": "Helm chart {{depName}}",
-      "separateMinorPatch": true
+      "postUpgradeTasks": {
+        "commands": [
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
+        ]
+      }
     },
     {
       "matchManagers": [
