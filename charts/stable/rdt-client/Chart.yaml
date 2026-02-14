@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/rogerfar/rdtclient
-appVersion: 2.0.119
+appVersion: 2.0.120
 description: rdt-client helm package
 name: rdt-client
-version: 1.1.0
+version: 1.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - rdt-client
@@ -20,5 +20,5 @@ dependencies:
     version: 4.5.2
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+    - kind: changed
+      description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.120
