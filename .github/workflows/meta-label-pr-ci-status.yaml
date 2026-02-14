@@ -26,7 +26,7 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
 
       - name: Download workflow artifact
-        uses: dawidd6/action-download-artifact@v12
+        uses: dawidd6/action-download-artifact@v14
         with:
           github_token: ${{ steps.generate-token.outputs.token }}
           workflow: pr-validate.yaml
