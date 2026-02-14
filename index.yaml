@@ -4,6 +4,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image ghcr.io/advplyr/audiobookshelf to 2.32.1
+    apiVersion: v2
+    appVersion: 2.32.1
+    created: "2026-02-14T07:32:58.929133392Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Self-hosted audiobook server for managing and playing your audiobooks
+    digest: 6ba4a4173e02b1f39814055211d73ca46b00f78fab33316c242f27ad58d8d9de
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/audiobookshelf
+    icon: https://github.com/advplyr/audiobookshelf/blob/master/static/Logo.png
+    keywords:
+    - audiobookshelf
+    - books
+    - audiobooks
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: audiobookshelf
+    sources:
+    - https://github.com/advplyr/audiobookshelf
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/audiobookshelf-2.0.1/audiobookshelf-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 2.2.23
@@ -4103,4 +4132,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-14T07:31:37.56357247Z"
+generated: "2026-02-14T07:32:58.929256113Z"
