@@ -2728,6 +2728,35 @@ entries:
           description: Applied minor update of image esanchezm/prometheus-qbittorrent-exporter to v1.6.0
     apiVersion: v2
     appVersion: 5.1.4
+    created: "2026-02-14T09:27:30.544600017Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: 965933c3cf8b688339670ee2c460f0fcb9e5bb97e8130c71af512cd2a0d51139
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.3.1/qbittorrent-14.3.1.tgz
+    version: 14.3.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Applied minor update of image esanchezm/prometheus-qbittorrent-exporter to v1.6.0
+    apiVersion: v2
+    appVersion: 5.1.4
     created: "2026-02-14T09:20:24.881771411Z"
     dependencies:
     - name: common
@@ -4040,4 +4069,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T09:20:25.184279192Z"
+generated: "2026-02-14T09:27:30.544809216Z"
