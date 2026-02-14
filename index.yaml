@@ -512,6 +512,31 @@ entries:
     urls:
     - https://github.com/Aste88/helm-charts/releases/download/calibre-web-9.0.0/calibre-web-9.0.0.tgz
     version: 9.0.0
+  common:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Switch to k8s-home-lab org
+        - kind: changed
+          description: Fixed global values access
+    apiVersion: v2
+    created: "2026-02-14T23:24:55.904265311Z"
+    description: Function library for k8s-at-home charts
+    digest: 062bdd4b6ea4b3fff7d38d320a05820511ed2f4d2a556afda83ac04d34745372
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common
+    keywords:
+    - k8s-at-home
+    - k8s-home-lab
+    - common
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: common
+    type: library
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/common-4.5.3/common-4.5.3.tgz
+    version: 4.5.3
   dynamo-db:
   - annotations:
       artifacthub.io/changes: |
@@ -4330,4 +4355,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T14:14:27.67718934Z"
+generated: "2026-02-14T23:24:55.904460637Z"
