@@ -2725,6 +2725,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image esanchezm/prometheus-qbittorrent-exporter to v1.6.0
+    apiVersion: v2
+    appVersion: 5.1.4
+    created: "2026-02-14T09:20:24.881771411Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: a0d0c5d9c24d3f06f453215d6d5387f7a71ce53f2ce51cf7eeebe73790ccd885
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.3.0/qbittorrent-14.3.0.tgz
+    version: 14.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Added global values to fix library merging
     apiVersion: v2
     appVersion: 5.1.4
@@ -3147,6 +3176,33 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/radarr-17.0.0/radarr-17.0.0.tgz
     version: 17.0.0
   rdt-client:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.120
+    apiVersion: v2
+    appVersion: 2.0.120
+    created: "2026-02-14T09:20:25.046695985Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: rdt-client helm package
+    digest: fe0520fa41beb6c39e2ca762b21991527eee19168886296e70111b6ad288c84f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/rdt-client
+    icon: https://github.com/rogerfar/rdt-client/blob/main/client/src/assets/logo.png?raw=true
+    keywords:
+    - rdt-client
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: rdt-client
+    sources:
+    - https://github.com/rogerfar/rdt-client
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/rdt-client-1.1.1/rdt-client-1.1.1.tgz
+    version: 1.1.1
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -3956,4 +4012,32 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-14T07:32:58.929256113Z"
+  zurg:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v0.9.3-final
+    created: "2026-02-14T09:20:25.18411819Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A self-hosted Real-Debrid webdav server
+    digest: 4d9b46a23f2ff0d95187fde19bca0fb7e67faf0e9ddebcbec27d2333ff2aa128
+    home: ttps://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zurg
+    icon: https://avatars.githubusercontent.com/u/130290673?s=48&amp;v=4
+    keywords:
+    - zurg
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: zurg
+    sources:
+    - https://github.com/debridmediamanager/zurg-testing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
+    version: 1.1.0
+generated: "2026-02-14T09:20:25.184279192Z"
