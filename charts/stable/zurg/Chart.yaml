@@ -1,0 +1,24 @@
+apiVersion: v2
+# renovate: image=ghcr.io/debridmediamanager/zurg-testing
+appVersion: v0.9.3-final
+description: A self-hosted Real-Debrid webdav server
+name: zurg
+version: 1.1.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - zurg
+home: ttps://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zurg
+icon: https://avatars.githubusercontent.com/u/130290673?s=48&amp;v=4
+sources:
+  - https://github.com/debridmediamanager/zurg-testing
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
