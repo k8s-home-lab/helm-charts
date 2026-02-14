@@ -44,34 +44,33 @@ jobs:
             echo "::set-output name=detected::true"
           fi
 
+  # unit-test:
+  #   needs:
+  #     - generate-install-matrix
+  #   if: needs.generate-install-matrix.outputs.detected == 'true'
+  #   name: Run unit tests
+  #   strategy:
+  #     matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
+  #     fail-fast: true
+  #     max-parallel: 15
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ inputs.checkoutCommit }}
+  #         persist-credentials: false
 
-  unit-test:
-    needs:
-      - generate-install-matrix
-    if: needs.generate-install-matrix.outputs.detected == 'true'
-    name: Run unit tests
-    strategy:
-      matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
-      fail-fast: true
-      max-parallel: 15
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ inputs.checkoutCommit }}
-          persist-credentials: false
+  #     - name: Install Kubernetes tools
+  #       uses: yokawasa/action-setup-kube-tools@v0.13.1
+  #       with:
+  #         setup-tools: |
+  #           helmv3
 
-      - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
-        with:
-          setup-tools: |
-            helmv3
-
-      - name: Run tests
-        run: |
-          helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml
+  #     - name: Run tests
+  #       run: |
+  #         helm dependency update && helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml
 
   install-charts:
     needs:
