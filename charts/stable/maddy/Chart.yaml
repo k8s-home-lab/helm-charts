@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=foxcpp/maddy
-appVersion: 0.7.0
+appVersion: 0.8.2
 description: Maddy Mail Server
 name: maddy
-version: 4.0.0
+version: 4.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - maddy
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add chart
+      description: Applied minor update of image foxcpp/maddy to 0.8.2
