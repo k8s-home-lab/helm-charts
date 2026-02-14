@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 16.0.0](https://img.shields.io/badge/Version-16.0.0-informational?style=flat-square) ![AppVersion: 2026.1.3](https://img.shields.io/badge/AppVersion-2026.1.3-informational?style=flat-square)
+![Version: 16.1.0](https://img.shields.io/badge/Version-16.1.0-informational?style=flat-square) ![AppVersion: 2026.2.2](https://img.shields.io/badge/AppVersion-2026.2.2-informational?style=flat-square)
 
 Home Assistant
 
@@ -175,5 +175,5 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 ## Changelog
 
-### Version 16.0.0
+### Version 16.1.0
 
