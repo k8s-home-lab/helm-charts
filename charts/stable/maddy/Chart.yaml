@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.7.0
 description: Maddy Mail Server
 name: maddy
-version: 4.0.0
+version: 4.2.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - maddy
@@ -21,10 +21,10 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 11.6.12
+    version: 11.9.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add chart
+      description: Applied minor update of image postgresql to 11.9.13

@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.2.1
+version: 2.5.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -20,7 +20,7 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 12.4.3
+    version: 12.12.10
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
@@ -28,10 +28,10 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: redis
-    version: 17.10.3
+    version: 17.17.1
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Added global values to fix library merging
+      description: Applied minor update of image redis to 17.17.1
