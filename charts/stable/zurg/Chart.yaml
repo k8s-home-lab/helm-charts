@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.3-final
 description: A self-hosted Real-Debrid webdav server
 name: zurg
-version: 1.1.0
+version: 1.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - zurg
