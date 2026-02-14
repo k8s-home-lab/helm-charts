@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.2.1
+version: 2.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -34,4 +34,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Added global values to fix library merging
+      description: Applied minor update of image codercom/code-server to 4.109.2
