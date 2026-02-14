@@ -1,6 +1,6 @@
 # zurg
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![AppVersion: v0.9.3-final](https://img.shields.io/badge/AppVersion-v0.9.3--final-informational?style=flat-square)
+![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-informational?style=flat-square) ![AppVersion: v0.9.3-final](https://img.shields.io/badge/AppVersion-v0.9.3--final-informational?style=flat-square)
 
 A self-hosted Real-Debrid webdav server
 
@@ -88,5 +88,5 @@ N/A
 
 ## Changelog
 
-### Version 1.1.0
+### Version 1.1.1
 
