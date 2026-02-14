@@ -394,6 +394,36 @@ entries:
   calibre-web:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: Applied patch update of image ghcr.io/linuxserver/calibre-web to 0.6.26
+    apiVersion: v2
+    appVersion: 0.6.26
+    created: "2026-02-14T14:02:22.435536989Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Calibre-Web is a web app providing a clean interface for browsing,
+      reading and downloading eBooks using an existing Calibre database.
+    digest: 152c122e7852c15251596efa6bf32da84754d5acd62d8936d8d294339f48b54e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/calibre-web
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
+    keywords:
+    - calibre
+    - ebook
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: calibre-web
+    sources:
+    - https://github.com/janeczku/calibre-web
+    - https://hub.docker.com/r/linuxserver/calibre-web/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/calibre-web-9.0.3/calibre-web-9.0.3.tgz
+    version: 9.0.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: fixed
           description: Update README
     apiVersion: v2
@@ -4163,4 +4193,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T14:01:05.688106251Z"
+generated: "2026-02-14T14:02:22.435761685Z"
