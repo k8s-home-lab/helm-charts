@@ -4048,6 +4048,33 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v0.9.3-final
+    created: "2026-02-14T09:29:20.240507302Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A self-hosted Real-Debrid webdav server
+    digest: fd0eadb50b56b6496e3e99da665bbfbd50657c44869505d3da8c06d35ed7347a
+    home: ttps://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zurg
+    icon: https://avatars.githubusercontent.com/u/130290673?s=48&amp;v=4
+    keywords:
+    - zurg
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: zurg
+    sources:
+    - https://github.com/debridmediamanager/zurg-testing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.1/zurg-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v0.9.3-final
     created: "2026-02-14T09:20:25.18411819Z"
     dependencies:
     - name: common
@@ -4069,4 +4096,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T09:27:30.544809216Z"
+generated: "2026-02-14T09:29:20.240700894Z"
