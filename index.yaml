@@ -903,6 +903,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image codercom/code-server to 4.109.2
+    apiVersion: v2
+    appVersion: 1.25.4
+    created: "2026-02-14T14:01:05.687870118Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.10.3
+    description: Gitea self-hosted github-styled git repository manager
+    digest: d5de4cee92fca505814a8f6003f873edd7c57b928be29f89d02457e6cceecb88
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.3.0/gitea-2.3.0.tgz
+    version: 2.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Added global values to fix library merging
     apiVersion: v2
     appVersion: 1.25.4
@@ -4123,4 +4163,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T09:30:36.232825279Z"
+generated: "2026-02-14T14:01:05.688106251Z"
