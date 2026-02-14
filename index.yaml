@@ -861,6 +861,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image jesec/flood to 4.12.6
+    apiVersion: v2
+    appVersion: 4.12.6
+    created: "2026-02-14T07:31:37.563395321Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Flood is a monitoring service for various torrent clients
+    digest: b72a636dcd70bdf46e00a3f3a7863bf099b568bb65926da0fa6353eabc400d14
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flood
+    icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
+    keywords:
+    - flood
+    - rtorrent
+    - qbittorrent
+    - transmission
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flood
+    sources:
+    - https://github.com/jesec/flood
+    - https://hub.docker.com/r/jesec/flood
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flood-7.0.1/flood-7.0.1.tgz
+    version: 7.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 4.7.0
@@ -4072,4 +4103,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-14T07:30:31.777994955Z"
+generated: "2026-02-14T07:31:37.56357247Z"
