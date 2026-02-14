@@ -47,7 +47,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Install Kubernetes tools
         if: inputs.isRenovatePR == 'true'
@@ -55,7 +54,6 @@ jobs:
         with:
           setup-tools: |
             yq
-          # yq: "4.20.1"
 
       - name: Annotate Charts.yaml for Renovate PR's
         if: inputs.isRenovatePR == 'true'
