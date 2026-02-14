@@ -2120,6 +2120,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image foxcpp/maddy to 0.8.2
+    apiVersion: v2
+    appVersion: 0.8.2
+    created: "2026-02-14T14:14:27.676995505Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Maddy Mail Server
+    digest: 58e6d6fdeeefd9bc2add4617105d5f23738005f7f6706d0f461fb5e3f74aa6be
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/maddy
+    keywords:
+    - maddy
+    - mail
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: maddy
+    sources:
+    - https://github.com/foxcpp/maddy
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/maddy-4.1.0/maddy-4.1.0.tgz
+    version: 4.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 0.7.0
@@ -4299,4 +4330,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-14T14:06:34.908774103Z"
+generated: "2026-02-14T14:14:27.67718934Z"
