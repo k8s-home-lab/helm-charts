@@ -294,6 +294,40 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/beets-2.0.0/beets-2.0.0.tgz
     version: 2.0.0
+  blocky:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Updated app to v0.28.2
+    apiVersion: v2
+    appVersion: v0.28.2
+    created: "2026-02-14T01:21:36.527674553Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.10.3
+    description: DNS proxy as ad-blocker for local network
+    digest: a2f5b03b1c7e4b24e5277dc5b92ad439e951f03d44abea10ed05e17e978d8aee
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/blocky-11.0.0/blocky-11.0.0.tgz
+    version: 11.0.0
   brave-sync:
   - annotations:
       artifacthub.io/changes: |
@@ -4004,4 +4038,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-06T23:16:06.34059559Z"
+generated: "2026-02-14T01:21:36.527788215Z"
