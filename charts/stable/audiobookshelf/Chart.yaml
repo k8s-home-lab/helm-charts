@@ -10,7 +10,7 @@ keywords:
   - books
   - audiobooks
 home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/audiobookshelf
-icon: https://github.com/advplyr/audiobookshelf/blob/master/static/Logo.png
+icon: https://github.com/advplyr/audiobookshelf/raw/master/client/static/Logo.png
 sources:
   - https://github.com/advplyr/audiobookshelf
 maintainers:
@@ -19,8 +19,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    version: 4.5.3
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image ghcr.io/advplyr/audiobookshelf to 2.32.1
+      description: Update Logo.png
