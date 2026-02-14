@@ -28,7 +28,7 @@ jobs:
           setup-tools: |
             helmv3
 
-      - uses: actions/setup-python@v6.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: '3.x'
           check-latest: true
