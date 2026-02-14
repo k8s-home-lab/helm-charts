@@ -5,6 +5,7 @@
 | [audiobookshelf](stable/audiobookshelf) | Self-hosted audiobook server for managing and playing your audiobooks |
 | [bazarr](stable/bazarr) | Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements |
 | [beets](stable/beets) | beets helm package |
+| [blocky](stable/blocky) | DNS proxy as ad-blocker for local network |
 | [calibre-web](stable/calibre-web) | Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. |
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
 | [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
@@ -24,6 +25,7 @@
 | [prowlarr](stable/prowlarr) | Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps. |
 | [qbittorrent](stable/qbittorrent) | qBittorrent is a cross-platform free and open-source BitTorrent client |
 | [radarr](stable/radarr) | A fork of Sonarr to work with movies à la Couchpotato |
+| [rdt-client](stable/rdt-client) | rdt-client helm package |
 | [readarr](stable/readarr) | A fork of Radarr to work with Books & AudioBooks |
 | [shinobi](stable/shinobi) | shinobi helm package |
 | [sonarr](stable/sonarr) | Smart PVR for newsgroup and bittorrent users |
