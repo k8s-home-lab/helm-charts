@@ -1,0 +1,153 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/debridmediamanager/zurg-testing
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. See more environment variables in the [zurg documentation](https://zurg.org/docs).
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 9999
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configures the probes for the main Pod.
+# @default -- See values.yaml
+probes:
+  liveness:
+    enabled: true
+    ## Set this to true if you wish to specify your own livenessProbe
+    custom: true
+    ## The spec field contains the values for the default livenessProbe.
+    ## If you selected custom: true, this field holds the definition of the livenessProbe.
+    spec:
+      exec:
+        command:
+        - /usr/bin/env
+        - bash
+        - -c
+        - curl -f localhost:9999/dav/version.txt || exit 1
+      failureThreshold: 5
+      initialDelaySeconds: 60
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 10
+
+# -- Configure persistence settings for the chart under this key.
+## Config persistence is required for the Prometheus exporter sidecar.
+# @default -- See values.yaml
+persistence:
+  config:
+    enabled: false
+
+  media:
+    enabled: false
+    mountPath: /media
+
+# -- Full list of options https://github.com/debridmediamanager/zurg-testing/wiki/Config-v0.9
+# @default -- see URL to default config
+config: |
+  # Zurg configuration version
+  zurg: v1
+
+  # Provide your Real-Debrid API token
+  token: YOUR_RD_API_TOKEN # https://real-debrid.com/apitoken
+
+  # Host and port settings
+  host: "[::]"
+  port: 9999
+
+  # Authentication (if required)
+  # username:
+  # password:
+
+  # Proxy settings (if needed)
+  # proxy:
+
+  api_rate_limit_per_minute: 60
+  torrents_rate_limit_per_minute: 25
+  concurrent_workers: 32
+
+  # Checking for changes in Real-Debrid API more frequently (every 60 seconds)
+  check_for_changes_every_secs: 60
+
+  # File handling and renaming settings
+  ignore_renames: false
+  retain_rd_torrent_name: false
+  retain_folder_name_extension: false
+  # expose_full_path: true
+
+  # Torrent management settings
+  enable_repair: true
+  auto_delete_rar_torrents: true
+  get_torrents_count: 5000
+  enable_download_mount: false
+
+  # Performance management
+  api_timeout_secs: 15
+  download_timeout_secs: 10
+  network_buffer_size: 4194304 # 4MB
+  use_download_cache: true
+  realdebrid_timeout_secs: 60
+  rate_limit_sleep_secs: 6
+  retries_until_failed: 3
+
+  # Streaming and download link verification settings
+  serve_from_rclone: false
+  verify_download_link: false
+
+  # Network and API settings
+  force_ipv6: false
+
+  # Library update script configuration
+  # on_library_update: sh plex_update.sh "$@"
+
+  # Directories configuration with specific filters for anime, shows, and movies
+  directories:
+    torrents:
+      group: 1
+      filters:
+        - regex: /.*/
+
+    # anime:
+    #   group_order: 10
+    #   group: media
+    #   filters:
+    #     - regex: /\b[a-fA-F0-9]{8}\b/
+    #     - any_file_inside_regex: /\b[a-fA-F0-9]{8}\b/
+
+    # shows:
+    #   group_order: 20
+    #   group: media
+    #   filters:
+    #     - has_episodes: true
+
+    # movies:
+    #   group_order: 30
+    #   group: media
+    #   only_show_the_biggest_file: true
+    #   filters:
+    #     - regex: /.*/
