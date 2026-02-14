@@ -34,6 +34,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied patch update of image ghcr.io/home-operations/bazarr to 1.5.5
+    apiVersion: v2
+    appVersion: 1.5.5
+    created: "2026-02-14T07:30:31.567219171Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: a4cc31570a3079cdeb9c605438d044b511684fcf0d856d33a62e8f90b3dc4074
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/bazarr-11.2.1/bazarr-11.2.1.tgz
+    version: 11.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Switch to ghcr.io/home-operations/bazarr 1.5.4
     apiVersion: v2
     appVersion: 1.5.4
@@ -4038,4 +4072,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
-generated: "2026-02-14T01:21:36.527788215Z"
+generated: "2026-02-14T07:30:31.777994955Z"
