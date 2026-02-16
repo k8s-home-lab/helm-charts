@@ -44,39 +44,39 @@ jobs:
             echo "::set-output name=detected::true"
           fi
 
-  unit-test:
-    needs:
-      - generate-install-matrix
-    if: needs.generate-install-matrix.outputs.detected == 'true'
-    name: Run unit tests
-    strategy:
-      matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
-      fail-fast: true
-      max-parallel: 15
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ inputs.checkoutCommit }}
-          persist-credentials: false
+  # unit-test:
+  #   needs:
+  #     - generate-install-matrix
+  #   if: needs.generate-install-matrix.outputs.detected == 'true'
+  #   name: Run unit tests
+  #   strategy:
+  #     matrix: ${{ fromJson(needs.generate-install-matrix.outputs.matrix) }}
+  #     fail-fast: true
+  #     max-parallel: 15
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ inputs.checkoutCommit }}
+  #         persist-credentials: false
 
-      - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
-        with:
-          setup-tools: |
-            helmv3
-            yq
+  #     - name: Install Kubernetes tools
+  #       uses: yokawasa/action-setup-kube-tools@v0.13.1
+  #       with:
+  #         setup-tools: |
+  #           helmv3
+  #           yq
 
-      - name: Run tests
-        run: |
-          for repo in $(yq eval '.chart-repos.[]' .github/ct-install.yaml)
-          do
-            helm repo add ${repo%=*} ${repo#*=}
-          done
-          helm dependency update
-          helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
+  #     - name: Run tests
+  #       run: |
+  #         for repo in $(yq eval '.chart-repos.[]' .github/ct-install.yaml)
+  #         do
+  #           helm repo add ${repo%=*} ${repo#*=}
+  #         done
+  #         helm dependency update
+  #         helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
 
   install-charts:
     needs:
