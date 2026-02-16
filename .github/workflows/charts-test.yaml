@@ -71,8 +71,9 @@ jobs:
 
       - name: Run tests
         run: |
-          for repo in $(yq '.chart-repos' .github/ct-install.yaml); do
-            helm repo add ${repo%*=} ${repo#*=}
+          for repo in $(yq eval '.chart-repos.[]' .github/ct-install.yaml)
+          do
+            helm repo add ${repo%=*} ${repo#*=}
           done
           helm dependency update
           helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
