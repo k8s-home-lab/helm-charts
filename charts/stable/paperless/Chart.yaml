@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.17.4
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 10.1.0
+version: 10.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - paperless
@@ -23,10 +23,10 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: redis
-    version: 16.13.1
+    version: 16.13.2
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image ghcr.io/paperless-ngx/paperless-ngx to 1.17.4
+      description: Applied patch update of image redis to 16.13.2
