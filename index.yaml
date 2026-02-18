@@ -4176,6 +4176,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image vaultwarden/server to 1.35.3
+    apiVersion: v2
+    appVersion: 1.35.3
+    created: "2026-02-18T10:17:49.269194176Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.14
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 5d72d0a8b319f06e19dd28ae025373a7ccb0bb8b066c5f470de8bbfe456303cd
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.1.0/vaultwarden-6.1.0.tgz
+    version: 6.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 1.28.1
@@ -4448,4 +4484,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-18T10:16:23.490332809Z"
+generated: "2026-02-18T10:17:49.269439278Z"
