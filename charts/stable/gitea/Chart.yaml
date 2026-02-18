@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.3.0
+version: 2.4.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - gitea
@@ -28,10 +28,10 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: redis
-    version: 17.10.3
+    version: 17.17.1
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image codercom/code-server to 4.109.2
+      description: Applied minor update of image redis to 17.17.1
