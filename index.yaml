@@ -3900,6 +3900,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied major update of image syncthing/syncthing to 2.0.14
+    apiVersion: v2
+    appVersion: 2.0.14
+    created: "2026-02-18T10:15:09.502789506Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Open Source Continuous File Synchronization
+    digest: 41c9610a6112cb673cc4c60dcf1421a085c968bed19a244d9fba99ea0b13e5c9
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - syncthing
+    - file sync
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://github.com/syncthing/syncthing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syncthing-5.0.0/syncthing-5.0.0.tgz
+    version: 5.0.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Add chart
     apiVersion: v2
     appVersion: 1.23.5
@@ -4383,4 +4412,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-18T10:13:38.579231806Z"
+generated: "2026-02-18T10:15:09.503028873Z"
