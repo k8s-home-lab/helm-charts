@@ -4109,6 +4109,38 @@ entries:
     version: 12.0.0
   tdarr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Applied minor update of image haveagitgat/tdarr_node to 2.58.02
+    apiVersion: v2
+    appVersion: 2.11.01
+    created: "2026-02-18T10:18:51.022795026Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Tdarr is a self hosted web-app for automating media library transcode/remux
+      management and making sure your files are exactly how you need them to be in
+      terms of codecs/streams/containers etc.
+    digest: 4d38d7ef3ede1c3b8591c435b50dc314975a4a0a9a88af3e95fea81c6128b31f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/tdarr
+    icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+    keywords:
+    - transcoding
+    - remux
+    - media
+    - video
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tdarr
+    sources:
+    - https://www.github.com/HaveAGitGat/Tdarr
+    - https://tdarr.io/docs/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tdarr-5.1.0/tdarr-5.1.0.tgz
+    version: 5.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Update README
@@ -4484,4 +4516,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-18T10:17:49.269439278Z"
+generated: "2026-02-18T10:18:51.023061225Z"
