@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/tautulli
-appVersion: 2.16.0
+appVersion: 2.16.1
 description: A Python based monitoring and tracking tool for Plex Media Server
 name: tautulli
-version: 12.1.0
+version: 12.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - tautulli
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Switch to ghcr.io/home-operations/tautulli 2.16.0
+      description: Applied patch update of image ghcr.io/home-operations/tautulli to 2.16.1
