@@ -3,13 +3,13 @@ apiVersion: v2
 appVersion: 2.3.2
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 5.2.1
-kubeVersion: ">=1.16.0-0"
+version: 5.3.0
+kubeVersion: ">=1.32.0"
 keywords:
   - prowlarr
   - torrent
   - usenet
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/prowlarr
 icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
 sources:
   - https://github.com/Prowlarr/Prowlarr
@@ -19,9 +19,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Added liveness probe
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url

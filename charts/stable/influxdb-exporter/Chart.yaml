@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: v0.11.4
 description: An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus.
 name: influxdb-exporter
-version: 1.1.3
-kubeVersion: ">=1.16.0-0"
+version: 1.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - influxdb-exporter
 home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
@@ -17,9 +17,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Update README
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version

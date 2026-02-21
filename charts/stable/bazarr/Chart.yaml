@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: 1.5.5
 description: Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 name: bazarr
-version: 11.2.1
-kubeVersion: ">=1.16.0-0"
+version: 11.3.0
+kubeVersion: ">=1.32.0"
 keywords:
   - bazarr
   - radarr
@@ -22,9 +22,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image ghcr.io/home-operations/bazarr to 1.5.5
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version

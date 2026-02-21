@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.3.0
-kubeVersion: ">=1.16.0-0"
+version: 2.4.0
+kubeVersion: ">=1.32.0"
 keywords:
   - gitea
 home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
@@ -17,21 +17,25 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
   - name: postgresql
-    version: 12.4.3
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.16.0
+    repository: oci://registry-1.docker.io/cloudpirates/
     condition: postgresql.enabled
   - name: mariadb
-    version: 11.5.7
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.14.3
+    repository: oci://registry-1.docker.io/cloudpirates/
     condition: mariadb.enabled
   - name: redis
-    version: 17.10.3
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.24.0
+    repository: oci://registry-1.docker.io/cloudpirates/
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image codercom/code-server to 4.109.2
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Remove bitnami dependency

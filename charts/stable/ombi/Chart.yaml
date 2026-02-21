@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: 4.53.4
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
 name: ombi
-version: 12.1.0
-kubeVersion: ">=1.16.0-0"
+version: 12.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - ombi
   - plex
@@ -22,9 +22,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/linuxserver/ombi to 4.53.4
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s versio

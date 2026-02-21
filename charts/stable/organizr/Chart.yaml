@@ -3,11 +3,11 @@ apiVersion: v2
 appVersion: latest
 description: HTPC/Homelab Services Organizer
 name: organizr
-version: 8.0.0
-kubeVersion: ">=1.16.0-0"
+version: 8.1.0
+kubeVersion: ">=1.32.0"
 keywords:
   - organizr
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/organizr
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/organizr
 icon: https://github.com/causefx/Organizr/blob/v2-master/plugins/images/organizr/logo.png?raw=true
 sources:
   - https://github.com/causefx/Organizr
@@ -17,9 +17,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Add chart
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url

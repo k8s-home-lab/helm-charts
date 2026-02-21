@@ -3,12 +3,12 @@ apiVersion: v2
 appVersion: 2.0.14
 description: Open Source Continuous File Synchronization
 name: syncthing
-version: 5.0.0
-kubeVersion: ">=1.16.0-0"
+version: 5.1.0
+kubeVersion: ">=1.32.0"
 keywords:
   - syncthing
   - file sync
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/syncthing
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/syncthing
 icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
 sources:
   - https://syncthing.net/
@@ -18,9 +18,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied major update of image syncthing/syncthing to 2.0.14
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url

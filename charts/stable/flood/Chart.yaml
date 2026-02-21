@@ -3,14 +3,14 @@ apiVersion: v2
 appVersion: 4.12.6
 description: Flood is a monitoring service for various torrent clients
 name: flood
-version: 7.0.1
-kubeVersion: ">=1.16.0-0"
+version: 7.1.0
+kubeVersion: ">=1.32.0"
 keywords:
   - flood
   - rtorrent
   - qbittorrent
   - transmission
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/flood
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flood
 icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
 sources:
   - https://github.com/jesec/flood
@@ -20,9 +20,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image jesec/flood to 4.12.6
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url

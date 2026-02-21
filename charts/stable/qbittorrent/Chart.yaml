@@ -3,12 +3,12 @@ apiVersion: v2
 appVersion: 5.1.4
 description: qBittorrent is a cross-platform free and open-source BitTorrent client
 name: qbittorrent
-version: 14.3.1
-kubeVersion: ">=1.16.0-0"
+version: 14.4.0
+kubeVersion: ">=1.32.0"
 keywords:
   - qbittorrent
   - torrrent
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/qbittorrent
 icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
 sources:
   - https://github.com/qbittorrent/qBittorrent
@@ -18,9 +18,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image esanchezm/prometheus-qbittorrent-exporter to v1.6.0
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url

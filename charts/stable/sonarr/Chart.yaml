@@ -3,13 +3,13 @@ apiVersion: v2
 appVersion: 4.0.16
 description: Smart PVR for newsgroup and bittorrent users
 name: sonarr
-version: 17.2.1
-kubeVersion: ">=1.16.0-0"
+version: 17.3.0
+kubeVersion: ">=1.32.0"
 keywords:
   - sonarr
   - torrent
   - usenet
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/sonarr
 icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
 sources:
   - https://github.com/Sonarr/Sonarr
@@ -19,9 +19,13 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Fix and update exportarr
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
