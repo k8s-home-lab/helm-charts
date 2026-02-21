@@ -3,7 +3,7 @@ appVersion: 1.0.0
 description: ${CHARTNAME} helm package
 name: ${CHARTNAME}
 version: 1.1.0
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.32.0"
 keywords:
   - ${CHARTNAME}
 home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/${CHARTNAME}
@@ -15,8 +15,8 @@ maintainers:
     email: ${CHARTNAME}@${CHARTNAME}.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
   artifacthub.io/changes: |
     - kind: added

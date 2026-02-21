@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.9.3-final
 description: A self-hosted Real-Debrid webdav server
 name: zurg
-version: 1.1.1
+version: 1.2.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - zurg
@@ -16,9 +16,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version

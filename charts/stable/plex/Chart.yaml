@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.43.0
 description: Plex Media Server
 name: plex
-version: 7.2.1
+version: 7.3.0
 kubeVersion: ">=1.30.0"
 keywords:
   - plex
@@ -17,9 +17,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/home-operations/plex:1.43.0
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version

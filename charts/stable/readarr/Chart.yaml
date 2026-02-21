@@ -3,15 +3,15 @@ apiVersion: v2
 appVersion: 0.4.18
 description: A fork of Radarr to work with Books & AudioBooks
 name: readarr
-version: 7.1.2
-kubeVersion: ">=1.16.0-0"
+version: 7.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - readarr
   - torrent
   - usenet
   - AudioBooks
   - ebooks
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/readarr
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/readarr
 icon: https://readarr.com/img/logo.png
 sources:
   - https://github.com/Readarr/Readarr
@@ -21,9 +21,13 @@ maintainers:
     email: mark@markmcw.uk
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Switch to ghcr.io/home-operations/readarr 0.4.18
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
