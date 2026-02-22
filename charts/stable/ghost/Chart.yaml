@@ -22,7 +22,7 @@ dependencies:
     version: 4.5.3
   - name: mariadb
     version: 0.14.3
-    repository: oci://registry-1.docker.io/cloudpirates/
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
 annotations:
   artifacthub.io/changes: |-

@@ -21,7 +21,7 @@ dependencies:
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.3
   - name: redis
-    repository: oci://registry-1.docker.io/cloudpirates/
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     version: 0.24.0
     condition: redis.enabled
 annotations:

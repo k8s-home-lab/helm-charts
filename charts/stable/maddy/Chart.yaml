@@ -20,9 +20,9 @@ dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.3
-  - name: postgresql
+  - name: postgres
     version: 0.16.0
-    repository: oci://registry-1.docker.io/cloudpirates/
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
