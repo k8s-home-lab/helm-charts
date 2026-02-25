@@ -1,6 +1,6 @@
 # beets
 
-![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-informational?style=flat-square) ![AppVersion: 2.3.1](https://img.shields.io/badge/AppVersion-2.3.1-informational?style=flat-square)
+![Version: 3.1.0](https://img.shields.io/badge/Version-3.1.0-informational?style=flat-square) ![AppVersion: 2.3.1](https://img.shields.io/badge/AppVersion-2.3.1-informational?style=flat-square)
 
 beets helm package
 
@@ -13,13 +13,13 @@ beets helm package
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -87,5 +87,5 @@ N/A
 
 ## Changelog
 
-### Version 3.0.0
+### Version 3.1.0
 

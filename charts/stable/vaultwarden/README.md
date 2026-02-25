@@ -1,6 +1,6 @@
 # vaultwarden
 
-![Version: 6.1.0](https://img.shields.io/badge/Version-6.1.0-informational?style=flat-square) ![AppVersion: 1.35.3](https://img.shields.io/badge/AppVersion-1.35.3-informational?style=flat-square)
+![Version: 6.2.0](https://img.shields.io/badge/Version-6.2.0-informational?style=flat-square) ![AppVersion: 1.35.3](https://img.shields.io/badge/AppVersion-1.35.3-informational?style=flat-square)
 
 Vaultwarden is a Bitwarden compatable server in Rust
 
@@ -12,15 +12,15 @@ Vaultwarden is a Bitwarden compatable server in Rust
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
 
 ## TL;DR
 
@@ -99,5 +99,5 @@ persistence:
 
 ## Changelog
 
-### Version 6.1.0
+### Version 6.2.0
 

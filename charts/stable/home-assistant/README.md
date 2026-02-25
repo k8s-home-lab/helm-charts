@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 16.1.0](https://img.shields.io/badge/Version-16.1.0-informational?style=flat-square) ![AppVersion: 2026.2.2](https://img.shields.io/badge/AppVersion-2026.2.2-informational?style=flat-square)
+![Version: 16.2.0](https://img.shields.io/badge/Version-16.2.0-informational?style=flat-square) ![AppVersion: 2026.2.2](https://img.shields.io/badge/AppVersion-2026.2.2-informational?style=flat-square)
 
 Home Assistant
 
@@ -13,16 +13,16 @@ Home Assistant
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 7.1.20 |
-| https://charts.bitnami.com/bitnami | mariadb | 24.0.3 |
-| https://charts.bitnami.com/bitnami | postgresql | 18.2.3 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://helm.influxdata.com/ | influxdb2 | 2.1.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
 
 ## TL;DR
 
@@ -175,5 +175,5 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 
 ## Changelog
 
-### Version 16.1.0
+### Version 16.2.0
 

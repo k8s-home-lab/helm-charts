@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 7.1.2](https://img.shields.io/badge/Version-7.1.2-informational?style=flat-square) ![AppVersion: 0.4.18](https://img.shields.io/badge/AppVersion-0.4.18-informational?style=flat-square)
+![Version: 7.2.0](https://img.shields.io/badge/Version-7.2.0-informational?style=flat-square) ![AppVersion: 0.4.18](https://img.shields.io/badge/AppVersion-0.4.18-informational?style=flat-square)
 
 A fork of Radarr to work with Books & AudioBooks
 
@@ -13,13 +13,13 @@ A fork of Radarr to work with Books & AudioBooks
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -89,5 +89,5 @@ helm install readarr k8s-home-lab/readarr -f values.yaml
 
 ## Changelog
 
-### Version 7.1.2
+### Version 7.2.0
 

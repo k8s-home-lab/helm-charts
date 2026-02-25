@@ -1,6 +1,6 @@
 # calibre-web
 
-![Version: 9.0.3](https://img.shields.io/badge/Version-9.0.3-informational?style=flat-square) ![AppVersion: 0.6.26](https://img.shields.io/badge/AppVersion-0.6.26-informational?style=flat-square)
+![Version: 9.1.0](https://img.shields.io/badge/Version-9.1.0-informational?style=flat-square) ![AppVersion: 0.6.26](https://img.shields.io/badge/AppVersion-0.6.26-informational?style=flat-square)
 
 Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 
@@ -13,13 +13,13 @@ Calibre-Web is a web app providing a clean interface for browsing, reading and d
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 9.0.3
+### Version 9.1.0
 

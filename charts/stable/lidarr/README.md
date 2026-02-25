@@ -1,6 +1,6 @@
 # lidarr
 
-![Version: 15.2.1](https://img.shields.io/badge/Version-15.2.1-informational?style=flat-square) ![AppVersion: 3.1.2](https://img.shields.io/badge/AppVersion-3.1.2-informational?style=flat-square)
+![Version: 15.3.0](https://img.shields.io/badge/Version-15.3.0-informational?style=flat-square) ![AppVersion: 3.1.2](https://img.shields.io/badge/AppVersion-3.1.2-informational?style=flat-square)
 
 Looks and smells like Sonarr but made for music
 
@@ -13,13 +13,13 @@ Looks and smells like Sonarr but made for music
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 15.2.1
+### Version 15.3.0
 

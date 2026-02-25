@@ -1,6 +1,6 @@
 # rdt-client
 
-![Version: 1.1.3](https://img.shields.io/badge/Version-1.1.3-informational?style=flat-square) ![AppVersion: 2.0.121](https://img.shields.io/badge/AppVersion-2.0.121-informational?style=flat-square)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat-square) ![AppVersion: 2.0.121](https://img.shields.io/badge/AppVersion-2.0.121-informational?style=flat-square)
 
 rdt-client helm package
 
@@ -12,13 +12,13 @@ rdt-client helm package
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -88,5 +88,5 @@ N/A
 
 ## Changelog
 
-### Version 1.1.3
+### Version 1.2.0
 

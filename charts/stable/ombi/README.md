@@ -1,6 +1,6 @@
 # ombi
 
-![Version: 12.1.0](https://img.shields.io/badge/Version-12.1.0-informational?style=flat-square) ![AppVersion: 4.53.4](https://img.shields.io/badge/AppVersion-4.53.4-informational?style=flat-square)
+![Version: 12.2.0](https://img.shields.io/badge/Version-12.2.0-informational?style=flat-square) ![AppVersion: 4.53.4](https://img.shields.io/badge/AppVersion-4.53.4-informational?style=flat-square)
 
 Want a Movie or TV Show on Plex or Emby? Use Ombi!
 
@@ -13,13 +13,13 @@ Want a Movie or TV Show on Plex or Emby? Use Ombi!
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 12.1.0
+### Version 12.2.0
 

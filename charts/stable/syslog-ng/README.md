@@ -1,6 +1,6 @@
 # syslog-ng
 
-![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-informational?style=flat-square) ![AppVersion: 4.10.2](https://img.shields.io/badge/AppVersion-4.10.2-informational?style=flat-square)
+![Version: 3.1.0](https://img.shields.io/badge/Version-3.1.0-informational?style=flat-square) ![AppVersion: 4.10.2](https://img.shields.io/badge/AppVersion-4.10.2-informational?style=flat-square)
 
 syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs.
 
@@ -12,13 +12,13 @@ syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -87,5 +87,5 @@ N/A
 
 ## Changelog
 
-### Version 3.0.0
+### Version 3.1.0
 

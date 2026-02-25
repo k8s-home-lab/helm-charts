@@ -1,6 +1,6 @@
 # bazarr
 
-![Version: 11.2.1](https://img.shields.io/badge/Version-11.2.1-informational?style=flat-square) ![AppVersion: 1.5.5](https://img.shields.io/badge/AppVersion-1.5.5-informational?style=flat-square)
+![Version: 11.3.0](https://img.shields.io/badge/Version-11.3.0-informational?style=flat-square) ![AppVersion: 1.5.5](https://img.shields.io/badge/AppVersion-1.5.5-informational?style=flat-square)
 
 Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements
 
@@ -13,13 +13,13 @@ Bazarr is a companion application to Sonarr and Radarr. It manages and downloads
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -87,5 +87,5 @@ N/A
 
 ## Changelog
 
-### Version 11.2.1
+### Version 11.3.0
 

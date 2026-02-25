@@ -1,6 +1,6 @@
 # tautulli
 
-![Version: 12.1.1](https://img.shields.io/badge/Version-12.1.1-informational?style=flat-square) ![AppVersion: 2.16.1](https://img.shields.io/badge/AppVersion-2.16.1-informational?style=flat-square)
+![Version: 12.2.1](https://img.shields.io/badge/Version-12.2.1-informational?style=flat-square) ![AppVersion: 2.16.1](https://img.shields.io/badge/AppVersion-2.16.1-informational?style=flat-square)
 
 A Python based monitoring and tracking tool for Plex Media Server
 
@@ -13,13 +13,13 @@ A Python based monitoring and tracking tool for Plex Media Server
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -87,5 +87,5 @@ N/A
 
 ## Changelog
 
-### Version 12.1.1
+### Version 12.2.1
 

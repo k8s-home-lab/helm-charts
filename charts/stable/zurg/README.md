@@ -1,6 +1,6 @@
 # zurg
 
-![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-informational?style=flat-square) ![AppVersion: v0.9.3-final](https://img.shields.io/badge/AppVersion-v0.9.3--final-informational?style=flat-square)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat-square) ![AppVersion: v0.9.3-final](https://img.shields.io/badge/AppVersion-v0.9.3--final-informational?style=flat-square)
 
 A self-hosted Real-Debrid webdav server
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -88,5 +88,5 @@ N/A
 
 ## Changelog
 
-### Version 1.1.1
+### Version 1.2.0
 

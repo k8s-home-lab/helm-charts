@@ -1,6 +1,6 @@
 # flaresolverr
 
-![Version: 6.0.4](https://img.shields.io/badge/Version-6.0.4-informational?style=flat-square) ![AppVersion: v3.4.6](https://img.shields.io/badge/AppVersion-v3.4.6-informational?style=flat-square)
+![Version: 6.1.0](https://img.shields.io/badge/Version-6.1.0-informational?style=flat-square) ![AppVersion: v3.4.6](https://img.shields.io/badge/AppVersion-v3.4.6-informational?style=flat-square)
 
 FlareSolverr is a proxy server to bypass Cloudflare protection
 
@@ -13,13 +13,13 @@ FlareSolverr is a proxy server to bypass Cloudflare protection
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -86,5 +86,5 @@ N/A
 
 ## Changelog
 
-### Version 6.0.4
+### Version 6.1.0
 

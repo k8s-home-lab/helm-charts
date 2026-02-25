@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 17.4.0](https://img.shields.io/badge/Version-17.4.0-informational?style=flat-square) ![AppVersion: 6.1.1](https://img.shields.io/badge/AppVersion-6.1.1-informational?style=flat-square)
+![Version: 17.5.0](https://img.shields.io/badge/Version-17.5.0-informational?style=flat-square) ![AppVersion: 6.1.1](https://img.shields.io/badge/AppVersion-6.1.1-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -13,13 +13,13 @@ A fork of Sonarr to work with movies à la Couchpotato
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
 
 ## TL;DR
 
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 17.4.0
+### Version 17.5.0
 
