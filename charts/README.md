@@ -14,7 +14,6 @@
 | [ghost](stable/ghost) | Ghost is a blogging and publishing software |
 | [gitea](stable/gitea) | Gitea self-hosted github-styled git repository manager |
 | [home-assistant](stable/home-assistant) | Home Assistant |
-| [influxdb-exporter](stable/influxdb-exporter) | An exporter for metrics in the InfluxDB format, transforms them and exposes them for consumption by Prometheus. |
 | [lidarr](stable/lidarr) | Looks and smells like Sonarr but made for music |
 | [maddy](stable/maddy) | Maddy Mail Server |
 | [ombi](stable/ombi) | Want a Movie or TV Show on Plex or Emby? Use Ombi! |
@@ -34,7 +33,6 @@
 | [tautulli](stable/tautulli) | A Python based monitoring and tracking tool for Plex Media Server |
 | [tdarr](stable/tdarr) | Tdarr is a self hosted web-app for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers etc. |
 | [vaultwarden](stable/vaultwarden) | Vaultwarden is a Bitwarden compatable server in Rust |
-| [wireguard-pia](stable/wireguard-pia) | Fast, modern, secure VPN tunnel with PIA connect scripts |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
 | [youtubedl-material](stable/youtubedl-material) | Self-hosted YouTube downloader built on Material Design |
 | [zurg](stable/zurg) | A self-hosted Real-Debrid webdav server |
