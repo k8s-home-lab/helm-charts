@@ -63,6 +63,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: 1.5.5
+    created: "2026-02-25T11:25:30.981178566Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: 166035caf119d35b0984e900f876aac75514ee3845831fabd22fd8e20c1788ce
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/bazarr-11.3.0/bazarr-11.3.0.tgz
+    version: 11.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image ghcr.io/home-operations/bazarr to 1.5.5
     apiVersion: v2
     appVersion: 1.5.5
@@ -302,6 +338,38 @@ entries:
     version: 11.0.0
   beets:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 2.3.1
+    created: "2026-02-25T11:25:31.191295612Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: beets helm package
+    digest: a271cee3d5310849acd8a2a62620b486772415ae3e9b7b6c0a946df906cef7b2
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/beets
+    icon: https://pbs.twimg.com/profile_images/934307246/logo-square_400x400.png
+    keywords:
+    - beets
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: beets
+    sources:
+    - https://github.com/beetbox/beets
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/beets-3.1.0/beets-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Switch to ghcr.io/home-operations/beets 3.2.1
@@ -359,6 +427,43 @@ entries:
     version: 2.0.0
   blocky:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Change redis dependency source
+    apiVersion: v2
+    appVersion: v0.28.2
+    created: "2026-02-25T11:25:31.401175459Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: DNS proxy as ad-blocker for local network
+    digest: 20fa23e5cf7e37d2a58ff01c44096c2da9cbd475a8e2a91843d020a09c121f39
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/blocky-11.1.0/blocky-11.1.0.tgz
+    version: 11.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Updated app to v0.28.2
@@ -392,6 +497,38 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/blocky-11.0.0/blocky-11.0.0.tgz
     version: 11.0.0
   calibre-web:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: 0.6.26
+    created: "2026-02-25T11:25:31.630976231Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Calibre-Web is a web app providing a clean interface for browsing,
+      reading and downloading eBooks using an existing Calibre database.
+    digest: 4329a35ce3729e749ce3c0d42d66805e74d04e82f980f62e59b47365622c438b
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/calibre-web
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
+    keywords:
+    - calibre
+    - ebook
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: calibre-web
+    sources:
+    - https://github.com/janeczku/calibre-web
+    - https://hub.docker.com/r/linuxserver/calibre-web/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/calibre-web-9.1.0/calibre-web-9.1.0.tgz
+    version: 9.1.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -621,6 +758,37 @@ entries:
     version: 0.0.1
   flaresolverr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: v3.4.6
+    created: "2026-02-25T11:25:31.864592039Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: FlareSolverr is a proxy server to bypass Cloudflare protection
+    digest: 38762f57665857271d04e3c98f6c9db5954bd243070d307d791afda9ca4f674f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flaresolverr
+    icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
+    keywords:
+    - flaresolverr
+    - jackett
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flaresolverr
+    sources:
+    - https://github.com/FlareSolverr/FlareSolverr
+    - https://hub.docker.com/r/flaresolverr/flaresolverr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flaresolverr-6.1.0/flaresolverr-6.1.0.tgz
+    version: 6.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image ghcr.io/flaresolverr/flaresolverr to v3.4.6
@@ -767,6 +935,41 @@ entries:
     version: 6.0.0
   flood:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 4.12.6
+    created: "2026-02-25T11:25:32.099002129Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Flood is a monitoring service for various torrent clients
+    digest: 048ebe4998f771bf520d331af9c52289d2bd74e7fc711ba4edb3a9cc9e39693e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flood
+    icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
+    keywords:
+    - flood
+    - rtorrent
+    - qbittorrent
+    - transmission
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flood
+    sources:
+    - https://github.com/jesec/flood
+    - https://hub.docker.com/r/jesec/flood
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flood-7.1.0/flood-7.1.0.tgz
+    version: 7.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image jesec/flood to 4.12.6
@@ -829,6 +1032,39 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/flood-7.0.0/flood-7.0.0.tgz
     version: 7.0.0
   freshrss:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 1.28.1
+    created: "2026-02-25T11:25:32.292085221Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: FreshRSS is a self-hosted RSS feed aggregator
+    digest: 03ee2a8782a67dab4f2eff34bc5609665267074d1ebe7126ab58bbe8983d2b1a
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/freshrss
+    icon: https://avatars.githubusercontent.com/u/9414285?s=200&v=4
+    keywords:
+    - freshrss
+    - rss
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: freshrss
+    sources:
+    - https://github.com/FreshRSS/FreshRSS
+    - https://hub.docker.com/r/linuxserver/freshrss
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/freshrss-7.2.0/freshrss-7.2.0.tgz
+    version: 7.2.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -918,6 +1154,42 @@ entries:
     version: 7.0.0
   frigate:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 0.11.1
+    created: "2026-02-25T11:25:32.542783162Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: NVR With Realtime Object Detection for IP Cameras
+    digest: 7dee1a98485865edc095bcd3b25ef7c28bae2d57d69d0d5a51e84447a5cc0f8e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/frigate
+    icon: https://github.com/blakeblackshear/frigate/blob/master/docs/static/img/frigate.png
+    keywords:
+    - frigate
+    - nvr
+    - tensorflow
+    - coral
+    - ml
+    - machine-learning
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: frigate
+    sources:
+    - https://github.com/blakeblackshear/frigate
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/frigate-9.1.0/frigate-9.1.0.tgz
+    version: 9.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Add chart
@@ -950,6 +1222,43 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/frigate-9.0.0/frigate-9.0.0.tgz
     version: 9.0.0
   ghost:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 5.51.1
+    created: "2026-02-25T11:25:32.746183679Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    description: Ghost is a blogging and publishing software
+    digest: 3fb9b56ad1fd6edfac2bfa69f9bee020defbde0c14e339496751a47477e4df94
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-3.1.0/ghost-3.1.0.tgz
+    version: 3.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -984,6 +1293,50 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-3.0.0/ghost-3.0.0.tgz
     version: 3.0.0
   gitea:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 1.25.4
+    created: "2026-02-25T11:25:32.961613853Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 3f9c52aa20aa83ddefcda5c9ccacfddea0c8f3c564d9938d5833c64b4cb1bb5f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.4.0/gitea-2.4.0.tgz
+    version: 2.4.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1510,6 +1863,54 @@ entries:
     version: 1.0.2
   home-assistant:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 2026.2.2
+    created: "2026-02-25T11:25:33.179315681Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: influxdb.enabled
+      name: influxdb2
+      repository: https://helm.influxdata.com/
+      version: 2.1.2
+    description: Home Assistant
+    digest: e22dcde4274c068419962ca8e206c6485a0d418a53128585f519ae60f2d18b41
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/home-assistant-16.2.0/home-assistant-16.2.0.tgz
+    version: 16.2.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image ghcr.io/home-operations/home-assistant to 2026.2.2
@@ -1958,6 +2359,40 @@ entries:
     version: 1.0.3
   lidarr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 3.1.2
+    created: "2026-02-25T11:25:33.40427947Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Looks and smells like Sonarr but made for music
+    digest: 55bd805af773bcc683d63c2b5f9008ed0d06caf897b7ed654c5c553f8a3218b3
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/lidarr
+    icon: https://github.com/lidarr/Lidarr/blob/develop/Logo/512.png?raw=true
+    keywords:
+    - lidarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: lidarr
+    sources:
+    - https://github.com/Lidarr/Lidarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/lidarr-15.3.0/lidarr-15.3.0.tgz
+    version: 15.3.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Fix and update exportarr
@@ -2143,6 +2578,43 @@ entries:
     version: 15.0.0
   maddy:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 0.8.2
+    created: "2026-02-25T11:25:33.603691513Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: Maddy Mail Server
+    digest: f2205bdb1c396e028132127730b7dd7aa486c68ba81d09490f79321279b83e62
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/maddy
+    keywords:
+    - maddy
+    - mail
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: maddy
+    sources:
+    - https://github.com/foxcpp/maddy
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/maddy-4.2.0/maddy-4.2.0.tgz
+    version: 4.2.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image foxcpp/maddy to 0.8.2
@@ -2205,6 +2677,41 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/maddy-4.0.0/maddy-4.0.0.tgz
     version: 4.0.0
   ombi:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s versio
+    apiVersion: v2
+    appVersion: 4.53.4
+    created: "2026-02-25T11:25:33.79768389Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
+    digest: 5b6a982bc8a64c374c3118fb060a517ea049d131c28ee9c338bd1e9118e613bd
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/influxdb-exporter
+    icon: https://github.com/tidusjar/Ombi/blob/feature/v4/src/Ombi/wwwroot/images/ms-icon-310x310.png?raw=true
+    keywords:
+    - ombi
+    - plex
+    - emby
+    - sonarr
+    - radarr
+    - couchpotato
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ombi
+    sources:
+    - https://github.com/tidusjar/Ombi
+    - https://github.com/onedr0p/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ombi-12.2.0/ombi-12.2.0.tgz
+    version: 12.2.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2310,6 +2817,38 @@ entries:
     version: 12.0.0
   organizr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: latest
+    created: "2026-02-25T11:25:34.011459157Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: HTPC/Homelab Services Organizer
+    digest: 9e0d456909cc4d5146c3661e2b8690f59509f2bc3de10423a1d5210b180775a2
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/organizr
+    icon: https://github.com/causefx/Organizr/blob/v2-master/plugins/images/organizr/logo.png?raw=true
+    keywords:
+    - organizr
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: organizr
+    sources:
+    - https://github.com/causefx/Organizr
+    - https://hub.docker.com/r/organizr/organizr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/organizr-8.1.0/organizr-8.1.0.tgz
+    version: 8.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Add chart
@@ -2338,6 +2877,47 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/organizr-8.0.0/organizr-8.0.0.tgz
     version: 8.0.0
   paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 1.17.4
+    created: "2026-02-25T11:25:34.222473747Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 1eb76cb473cca84ebcba8ffa58080c3cac71f89e2ebe848060a7e25ea69adad1
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.2.0/paperless-10.2.0.tgz
+    version: 10.2.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2409,6 +2989,48 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.0.0/paperless-10.0.0.tgz
     version: 10.0.0
   photoprism:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 231021-ce
+    created: "2026-02-25T11:25:34.524417833Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: b8ee9dcb0ca6d4c631a18c4f62211684e4a45d910c9a20f45346f29d6b02bc0a
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-9.1.0/photoprism-9.1.0.tgz
+    version: 9.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2482,6 +3104,36 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-8.0.0/photoprism-8.0.0.tgz
     version: 8.0.0
   plex:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: 1.43.0
+    created: "2026-02-25T11:25:34.753915407Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Plex Media Server
+    digest: a5c587295b1f071c96be92a60c5aa6dba357814b67a163cf7c6ce4d48644819c
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/plex
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    - plex-media-server
+    kubeVersion: '>=1.30.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: plex
+    sources:
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/plex-7.3.0/plex-7.3.0.tgz
+    version: 7.3.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2769,6 +3421,41 @@ entries:
     version: 7.0.0
   prowlarr:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 2.3.2
+    created: "2026-02-25T11:25:34.939836847Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: d628d2ee5d3b1835c6956132702af10b08592e91f54262f5d87e8b984ac30156
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/prowlarr-5.3.0/prowlarr-5.3.0.tgz
+    version: 5.3.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Added liveness probe
@@ -2991,6 +3678,39 @@ entries:
     version: 5.0.0
   qbittorrent:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 5.1.4
+    created: "2026-02-25T11:25:35.150985293Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: 28393c6f99e965fa86fb63ebc6f1facbc588b62365e081af69bba32697d4da97
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.4.0/qbittorrent-14.4.0.tgz
+    version: 14.4.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image esanchezm/prometheus-qbittorrent-exporter to v1.6.0
@@ -3198,6 +3918,40 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/qbittorrent-14.0.0/qbittorrent-14.0.0.tgz
     version: 14.0.0
   radarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 6.1.1
+    created: "2026-02-25T11:25:35.356070553Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: bc17f7a284761089d91c1c36598d0def2c4a2276dd21f0906e55b825d155ec41
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/radarr-17.5.0/radarr-17.5.0.tgz
+    version: 17.5.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3474,6 +4228,35 @@ entries:
     version: 17.0.0
   rdt-client:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: 2.0.121
+    created: "2026-02-25T11:25:35.554473765Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: rdt-client helm package
+    digest: 99d747fb48a99d2bc0d6459aa95bed365daa23b968f5c9efe686b66eebf07fb1
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/rdt-client
+    icon: https://github.com/rogerfar/rdt-client/blob/main/client/src/assets/logo.png?raw=true
+    keywords:
+    - rdt-client
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: rdt-client
+    sources:
+    - https://github.com/rogerfar/rdt-client
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/rdt-client-1.2.0/rdt-client-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.121
@@ -3582,6 +4365,42 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/rdt-client-1.1.0/rdt-client-1.1.0.tgz
     version: 1.1.0
   readarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 0.4.18
+    created: "2026-02-25T11:25:35.750303077Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: A fork of Radarr to work with Books & AudioBooks
+    digest: a8a5b61dc1e53b8882ef70b88e84f582197e233eeba886004d4219d2bae35aee
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/readarr
+    icon: https://readarr.com/img/logo.png
+    keywords:
+    - readarr
+    - torrent
+    - usenet
+    - AudioBooks
+    - ebooks
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: mark@markmcw.uk
+      name: mcmarkj
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/readarr-7.2.0/readarr-7.2.0.tgz
+    version: 7.2.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3748,6 +4567,37 @@ entries:
     version: 7.0.0
   shinobi:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: latest
+    created: "2026-02-25T11:25:35.942096552Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: shinobi helm package
+    digest: 003e5403fe90ad04d51b5c94cc4f10bdad511f00eb35c28e1f195cf4aa58e975
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/shinobi
+    icon: https://shinobi.org/icon
+    keywords:
+    - shinobi
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: shinobi
+    sources:
+    - https://gitlab.com/Shinobi-Systems/Shinobi-Installer
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/shinobi-2.1.0/shinobi-2.1.0.tgz
+    version: 2.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Add chart
@@ -3775,6 +4625,40 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/shinobi-2.0.0/shinobi-2.0.0.tgz
     version: 2.0.0
   sonarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 4.0.16
+    created: "2026-02-25T11:25:36.170491865Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 3342204fe9a5712396b1b3c2cc5778bc8dc4d56dc7a3fabfed500f28d23c333f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/sonarr
+    icon: https://github.com/Sonarr/Sonarr/blob/phantom-develop/Logo/512.png?raw=true
+    keywords:
+    - sonarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/sonarr-17.3.0/sonarr-17.3.0.tgz
+    version: 17.3.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3961,6 +4845,39 @@ entries:
     version: 17.0.0
   syncthing:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 2.0.14
+    created: "2026-02-25T11:25:36.40976722Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Open Source Continuous File Synchronization
+    digest: be498615b27921cd404c8f70e92f622967f7ce3cb3523230fe3054270f1a41d2
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - syncthing
+    - file sync
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://github.com/syncthing/syncthing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syncthing-5.1.0/syncthing-5.1.0.tgz
+    version: 5.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied major update of image syncthing/syncthing to 2.0.14
@@ -4020,6 +4937,38 @@ entries:
     version: 4.0.0
   syslog-ng:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 4.10.2
+    created: "2026-02-25T11:25:36.649920102Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: syslog-ng allows you to flexibly collect, parse, classify, rewrite
+      and correlate logs.
+    digest: bed766872849d44945fac5596ac25c09b46c0c0450eae463a0a62d30dc76cb7d
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/syslog-ng
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png
+    keywords:
+    - syslog-ng
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syslog-ng
+    sources:
+    - https://hub.docker.com/r/linuxserver/syslog-ng
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syslog-ng-3.1.0/syslog-ng-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied major update of image ghcr.io/linuxserver/syslog-ng to 4.10.2
@@ -4076,6 +5025,39 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/syslog-ng-2.0.0/syslog-ng-2.0.0.tgz
     version: 2.0.0
   tautulli:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 2.16.1
+    created: "2026-02-25T11:25:36.855958247Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: A Python based monitoring and tracking tool for Plex Media Server
+    digest: 1c754e4206d5cfff7a2e0bf9652a260a05a2e98f27a9674a02f74b1db772920a
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/tautulli
+    icon: https://github.com/Tautulli/Tautulli/blob/master/data/interfaces/default/images/logo.png?raw=true
+    keywords:
+    - tautulli
+    - plex
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tautulli
+    sources:
+    - https://github.com/Tautulli/Tautulli
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tautulli-12.2.1/tautulli-12.2.1.tgz
+    version: 12.2.1
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -4164,6 +5146,42 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/tautulli-12.0.0/tautulli-12.0.0.tgz
     version: 12.0.0
   tdarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 2.58.02
+    created: "2026-02-25T11:25:37.058482293Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Tdarr is a self hosted web-app for automating media library transcode/remux
+      management and making sure your files are exactly how you need them to be in
+      terms of codecs/streams/containers etc.
+    digest: fedf9692219c28633143ccf88f922eee560261c6e1fc1b8619d78a702bf6baf1
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/tdarr
+    icon: https://s7.gifyu.com/images/GifCroppedTran.gif
+    keywords:
+    - transcoding
+    - remux
+    - media
+    - video
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tdarr
+    sources:
+    - https://www.github.com/HaveAGitGat/Tdarr
+    - https://tdarr.io/docs/
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tdarr-5.3.0/tdarr-5.3.0.tgz
+    version: 5.3.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -4294,6 +5312,48 @@ entries:
     version: 5.0.0
   vaultwarden:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+        - kind: changed
+          description: Remove bitnami dependency
+    apiVersion: v2
+    appVersion: 1.35.3
+    created: "2026-02-25T11:25:37.288148679Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: f2a39b5af7ef90801b53ff8da3ae7adb19fbae38fb24feb18a9ea79e59bc50b1
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.2.0/vaultwarden-6.2.0.tgz
+    version: 6.2.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Applied minor update of image vaultwarden/server to 1.35.3
@@ -4366,6 +5426,41 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.0.0/vaultwarden-6.0.0.tgz
     version: 6.0.0
   wireguard:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: v1.0.20210914
+    created: "2026-02-25T11:25:37.501977291Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Fast, modern, secure VPN tunnel
+    digest: 7107a94a59641801f12ef56fb75edf29893bff50b4cd2bb3a71ec830f13198b9
+    home: ttps://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zurg
+    icon: https://avatars.githubusercontent.com/u/13991055?s=200&v=4
+    keywords:
+    - vpn
+    - privacy
+    - security
+    - wireguard
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: wireguard
+    sources:
+    - https://git.zx2c4.com/wireguard-tools
+    - https://github.com/k8s-home-lab/container-images
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/wireguard-1.6.0/wireguard-1.6.0.tgz
+    version: 1.6.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
@@ -4522,6 +5617,38 @@ entries:
     version: 1.5.2
   youtubedl-material:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+        - kind: changed
+          description: Fix home url
+    apiVersion: v2
+    appVersion: 4.3.2
+    created: "2026-02-25T11:25:37.688100767Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Self-hosted YouTube downloader built on Material Design
+    digest: 610c4448ede9fbd1778525b7567ad8b7cd3ca8cc419c87ea330a597ae3d91573
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/youtubedl-material
+    icon: https://i.imgur.com/IKOlr0N.png
+    keywords:
+    - youtubedl-material
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: youtubedl-material
+    sources:
+    - https://github.com/Tzahi12345/YoutubeDL-Material
+    - https://github.com/k8s-at-home/charts/tree/master/charts/youtubedl-material
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.1.0/youtubedl-material-5.1.0.tgz
+    version: 5.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Add chart
@@ -4550,6 +5677,35 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
   zurg:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgrade common chart to 4.5.3
+        - kind: changed
+          description: Update minimum k8s version
+    apiVersion: v2
+    appVersion: v0.9.3-final
+    created: "2026-02-25T11:25:37.913783078Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: A self-hosted Real-Debrid webdav server
+    digest: 02e25bcef0e8c636211dbc51cd79aa48f498e553288f73430cab4cec94e64420
+    home: ttps://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zurg
+    icon: https://avatars.githubusercontent.com/u/130290673?s=48&amp;v=4
+    keywords:
+    - zurg
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: zurg
+    sources:
+    - https://github.com/debridmediamanager/zurg-testing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.2.0/zurg-1.2.0.tgz
+    version: 1.2.0
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -4604,4 +5760,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-21T08:37:05.196491854Z"
+generated: "2026-02-25T11:25:37.914175249Z"
