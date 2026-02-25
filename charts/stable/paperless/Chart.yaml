@@ -3,11 +3,11 @@ apiVersion: v2
 appVersion: 1.17.4
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 10.1.0
-kubeVersion: ">=1.16.0-0"
+version: 10.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - paperless
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/paperless
 icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
 sources:
   - https://github.com/paperless-ngx/paperless-ngx
@@ -16,17 +16,23 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
-  - name: postgresql
-    version: 11.6.12
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
+  - name: postgres
+    version: 0.16.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
   - name: redis
-    version: 16.13.1
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.24.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/paperless-ngx/paperless-ngx to 1.17.4
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
+    - kind: changed
+      description: Remove bitnami dependency

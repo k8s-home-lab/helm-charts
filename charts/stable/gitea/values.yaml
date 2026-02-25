@@ -5,16 +5,6 @@
 # https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
 #
 
-global:
-  # -- Set an override for the prefix of the fullname
-  nameOverride:
-  # -- Set the entire name definition
-  fullnameOverride:
-  # -- Set additional global labels. Helm templates can be used.
-  labels: {}
-  # -- Set additional global annotations. Helm templates can be used.
-  annotations: {}
-
 image:
   # -- image repository
   repository: gitea/gitea

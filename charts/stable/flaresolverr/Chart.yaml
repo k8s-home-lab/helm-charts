@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: v3.4.6
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 name: flaresolverr
-version: 6.0.4
-kubeVersion: ">=1.16.0-0"
+version: 6.1.0
+kubeVersion: ">=1.32.0"
 keywords:
   - flaresolverr
   - jackett
@@ -18,9 +18,11 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/flaresolverr/flaresolverr to v3.4.6
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version

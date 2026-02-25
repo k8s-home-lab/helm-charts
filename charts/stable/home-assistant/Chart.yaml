@@ -3,13 +3,13 @@ apiVersion: v2
 appVersion: 2026.2.2
 description: Home Assistant
 name: home-assistant
-version: 16.1.0
-kubeVersion: ">=1.16.0-0"
+version: 16.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - home-assistant
   - hass
   - homeassistant
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/home-assistant
 icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
 sources:
   - https://github.com/home-assistant/home-assistant
@@ -19,21 +19,27 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
-  - name: postgresql
-    version: 18.2.3
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
+  - name: postgres
+    version: 0.16.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
   - name: mariadb
-    version: 24.0.3
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.14.3
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
-  - name: influxdb
-    version: 7.1.20
-    repository: https://charts.bitnami.com/bitnami
+  - name: influxdb2
+    version: 2.1.2
+    repository: https://helm.influxdata.com/
     condition: influxdb.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/home-operations/home-assistant to 2026.2.2
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
+    - kind: changed
+      description: Remove bitnami dependency

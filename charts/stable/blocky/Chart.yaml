@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.28.2
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 11.0.0
+version: 11.1.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -18,13 +18,17 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
   - name: redis
-    repository: https://charts.bitnami.com/bitnami
-    version: 17.10.3
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
+    version: 0.24.0
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Updated app to v0.28.2
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Change redis dependency source

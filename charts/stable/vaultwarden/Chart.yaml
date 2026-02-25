@@ -3,8 +3,8 @@ apiVersion: v2
 appVersion: 1.35.3
 description: Vaultwarden is a Bitwarden compatable server in Rust
 name: vaultwarden
-version: 6.1.0
-kubeVersion: ">=1.16.0-0"
+version: 6.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - Vaultwarden
   - bitwardenrs
@@ -17,17 +17,23 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
   - name: mariadb
-    version: 11.0.14
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.14.3
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
-  - name: postgresql
-    version: 11.6.12
-    repository: https://charts.bitnami.com/bitnami
+  - name: postgres
+    version: 0.16.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image vaultwarden/server to 1.35.3
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
+    - kind: changed
+      description: Remove bitnami dependency

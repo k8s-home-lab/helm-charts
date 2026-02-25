@@ -3,12 +3,12 @@ apiVersion: v2
 appVersion: 0.8.2
 description: Maddy Mail Server
 name: maddy
-version: 4.1.0
-kubeVersion: ">=1.16.0-0"
+version: 4.2.0
+kubeVersion: ">=1.32.0"
 keywords:
   - maddy
   - mail
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/maddy
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/maddy
 # Project has no icon yet
 # icon: https://maddy.org/icon
 sources:
@@ -18,13 +18,19 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
-  - name: postgresql
-    version: 11.6.12
-    repository: https://charts.bitnami.com/bitnami
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
+  - name: postgres
+    version: 0.16.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image foxcpp/maddy to 0.8.2
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
+    - kind: changed
+      description: Remove bitnami dependency

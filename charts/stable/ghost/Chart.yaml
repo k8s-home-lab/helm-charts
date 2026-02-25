@@ -3,12 +3,12 @@ apiVersion: v2
 appVersion: 5.51.1
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 3.0.0
+version: 3.1.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
   - blogging
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/ghost
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/ghost
 icon: https://ghost.org/images/logos/logo-black-1.png
 sources:
   - https://github.com/TryGhost/Ghost
@@ -18,13 +18,17 @@ maintainers:
     email: admin@aste.tools
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
   - name: mariadb
-    version: 11.0.14
-    repository: https://charts.bitnami.com/bitnami
+    version: 0.14.3
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Add chart
+      description: Upgrade common chart to 4.5.3
+    - kind: changed
+      description: Update minimum k8s version
+    - kind: changed
+      description: Fix home url
