@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.4.0
+version: 2.5.0
 kubeVersion: ">=1.32.0"
 keywords:
   - gitea
@@ -20,7 +20,7 @@ dependencies:
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.3
   - name: postgres
-    version: 0.16.0
+    version: 0.17.1
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
   - name: mariadb
@@ -34,8 +34,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
+      description: Applied minor update of image postgres to 0.17.1
     - kind: changed
-      description: Update minimum k8s version
+      description: Applied minor update of image postgres to 0.17.1
     - kind: changed
-      description: Remove bitnami dependency
+      description: Applied minor update of image postgres to 0.17.1
