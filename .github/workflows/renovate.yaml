@@ -18,7 +18,7 @@ jobs:
           owner: ${{ github.repository_owner }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
