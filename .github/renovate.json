@@ -64,6 +64,28 @@
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "Update Docker image {{depName}}",
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
+        ]
+      }
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "commitMessagePrefix": "[{{{parentDir}}}]",
+      "commitMessageTopic": "Update Docker image {{depName}}",
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "schedule": [
+        "every 1 months on the first day of the month"
+      ],
       "postUpgradeTasks": {
         "commands": [
           "bash .github/scripts/bump-chart-version.sh '{{{parentDir}}}' '{{{updateType}}}' {{{depName}}} '{{{newVersion}}}'"
