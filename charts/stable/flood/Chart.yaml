@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=jesec/flood
-appVersion: 4.12.6
+appVersion: 4.13.0
 description: Flood is a monitoring service for various torrent clients
 name: flood
-version: 7.1.0
+version: 7.2.0
 kubeVersion: ">=1.32.0"
 keywords:
   - flood
@@ -25,8 +25,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
+      description: Applied minor update of image jesec/flood to 4.13.0
     - kind: changed
-      description: Update minimum k8s version
+      description: Applied minor update of image jesec/flood to 4.13.0
     - kind: changed
-      description: Fix home url
+      description: Applied minor update of image jesec/flood to 4.13.0
