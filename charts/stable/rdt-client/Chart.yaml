@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/rogerfar/rdtclient
-appVersion: 2.0.121
+appVersion: 2.0.125
 description: rdt-client helm package
 name: rdt-client
-version: 1.2.0
+version: 1.2.1
 kubeVersion: ">=1.32.0"
 keywords:
   - rdt-client
@@ -21,6 +21,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
+      description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.125
     - kind: changed
-      description: Update minimum k8s version
+      description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.125
