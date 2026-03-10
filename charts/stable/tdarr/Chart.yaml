@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.58.02
 description: Tdarr is a self hosted web-app for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers etc.
 name: tdarr
-version: 5.3.0
+version: 5.4.0
 keywords:
   - transcoding
   - remux
@@ -24,8 +24,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
+      description: Applied minor update of image haveagitgat/tdarr_node to 2.62.01
     - kind: changed
-      description: Update minimum k8s version
+      description: Applied minor update of image haveagitgat/tdarr_node to 2.62.01
     - kind: changed
-      description: Fix home url
+      description: Applied minor update of image haveagitgat/tdarr_node to 2.62.01
