@@ -5777,6 +5777,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied patch update of image vaultwarden/server to 1.35.4
+    apiVersion: v2
+    appVersion: 1.35.4
+    created: "2026-03-10T23:19:41.105558508Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 985b0f22c1521973763c9a8b180d3aec1c5daf993ef43ecd32f22a175e232aca
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.2.2/vaultwarden-6.2.2.tgz
+    version: 6.2.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update base values for new dependency provider
     apiVersion: v2
     appVersion: 1.35.3
@@ -6259,4 +6295,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-10T23:18:44.003864603Z"
+generated: "2026-03-10T23:19:41.105813484Z"
