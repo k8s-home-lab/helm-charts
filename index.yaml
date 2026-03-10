@@ -3175,6 +3175,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied major update of image photoprism/photoprism to 231128
+    apiVersion: v2
+    appVersion: 231128-ce
+    created: "2026-03-10T23:11:53.909204113Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 6ac7e35b7d2c939bb2e04c04d61b823a2c18fed1a365c9974f739e67b6b65925
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-10.0.0/photoprism-10.0.0.tgz
+    version: 10.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update base values for new dependency provider
     apiVersion: v2
     appVersion: 231021-ce
@@ -6015,4 +6051,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-10T22:58:39.304707371Z"
+generated: "2026-03-10T23:11:53.909517159Z"
