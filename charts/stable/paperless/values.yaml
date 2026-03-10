@@ -87,21 +87,29 @@ persistence:
       enabled: false
 
 # -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+#    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  postgresqlUsername: paperless
-  postgresqlPassword: paperless
-  postgresqlDatabase: paperless
-  persistence:
+  replication:
     enabled: false
-    # storageClass: ""
+  auth:
+    database: paperless
+    username: paperless
+    password: raktfbzytonxxl
+  persistence:
+    enabled: true
+    size: 4Gi
 
 # -- Enable and configure redis subchart under this key.
-#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+#    For more options see [redis chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/redis)
 # @default -- See values.yaml
 redis:
   enabled: false
+  architecture: standalone
   auth:
+    enabled: true
+    password: dzetatzeadoyyr
+  persistence:
     enabled: false
+    size: 4Gi

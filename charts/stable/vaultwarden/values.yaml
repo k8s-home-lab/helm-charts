@@ -61,25 +61,33 @@ persistence:
   config:
     enabled: false
 
-# https://github.com/bitnami/charts/tree/master/bitnami/mariadb/#installing-the-chart
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
+# @default -- See values.yaml
 mariadb:
   enabled: false
-  # primary:
-  #   persistence:
-  #     enabled: true
-  # auth:
-  #   username: "username"
-  #   password: "password"
-  #   database: database
+  galera:
+    enabled: false
+  auth:
+    database: vaultwarden
+    username: vaultwarden
+    password: hvcwhjwpycsuir
+    rootPassword: gkkutpkwjooagx
+  persistence:
+    enabled: false
+    size: 4Gi
 
-# https://github.com/bitnami/charts/tree/master/bitnami/postgresql/#installing-the-chart
+# -- Enable and configure postgresql database subchart under this key.
+#    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
+# @default -- See values.yaml
 postgresql:
   enabled: false
-  # postgresqlUsername: ""
-  # postgresqlPassword: ""
-  # postgresqlDatabase: ""
-  # persistence:
-  #   enabled: true
-  #   storageClass:
-  #   accessModes:
-  #     - ReadWriteOnce
+  replication:
+    enabled: false
+  auth:
+    database: vaultwarden
+    username: vaultwarden
+    password: aklgndsujrqkki
+  persistence:
+    enabled: true
+    size: 4Gi

@@ -45,14 +45,18 @@ persistence:
     enabled: false
     mountPath: /var/lib/ghost/content
 
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
+# @default -- See values.yaml
 mariadb:
   enabled: false
-  architecture: standalone
+  galera:
+    enabled: false
   auth:
     database: ghost
     username: ghost
-    password: ghost
-    rootPassword: ghost-rootpass
-  primary:
-    persistance:
-      enabled: false
+    password: fwsucgmggictvf
+    rootPassword: tjhylmggubyvfd
+  persistence:
+    enabled: false
+    size: 4Gi

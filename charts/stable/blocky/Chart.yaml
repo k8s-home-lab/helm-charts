@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.28.2
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 11.1.0
+version: 11.1.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -27,8 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Change redis dependency source
+      description: Update base values for new dependency provider

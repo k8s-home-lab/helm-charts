@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.17.4
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 10.2.0
+version: 10.2.1
 kubeVersion: ">=1.32.0"
 keywords:
   - paperless
@@ -29,10 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
-    - kind: changed
-      description: Remove bitnami dependency
+      description: Update base values for new dependency provider
