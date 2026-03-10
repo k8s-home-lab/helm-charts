@@ -17,11 +17,6 @@ image:
 # See https://ghost.org/docs/config/#running-ghost-with-config-env-variables
 env:
   url: "http://some-ghost.example.com"
-  database__client: mysql
-  database__connection__host: ghost-mariadb
-  database__connection__user: ghost
-  database__connection__password: ghost
-  database__connection__database: ghost
   NODE_ENV: production
 
 # -- Configures service settings for the chart.

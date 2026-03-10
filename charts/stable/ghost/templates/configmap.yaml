@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "common.names.fullname" . }}-config
+  labels:
+    {{- include "common.labels" . | nindent 4 }}
+data:
+  {{ if .Values.mariadb.enabled }}
+  database__client: mysql
+  database__connection__host: gitea-mariadb:3306
+  database__connection__database: {{ .Values.mariadb.auth.database }}
+  database__connection__user: {{ .Values.mariadb.auth.username  }}
+  {{ end }}
+  {{- range $key, $val := .Values.config }}
+  {{ $key }}: {{ $val | toJson }}
+  {{- end }}
