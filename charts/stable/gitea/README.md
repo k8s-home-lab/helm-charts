@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.3.0](https://img.shields.io/badge/Version-2.3.0-informational?style=flat-square) ![AppVersion: 1.25.4](https://img.shields.io/badge/AppVersion-1.25.4-informational?style=flat-square)
+![Version: 2.4.1](https://img.shields.io/badge/Version-2.4.1-informational?style=flat-square) ![AppVersion: 1.25.4](https://img.shields.io/badge/AppVersion-1.25.4-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -13,16 +13,16 @@ Gitea self-hosted github-styled git repository manager
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.5.7 |
-| https://charts.bitnami.com/bitnami | postgresql | 12.4.3 |
-| https://charts.bitnami.com/bitnami | redis | 17.10.3 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
 
 ## TL;DR
 
@@ -110,21 +110,17 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 | config | string | See https://docs.gitea.io/en-us/config-cheat-sheet/ | gitea specific configuration keys. Must be formatted as GITEA__[section]__variable |
 | env | object | See below | environment variables. See more environment variables in the [gitea documentation](https://gitea.org/docs). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
-| global.annotations | object | `{}` | Set additional global annotations. Helm templates can be used. |
-| global.fullnameOverride | string | `nil` | Set the entire name definition |
-| global.labels | object | `{}` | Set additional global labels. Helm templates can be used. |
-| global.nameOverride | string | `nil` | Set an override for the prefix of the fullname |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"gitea/gitea"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb) |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
-| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres) |
+| redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/redis) |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 2.3.0
+### Version 2.4.1
 

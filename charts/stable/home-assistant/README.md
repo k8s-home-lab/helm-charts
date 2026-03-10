@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 16.1.0](https://img.shields.io/badge/Version-16.1.0-informational?style=flat-square) ![AppVersion: 2026.2.2](https://img.shields.io/badge/AppVersion-2026.2.2-informational?style=flat-square)
+![Version: 16.2.1](https://img.shields.io/badge/Version-16.2.1-informational?style=flat-square) ![AppVersion: 2026.2.2](https://img.shields.io/badge/AppVersion-2026.2.2-informational?style=flat-square)
 
 Home Assistant
 
@@ -13,16 +13,16 @@ Home Assistant
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | influxdb | 7.1.20 |
-| https://charts.bitnami.com/bitnami | mariadb | 24.0.3 |
-| https://charts.bitnami.com/bitnami | postgresql | 18.2.3 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://helm.influxdata.com/ | influxdb2 | 2.1.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
 
 ## TL;DR
 
@@ -159,7 +159,7 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 | image.tag | string | chart.appVersion | image tag |
 | influxdb | object | See values.yaml | Enable and configure influxdb database subchart under this key.    For more options see [influxdb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/influxdb) |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb) |
 | metrics.enabled | bool | See values.yaml | Enable and configure a Prometheus serviceMonitor for the chart under this key. |
 | metrics.prometheusRule | object | See values.yaml | Enable and configure Prometheus Rules for the chart under this key. |
 | metrics.prometheusRule.rules | list | See prometheusrules.yaml | Configure additionial rules for the chart under this key. |
@@ -168,12 +168,12 @@ endpoint in your Home-Assistant configuration. See the [official documentation](
 | metrics.serviceMonitor.scrapeTimeout | string | `"30s"` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.usb | object | See values.yaml | Configure a hostPathMount to mount a USB device in the container. |
-| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres) |
 | securityContext | object | `{"privileged":null}` | When hostNetwork is true set dnsPolicy to ClusterFirstWithHostNet dnsPolicy: ClusterFirstWithHostNet |
 | securityContext.privileged | bool | `nil` | Privileged securityContext may be required if USB devics are accessed directly through the host machine |
 | service | object | See values.yaml | Configures service settings for the chart. Normally this does not need to be modified. |
 
 ## Changelog
 
-### Version 16.1.0
+### Version 16.2.1
 

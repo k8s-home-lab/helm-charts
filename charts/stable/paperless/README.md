@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 10.1.0](https://img.shields.io/badge/Version-10.1.0-informational?style=flat-square) ![AppVersion: 1.17.4](https://img.shields.io/badge/AppVersion-1.17.4-informational?style=flat-square)
+![Version: 10.2.1](https://img.shields.io/badge/Version-10.2.1-informational?style=flat-square) ![AppVersion: 1.17.4](https://img.shields.io/badge/AppVersion-1.17.4-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -12,15 +12,15 @@ Paperless - Index and archive all of your scanned paper documents
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
-| https://charts.bitnami.com/bitnami | redis | 16.13.1 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
 
 ## TL;DR
 
@@ -90,11 +90,11 @@ N/A
 | persistence.data | object | See values.yaml | Configure persistence for data. |
 | persistence.export | object | See values.yaml | Configure export volume. |
 | persistence.media | object | See values.yaml | Configure persistence for media. |
-| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres) |
+| redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/redis) |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 10.1.0
+### Version 10.2.1
 

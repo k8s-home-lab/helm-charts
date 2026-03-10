@@ -1,6 +1,6 @@
 # photoprism
 
-![Version: 9.0.0](https://img.shields.io/badge/Version-9.0.0-informational?style=flat-square) ![AppVersion: 231021-ce](https://img.shields.io/badge/AppVersion-231021--ce-informational?style=flat-square)
+![Version: 9.1.1](https://img.shields.io/badge/Version-9.1.1-informational?style=flat-square) ![AppVersion: 231021-ce](https://img.shields.io/badge/AppVersion-231021--ce-informational?style=flat-square)
 
 PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 
@@ -13,14 +13,14 @@ PhotoPrism® is a server-based application for browsing, organizing and sharing 
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 11.0.14 |
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
 
 ## TL;DR
 
@@ -95,11 +95,11 @@ N/A
 | image.repository | string | `"photoprism/photoprism"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb) |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 9.0.0
+### Version 9.1.1
 
