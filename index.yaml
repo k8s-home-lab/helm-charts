@@ -3207,6 +3207,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied major update of image ghcr.io/paperless-ngx/paperless-ngx to 2.20.10
+    apiVersion: v2
+    appVersion: 2.20.10
+    created: "2026-03-10T23:21:15.110927726Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 2ed3d1cdb186a5111216786a1557d8d193ee3f481b00300c5b21ae95b6c61f6d
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-11.0.0/paperless-11.0.0.tgz
+    version: 11.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update base values for new dependency provider
     apiVersion: v2
     appVersion: 1.17.4
@@ -6295,4 +6330,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-10T23:19:41.105813484Z"
+generated: "2026-03-10T23:21:15.111126066Z"
