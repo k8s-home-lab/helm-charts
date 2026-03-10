@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/0xerr0r/blocky
-appVersion: v0.28.2
+appVersion: v0.29.0
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 11.1.1
+version: 11.2.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update base values for new dependency provider
+      description: Applied minor update of image ghcr.io/0xerr0r/blocky to v0.29.0
