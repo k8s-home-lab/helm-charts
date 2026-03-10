@@ -429,6 +429,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: v0.28.2
+    created: "2026-03-10T22:58:32.475579042Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: DNS proxy as ad-blocker for local network
+    digest: b7f97d2cc2dbfa284e3c2e6858fe883d4ece0070266dbc5b16441158f51a50f4
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/blocky-11.1.1/blocky-11.1.1.tgz
+    version: 11.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade common chart to 4.5.3
         - kind: changed
           description: Update minimum k8s version
@@ -1225,6 +1258,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 5.51.1
+    created: "2026-03-10T22:58:33.839886384Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    description: Ghost is a blogging and publishing software
+    digest: 523b31e481219dbca1f20db61861487218761debab0c4d7d89448e11e8cf4b1e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-3.1.1/ghost-3.1.1.tgz
+    version: 3.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade common chart to 4.5.3
         - kind: changed
           description: Update minimum k8s version
@@ -1293,6 +1359,46 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-3.0.0/ghost-3.0.0.tgz
     version: 3.0.0
   gitea:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 1.25.4
+    created: "2026-03-10T22:58:34.117730669Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Gitea self-hosted github-styled git repository manager
+    digest: 3faf19426800c348dfed1068d60ab124ee0a8218276fd49670cd3af7eb8c6337
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.4.1/gitea-2.4.1.tgz
+    version: 2.4.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1862,6 +1968,48 @@ entries:
     - https://github.com/Aste88/helm-charts/releases/download/gitea-1.0.2/gitea-1.0.2.tgz
     version: 1.0.2
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 2026.2.2
+    created: "2026-03-10T22:58:34.384039027Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: influxdb.enabled
+      name: influxdb2
+      repository: https://helm.influxdata.com/
+      version: 2.1.2
+    description: Home Assistant
+    digest: 8f497d3fdc7a8062f91fca1d8fca46589c99f3f7b25847b2c3a814c592d3b1c5
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/home-assistant-16.2.1/home-assistant-16.2.1.tgz
+    version: 16.2.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2880,6 +3028,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 1.17.4
+    created: "2026-03-10T22:58:35.540373918Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 173bb894577da93bfaabaf43c21039dbb3fcc4851307ac6b5c08bb8435c1662c
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.2.1/paperless-10.2.1.tgz
+    version: 10.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade common chart to 4.5.3
         - kind: changed
           description: Update minimum k8s version
@@ -2989,6 +3172,42 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.0.0/paperless-10.0.0.tgz
     version: 10.0.0
   photoprism:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 231021-ce
+    created: "2026-03-10T22:58:35.764854069Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 17535d1b0f72eb68f3747f9eb96520962497c833ab6eb4a725847ce103b2fe64
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-9.1.1/photoprism-9.1.1.tgz
+    version: 9.1.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -5314,6 +5533,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update base values for new dependency provider
+    apiVersion: v2
+    appVersion: 1.35.3
+    created: "2026-03-10T22:58:38.604117443Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 2c59b9d197a6a0205e72b6aa71cb9f4062b21b56ee2a67a17ce42541161ab587
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.2.1/vaultwarden-6.2.1.tgz
+    version: 6.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade common chart to 4.5.3
         - kind: changed
           description: Update minimum k8s version
@@ -5760,4 +6015,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-02-25T11:25:37.914175249Z"
+generated: "2026-03-10T22:58:39.304707371Z"
