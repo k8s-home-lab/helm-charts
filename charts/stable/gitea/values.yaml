@@ -54,37 +54,38 @@ persistence: {}
   #   mountPath: /data
 
 # -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+#    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  architecture: standalone
+  replication:
+    enabled: false
   auth:
     database: gitea
     username: gitea
     password: dcjnwocqnobeno
-  primary:
-    persistence:
-      enabled: true
-      size: 4Gi
+  persistence:
+    enabled: true
+    size: 4Gi
 
 # -- Enable and configure mariadb database subchart under this key.
-#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+#    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
 # @default -- See values.yaml
 mariadb:
   enabled: false
-  architecture: standalone
+  galera:
+    enabled: false
   auth:
     database: gitea
     username: gitea
     password: dcjnwocqnobeno
-  primary:
-    persistence:
-      enabled: false
-      size: 4Gi
+    rootPassword: kmrjiqpwfyxhuu
+  persistence:
+    enabled: false
+    size: 4Gi
 
 # -- Enable and configure redis subchart under this key.
-#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+#    For more options see [redis chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/redis)
 # @default -- See values.yaml
 redis:
   enabled: false
@@ -92,9 +93,9 @@ redis:
   auth:
     enabled: true
     password: csjndlascxaj
-  master:
-    persistence:
-      size: 6Gi
+  persistence:
+    enabled: false
+    size: 4Gi
 
 addons:
     # -- The common library supports adding a code-server add-on to access files. It can be configured under this key.

@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 5.51.1
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 3.1.0
+version: 3.1.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -27,8 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
+      description: Update base values for new dependency provider

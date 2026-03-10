@@ -3,6 +3,11 @@
 
 {{/* Append the hardcoded settings */}}
 {{- define "ghost.hardcodedValues" -}}
+envFrom:
+  - configMapRef:
+      name: {{ include "common.names.fullname" . }}-config
+  - secretRef:
+      name: {{ include "common.names.fullname" . }}-secret
   {{- if not .Values.persistence.content.enabled }}
 persistence:
   content:

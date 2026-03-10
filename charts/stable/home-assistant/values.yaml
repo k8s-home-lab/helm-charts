@@ -57,49 +57,49 @@ persistence:
     hostPath: /path/to/device
 
 # -- Enable and configure mariadb database subchart under this key.
-#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+#    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
 # @default -- See values.yaml
 mariadb:
   enabled: false
-  architecture: standalone
+  galera:
+    enabled: false
   auth:
     database: home-assistant
     username: home-assistant
-    password: home-assistant-pass
-    rootPassword: home-assistantrootpass
-  primary:
-    persistence:
-      enabled: false
-      # storageClass: ""
+    password: qbsiforfmtzoau
+    rootPassword: vnkhabhjyglhuq
+  persistence:
+    enabled: false
+    size: 4Gi
 
 # -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+#    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  image:
-    repository: bitnami/postgresql
-    tag: 14.9.0
-  postgresqlUsername: home-assistant
-  postgresqlPassword: home-assistant-pass
-  postgresqlDatabase: home-assistant
+  replication:
+    enabled: false
+  auth:
+    database: home-assistant
+    username: home-assistant
+    password: vkdtmkgexajuyq
   persistence:
-    primary:
-      enabled: false
-      # storageClass: ""
+    enabled: true
+    size: 4Gi
 
 # -- Enable and configure influxdb database subchart under this key.
 #    For more options see [influxdb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/influxdb)
 # @default -- See values.yaml
 influxdb:
   enabled: false
-  architecture: standalone
-  database: home_assistant
-  authEnabled: false
+  adminUser:
+    organization: "influxdata"
+    bucket: "default"
+    user: "admin"
+    retention_policy: "0s"
   persistence:
     enabled: false
-    # storageClass: ""
-    # size: 8Gi
+    size: 8Gi
 
 metrics:
   # -- Enable and configure a Prometheus serviceMonitor for the chart under this key.

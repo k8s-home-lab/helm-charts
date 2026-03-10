@@ -17,11 +17,6 @@ image:
 # See https://ghost.org/docs/config/#running-ghost-with-config-env-variables
 env:
   url: "http://some-ghost.example.com"
-  database__client: mysql
-  database__connection__host: ghost-mariadb
-  database__connection__user: ghost
-  database__connection__password: ghost
-  database__connection__database: ghost
   NODE_ENV: production
 
 # -- Configures service settings for the chart.
@@ -45,14 +40,18 @@ persistence:
     enabled: false
     mountPath: /var/lib/ghost/content
 
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
+# @default -- See values.yaml
 mariadb:
   enabled: false
-  architecture: standalone
+  galera:
+    enabled: false
   auth:
     database: ghost
     username: ghost
-    password: ghost
-    rootPassword: ghost-rootpass
-  primary:
-    persistance:
-      enabled: false
+    password: fwsucgmggictvf
+    rootPassword: tjhylmggubyvfd
+  persistence:
+    enabled: false
+    size: 4Gi
