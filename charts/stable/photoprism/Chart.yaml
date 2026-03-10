@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=photoprism/photoprism
-appVersion: "231021-ce"
+appVersion: "231128-ce"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 9.1.1
+version: 10.0.0
 kubeVersion: ">=1.32.0"
 keywords:
   - photos
@@ -29,4 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update base values for new dependency provider
+      description: Applied major update of image photoprism/photoprism to 231128
