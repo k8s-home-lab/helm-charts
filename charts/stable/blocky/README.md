@@ -1,6 +1,6 @@
 # blocky
 
-![Version: 11.1.1](https://img.shields.io/badge/Version-11.1.1-informational?style=flat-square) ![AppVersion: v0.28.2](https://img.shields.io/badge/AppVersion-v0.28.2-informational?style=flat-square)
+![Version: 11.2.0](https://img.shields.io/badge/Version-11.2.0-informational?style=flat-square) ![AppVersion: v0.29.0](https://img.shields.io/badge/AppVersion-v0.29.0-informational?style=flat-square)
 
 DNS proxy as ad-blocker for local network
 
@@ -105,5 +105,5 @@ helm install blocky k8s-home-lab/blocky -f values.yaml
 
 ## Changelog
 
-### Version 11.1.1
+### Version 11.2.0
 
