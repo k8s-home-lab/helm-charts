@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=vaultwarden/server
-appVersion: 1.35.3
+appVersion: 1.35.4
 description: Vaultwarden is a Bitwarden compatable server in Rust
 name: vaultwarden
-version: 6.2.1
+version: 6.2.2
 kubeVersion: ">=1.32.0"
 keywords:
   - Vaultwarden
@@ -30,4 +30,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update base values for new dependency provider
+      description: Applied patch update of image vaultwarden/server to 1.35.4
