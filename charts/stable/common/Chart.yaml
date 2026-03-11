@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for k8s-home-lab charts
 type: library
-version: 5.0.0
+version: 4.5.5
 kubeVersion: ">=1.32.0"
 keywords:
   - k8s-at-home
@@ -14,5 +14,7 @@ maintainers:
     email: admin@aste.tools
 annotations:
   artifacthub.io/changes: |
+    - kind: changed
+      description: Applied minor update of image ghcr.io/nicolaka/netshoot to v0.15
     - kind: changed
       description: Applied major update of image docker.io/grafana/promtail to 3.6.7
