@@ -66,7 +66,7 @@ dumpBackup:
   # -- Sets the persistence type.
   # Valid options are pvc, emptyDir, hostPath or custom.
   # See
-  # [common chart persistence doc](https://github.com/k8s-at-home/library-charts/blob/main/charts/stable/common/values.yaml)
+  # [common chart persistence doc](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml)
   type:
   # -- Backup schedule for postgres dumps
   schedule: "@daily"

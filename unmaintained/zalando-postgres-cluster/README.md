@@ -47,7 +47,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -80,7 +80,7 @@ Features added by this wrapper:
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -94,7 +94,7 @@ Features added by this wrapper:
 | dumpBackup.schedule | string | `"@daily"` | Backup schedule for postgres dumps |
 | dumpBackup.subpath | string | `nil` | Persistent volume claim subpath for the backups @default: <subpathPrefix/<release-name> |
 | dumpBackup.subpathPrefix | string | `"backup/db"` | Persistent volume claim subpath prefix for the backups |
-| dumpBackup.type | string | `nil` | Sets the persistence type. Valid options are pvc, emptyDir, hostPath or custom. See [common chart persistence doc](https://github.com/k8s-at-home/library-charts/blob/main/charts/stable/common/values.yaml) |
+| dumpBackup.type | string | `nil` | Sets the persistence type. Valid options are pvc, emptyDir, hostPath or custom. See [common chart persistence doc](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml) |
 | persistentVolumes.accessModes[0] | string | `"ReadWriteOnce"` |  |
 | persistentVolumes.annotations | object | `{}` |  |
 | persistentVolumes.hostPath | string | `nil` | Local path for the persistent volumes @default: <hostPathPrefix/<release-name> |
