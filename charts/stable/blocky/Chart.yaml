@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.29.0
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 11.2.0
+version: 11.3.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -22,9 +22,9 @@ dependencies:
     version: 4.5.3
   - name: redis
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
-    version: 0.24.0
+    version: 0.26.4
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/0xerr0r/blocky to v0.29.0
+      description: Applied minor update of image redis to 0.26.4
