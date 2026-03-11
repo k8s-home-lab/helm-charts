@@ -755,6 +755,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Fix documentation
+    apiVersion: v2
+    created: "2026-03-11T19:42:42.320385047Z"
+    description: Function library for k8s-home-lab charts
+    digest: 6b4cd21dcaa0ac8adaf3d1dcbaa180c18020e84ede9a1c3bdf78f1b7006e0ca3
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common
+    keywords:
+    - k8s-at-home
+    - k8s-home-lab
+    - common
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: common
+    type: library
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/common-4.5.4/common-4.5.4.tgz
+    version: 4.5.4
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Switch to k8s-home-lab org
         - kind: changed
           description: Fixed global values access
@@ -6462,4 +6484,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-11T17:23:04.870947498Z"
+generated: "2026-03-11T19:42:42.320689506Z"
