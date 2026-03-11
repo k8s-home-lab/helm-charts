@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/prowlarr
-appVersion: 2.3.2
+appVersion: 2.3.3
 description: Indexer manager/proxy built on the popular arr net base stack to integrate with your various PVR apps.
 name: prowlarr
-version: 5.3.0
+version: 5.3.1
 kubeVersion: ">=1.32.0"
 keywords:
   - prowlarr
@@ -24,8 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
+      description: Applied patch update of image ghcr.io/home-operations/prowlarr to 2.3.3
