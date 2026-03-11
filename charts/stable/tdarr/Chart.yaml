@@ -25,7 +25,3 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Applied minor update of image ghcr.io/haveagitgat/tdarr to 2.62.01
-    - kind: changed
-      description: Applied minor update of image ghcr.io/haveagitgat/tdarr to 2.62.01
-    - kind: changed
-      description: Applied minor update of image ghcr.io/haveagitgat/tdarr to 2.62.01
