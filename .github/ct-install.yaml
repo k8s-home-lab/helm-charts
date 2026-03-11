@@ -24,6 +24,5 @@ excluded-charts:
   - charts/stable/zigbee2mqtt
   - charts/stable/wireguard
 chart-repos:
-  - k8s-at-home-library=https://library-charts.k8s-at-home.com
   - k8s-home-lab=https://k8s-home-lab.github.io/helm-charts/
   - jetstack=https://charts.jetstack.io
