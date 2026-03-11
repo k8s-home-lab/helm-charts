@@ -109,7 +109,7 @@ addons:
       # -- Specify the code-server image
       repository: codercom/code-server
       # -- Specify the code-server image tag
-      tag: 4.109.2
+      tag: 4.110.1
       # -- Specify the code-server image pull policy
       pullPolicy: IfNotPresent
 
