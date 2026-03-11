@@ -5385,6 +5385,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied patch update of image syncthing/syncthing to 2.0.15
+    apiVersion: v2
+    appVersion: 2.0.15
+    created: "2026-03-11T17:22:06.865465729Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.3
+    description: Open Source Continuous File Synchronization
+    digest: f718901de412396e4d174bf4cefa74af3f73020bf689233bfd269f9cd84c937f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - syncthing
+    - file sync
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://github.com/syncthing/syncthing
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syncthing-5.1.1/syncthing-5.1.1.tgz
+    version: 5.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Upgrade common chart to 4.5.3
         - kind: changed
           description: Update minimum k8s version
@@ -6402,4 +6431,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-11T17:14:23.445793452Z"
+generated: "2026-03-11T17:22:06.865938019Z"
