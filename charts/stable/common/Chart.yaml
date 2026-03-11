@@ -18,3 +18,5 @@ annotations:
       description: Applied minor update of image ghcr.io/nicolaka/netshoot to v0.15
     - kind: changed
       description: Applied major update of image docker.io/grafana/promtail to 3.6.7
+    - kind: changed
+      description: Applied minor update of image ghcr.io/coder/code-server to 4.111.0
