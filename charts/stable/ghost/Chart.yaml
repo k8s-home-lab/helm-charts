@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 6.21.2
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 4.0.0
+version: 4.0.1
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -19,7 +19,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
   - name: mariadb
     version: 0.14.3
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied major update of image ghost to 6.21.2
+      description: Applied patch update of image common to 4.5.4

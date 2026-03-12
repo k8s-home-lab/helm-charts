@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2026.3.1
 description: Home Assistant
 name: home-assistant
-version: 16.3.0
+version: 16.3.1
 kubeVersion: ">=1.32.0"
 keywords:
   - home-assistant
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
   - name: postgres
     version: 0.16.0
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
@@ -36,4 +36,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image ghcr.io/home-operations/home-assistant to 2026.3.1
+      description: Applied patch update of image common to 4.5.4

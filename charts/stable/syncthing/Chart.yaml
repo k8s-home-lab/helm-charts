@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.0.15
 description: Open Source Continuous File Synchronization
 name: syncthing
-version: 5.1.1
+version: 5.1.2
 kubeVersion: ">=1.32.0"
 keywords:
   - syncthing
@@ -19,8 +19,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image syncthing/syncthing to 2.0.15
+      description: Applied patch update of image common to 4.5.4
