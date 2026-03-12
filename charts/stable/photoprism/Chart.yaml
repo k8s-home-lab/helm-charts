@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: "231128-ce"
 description: PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection
 name: photoprism
-version: 10.0.0
+version: 10.0.1
 kubeVersion: ">=1.32.0"
 keywords:
   - photos
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
   - name: mariadb
     version: 0.14.3
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
@@ -29,4 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied major update of image photoprism/photoprism to 231128
+      description: Applied patch update of image common to 4.5.4

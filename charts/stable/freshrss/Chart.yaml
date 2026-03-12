@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.28.1
 description: FreshRSS is a self-hosted RSS feed aggregator
 name: freshrss
-version: 7.2.0
+version: 7.2.1
 kubeVersion: ">=1.32.0"
 keywords:
   - freshrss
@@ -19,12 +19,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
+      description: Applied patch update of image common to 4.5.4
