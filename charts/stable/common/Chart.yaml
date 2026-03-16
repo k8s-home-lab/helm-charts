@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for k8s-home-lab charts
 type: library
-version: 4.5.4
+version: 5.0.0
 kubeVersion: ">=1.32.0"
 keywords:
   - k8s-at-home
@@ -15,4 +15,4 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Fix documentation
+      description: Applied major update of image docker.io/grafana/promtail to 3.6.7
