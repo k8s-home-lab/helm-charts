@@ -10,7 +10,7 @@ on:
 jobs:
   pre-commit-check:
     name: Run pre-commit checks
-    runs-on: ubuntu-latest
+    runs-on: github-actions-runner
     steps:
       - name: Checkout
         uses: actions/checkout@v4

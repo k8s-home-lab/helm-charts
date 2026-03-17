@@ -7,7 +7,7 @@ on:
 
 jobs:
   renovate:
-    runs-on: ubuntu-24.04
+    runs-on: github-actions-runner
     steps:
       - name: Generate Token
         uses: actions/create-github-app-token@v2
