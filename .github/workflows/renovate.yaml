@@ -3,7 +3,7 @@ name: "Run Renovate bot"
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0/15 * * * *'
+    - cron: '0 * * * *'
 
 jobs:
   renovate:
@@ -13,8 +13,8 @@ jobs:
         uses: actions/create-github-app-token@v2
         id: generate-token
         with:
-          app-id: ${{ secrets.RENOVATE_APP_ID }}
-          private-key: ${{ secrets.RENOVATE_PRIVATE_KEY }}
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
 
       - name: Checkout
