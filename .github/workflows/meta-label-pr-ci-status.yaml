@@ -11,7 +11,7 @@ on:
 jobs:
   label-ci-status:
     name: Label CI status
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     steps:
       - name: Generate Token
         uses: actions/create-github-app-token@v2

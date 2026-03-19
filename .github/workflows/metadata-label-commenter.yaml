@@ -19,7 +19,7 @@ permissions:
 jobs:
   comment:
     name: Label commenter
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     steps:
       - name: Generate Token
         uses: actions/create-github-app-token@v2

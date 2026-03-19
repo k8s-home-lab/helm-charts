@@ -10,7 +10,7 @@ on:
 jobs:
   pre-commit-check:
     name: Run pre-commit checks
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     steps:
       - name: Checkout
         uses: actions/checkout@v4

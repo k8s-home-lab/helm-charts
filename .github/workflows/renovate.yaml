@@ -7,7 +7,7 @@ on:
 
 jobs:
   renovate:
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     steps:
       - name: Generate Token
         uses: actions/create-github-app-token@v2
@@ -15,7 +15,6 @@ jobs:
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
-          owner: ${{ github.repository_owner }}
 
       - name: Checkout
         uses: actions/checkout@v4

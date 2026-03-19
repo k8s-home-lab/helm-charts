@@ -9,7 +9,7 @@ on: # yamllint disable-line rule:truthy
 jobs:
   labels:
     name: Sync Labels
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     if: github.repository == 'k8s-home-lab/helm-charts'
     steps:
       - name: Generate Token

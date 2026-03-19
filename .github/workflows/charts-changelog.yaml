@@ -17,7 +17,7 @@ on:
 jobs:
   validate-changelog:
     name: Validate changelog
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
 
   generate-changelog:
     name: Generate changelog annotations
-    runs-on: github-actions-runner
+    runs-on: github-actions-runner-home-lab
     needs:
       - validate-changelog
     outputs:
