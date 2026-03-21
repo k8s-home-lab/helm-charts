@@ -24,6 +24,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install dependencies
+        uses: eclipse-score/apt-install@main
+        with:
+          apt_update: true
+          packages: yq
+
       - name: Check changelog annotations
         if: inputs.isRenovatePR != 'true'
         run: |
@@ -48,12 +54,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Kubernetes tools
+      - name: Install dependencies
         if: inputs.isRenovatePR == 'true'
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: eclipse-score/apt-install@main
         with:
-          setup-tools: |
-            yq
+          # apt_update: true
+          packages: yq
 
       - name: Annotate Charts.yaml for Renovate PR's
         if: inputs.isRenovatePR == 'true'

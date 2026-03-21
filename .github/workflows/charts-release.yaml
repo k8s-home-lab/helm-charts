@@ -33,7 +33,12 @@ jobs:
         with:
           setup-tools: |
             helmv3
-            yq
+
+      - name: Install dependencies
+        uses: eclipse-score/apt-install@main
+        with:
+          apt_update: true
+          packages: yq
 
       - name: Install helm-docs
         run: |
@@ -116,10 +121,11 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           fetch-depth: 0
 
-      - name: Install yq
-        uses: chrisdickinson/setup-yq@latest
+      - name: Install dependencies
+        uses: eclipse-score/apt-install@main
         with:
-          yq-version: v4.50.1
+          # apt_update: true
+          packages: yq
 
       - name: Run script
         run: |
