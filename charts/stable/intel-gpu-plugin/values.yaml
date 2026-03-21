@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: intel/intel-gpu-plugin
   # -- image tag
-  tag: 0.20.0
+  tag:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
