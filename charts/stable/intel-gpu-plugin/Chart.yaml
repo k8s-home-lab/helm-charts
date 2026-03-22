@@ -1,27 +1,28 @@
 apiVersion: v2
+# renovate: image=intel/intel-gpu-plugin
 name: intel-gpu-plugin
-version: 4.4.2
-appVersion: 0.20.0
+version: 4.5.0
+appVersion: 0.35.0
 description: The Intel GPU plugin facilitates offloading the processing of computation intensive workloads to GPU hardware
 keywords:
   - kubernetes
   - cluster
   - hardware
   - gpu
-home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/intel-gpu-plugin
+home: https://k8s-home-lab/helm-charts/tree/master/charts/stable/intel-gpu-plugin
 icon: https://avatars0.githubusercontent.com/u/17888862?s=400&v=4
 sources:
   - https://github.com/intel/intel-device-plugins-for-kubernetes/blob/master/cmd/gpu_plugin
 maintainers:
-  - name: billimek
-    email: jeff@billimek.com
-  - name: bjw-s
-    email: me@bjw-s.dev
+  - name: k8s-home-lab
+    email: admin@aste.tools
 dependencies:
   - name: common
-    version: 4.5.2
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.3
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgraded `common` chart dependency to version 4.5.2
+      description: Upgraded `common` chart dependency to version 4.5.3
+    - kind: changed
+      description: Applied minor update of image intel/intel-gpu-plugin to 0.35.0
