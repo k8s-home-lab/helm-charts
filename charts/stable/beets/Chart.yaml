@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.3.1
 description: beets helm package
 name: beets
-version: 3.1.0
+version: 3.1.1
 kubeVersion: ">=1.32.0"
 keywords:
   - beets
@@ -18,12 +18,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
+      description: Applied patch update of image common to 4.5.4

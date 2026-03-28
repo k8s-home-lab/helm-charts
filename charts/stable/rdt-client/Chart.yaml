@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.0.125
 description: rdt-client helm package
 name: rdt-client
-version: 1.2.1
+version: 1.2.2
 kubeVersion: ">=1.32.0"
 keywords:
   - rdt-client
@@ -17,10 +17,8 @@ maintainers:
 dependencies:
   - name: common
     repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 4.5.3
+    version: 4.5.4
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.125
-    - kind: changed
-      description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.125
+      description: Applied patch update of image common to 4.5.4
