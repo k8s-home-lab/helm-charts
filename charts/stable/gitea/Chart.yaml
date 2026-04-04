@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.5.0
+version: 2.6.0
 kubeVersion: ">=1.32.0"
 keywords:
   - gitea
@@ -28,10 +28,10 @@ dependencies:
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
   - name: redis
-    version: 0.24.0
+    version: 0.26.4
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied minor update of image codercom/code-server to 4.110.1
+      description: Applied minor update of image redis to 0.26.4
