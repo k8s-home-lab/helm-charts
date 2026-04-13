@@ -80,7 +80,7 @@
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
       "commitMessageTopic": "{{updateType}} update Docker image {{depName}}",
-      "match{{updateType}} updateTypes": [
+      "matchUpdateTypes": [
         "patch"
       ],
       "schedule": [
