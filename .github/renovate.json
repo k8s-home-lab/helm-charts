@@ -63,7 +63,7 @@
         "docker"
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
-      "commitMessageTopic": "Update Docker image {{depName}}",
+      "commitMessageTopic": "{{updateType}} update Docker image {{depName}}",
       "matchUpdateTypes": [
         "major",
         "minor"
@@ -79,8 +79,8 @@
         "docker"
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
-      "commitMessageTopic": "Update Docker image {{depName}}",
-      "matchUpdateTypes": [
+      "commitMessageTopic": "{{updateType}} update Docker image {{depName}}",
+      "match{{updateType}} updateTypes": [
         "patch"
       ],
       "schedule": [
@@ -97,7 +97,7 @@
         "helm"
       ],
       "commitMessagePrefix": "[{{{parentDir}}}]",
-      "commitMessageTopic": "Update Helm chart {{depName}}",
+      "commitMessageTopic": "{{updateType}} update Helm chart {{depName}}",
       "matchPackageNames": [
         "!common"
       ],
@@ -114,7 +114,7 @@
       "matchDatasources": [
         "helm"
       ],
-      "commitMessageTopic": "Update Helm common library chart",
+      "commitMessageTopic": "{{updateType}} update Helm common library chart",
       "matchPackageNames": [
         "common"
       ],
