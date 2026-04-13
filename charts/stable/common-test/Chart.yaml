@@ -1,0 +1,15 @@
+apiVersion: v2
+name: common-test
+description: Helper chart to test different use cases of the common library
+version: 0.1.0
+kubeVersion: ">=1.32.0"
+keywords:
+- common
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common-test
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+- name: common
+  repository: file://../common
+  version: "*"

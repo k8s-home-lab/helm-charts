@@ -126,7 +126,12 @@ jobs:
         uses: medyagh/setup-minikube@latest
 
       - name: Run chart-testing (install)
-        run: ct install --config .github/ct-install.yaml --charts ${{ matrix.chart }}
+        run: |
+          if [ "${{ matrix.chart }}" != "common" ]; then
+            ct install --config .github/ct-install.yaml --charts ${{ matrix.chart }}
+          else
+            ct install --config .github/ct-install.yaml --charts charts/stable/common-test
+          fi
 
   # Summarize matrix https://github.community/t/status-check-for-a-matrix-jobs/127354/7
   install_success:

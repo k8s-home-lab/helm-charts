@@ -5,8 +5,7 @@ chart-dirs:
   - charts/incubator
   - charts/stable
 excluded-charts:
-  - charts/incubator/kah-common-chart
-  - charts/incubator/sdtd
+  # - charts/stable/common
   - charts/stable/alertmanager-bot
   - charts/stable/alertmanager-discord
   - charts/stable/amcrest2mqtt
