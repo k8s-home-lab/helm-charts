@@ -522,7 +522,7 @@ addons:
         # -- Specify the Gluetun image
         repository: docker.io/qmcgaw/gluetun
         # -- Specify the Gluetun image tag
-        tag: v3.30.0
+        tag: v3.41.1
         # -- Specify the Gluetun image pull policy
         pullPolicy: IfNotPresent
 
@@ -619,7 +619,7 @@ addons:
       # -- Specify the code-server image
       repository: ghcr.io/coder/code-server
       # -- Specify the code-server image tag
-      tag: 4.5.1
+      tag: 4.111.0
       # -- Specify the code-server image pull policy
       pullPolicy: IfNotPresent
 
@@ -712,7 +712,7 @@ addons:
       # -- Specify the promtail image
       repository: docker.io/grafana/promtail
       # -- Specify the promtail image tag
-      tag: 2.6.1
+      tag: 3.6.7
       # -- Specify the promtail image pull policy
       pullPolicy: IfNotPresent
 
@@ -750,7 +750,7 @@ addons:
       # -- Specify the netshoot image
       repository: ghcr.io/nicolaka/netshoot
       # -- Specify the netshoot image tag
-      tag: v0.7
+      tag: v0.15
       # -- Specify the netshoot image pull policy
       pullPolicy: IfNotPresent
 
