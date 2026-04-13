@@ -85,7 +85,7 @@ jobs:
             helm repo add ${repo%=*} ${repo#*=}
           done
           helm dependency update
-          helm template ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
+          helm template chart-test ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
 
   install-charts:
     needs:
@@ -126,7 +126,7 @@ jobs:
 
       - name: Run chart-testing (install)
         run: |
-          if [ "${{ matrix.chart }}" != "common" ]; then
+          if [ "${{ matrix.chart }}" != "charts/stable/common" ]; then
             ct install --config .github/ct-install.yaml --charts ${{ matrix.chart }}
           else
             ct install --config .github/ct-install.yaml --charts charts/stable/common-test
