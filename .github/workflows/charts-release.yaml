@@ -29,11 +29,13 @@ jobs:
           fetch-depth: 0
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: yokawasa/action-setup-kube-tools@v0.13.4
         with:
           setup-tools: |
-            helmv3
+            helm
             yq
+          helm: '3.11.1'
+          yq: '4.52.5'
 
       - name: Install helm-docs
         run: |
@@ -121,6 +123,7 @@ jobs:
         with:
           setup-tools: |
             yq
+          yq: '4.52.5'
 
       - name: Run script
         run: |

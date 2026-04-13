@@ -36,6 +36,7 @@ jobs:
         with:
           setup-tools: |
             yq
+          yq: '4.52.5'
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -69,11 +70,13 @@ jobs:
           persist-credentials: false
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: yokawasa/action-setup-kube-tools@v0.13.4
         with:
           setup-tools: |
-            helmv3
+            helm
             yq
+          helm: '3.11.1'
+          yq: '4.52.5'
 
       - name: Run tests
         run: |
@@ -103,10 +106,11 @@ jobs:
           persist-credentials: false
 
       - name: Install Kubernetes tools
-        uses: yokawasa/action-setup-kube-tools@v0.13.1
+        uses: yokawasa/action-setup-kube-tools@v0.13.4
         with:
           setup-tools: |
-            helmv3
+            helm
+          helm: '3.11.1'
 
       - uses: actions/setup-python@v6
         with:
