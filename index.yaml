@@ -755,6 +755,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image ghcr.io/nicolaka/netshoot to v0.15
+        - kind: changed
+          description: Applied major update of image docker.io/grafana/promtail to 3.6.7
+        - kind: changed
+          description: Applied minor update of image ghcr.io/coder/code-server to 4.111.0
+        - kind: changed
+          description: Applied minor update of image docker.io/qmcgaw/gluetun to v3.41.1
+    apiVersion: v2
+    created: "2026-04-13T22:47:48.52122644Z"
+    description: Function library for k8s-home-lab charts
+    digest: 0b2e127f286398f230295264570ee3caf45c3684d810b59aa76f3a99ac486b3e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common
+    keywords:
+    - k8s-at-home
+    - k8s-home-lab
+    - common
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: common
+    type: library
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/common-4.5.5/common-4.5.5.tgz
+    version: 4.5.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Fix documentation
     apiVersion: v2
     created: "2026-03-11T19:42:42.320385047Z"
@@ -798,6 +826,26 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/common-4.5.3/common-4.5.3.tgz
     version: 4.5.3
+  common-test:
+  - apiVersion: v2
+    created: "2026-04-13T22:47:48.678704072Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: '*'
+    description: Helper chart to test different use cases of the common library
+    digest: 4d87e6feee07d054a10b48ad131f1bc30e7c24cb44a87ca158ade6c07144d7c2
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common-test
+    keywords:
+    - common
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: common-test
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/common-test-0.1.0/common-test-0.1.0.tgz
+    version: 0.1.0
   dynamo-db:
   - annotations:
       artifacthub.io/changes: |
@@ -6484,4 +6532,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-03-11T19:42:42.320689506Z"
+generated: "2026-04-13T22:47:48.678925637Z"
