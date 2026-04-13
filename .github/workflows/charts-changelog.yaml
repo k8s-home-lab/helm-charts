@@ -29,6 +29,7 @@ jobs:
         with:
           setup-tools: |
             yq
+          yq: '4.52.5'
 
       - name: Check changelog annotations
         if: inputs.isRenovatePR != 'true'
@@ -59,6 +60,7 @@ jobs:
         with:
           setup-tools: |
             yq
+          yq: '4.52.5'
 
       - name: Annotate Charts.yaml for Renovate PR's
         if: inputs.isRenovatePR == 'true'
