@@ -31,11 +31,11 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2
 
-      - name: Install dependencies
-        uses: eclipse-score/apt-install@main
+      - name: Install Kubernetes tools
+        uses: yokawasa/action-setup-kube-tools@v0.13.4
         with:
-          apt_update: true
-          packages: yq
+          setup-tools: |
+            yq
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -73,12 +73,7 @@ jobs:
         with:
           setup-tools: |
             helmv3
-
-      - name: Install dependencies
-        uses: eclipse-score/apt-install@main
-        with:
-          # apt_update: true
-          packages: yq
+            yq
 
       - name: Run tests
         run: |
