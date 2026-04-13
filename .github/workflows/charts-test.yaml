@@ -85,7 +85,11 @@ jobs:
             helm repo add ${repo%=*} ${repo#*=}
           done
           helm dependency update
-          helm template chart-test ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
+          if [ "${{ matrix.chart }}" != "charts/stable/common" ]; then
+            helm template chart-test ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
+          else
+            helm template chart-test charts/stable/common-test --values charts/stable/common-test/values.yaml > /dev/null
+          fi
 
   install-charts:
     needs:
