@@ -84,10 +84,11 @@ jobs:
           do
             helm repo add ${repo%=*} ${repo#*=}
           done
-          helm dependency update
           if [ "${{ matrix.chart }}" != "charts/stable/common" ]; then
+            helm dependency build ${{ matrix.chart }}
             helm template chart-test ${{ matrix.chart }} --values ${{ matrix.chart }}/values.yaml > /dev/null
           else
+            helm dependency build charts/stable/common-test
             helm template chart-test charts/stable/common-test --values charts/stable/common-test/values.yaml > /dev/null
           fi
 
