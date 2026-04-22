@@ -1,6 +1,6 @@
 apiVersion: v2
 # renovate: image=syncthing/syncthing
-appVersion: 2.0.15
+appVersion: 2.0.16
 description: Open Source Continuous File Synchronization
 name: syncthing
 version: 5.1.2
@@ -24,3 +24,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Applied patch update of image common to 4.5.5
+    - kind: changed
+      description: Applied patch update of image syncthing/syncthing to 2.0.16
