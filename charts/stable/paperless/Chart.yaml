@@ -1,6 +1,6 @@
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 2.20.10
+appVersion: 2.20.14
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
 version: 11.0.1
@@ -30,3 +30,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Applied patch update of image common to 4.5.5
+    - kind: changed
+      description: Applied patch update of image ghcr.io/paperless-ngx/paperless-ngx to 2.20.14
