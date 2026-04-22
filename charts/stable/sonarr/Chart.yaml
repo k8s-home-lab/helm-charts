@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/home-operations/sonarr
-appVersion: 4.0.16
+appVersion: 4.0.17
 description: Smart PVR for newsgroup and bittorrent users
 name: sonarr
-version: 17.3.0
+version: 17.3.1
 kubeVersion: ">=1.32.0"
 keywords:
   - sonarr
@@ -24,8 +24,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s version
-    - kind: changed
-      description: Fix home url
+      description: Applied patch update of image ghcr.io/home-operations/sonarr to 4.0.17
