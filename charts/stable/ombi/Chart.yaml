@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/linuxserver/ombi
-appVersion: 4.53.4
+appVersion: 4.53.5
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
 name: ombi
-version: 12.2.0
+version: 12.2.1
 kubeVersion: ">=1.32.0"
 keywords:
   - ombi
@@ -27,6 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Upgrade common chart to 4.5.3
-    - kind: changed
-      description: Update minimum k8s versio
+      description: Applied patch update of image ghcr.io/linuxserver/ombi to 4.53.5
