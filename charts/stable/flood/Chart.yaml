@@ -1,6 +1,6 @@
 apiVersion: v2
 # renovate: image=jesec/flood
-appVersion: 4.13.0
+appVersion: 4.13.9
 description: Flood is a monitoring service for various torrent clients
 name: flood
 version: 7.2.1
@@ -26,3 +26,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Applied patch update of image common to 4.5.5
+    - kind: changed
+      description: Applied patch update of image jesec/flood to 4.13.9
