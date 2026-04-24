@@ -95,6 +95,7 @@ jobs:
   install-charts:
     needs:
       - generate-install-matrix
+      - unit-test
     if: needs.generate-install-matrix.outputs.detected == 'true'
     name: Install charts
     strategy:
