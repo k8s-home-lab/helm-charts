@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 17.4.0](https://img.shields.io/badge/Version-17.4.0-informational?style=flat-square) ![AppVersion: 6.1.1](https://img.shields.io/badge/AppVersion-6.1.1-informational?style=flat-square)
+![Version: 17.5.1](https://img.shields.io/badge/Version-17.5.1-informational?style=flat-square) ![AppVersion: 6.1.1](https://img.shields.io/badge/AppVersion-6.1.1-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -13,13 +13,13 @@ A fork of Sonarr to work with movies à la Couchpotato
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.32.0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.5.2 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
 
 ## TL;DR
 
@@ -50,7 +50,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -72,7 +72,7 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 17.4.0
+### Version 17.5.1
 

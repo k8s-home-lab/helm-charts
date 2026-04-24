@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.5.0](https://img.shields.io/badge/Version-2.5.0-informational?style=flat-square) ![AppVersion: 1.25.4](https://img.shields.io/badge/AppVersion-1.25.4-informational?style=flat-square)
+![Version: 2.5.1](https://img.shields.io/badge/Version-2.5.1-informational?style=flat-square) ![AppVersion: 1.25.4](https://img.shields.io/badge/AppVersion-1.25.4-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.32.0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
 | oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
 | oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
 | oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
@@ -53,7 +53,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -86,7 +86,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -122,5 +122,5 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 2.5.0
+### Version 2.5.1
 

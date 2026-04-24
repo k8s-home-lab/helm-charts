@@ -1,6 +1,6 @@
 # tdarr
 
-![Version: 5.4.0](https://img.shields.io/badge/Version-5.4.0-informational?style=flat-square) ![AppVersion: 2.62.01](https://img.shields.io/badge/AppVersion-2.62.01-informational?style=flat-square)
+![Version: 5.4.1](https://img.shields.io/badge/Version-5.4.1-informational?style=flat-square) ![AppVersion: 2.62.01](https://img.shields.io/badge/AppVersion-2.62.01-informational?style=flat-square)
 
 Tdarr is a self hosted web-app for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers etc.
 
@@ -17,7 +17,7 @@ Tdarr is a self hosted web-app for automating media library transcode/remux mana
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.3 |
+| https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
 
 ## TL;DR
 
@@ -48,7 +48,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/k8s-home-lab/helm-charts/blob/master/charts/stable/common/values.yaml) from the [common library](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -70,7 +70,7 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
@@ -101,5 +101,5 @@ N/A
 
 ## Changelog
 
-### Version 5.4.0
+### Version 5.4.1
 
