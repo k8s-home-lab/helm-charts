@@ -84,7 +84,7 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           ref: ${{ steps.save-commit-hash.outputs.commit_hash }}
           fetch-depth: 0
-          persist-credentials: falsemit-hash.outputs.commit_hash }}
+          persist-credentials: false
 
       - name: Configure Git
         run: |
