@@ -4,7 +4,7 @@
 
 The Intel GPU plugin facilitates offloading the processing of computation intensive workloads to GPU hardware
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://k8s-home-lab/helm-charts/issues/new/choose)**
 
 ## Source Code
 
@@ -67,7 +67,7 @@ helm install intel-gpu-plugin k8s-at-home/intel-gpu-plugin -f values.yaml
 
 ### Node Feature Discovery
 
-If your cluster runs [Node Feature Discovery](https://github.com/k8s-at-home/charts/blob/master/charts/node-feature-discovery), you can deploy the device plugin only on nodes with Intel GPU by specifying the desired `nodeSelector` or `affinity` in your values. For example (make sure to update to your exact feature label):
+If your cluster runs [Node Feature Discovery](https://k8s-home-lab/helm-charts/blob/master/charts/node-feature-discovery), you can deploy the device plugin only on nodes with Intel GPU by specifying the desired `nodeSelector` or `affinity` in your values. For example (make sure to update to your exact feature label):
 
 ```yaml
 affinity:
@@ -122,7 +122,7 @@ A historical overview of changes can be found on [ArtifactHUB](https://artifacth
 ## Support
 
 - See the [Docs](https://docs.k8s-at-home.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/k8s-at-home/charts/issues/new/choose)
+- Open an [issue](https://k8s-home-lab/helm-charts/issues/new/choose)
 - Ask a [question](https://github.com/k8s-at-home/organization/discussions)
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
