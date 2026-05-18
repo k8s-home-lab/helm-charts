@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 1.25.4
 description: Gitea self-hosted github-styled git repository manager
 name: gitea
-version: 2.5.1
+version: 2.6.0
 kubeVersion: ">=1.32.0"
 keywords:
   - gitea
@@ -24,7 +24,7 @@ dependencies:
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
   - name: mariadb
-    version: 0.14.3
+    version: 0.16.2
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: mariadb.enabled
   - name: redis
@@ -34,4 +34,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image common to 4.5.5
+      description: Applied minor update of image mariadb to 0.16.2
