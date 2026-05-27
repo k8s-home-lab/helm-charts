@@ -1,6 +1,6 @@
 # tautulli
 
-![Version: 12.2.2](https://img.shields.io/badge/Version-12.2.2-informational?style=flat-square) ![AppVersion: 2.16.1](https://img.shields.io/badge/AppVersion-2.16.1-informational?style=flat-square)
+![Version: 12.3.0](https://img.shields.io/badge/Version-12.3.0-informational?style=flat-square) ![AppVersion: 2.17.1](https://img.shields.io/badge/AppVersion-2.17.1-informational?style=flat-square)
 
 A Python based monitoring and tracking tool for Plex Media Server
 
@@ -87,5 +87,5 @@ N/A
 
 ## Changelog
 
-### Version 12.2.2
+### Version 12.3.0
 
