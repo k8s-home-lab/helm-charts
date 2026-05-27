@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 3.5.0
 description: zilean is a service that allows you to search for DebridMediaManager sourced content
 name: zilean
-version: 1.0.0
+version: 1.1.0
 kubeVersion: ">=1.32.0"
 keywords:
   - zilean
@@ -20,10 +20,10 @@ dependencies:
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.5
   - name: postgres
-    version: 0.16.0
+    version: 0.19.5
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Added zilean chart
+    - kind: changed
+      description: Applied minor update of image postgres to 0.19.5

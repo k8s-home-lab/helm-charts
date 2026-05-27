@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.20.14
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 11.0.1
+version: 11.1.0
 kubeVersion: ">=1.32.0"
 keywords:
   - paperless
@@ -19,7 +19,7 @@ dependencies:
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.5
   - name: postgres
-    version: 0.16.0
+    version: 0.19.5
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
   - name: redis
@@ -29,6 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image common to 4.5.5
-    - kind: changed
-      description: Applied patch update of image ghcr.io/paperless-ngx/paperless-ngx to 2.20.14
+      description: Applied minor update of image postgres to 0.19.5
