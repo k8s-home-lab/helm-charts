@@ -1,6 +1,6 @@
 # ghost
 
-![Version: 4.0.1](https://img.shields.io/badge/Version-4.0.1-informational?style=flat-square) ![AppVersion: 6.21.2](https://img.shields.io/badge/AppVersion-6.21.2-informational?style=flat-square)
+![Version: 4.1.0](https://img.shields.io/badge/Version-4.1.0-informational?style=flat-square) ![AppVersion: 6.41.1](https://img.shields.io/badge/AppVersion-6.41.1-informational?style=flat-square)
 
 Ghost is a blogging and publishing software
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 4.0.1
+### Version 4.1.0
 
