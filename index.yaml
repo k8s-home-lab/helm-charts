@@ -1917,6 +1917,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image gitea/gitea to 1.26.2
+    apiVersion: v2
+    appVersion: 1.26.2
+    created: "2026-05-27T18:25:33.397258317Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.14.3
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.24.0
+    description: Gitea self-hosted github-styled git repository manager
+    digest: a2e982607c40686a9864579958606348a6a2458fe6f7ae4d4893eabafd0b7953
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-2.6.0/gitea-2.6.0.tgz
+    version: 2.6.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
     apiVersion: v2
     appVersion: 1.25.4
@@ -7678,4 +7718,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-05-27T18:24:16.875517779Z"
+generated: "2026-05-27T18:25:33.397596217Z"
