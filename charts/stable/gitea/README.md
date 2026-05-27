@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.5.1](https://img.shields.io/badge/Version-2.5.1-informational?style=flat-square) ![AppVersion: 1.25.4](https://img.shields.io/badge/AppVersion-1.25.4-informational?style=flat-square)
+![Version: 2.6.0](https://img.shields.io/badge/Version-2.6.0-informational?style=flat-square) ![AppVersion: 1.26.2](https://img.shields.io/badge/AppVersion-1.26.2-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -122,5 +122,5 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 2.5.1
+### Version 2.6.0
 
