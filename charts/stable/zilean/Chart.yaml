@@ -1,0 +1,29 @@
+apiVersion: v2
+# renovate: image=ipromknight/zilean
+appVersion: 3.5.0
+description: zilean is a service that allows you to search for DebridMediaManager sourced content
+name: zilean
+version: 1.0.0
+kubeVersion: ">=1.32.0"
+keywords:
+  - zilean
+home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zilean
+icon: https://raw.githubusercontent.com/iPromKnight/zilean/main/src/Zilean.ApiService/wwwroot/images/zilean-logo.png
+sources:
+  - https://github.com/iPromKnight/zilean
+  - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zilean
+maintainers:
+  - name: k8s-home-lab
+    email: admin@aste.tools
+dependencies:
+  - name: common
+    repository: https://k8s-home-lab.github.io/helm-charts/
+    version: 4.5.5
+  - name: postgres
+    version: 0.16.0
+    repository: oci://ghcr.io/cloudpirates-io/helm-charts
+    condition: postgresql.enabled
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Added zilean chart
