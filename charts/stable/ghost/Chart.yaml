@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghost
-appVersion: 6.21.2
+appVersion: 6.41.1
 description: Ghost is a blogging and publishing software
 name: ghost
-version: 4.0.1
+version: 4.1.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - ghost
@@ -27,4 +27,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image common to 4.5.5
+      description: Applied minor update of image ghost to 6.41.1
