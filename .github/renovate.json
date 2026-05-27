@@ -1,13 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "group:allNonMajor"
   ],
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
-  "abandonmentThreshold": "10 years",
-  "assigneesFromCodeOwners": true,
-  "reviewersFromCodeOwners": true,
+  "abandonmentThreshold": "2 years",
   "suppressNotifications": [
     "prIgnoreNotification"
   ],
