@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=syncthing/syncthing
-appVersion: 2.0.16
+appVersion: 2.1.0
 description: Open Source Continuous File Synchronization
 name: syncthing
-version: 5.1.2
+version: 5.2.0
 kubeVersion: ">=1.32.0"
 keywords:
   - syncthing
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image common to 4.5.5
-    - kind: changed
-      description: Applied patch update of image syncthing/syncthing to 2.0.16
+      description: Applied minor update of image syncthing/syncthing to 2.1.0
