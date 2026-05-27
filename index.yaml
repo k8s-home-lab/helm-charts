@@ -7466,6 +7466,40 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/youtubedl-material-5.0.0/youtubedl-material-5.0.0.tgz
     version: 5.0.0
+  zilean:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Added zilean chart
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2026-05-27T17:19:15.413089381Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: zilean is a service that allows you to search for DebridMediaManager
+      sourced content
+    digest: bbbf229628693e1d3f7fd5aaaf7ba35101c2c8459ca668cc260f62379141d8a8
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zilean
+    icon: https://raw.githubusercontent.com/iPromKnight/zilean/main/src/Zilean.ApiService/wwwroot/images/zilean-logo.png
+    keywords:
+    - zilean
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: zilean
+    sources:
+    - https://github.com/iPromKnight/zilean
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zilean
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/zilean-1.0.0/zilean-1.0.0.tgz
+    version: 1.0.0
   zurg:
   - annotations:
       artifacthub.io/changes: |-
@@ -7577,4 +7611,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-04-26T16:06:24.461745001Z"
+generated: "2026-05-27T17:19:15.413375257Z"
