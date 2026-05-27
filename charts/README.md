@@ -4,6 +4,7 @@
 | ----- | ----------- |
 | [bazarr](stable/bazarr) | Bazarr is a companion application to Sonarr and Radarr. It manages and downloads subtitles based on your requirements |
 | [beets](stable/beets) | beets helm package |
+| [bitmagnet](stable/bitmagnet) | bitmagnet is a BitTorrent indexer, DHT crawler, content classifier and torrent search engine |
 | [blocky](stable/blocky) | DNS proxy as ad-blocker for local network |
 | [calibre-web](stable/calibre-web) | Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. |
 | [common-test](stable/common-test) | Helper chart to test different use cases of the common library |
