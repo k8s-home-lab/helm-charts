@@ -1,6 +1,6 @@
 # bitmagnet
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: v0.10](https://img.shields.io/badge/AppVersion-v0.10-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: v0.10](https://img.shields.io/badge/AppVersion-v0.10-informational?style=flat-square)
 
 bitmagnet is a BitTorrent indexer, DHT crawler, content classifier and torrent search engine
 
@@ -89,6 +89,11 @@ PROCESSOR_CONCURRENCY (default: 1): Defines the maximum number of torrents to be
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| args[0] | string | `"--keys=http_server"` |  |
+| args[1] | string | `"--keys=queue_server"` |  |
+| args[2] | string | `"--keys=dht_crawler"` |  |
+| command[0] | string | `"worker"` |  |
+| command[1] | string | `"run"` |  |
 | config | string | See https://bitmagnet.io/setup/configuration.html | bitmagnet specific configuration keys. |
 | env | object | See below | environment variables. See more environment variables in the [bitmagnet documentation](https://bitmagnet.org/docs). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
@@ -102,5 +107,5 @@ PROCESSOR_CONCURRENCY (default: 1): Defines the maximum number of torrents to be
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 
