@@ -36,6 +36,7 @@
 | [vaultwarden](stable/vaultwarden) | Vaultwarden is a Bitwarden compatable server in Rust |
 | [wireguard](stable/wireguard) | Fast, modern, secure VPN tunnel |
 | [youtubedl-material](stable/youtubedl-material) | Self-hosted YouTube downloader built on Material Design |
+| [zilean](stable/zilean) | zilean is a service that allows you to search for DebridMediaManager sourced content |
 | [zurg](stable/zurg) | A self-hosted Real-Debrid webdav server |
 ### Incubator charts:
 | Chart | Description |
