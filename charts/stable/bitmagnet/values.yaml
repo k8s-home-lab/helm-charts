@@ -13,6 +13,15 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
+command:
+  - worker
+  - run
+args:
+  - --keys=http_server
+  - --keys=queue_server
+  # disable the next line to run without DHT crawler
+  - --keys=dht_crawler
+
 # -- environment variables. See more environment variables in the [bitmagnet documentation](https://bitmagnet.org/docs).
 # @default -- See below
 env:

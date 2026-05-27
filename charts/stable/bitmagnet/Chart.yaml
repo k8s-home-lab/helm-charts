@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.10
 description: bitmagnet is a BitTorrent indexer, DHT crawler, content classifier and torrent search engine
 name: bitmagnet
-version: 1.0.0
+version: 1.0.1
 kubeVersion: ">=1.32.0"
 keywords:
   - bitmagnet
@@ -25,5 +25,5 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Added bitmagnet chart
+    - kind: changed
+      description: Added commands and args
