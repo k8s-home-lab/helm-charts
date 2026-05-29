@@ -1,6 +1,6 @@
 # zilean
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 3.5.0](https://img.shields.io/badge/AppVersion-3.5.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: v3.10.1](https://img.shields.io/badge/AppVersion-v3.10.1-informational?style=flat-square)
 
 zilean is a service that allows you to search for DebridMediaManager sourced content
 
@@ -80,7 +80,7 @@ N/A
 | env | object | See below | environment variables. See more environment variables in the [zilean documentation](https://zilean.org/docs). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ipromknight/zilean"` | image repository |
+| image.repository | string | `"ghcr.io/thoroslives/zilean"` | image repository |
 | image.tag | string | `nil` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 
