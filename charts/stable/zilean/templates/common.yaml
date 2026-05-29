@@ -4,6 +4,8 @@
 {{/* Append the hardcoded settings */}}
 {{- define "zilean.harcodedValues" -}}
 envFrom:
+  - configMapRef:
+      name: {{ include "common.names.fullname" . }}-config
   - secretRef:
       name: {{ include "common.names.fullname" . }}-secret
 {{- end -}}

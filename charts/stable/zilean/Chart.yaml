@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ipromknight/zilean
-appVersion: 3.5.0
+appVersion: v3.10.1
 description: zilean is a service that allows you to search for DebridMediaManager sourced content
 name: zilean
-version: 1.0.0
+version: 1.0.1
 kubeVersion: ">=1.32.0"
 keywords:
   - zilean
@@ -25,5 +25,5 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Added zilean chart
+    - kind: changed
+      description: Switch to thoroslives/zilean
