@@ -8,7 +8,7 @@ zilean is a service that allows you to search for DebridMediaManager sourced con
 
 ## Source Code
 
-* <https://github.com/iPromKnight/zilean>
+* <https://github.com/Thoroslives/zilean>
 * <https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/zilean>
 
 ## Requirements
