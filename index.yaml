@@ -527,6 +527,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Fix postgres address
+    apiVersion: v2
+    appVersion: v0.10
+    created: "2026-06-06T21:03:11.449413453Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.16.0
+    description: bitmagnet is a BitTorrent indexer, DHT crawler, content classifier
+      and torrent search engine
+    digest: 705bde3a484535974e18de09491870d29fc53c522ef51350290b42d4d152d654
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/bitmagnet
+    icon: https://raw.githubusercontent.com/bitmagnet-io/bitmagnet/main/bitmagnet.io/assets/images/favicon.png
+    keywords:
+    - bitmagnet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: bitmagnet
+    sources:
+    - https://github.com/bitmagnet-io/bitmagnet
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/bitmagnet
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/bitmagnet-1.0.2/bitmagnet-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Added commands and args
     apiVersion: v2
     appVersion: v0.10
@@ -7813,4 +7846,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-05-29T23:52:08.163789004Z"
+generated: "2026-06-06T21:03:11.682545147Z"
