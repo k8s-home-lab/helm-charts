@@ -1,6 +1,6 @@
 # bitmagnet
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: v0.10](https://img.shields.io/badge/AppVersion-v0.10-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: v0.10](https://img.shields.io/badge/AppVersion-v0.10-informational?style=flat-square)
 
 bitmagnet is a BitTorrent indexer, DHT crawler, content classifier and torrent search engine
 
@@ -107,5 +107,5 @@ PROCESSOR_CONCURRENCY (default: 1): Defines the maximum number of torrents to be
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.2
 
