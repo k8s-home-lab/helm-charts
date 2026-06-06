@@ -6,7 +6,7 @@ metadata:
     {{- include "common.labels" . | nindent 4 }}
 data:
   {{ if .Values.postgresql.enabled }}
-  POSTGRES_HOST: bitmagnet-postgresql-hl:5432
+  POSTGRES_HOST: bitmagnet-postgres
   {{ end }}
   {{- range $key, $val := .Values.config }}
   {{ $key }}: {{ $val | toJson }}
