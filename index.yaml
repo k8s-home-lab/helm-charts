@@ -1157,6 +1157,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image ghcr.io/flaresolverr/flaresolverr to v3.5.0
+    apiVersion: v2
+    appVersion: v3.5.0
+    created: "2026-06-22T19:39:06.111009492Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: FlareSolverr is a proxy server to bypass Cloudflare protection
+    digest: a866a86e563b136a5da8c170da3e87da0478b87f0b59ee0052422c9532c33b9e
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flaresolverr
+    icon: https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.svg
+    keywords:
+    - flaresolverr
+    - jackett
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flaresolverr
+    sources:
+    - https://github.com/FlareSolverr/FlareSolverr
+    - https://hub.docker.com/r/flaresolverr/flaresolverr
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flaresolverr-6.2.0/flaresolverr-6.2.0.tgz
+    version: 6.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
     apiVersion: v2
     appVersion: v3.4.6
@@ -7962,4 +7991,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-06-22T19:37:52.463412788Z"
+generated: "2026-06-22T19:39:06.111327474Z"
