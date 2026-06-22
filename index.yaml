@@ -5785,6 +5785,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.138
+    apiVersion: v2
+    appVersion: 2.0.138
+    created: "2026-06-22T19:37:52.463082292Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: rdt-client helm package
+    digest: 4f303f13e5c4080ee9ce4b93dd832e9e34f77bb223f505001ebf8f83b95328ba
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/rdt-client
+    icon: https://github.com/rogerfar/rdt-client/blob/main/client/src/assets/logo.png?raw=true
+    keywords:
+    - rdt-client
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: rdt-client
+    sources:
+    - https://github.com/rogerfar/rdt-client
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/rdt-client-1.2.3/rdt-client-1.2.3.tgz
+    version: 1.2.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
         - kind: changed
           description: Applied patch update of image ghcr.io/rogerfar/rdtclient to 2.0.129
@@ -7935,4 +7962,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-06-22T19:36:54.710770429Z"
+generated: "2026-06-22T19:37:52.463412788Z"
