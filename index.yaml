@@ -4765,6 +4765,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image ghcr.io/home-operations/prowlarr to 2.4.0
+    apiVersion: v2
+    appVersion: 2.4.0
+    created: "2026-06-22T19:36:54.710324675Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: Indexer manager/proxy built on the popular arr net base stack to
+      integrate with your various PVR apps.
+    digest: 1a7fccd090a169ede4e2c5142bca18b1ba007b4a695f26d8e443e8af0daeba75
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/400.png
+    keywords:
+    - prowlarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/prowlarr-5.4.0/prowlarr-5.4.0.tgz
+    version: 5.4.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
         - kind: changed
           description: Applied patch update of image ghcr.io/home-operations/prowlarr to 2.3.6
@@ -7904,4 +7935,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-06-22T19:35:09.259731573Z"
+generated: "2026-06-22T19:36:54.710770429Z"
