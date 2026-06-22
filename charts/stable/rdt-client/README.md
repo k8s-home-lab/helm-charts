@@ -1,6 +1,6 @@
 # rdt-client
 
-![Version: 1.2.2](https://img.shields.io/badge/Version-1.2.2-informational?style=flat-square) ![AppVersion: 2.0.129](https://img.shields.io/badge/AppVersion-2.0.129-informational?style=flat-square)
+![Version: 1.2.3](https://img.shields.io/badge/Version-1.2.3-informational?style=flat-square) ![AppVersion: 2.0.138](https://img.shields.io/badge/AppVersion-2.0.138-informational?style=flat-square)
 
 rdt-client helm package
 
@@ -88,5 +88,5 @@ N/A
 
 ## Changelog
 
-### Version 1.2.2
+### Version 1.2.3
 
