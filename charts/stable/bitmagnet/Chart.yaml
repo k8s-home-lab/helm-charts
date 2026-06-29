@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v0.10
 description: bitmagnet is a BitTorrent indexer, DHT crawler, content classifier and torrent search engine
 name: bitmagnet
-version: 1.0.2
+version: 1.1.0
 kubeVersion: ">=1.32.0"
 keywords:
   - bitmagnet
@@ -20,10 +20,10 @@ dependencies:
     repository: https://k8s-home-lab.github.io/helm-charts/
     version: 4.5.5
   - name: postgres
-    version: 0.16.0
+    version: 0.19.6
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Fix postgres address
+      description: Applied minor update of image postgres to 0.19.6
