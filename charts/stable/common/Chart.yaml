@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for k8s-home-lab charts
 type: library
-version: 4.5.5
+version: 4.6.0
 kubeVersion: ">=1.32.0"
 keywords:
   - k8s-at-home
@@ -15,10 +15,4 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image ghcr.io/nicolaka/netshoot to v0.15
-    - kind: changed
-      description: Applied major update of image docker.io/grafana/promtail to 3.6.7
-    - kind: changed
-      description: Applied minor update of image ghcr.io/coder/code-server to 4.111.0
-    - kind: changed
-      description: Applied minor update of image docker.io/qmcgaw/gluetun to v3.41.1
+      description: Applied minor update of image ghcr.io/coder/code-server to 4.127.0
