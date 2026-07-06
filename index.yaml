@@ -1558,6 +1558,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image ghcr.io/linuxserver/freshrss to 1.29.1
+    apiVersion: v2
+    appVersion: 1.29.1
+    created: "2026-07-06T22:01:10.380775152Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: FreshRSS is a self-hosted RSS feed aggregator
+    digest: e3fe24729b2d60a4bc73de5d8f31a76acafc19704dafc63c113254cbebe237ec
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/freshrss
+    icon: https://avatars.githubusercontent.com/u/9414285?s=200&v=4
+    keywords:
+    - freshrss
+    - rss
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: freshrss
+    sources:
+    - https://github.com/FreshRSS/FreshRSS
+    - https://hub.docker.com/r/linuxserver/freshrss
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/freshrss-7.3.0/freshrss-7.3.0.tgz
+    version: 7.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
     apiVersion: v2
     appVersion: 1.28.1
@@ -8021,4 +8050,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-06-29T23:03:00.770922223Z"
+generated: "2026-07-06T22:01:10.381610912Z"
