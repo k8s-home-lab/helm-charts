@@ -1,6 +1,6 @@
 # freshrss
 
-![Version: 7.2.1](https://img.shields.io/badge/Version-7.2.1-informational?style=flat-square) ![AppVersion: 1.28.1](https://img.shields.io/badge/AppVersion-1.28.1-informational?style=flat-square)
+![Version: 7.3.0](https://img.shields.io/badge/Version-7.3.0-informational?style=flat-square) ![AppVersion: 1.29.1](https://img.shields.io/badge/AppVersion-1.29.1-informational?style=flat-square)
 
 FreshRSS is a self-hosted RSS feed aggregator
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 7.2.1
+### Version 7.3.0
 
