@@ -1392,6 +1392,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image jesec/flood to 4.14.3
+    apiVersion: v2
+    appVersion: 4.14.3
+    created: "2026-07-06T22:07:57.21424912Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: Flood is a monitoring service for various torrent clients
+    digest: 12e8a89fb6739df977ad01d18fa8121b0938c1c1ce4f4cf8e45ac4c0193da9dd
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/flood
+    icon: https://raw.githubusercontent.com/jesec/flood/master/flood.svg
+    keywords:
+    - flood
+    - rtorrent
+    - qbittorrent
+    - transmission
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: flood
+    sources:
+    - https://github.com/jesec/flood
+    - https://hub.docker.com/r/jesec/flood
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/flood-7.3.0/flood-7.3.0.tgz
+    version: 7.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
         - kind: changed
           description: Applied patch update of image jesec/flood to 4.13.9
@@ -8050,4 +8081,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-07-06T22:01:10.381610912Z"
+generated: "2026-07-06T22:07:57.214512504Z"
