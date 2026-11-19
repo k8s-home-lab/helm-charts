@@ -5206,6 +5206,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Fixed exporter host
+    apiVersion: v2
+    appVersion: 5.2.2
+    created: "2026-11-19T22:19:32.390602592Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: qBittorrent is a cross-platform free and open-source BitTorrent client
+    digest: 83ca31dc3eb4fd3059b0a5a748e6c84d320042789237d0d0fb683ad07c241c64
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/qbittorrent
+    icon: https://cloud.githubusercontent.com/assets/14862437/23586868/89ef2922-01c4-11e7-869c-52aafcece17f.png
+    keywords:
+    - qbittorrent
+    - torrrent
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/qbittorrent-14.5.1/qbittorrent-14.5.1.tgz
+    version: 14.5.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied minor update of image ghcr.io/home-operations/qbittorrent to 5.2.2
     apiVersion: v2
     appVersion: 5.2.2
@@ -8081,4 +8110,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-07-06T22:07:57.214512504Z"
+generated: "2026-11-19T22:19:32.391086383Z"
