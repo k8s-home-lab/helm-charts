@@ -25,6 +25,7 @@ jobs:
     needs:
       - pr-metadata
       - pre-commit-check
+    secrets: inherit
     with:
       isRenovatePR: ${{ needs.pr-metadata.outputs.isRenovatePR }}
       modifiedCharts: ${{ needs.pr-metadata.outputs.addedOrModifiedCharts }}
