@@ -34,6 +34,8 @@ dependencies:
     repository: https://helm.influxdata.com/
     condition: influxdb.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image postgres to 0.22.1
+      description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+    - kind: changed
+      description: Upgraded `postgres` chart dependency to version `0.22.1`.
