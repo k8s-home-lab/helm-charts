@@ -27,4 +27,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
+      description: Upgraded `blocky` to version `v0.36.0`.
+    - kind: changed
       description: Upgraded `redis` chart dependency to version `0.40.0`.
