@@ -25,6 +25,6 @@ dependencies:
     version: 0.40.0
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image redis to 0.40.0
+      description: Upgraded `redis` chart dependency to version `0.40.0`.
