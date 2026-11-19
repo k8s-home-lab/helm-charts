@@ -42,4 +42,5 @@ runs:
         # Remove duplicates
         CHARTS=( `printf "%s\n" "${CHARTS[@]}" | sort -u` )
         # Set output to changed charts
-        printf "::set-output name=addedOrModified::%s\n" "${CHARTS[*]}"
+        printf "addedOrModified=%s\n" "${CHARTS[*]}" >> "$GITHUB_OUTPUT"
+
