@@ -1,6 +1,6 @@
 # lidarr
 
-![Version: 15.3.1](https://img.shields.io/badge/Version-15.3.1-informational?style=flat-square) ![AppVersion: 3.1.2](https://img.shields.io/badge/AppVersion-3.1.2-informational?style=flat-square)
+![Version: 15.4.0](https://img.shields.io/badge/Version-15.4.0-informational?style=flat-square) ![AppVersion: 3.2.1](https://img.shields.io/badge/AppVersion-3.2.1-informational?style=flat-square)
 
 Looks and smells like Sonarr but made for music
 
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 15.3.1
+### Version 15.4.0
 
