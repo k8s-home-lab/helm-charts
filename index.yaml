@@ -625,6 +625,41 @@ entries:
     version: 1.0.0
   blocky:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `blocky` to version `v0.36.0`.
+        - kind: changed
+          description: Upgraded `redis` chart dependency to version `0.40.0`.
+    apiVersion: v2
+    appVersion: v0.36.0
+    created: "2026-11-19T23:10:22.778760745Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.40.0
+    description: DNS proxy as ad-blocker for local network
+    digest: 66459e129df226166e73d80cb100965965325c8602501a1e64255f014470f39c
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/blocky-11.4.0/blocky-11.4.0.tgz
+    version: 11.4.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied patch update of image common to 4.5.5
@@ -8346,4 +8381,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T23:07:43.070677159Z"
+generated: "2026-11-19T23:10:22.779008037Z"
