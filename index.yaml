@@ -7469,6 +7469,46 @@ entries:
     version: 5.0.0
   vaultwarden:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `Vaultwarden` to version `1.37.5`.
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+        - kind: changed
+          description: Upgraded `postgres` chart dependency to version `0.22.1`.
+    apiVersion: v2
+    appVersion: 1.37.5
+    created: "2026-11-19T22:54:42.22395839Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.17.0
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.22.1
+    description: Vaultwarden is a Bitwarden compatable server in Rust
+    digest: 41481b92a7ddac774cbfab84ec9aa5582447d6b64fd15a029629615680fad855
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/vaultwarden
+    icon: https://sesoodan.sirv.com/bitwarden_rs.png
+    keywords:
+    - Vaultwarden
+    - bitwardenrs
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/vaultwarden-6.5.0/vaultwarden-6.5.0.tgz
+    version: 6.5.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied patch update of image common to 4.5.5
@@ -8149,4 +8189,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T22:51:20.343872851Z"
+generated: "2026-11-19T22:54:42.224387506Z"
