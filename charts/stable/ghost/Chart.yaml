@@ -27,4 +27,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
+      description: Applied minor update of image ghost to 6.78.0
+    - kind: changed
       description: Upgraded `mariadb` chart dependency to version `0.17.0`.
