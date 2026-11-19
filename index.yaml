@@ -4064,6 +4064,45 @@ entries:
     version: 8.0.0
   paperless:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded paperless to version `2.20.15`.
+        - kind: changed
+          description: Upgraded `postgres` chart dependency to version `0.22.1`.
+        - kind: changed
+          description: Upgraded `redis` chart dependency to version `0.40.0`.
+    apiVersion: v2
+    appVersion: 2.20.15
+    created: "2026-11-19T22:51:20.343566629Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.22.1
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.40.0
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 02cf391d5315c9c72419a065918595c42b085accd31793005e428d2024244af1
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-11.2.0/paperless-11.2.0.tgz
+    version: 11.2.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied patch update of image common to 4.5.5
@@ -8110,4 +8149,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T22:19:32.391086383Z"
+generated: "2026-11-19T22:51:20.343872851Z"
