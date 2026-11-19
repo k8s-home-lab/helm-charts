@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 2.6.0](https://img.shields.io/badge/Version-2.6.0-informational?style=flat-square) ![AppVersion: 1.26.2](https://img.shields.io/badge/AppVersion-1.26.2-informational?style=flat-square)
+![Version: 2.10.0](https://img.shields.io/badge/Version-2.10.0-informational?style=flat-square) ![AppVersion: 1.27.3](https://img.shields.io/badge/AppVersion-1.27.3-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -20,9 +20,9 @@ Kubernetes: `>=1.32.0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.17.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.22.1 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.40.0 |
 
 ## TL;DR
 
@@ -122,5 +122,5 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 2.6.0
+### Version 2.10.0
 
