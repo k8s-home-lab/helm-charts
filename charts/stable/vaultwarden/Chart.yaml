@@ -28,6 +28,8 @@ dependencies:
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: postgresql.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image vaultwarden/server to 1.37.5
+      description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+    - kind: changed
+      description: Upgraded `postgres` chart dependency to version `0.22.1`.
