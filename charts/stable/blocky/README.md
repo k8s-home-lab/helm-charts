@@ -1,6 +1,6 @@
 # blocky
 
-![Version: 11.2.1](https://img.shields.io/badge/Version-11.2.1-informational?style=flat-square) ![AppVersion: v0.29.0](https://img.shields.io/badge/AppVersion-v0.29.0-informational?style=flat-square)
+![Version: 11.4.0](https://img.shields.io/badge/Version-11.4.0-informational?style=flat-square) ![AppVersion: v0.36.0](https://img.shields.io/badge/AppVersion-v0.36.0-informational?style=flat-square)
 
 DNS proxy as ad-blocker for local network
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.19.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.40.0 |
 
 ## TL;DR
 
@@ -105,5 +105,5 @@ helm install blocky k8s-home-lab/blocky -f values.yaml
 
 ## Changelog
 
-### Version 11.2.1
+### Version 11.4.0
 
