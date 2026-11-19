@@ -36,6 +36,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
+      description: Upgraded `home-assistant` to version `2026.11.2`.
+    - kind: changed
       description: Upgraded `mariadb` chart dependency to version `0.17.0`.
     - kind: changed
       description: Upgraded `postgres` chart dependency to version `0.22.1`.
