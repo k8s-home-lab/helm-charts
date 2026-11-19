@@ -1,6 +1,6 @@
 # paperless
 
-![Version: 11.0.1](https://img.shields.io/badge/Version-11.0.1-informational?style=flat-square) ![AppVersion: 2.20.14](https://img.shields.io/badge/AppVersion-2.20.14-informational?style=flat-square)
+![Version: 11.2.0](https://img.shields.io/badge/Version-11.2.0-informational?style=flat-square) ![AppVersion: 2.20.15](https://img.shields.io/badge/AppVersion-2.20.15-informational?style=flat-square)
 
 Paperless - Index and archive all of your scanned paper documents
 
@@ -19,8 +19,8 @@ Kubernetes: `>=1.32.0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.24.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.22.1 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | redis | 0.40.0 |
 
 ## TL;DR
 
@@ -96,5 +96,5 @@ N/A
 
 ## Changelog
 
-### Version 11.0.1
+### Version 11.2.0
 
