@@ -29,6 +29,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
+      description: Upgraded paperless to version `2.20.15`.
+    - kind: changed
       description: Upgraded `postgres` chart dependency to version `0.22.1`.
     - kind: changed
       description: Upgraded `redis` chart dependency to version `0.40.0`.
