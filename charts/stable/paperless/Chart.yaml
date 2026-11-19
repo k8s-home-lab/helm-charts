@@ -27,6 +27,8 @@ dependencies:
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
     condition: redis.enabled
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Applied minor update of image redis to 0.40.0
+      description: Upgraded `postgres` chart dependency to version `0.22.1`.
+    - kind: changed
+      description: Upgraded `redis` chart dependency to version `0.40.0`.
