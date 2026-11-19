@@ -2799,6 +2799,52 @@ entries:
     version: 1.0.2
   home-assistant:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `home-assistant` to version `2026.11.2`.
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+        - kind: changed
+          description: Upgraded `postgres` chart dependency to version `0.22.1`.
+    apiVersion: v2
+    appVersion: 2026.11.2
+    created: "2026-11-19T22:57:47.901047182Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.22.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.17.0
+    - condition: influxdb.enabled
+      name: influxdb2
+      repository: https://helm.influxdata.com/
+      version: 2.1.2
+    description: Home Assistant
+    digest: 724700244c3129537605a3d6561a52c3a8e1557ed4b24e07404be805293ec5a4
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/home-assistant
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/519px-Home_Assistant_Logo.svg.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/home-assistant
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/home-assistant-16.6.0/home-assistant-16.6.0.tgz
+    version: 16.6.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied patch update of image common to 4.5.5
@@ -8189,4 +8235,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T22:54:42.224387506Z"
+generated: "2026-11-19T22:57:47.901366293Z"
