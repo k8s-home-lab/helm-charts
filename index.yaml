@@ -1867,6 +1867,41 @@ entries:
     version: 9.0.0
   ghost:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Applied minor update of image ghost to 6.78.0
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+    apiVersion: v2
+    appVersion: 6.78.0
+    created: "2026-11-19T23:07:43.070522086Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.17.0
+    description: Ghost is a blogging and publishing software
+    digest: 1ef8129f77139e81ddda339c7695caf714984c3195645e787e654a2953a072d3
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/ghost
+    icon: https://ghost.org/images/logos/logo-black-1.png
+    keywords:
+    - ghost
+    - blogging
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: ghost
+    sources:
+    - https://github.com/TryGhost/Ghost
+    - https://github.com/TryGhost/Ghost-CLI
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/ghost-4.3.0/ghost-4.3.0.tgz
+    version: 4.3.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied minor update of image ghost to 6.41.1
@@ -8311,4 +8346,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T23:06:07.721763473Z"
+generated: "2026-11-19T23:07:43.070677159Z"
