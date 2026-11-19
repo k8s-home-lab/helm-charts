@@ -1,6 +1,6 @@
 # ghost
 
-![Version: 4.1.0](https://img.shields.io/badge/Version-4.1.0-informational?style=flat-square) ![AppVersion: 6.41.1](https://img.shields.io/badge/AppVersion-6.41.1-informational?style=flat-square)
+![Version: 4.3.0](https://img.shields.io/badge/Version-4.3.0-informational?style=flat-square) ![AppVersion: 6.78.0](https://img.shields.io/badge/AppVersion-6.78.0-informational?style=flat-square)
 
 Ghost is a blogging and publishing software
 
@@ -20,7 +20,7 @@ Kubernetes: `>=1.19.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.14.3 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | mariadb | 0.17.0 |
 
 ## TL;DR
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 4.1.0
+### Version 4.3.0
 
