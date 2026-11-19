@@ -23,7 +23,7 @@ additionalContainers:
     imagePullPolicy: {{ .Values.metrics.exporter.image.pullPolicy }}
     env:
       - name: QBITTORRENT_HOST
-        value: "http://localhost"
+        value: "localhost"
       - name: QBITTORRENT_PORT
         value: "{{ .Values.service.main.ports.http.port }}"
       - name: QBITTORRENT_USER
