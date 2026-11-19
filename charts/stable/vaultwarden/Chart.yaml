@@ -30,6 +30,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
+      description: Upgraded `Vaultwarden` to version `1.37.5`.
+    - kind: changed
       description: Upgraded `mariadb` chart dependency to version `0.17.0`.
     - kind: changed
       description: Upgraded `postgres` chart dependency to version `0.22.1`.
