@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 17.6.1](https://img.shields.io/badge/Version-17.6.1-informational?style=flat-square) ![AppVersion: 6.2.1](https://img.shields.io/badge/AppVersion-6.2.1-informational?style=flat-square)
+![Version: 18.0.0](https://img.shields.io/badge/Version-18.0.0-informational?style=flat-square) ![AppVersion: 7.0.3](https://img.shields.io/badge/AppVersion-7.0.3-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 17.6.1
+### Version 18.0.0
 
