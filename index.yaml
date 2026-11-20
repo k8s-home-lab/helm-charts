@@ -7283,6 +7283,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image ghcr.io/home-operations/tautulli to 2.19.1
+    apiVersion: v2
+    appVersion: 2.19.1
+    created: "2026-11-20T20:13:09.336067951Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: A Python based monitoring and tracking tool for Plex Media Server
+    digest: 712d489c7d96e5e6791a5689c0d88f8a603248fa6dea0e2e7ca19f31aae49587
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/tautulli
+    icon: https://github.com/Tautulli/Tautulli/blob/master/data/interfaces/default/images/logo.png?raw=true
+    keywords:
+    - tautulli
+    - plex
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: tautulli
+    sources:
+    - https://github.com/Tautulli/Tautulli
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/tautulli-12.4.0/tautulli-12.4.0.tgz
+    version: 12.4.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied minor update of image ghcr.io/home-operations/tautulli to 2.17.1
     apiVersion: v2
     appVersion: 2.17.1
@@ -8409,4 +8438,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-19T23:12:15.949804087Z"
+generated: "2026-11-20T20:13:09.336337516Z"
