@@ -48,7 +48,7 @@ persistence:
 #    For more options see [postgresql chart documentation](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
 # @default -- See values.yaml
 postgresql:
-  enabled: false
+  enabled: true
   replication:
     enabled: false
   auth:
