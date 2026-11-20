@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 17.3.1](https://img.shields.io/badge/Version-17.3.1-informational?style=flat-square) ![AppVersion: 4.0.17](https://img.shields.io/badge/AppVersion-4.0.17-informational?style=flat-square)
+![Version: 18.0.0](https://img.shields.io/badge/Version-18.0.0-informational?style=flat-square) ![AppVersion: 5.0.0](https://img.shields.io/badge/AppVersion-5.0.0-informational?style=flat-square)
 
 Smart PVR for newsgroup and bittorrent users
 
@@ -100,5 +100,5 @@ N/A
 
 ## Changelog
 
-### Version 17.3.1
+### Version 18.0.0
 
