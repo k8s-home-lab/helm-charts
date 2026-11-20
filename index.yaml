@@ -7166,6 +7166,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied minor update of image ghcr.io/linuxserver/syslog-ng to 4.11.0
+    apiVersion: v2
+    appVersion: 4.11.0
+    created: "2026-11-20T20:18:50.608288891Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: syslog-ng allows you to flexibly collect, parse, classify, rewrite
+      and correlate logs.
+    digest: 3e4137642d908e05b42f0d798a7827b0671ef27da5001b79d308aff3aef6bec6
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/syslog-ng
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png
+    keywords:
+    - syslog-ng
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: syslog-ng
+    sources:
+    - https://hub.docker.com/r/linuxserver/syslog-ng
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/syslog-ng-3.2.0/syslog-ng-3.2.0.tgz
+    version: 3.2.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image common to 4.5.5
     apiVersion: v2
     appVersion: 4.10.2
@@ -8438,4 +8466,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-20T20:13:09.336337516Z"
+generated: "2026-11-20T20:18:50.609182383Z"
