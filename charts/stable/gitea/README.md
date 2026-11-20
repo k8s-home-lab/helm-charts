@@ -1,6 +1,6 @@
 # gitea
 
-![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-informational?style=flat-square) ![AppVersion: 28.4.0](https://img.shields.io/badge/AppVersion-28.4.0-informational?style=flat-square)
+![Version: 3.1.0](https://img.shields.io/badge/Version-3.1.0-informational?style=flat-square) ![AppVersion: 28.4.0](https://img.shields.io/badge/AppVersion-28.4.0-informational?style=flat-square)
 
 Gitea self-hosted github-styled git repository manager
 
@@ -100,7 +100,7 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 | addons.codeserver.git.deployKeySecret | string | `""` | Existing secret containing SSH private key The chart expects it to be present under the `id_rsa` key. |
 | addons.codeserver.image.pullPolicy | string | `"IfNotPresent"` | Specify the code-server image pull policy |
 | addons.codeserver.image.repository | string | `"codercom/code-server"` | Specify the code-server image |
-| addons.codeserver.image.tag | string | `"4.110.1"` | Specify the code-server image tag |
+| addons.codeserver.image.tag | string | `"4.146.0"` | Specify the code-server image tag |
 | addons.codeserver.ingress.enabled | bool | `false` | Enable an ingress for the code-server add-on. |
 | addons.codeserver.service.enabled | bool | `true` | Enable a service for the code-server add-on. |
 | addons.codeserver.service.ipFamilies | list | `["IPv4"]` | The ip families that should be used. Options: IPv4, IPv6 |
@@ -122,5 +122,5 @@ All options can be found [here](https://docs.gitea.io/en-us/config-cheat-sheet/)
 
 ## Changelog
 
-### Version 3.0.0
+### Version 3.1.0
 
