@@ -2236,6 +2236,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Applied minor update of image codercom/code-server to 4.146.0
+    apiVersion: v2
+    appVersion: 28.4.0
+    created: "2026-11-20T22:14:53.334621042Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.22.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.17.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.40.0
+    description: Gitea self-hosted github-styled git repository manager
+    digest: ff4db435eb5e27db0d221f08e185b3bcff36e23b052b2df52d24658f3e9dc5c9
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - gitea
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/gitea
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/gitea-3.1.0/gitea-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Applied major update of image gitea/gitea to 28.4.0
     apiVersion: v2
     appVersion: 28.4.0
@@ -4678,6 +4718,42 @@ entries:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/paperless-10.0.0/paperless-10.0.0.tgz
     version: 10.0.0
   photoprism:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `mariadb` chart dependency to version `0.17.0`.
+    apiVersion: v2
+    appVersion: 231128-ce
+    created: "2026-11-20T22:14:53.653037743Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.17.0
+    description: PhotoPrism® is a server-based application for browsing, organizing
+      and sharing your personal photo collection
+    digest: 9cf48f9debff61cccafeffe3e63bdb6526a28b3fbf99ca6130a077e7033c646f
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/photoprism
+    icon: https://demo.photoprism.org/static/img/logo-avatar.svg
+    keywords:
+    - photos
+    - photoprism
+    - pictures
+    - sharing
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: photoprism
+    sources:
+    - https://github.com/photoprism/photoprism
+    - https://hub.docker.com/r/photoprism/photoprism
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/photoprism-10.1.0/photoprism-10.1.0.tgz
+    version: 10.1.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8754,4 +8830,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-20T22:10:55.697037555Z"
+generated: "2026-11-20T22:14:53.65334719Z"
