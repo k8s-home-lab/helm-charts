@@ -1,6 +1,6 @@
 # qbittorrent
 
-![Version: 14.5.1](https://img.shields.io/badge/Version-14.5.1-informational?style=flat-square) ![AppVersion: 5.2.2](https://img.shields.io/badge/AppVersion-5.2.2-informational?style=flat-square)
+![Version: 14.6.0](https://img.shields.io/badge/Version-14.6.0-informational?style=flat-square) ![AppVersion: 5.3.0](https://img.shields.io/badge/AppVersion-5.3.0-informational?style=flat-square)
 
 qBittorrent is a cross-platform free and open-source BitTorrent client
 
@@ -89,7 +89,7 @@ N/A
 | metrics.exporter.env.user | string | `"admin"` | qbittorrent username update value after configuring qbittorrent |
 | metrics.exporter.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | metrics.exporter.image.repository | string | `"esanchezm/prometheus-qbittorrent-exporter"` | image repository |
-| metrics.exporter.image.tag | string | `"v1.6.0"` | image tag |
+| metrics.exporter.image.tag | string | `"v1.8.0"` | image tag |
 | metrics.prometheusRule | object | See values.yaml | Enable and configure Prometheus Rules for the chart under this key. |
 | metrics.prometheusRule.rules | list | See prometheusrules.yaml | Configure additionial rules for the chart under this key. |
 | metrics.serviceMonitor.interval | string | `"15s"` |  |
@@ -101,5 +101,5 @@ N/A
 
 ## Changelog
 
-### Version 14.5.1
+### Version 14.6.0
 
