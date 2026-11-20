@@ -5793,6 +5793,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Applied major update of image ghcr.io/home-operations/radarr to 7.0.3
+    apiVersion: v2
+    appVersion: 7.0.3
+    created: "2026-11-20T21:07:52.164825222Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 9dd6f1cf2ffb9c92b6bb68bf14b2959ac7848d6441e3657601eb8a49f29e0c44
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/radarr
+    icon: https://github.com/Radarr/Radarr/blob/aphrodite/Logo/512.png?raw=true
+    keywords:
+    - radarr
+    - torrent
+    - usenet
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/radarr-18.0.0/radarr-18.0.0.tgz
+    version: 18.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Applied patch update of image ghcr.io/home-operations/radarr to 6.2.1
     apiVersion: v2
     appVersion: 6.2.1
@@ -8496,4 +8526,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-20T20:58:06.404302945Z"
+generated: "2026-11-20T21:07:52.165380293Z"
