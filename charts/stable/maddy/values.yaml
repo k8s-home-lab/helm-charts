@@ -14,6 +14,11 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
 
+# -- Override the command(s) for the default container
+command: ["/bin/maddy", "--config", "/data/maddy.conf"]
+# -- Override the args for the default container
+args: ["run"]
+
 maddy:
   # -- Hostname the service will listen to (incoming SMTP and IMAP)
   hostname: mx.example.com
