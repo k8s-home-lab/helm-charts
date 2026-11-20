@@ -3902,6 +3902,37 @@ entries:
     version: 15.0.0
   maddy:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Upgraded `postgres` chart dependency to version `0.22.1`.
+    apiVersion: v2
+    appVersion: 0.9.8
+    created: "2026-11-20T21:31:04.131365005Z"
+    dependencies:
+    - name: common
+      repository: https://k8s-home-lab.github.io/helm-charts/
+      version: 4.5.5
+    - condition: postgresql.enabled
+      name: postgres
+      repository: oci://ghcr.io/cloudpirates-io/helm-charts
+      version: 0.22.1
+    description: Maddy Mail Server
+    digest: cd3227646bd7b94eb993400bfc0c2c3969f775125563b8400e9a7c6f8df128e0
+    home: https://github.com/k8s-home-lab/helm-charts/tree/master/charts/stable/maddy
+    keywords:
+    - maddy
+    - mail
+    kubeVersion: '>=1.32.0'
+    maintainers:
+    - email: admin@aste.tools
+      name: k8s-home-lab
+    name: maddy
+    sources:
+    - https://github.com/foxcpp/maddy
+    urls:
+    - https://github.com/k8s-home-lab/helm-charts/releases/download/maddy-4.4.0/maddy-4.4.0.tgz
+    version: 4.4.0
+  - annotations:
       artifacthub.io/changes: |-
         - kind: changed
           description: Applied patch update of image common to 4.5.5
@@ -8597,4 +8628,4 @@ entries:
     urls:
     - https://github.com/k8s-home-lab/helm-charts/releases/download/zurg-1.1.0/zurg-1.1.0.tgz
     version: 1.1.0
-generated: "2026-11-20T21:12:29.920072476Z"
+generated: "2026-11-20T21:31:04.131607194Z"
