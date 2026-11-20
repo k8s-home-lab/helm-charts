@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 2.20.15
+appVersion: 3.5.1
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 11.2.0
+version: 12.0.0
 kubeVersion: ">=1.32.0"
 keywords:
   - paperless
@@ -29,8 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded paperless to version `2.20.15`.
-    - kind: changed
-      description: Upgraded `postgres` chart dependency to version `0.22.1`.
-    - kind: changed
-      description: Upgraded `redis` chart dependency to version `0.40.0`.
+      description: Applied major update of image ghcr.io/paperless-ngx/paperless-ngx to 3.5.1
