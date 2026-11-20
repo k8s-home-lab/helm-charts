@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/linuxserver/syslog-ng
-appVersion: 4.10.2
+appVersion: 4.11.0
 description: syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs.
 name: syslog-ng
-version: 3.1.1
+version: 3.2.0
 kubeVersion: ">=1.32.0"
 keywords:
   - syslog-ng
@@ -21,4 +21,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Applied patch update of image common to 4.5.5
+      description: Applied minor update of image ghcr.io/linuxserver/syslog-ng to 4.11.0
