@@ -1,6 +1,6 @@
 # maddy
 
-![Version: 4.2.1](https://img.shields.io/badge/Version-4.2.1-informational?style=flat-square) ![AppVersion: 0.8.2](https://img.shields.io/badge/AppVersion-0.8.2-informational?style=flat-square)
+![Version: 4.4.0](https://img.shields.io/badge/Version-4.4.0-informational?style=flat-square) ![AppVersion: 0.9.8](https://img.shields.io/badge/AppVersion-0.9.8-informational?style=flat-square)
 
 Maddy Mail Server
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.32.0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://k8s-home-lab.github.io/helm-charts/ | common | 4.5.5 |
-| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.16.0 |
+| oci://ghcr.io/cloudpirates-io/helm-charts | postgres | 0.22.1 |
 
 ## TL;DR
 
@@ -78,6 +78,8 @@ about how to do this.
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| args | list | `["run"]` | Override the args for the default container |
+| command | list | `["/bin/maddy","--config","/data/maddy.conf"]` | Override the command(s) for the default container |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"foxcpp/maddy"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
@@ -117,5 +119,5 @@ about how to do this.
 
 ## Changelog
 
-### Version 4.2.1
+### Version 4.4.0
 
