@@ -1,5 +1,5 @@
 env:
-  PAPERLESS_REDIS: redis://paperless-redis-headless:6379
+  PAPERLESS_REDIS: redis://paperless-redis-0:6379
 
 persistence:
   data:
