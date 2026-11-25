@@ -1,9 +1,9 @@
 apiVersion: v2
 # renovate: image=ghcr.io/0xerr0r/blocky
-appVersion: v0.36.0
+appVersion: v0.37.0
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 11.4.0
+version: 11.6.0
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -22,11 +22,9 @@ dependencies:
     version: 4.5.5
   - name: redis
     repository: oci://ghcr.io/cloudpirates-io/helm-charts
-    version: 0.40.0
+    version: 0.42.0
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Upgraded `blocky` to version `v0.36.0`.
-    - kind: changed
-      description: Upgraded `redis` chart dependency to version `0.40.0`.
+      description: Upgraded `redis` chart dependency to version `0.42.0`.
